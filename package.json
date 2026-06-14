@@ -1,0 +1,13 @@
+{
+  "name": "alzbdh-marketing",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Dedicated marketing workspace for الزبدة social content, campaign assets, and Buffer operations.",
+  "type": "module",
+  "scripts": {
+    "generate:mobile-app": "node content/mobile-app/generate-mobile-app-content.mjs"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}

@@ -1,0 +1,1508 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Alzbdh · Design System (EN)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Fraunces:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+<!-- =====================================================================
+     ALZBDH DESIGN SYSTEM — single-file English reference
+     Ship this file to Claude Code or any developer with the prompt:
+       "Build <thing> for Alzbdh using this design system."
+     Tokens, components, voice, layout patterns, RTL rules, and dark-mode
+     are all inline. Arabic typography and culturally-rooted content
+     (Halal scale, Voice quotes, Verdict labels) are preserved verbatim
+     because they ARE the product — translating them would break it.
+     ===================================================================== -->
+
+<style id="zb-tokens">
+:root {
+  /* Brand */
+  --zb-accent:        #1F3D2E;   /* Alzbdh forest green — primary */
+  --zb-accent-deep:   #122618;
+  --zb-accent-2:      #2E5A43;
+  --zb-accent-light:  #E5EDE7;
+
+  /* Surfaces */
+  --zb-bg:            #FDFBF7;
+  --zb-card:          #FFFFFF;
+  --zb-cream-2:       #F4EFE6;
+  --zb-cream-3:       #ECE5D8;
+  --zb-ink:           #1F1B16;
+
+  /* Text */
+  --zb-text:          #1A1A1A;
+  --zb-text-2:        #4A4A48;
+  --zb-muted:         #7A7A7A;
+
+  /* Lines */
+  --zb-border:        #E8E4DD;
+  --zb-border-strong: #D7D1C6;
+
+  /* Halal trust scale (semantic — never rebrand) */
+  --zb-halal-cert:    #16864F;
+  --zb-halal-std:     #6FA02E;
+  --zb-halal-opt:     #C68A1A;
+  --zb-halal-warn:    #C0392B;
+
+  --zb-blue:          #2F6FB8;
+  --zb-violet:        #6C5BC0;
+  --zb-amber:         #C68A1A;
+  --zb-green:         #2F8A53;
+
+  --zb-shadow-sm: 0 1px 2px rgba(31,27,22,.04), 0 1px 1px rgba(31,27,22,.03);
+  --zb-shadow-md: 0 4px 14px rgba(31,27,22,.06), 0 1px 3px rgba(31,27,22,.04);
+  --zb-shadow-lg: 0 18px 40px rgba(31,27,22,.10), 0 4px 12px rgba(31,27,22,.05);
+
+  --zb-r-sm: 10px; --zb-r-md: 14px; --zb-r-lg: 20px; --zb-r-xl: 28px;
+}
+
+[data-theme="dark"] {
+  --zb-accent:        #7BBF9A;
+  --zb-accent-deep:   #A6D6BC;
+  --zb-accent-2:      #4F8A6E;
+  --zb-accent-light:  #1F3D2E;
+  --zb-bg:            #14110D;
+  --zb-card:          #1F1B16;
+  --zb-cream-2:       #2A251D;
+  --zb-cream-3:       #352F25;
+  --zb-ink:           #F5F1E8;
+  --zb-text:          #F5F1E8;
+  --zb-text-2:        #B8B0A2;
+  --zb-muted:         #7E776B;
+  --zb-border:        rgba(255,255,255,.08);
+  --zb-border-strong: rgba(255,255,255,.16);
+  --zb-halal-cert:    #3FAE76;
+  --zb-halal-std:     #9BC458;
+  --zb-halal-opt:     #E0A93A;
+  --zb-halal-warn:    #E5634F;
+}
+
+* { box-sizing: border-box; }
+body, html { margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--zb-text);
+  background: var(--zb-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* When wrapping Arabic content inline */
+.ar { font-family: 'Changa', system-ui, sans-serif; direction: rtl; unicode-bidi: isolate; }
+.ar-block { font-family: 'Changa', system-ui, sans-serif; direction: rtl; }
+
+/* ----- Doc layout ----- */
+.doc { max-width: 980px; margin: 0 auto; padding: 60px 32px 120px; }
+
+.doc-hero {
+  display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center;
+  background: var(--zb-accent); color: #fff;
+  border-radius: 24px; padding: 44px 48px; margin-bottom: 36px;
+}
+.doc-hero h1 { font-size: 38px; font-weight: 800; margin: 8px 0 12px; letter-spacing: -.02em; }
+.doc-hero .sub { font-size: 15px; line-height: 1.65; opacity: .88; max-width: 520px; }
+.doc-hero .eyebrow { font-size: 11px; letter-spacing: .14em; font-weight: 600; text-transform: uppercase; opacity: .8; }
+.doc-hero .logo { width: 96px; height: 96px; border-radius: 22px; background: rgba(255,255,255,.12); display: grid; place-items: center; padding: 18px; }
+.doc-hero .logo img { width: 100%; height: 100%; object-fit: contain; filter: brightness(0) invert(1); }
+
+.doc-toc {
+  background: var(--zb-card); border: 1px solid var(--zb-border);
+  border-radius: 16px; padding: 22px 26px; margin-bottom: 56px;
+}
+.doc-toc h3 { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--zb-muted); margin: 0 0 14px; }
+.doc-toc ol { margin: 0; padding-inline-start: 22px; columns: 2; column-gap: 32px; }
+.doc-toc ol li { margin: 6px 0; line-height: 1.5; font-size: 14px; }
+.doc-toc a { color: var(--zb-text); text-decoration: none; }
+.doc-toc a:hover { color: var(--zb-accent); }
+
+section.doc-section { padding: 56px 0; border-top: 1px solid var(--zb-border); }
+section.doc-section:first-of-type { border-top: 0; padding-top: 0; }
+section h2 { font-size: 28px; font-weight: 800; margin: 0 0 4px; letter-spacing: -.01em; display: flex; align-items: baseline; gap: 14px; }
+section h2 .num { font-family: 'Fraunces', serif; font-size: 22px; font-style: italic; color: var(--zb-muted); font-weight: 400; }
+section h2 .anchor { font-size: 14px; color: var(--zb-muted); text-decoration: none; opacity: 0; }
+section h2:hover .anchor { opacity: 1; }
+section h3 { font-size: 17px; font-weight: 700; margin: 32px 0 14px; }
+section .intro { color: var(--zb-text-2); line-height: 1.7; max-width: 720px; margin: 6px 0 28px; font-size: 15px; }
+
+.callout {
+  background: var(--zb-accent-light);
+  border-radius: 14px; padding: 16px 20px;
+  font-size: 14px; line-height: 1.7;
+  color: var(--zb-accent-deep);
+  border-inline-start: 3px solid var(--zb-accent);
+  margin: 18px 0;
+}
+.callout code { background: rgba(255,255,255,.55); padding: 1px 6px; border-radius: 5px; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; }
+
+.spec { display: grid; grid-template-columns: 280px 1fr; gap: 24px; align-items: start; padding: 18px 0; border-bottom: 1px solid var(--zb-border); }
+.spec:last-child { border-bottom: none; }
+.spec .preview { background: var(--zb-cream-2); border-radius: 12px; padding: 24px; min-height: 90px; display: flex; align-items: center; justify-content: center; gap: 12px; flex-wrap: wrap; }
+.spec .preview.dark { background: #14110D; }
+.spec .preview.cream { background: var(--zb-cream-3); }
+.spec .meta { padding: 6px 0; }
+.spec .meta .name { font-weight: 700; font-size: 14px; }
+.spec .meta code { display: inline-block; font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; background: var(--zb-cream-2); padding: 2px 8px; border-radius: 5px; margin-top: 4px; color: var(--zb-accent-deep); }
+.spec .meta .desc { color: var(--zb-text-2); font-size: 13px; line-height: 1.65; margin-top: 8px; }
+
+.swatch { width: 100%; aspect-ratio: 4/2; border-radius: 12px; display: flex; align-items: flex-end; padding: 12px 14px; color: #fff; font-family: 'JetBrains Mono', monospace; font-size: 11px; }
+.swatch.light { color: var(--zb-text); }
+
+pre.code {
+  background: #0F1814; color: #C9DFD0;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 12.5px; line-height: 1.7;
+  padding: 22px 26px; border-radius: 14px;
+  overflow-x: auto; direction: ltr;
+}
+pre.code .c { color: #6E7E72; font-style: italic; }
+pre.code .k { color: #7BBF9A; }
+pre.code .p { color: #E0C879; }
+pre.code .v { color: #E5DDC8; }
+
+/* ----- Component CSS (mirrors components.jsx) ----- */
+.zb-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 18px; border-radius: 14px; border: 1px solid transparent; font-size: 15px; font-weight: 600; cursor: pointer; background: var(--zb-ink); color: #fff; font-family: inherit; }
+.zb-btn-accent { background: var(--zb-accent); color: #fff; }
+.zb-btn-ghost { background: transparent; color: var(--zb-text); border-color: var(--zb-border); }
+
+.zb-chip { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: #fff; border: 1px solid var(--zb-border); font-size: 13px; color: var(--zb-text-2); }
+.zb-chip-solid { background: var(--zb-ink); color: #fff; border-color: var(--zb-ink); }
+.zb-chip-accent { background: var(--zb-accent-light); color: var(--zb-accent-deep); border-color: transparent; }
+
+.zb-card { background: var(--zb-card); border: 1px solid var(--zb-border); border-radius: var(--zb-r-lg); box-shadow: var(--zb-shadow-sm); }
+.zb-card-soft { background: var(--zb-cream-2); border: 1px solid transparent; border-radius: var(--zb-r-lg); }
+.zb-card-ink { background: var(--zb-ink); color: #fff; border-radius: var(--zb-r-lg); }
+
+.zb-h1 { font-size: 26px; font-weight: 700; letter-spacing: -.01em; line-height: 1.2; margin: 0; }
+.zb-h2 { font-size: 19px; font-weight: 700; margin: 0; }
+.zb-h3 { font-size: 16px; font-weight: 600; margin: 0; }
+.zb-eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .12em; color: var(--zb-muted); text-transform: uppercase; }
+.zb-body { font-size: 15px; line-height: 1.65; }
+.zb-sm { font-size: 13px; line-height: 1.6; color: var(--zb-text-2); }
+
+.zb-halal { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; }
+.zb-halal::before { content: ""; width: 8px; height: 8px; border-radius: 999px; background: currentColor; }
+
+.zb-verdict { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; font-size: 13px; font-weight: 700; }
+.zb-verdict-yes { background: #E5F2EA; color: var(--zb-halal-cert); }
+.zb-verdict-meh { background: #FBEFD8; color: #8C5E0A; }
+.zb-verdict-no  { background: #F8E1DD; color: var(--zb-halal-warn); }
+
+.zb-voice {
+  background: var(--zb-accent-light); border-radius: var(--zb-r-md); padding: 14px 16px;
+  position: relative; color: var(--zb-accent-deep); font-weight: 600;
+  font-size: 14px; line-height: 1.6; font-family: 'Changa', sans-serif; direction: rtl;
+}
+.zb-voice::before {
+  content: "صراحة"; position: absolute; top: -10px; right: 12px;
+  background: var(--zb-accent); color: #fff; font-size: 10px;
+  padding: 3px 8px; border-radius: 999px; letter-spacing: .04em;
+}
+
+.zb-tabbar { display: grid; grid-template-columns: repeat(5,1fr); background: rgba(255,253,249,.92); backdrop-filter: blur(18px) saturate(160%); border-top: 1px solid var(--zb-border); padding: 8px 6px 14px; }
+.zb-tab { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 6px 4px; color: var(--zb-muted); font-size: 11px; cursor: pointer; border-radius: 10px; font-family: 'Changa', sans-serif; }
+.zb-tab[aria-current="true"] { color: var(--zb-accent-deep); }
+.zb-tab[aria-current="true"] .zb-tabicon { background: var(--zb-accent-light); }
+.zb-tabicon { width: 44px; height: 28px; border-radius: 999px; display: flex; align-items: center; justify-content: center; }
+
+.type-sample { display: grid; grid-template-columns: 130px 1fr 130px; gap: 16px; align-items: baseline; padding: 14px 0; border-bottom: 1px dashed var(--zb-border); }
+.type-sample .label { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--zb-muted); text-transform: uppercase; letter-spacing: .08em; }
+.type-sample .specs { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--zb-muted); text-align: right; }
+</style>
+</head>
+<body>
+
+<div class="doc">
+
+  <header class="doc-hero">
+    <div>
+      <div class="eyebrow">Design system · v1.0 · May 2026</div>
+      <h1>Alzbdh <span style="color: rgba(255,255,255,.6); font-weight: 600;">— Design System</span></h1>
+      <p class="sub">
+        Complete design system for <b>Alzbdh</b> — an Arabic-first, AI-powered concierge
+        for travel, local lifestyle, offers, and perfumes. This is the <b>only file</b>
+        you need to build new pages or features: tokens, components, voice, RTL rules.
+      </p>
+      <div style="margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap;">
+        <span class="zb-chip zb-chip-accent" style="background: rgba(255,255,255,.16); color: #fff;">RTL · Arabic-first</span>
+        <span class="zb-chip" style="background: rgba(255,255,255,.16); color: #fff; border-color: transparent;">Changa font</span>
+        <span class="zb-chip" style="background: rgba(255,255,255,.16); color: #fff; border-color: transparent;">Forest #1F3D2E</span>
+        <span class="zb-chip" style="background: rgba(255,255,255,.16); color: #fff; border-color: transparent;">React + CSS vars</span>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="assets/alzbdh-logo-color.png" alt="Alzbdh"/>
+    </div>
+  </header>
+
+  <!-- 00 HOW TO USE -->
+  <section class="doc-section" id="how-to-use">
+    <h2><span class="num">00</span> How to use this file <a class="anchor" href="#how-to-use">#</a></h2>
+    <p class="intro">
+      This file is meant to be passed to Claude Code or any developer with the request:
+      <i>"Build a [page] for Alzbdh using this design system."</i> Every section has a
+      preview + ready-to-paste code. No external files needed.
+    </p>
+
+    <div class="callout">
+      <strong>For the developer / Claude Code:</strong>
+      <ol style="margin: 10px 0 0; padding-inline-start: 22px; line-height: 1.85;">
+        <li>Copy the <code>:root</code> block from <a href="#tokens" style="color: var(--zb-accent-deep);">Section 01</a> into your global stylesheet.</li>
+        <li>Use the React components in <a href="#components" style="color: var(--zb-accent-deep);">Section 06</a> verbatim — don't rename classes.</li>
+        <li>Follow layout patterns in <a href="#patterns" style="color: var(--zb-accent-deep);">Section 09</a> for every new page.</li>
+        <li>Wrap your HTML in <code>&lt;div class="zb-app" dir="rtl" lang="ar"&gt;</code> so RTL + Changa apply automatically.</li>
+        <li>Honour the brand voice in <a href="#voice" style="color: var(--zb-accent-deep);">Section 02</a> — copy <i>is</i> the product.</li>
+        <li>Arabic content (Voice quotes, Halal labels, Verdict) is preserved verbatim — <b>do not translate it</b>. It's the actual UI string.</li>
+      </ol>
+    </div>
+
+    <div class="doc-toc">
+      <h3>Contents</h3>
+      <ol>
+        <li><a href="#tokens">01 — Tokens (color, shadow, radius)</a></li>
+        <li><a href="#voice">02 — Brand voice & writing style</a></li>
+        <li><a href="#typography">03 — Typography (Changa)</a></li>
+        <li><a href="#spacing">04 — Spacing & grid</a></li>
+        <li><a href="#rtl">05 — RTL & Arabic rules</a></li>
+        <li><a href="#components">06 — Components</a></li>
+        <li><a href="#semantics">07 — Semantic signals (Halal, Verdict, Voice)</a></li>
+        <li><a href="#nav">08 — Navigation (mobile + desktop)</a></li>
+        <li><a href="#patterns">09 — Layout patterns</a></li>
+        <li><a href="#a11y">10 — Accessibility</a></li>
+        <li><a href="#dark">11 — Dark mode</a></li>
+        <li><a href="#forms">12 — Forms &amp; inputs</a></li>
+        <li><a href="#icons">13 — Iconography</a></li>
+        <li><a href="#concierge">14 — Concierge chat anatomy</a></li>
+        <li><a href="#overlays">15 — Sheets · modals · toasts</a></li>
+        <li><a href="#states">16 — Empty · loading · error</a></li>
+        <li><a href="#numbers">17 — Numbers · dates · prayer</a></li>
+        <li><a href="#maps">18 — Maps</a></li>
+        <li><a href="#images">19 — Image treatment</a></li>
+        <li><a href="#motion">20 — Motion</a></li>
+        <li><a href="#avatars">21 — Avatars</a></li>
+        <li><a href="#examples">22 — Composition examples</a></li>
+        <li><a href="#z-index">23 — Z-index scale</a></li>
+        <li><a href="#breakpoints">24 — Breakpoints</a></li>
+        <li><a href="#content">25 — Content rules</a></li>
+        <li><a href="#share">26 — Share · deep links · OG</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 01 TOKENS -->
+  <section class="doc-section" id="tokens">
+    <h2><span class="num">01</span> Tokens <a class="anchor" href="#tokens">#</a></h2>
+    <p class="intro">
+      Every color, shadow, radius is a CSS variable on <code>:root</code>. Always use the
+      variable, never a raw hex — this is what makes dark mode and theming work.
+    </p>
+
+    <h3>Brand colors</h3>
+    <div class="spec">
+      <div class="swatch" style="background: #1F3D2E;">accent</div>
+      <div class="meta"><div class="name">Forest green — primary</div><div class="desc">Logo, primary CTAs, active tab. Sourced from the Alzbdh logo. Pairs with cream backgrounds.</div><code>--zb-accent · #1F3D2E</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch" style="background: #122618;">accent-deep</div>
+      <div class="meta"><div class="name">Deep green</div><div class="desc">Body links, hover states, text-on-accent-light surfaces.</div><code>--zb-accent-deep · #122618</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch light" style="background: #E5EDE7;">accent-light</div>
+      <div class="meta"><div class="name">Tinted background</div><div class="desc">Voice quote bubbles, active-tab pill, soft chips.</div><code>--zb-accent-light · #E5EDE7</code></div>
+    </div>
+
+    <h3>Surfaces</h3>
+    <div class="spec">
+      <div class="swatch light" style="background: #FDFBF7;">bg</div>
+      <div class="meta"><div class="name">Warm off-white app bg</div><div class="desc">The canonical canvas — never pure white. Cream warmth is part of the brand.</div><code>--zb-bg · #FDFBF7</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch light" style="background: #FFFFFF; border: 1px solid var(--zb-border);">card</div>
+      <div class="meta"><div class="name">Card surface</div><code>--zb-card · #FFFFFF</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch light" style="background: #F4EFE6;">cream-2</div>
+      <div class="meta"><div class="name">Soft surface</div><div class="desc">Search bars, secondary cards, photo placeholders.</div><code>--zb-cream-2 · #F4EFE6</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch" style="background: #1F1B16;">ink</div>
+      <div class="meta"><div class="name">Warm near-black</div><div class="desc">High-contrast CTAs, the newsletter card. Warm — not pure black.</div><code>--zb-ink · #1F1B16</code></div>
+    </div>
+
+    <h3>Halal trust scale (semantic — never rebrand)</h3>
+    <div class="callout"><strong>Why a scale, not just "halal/not halal":</strong> users want nuance. A restaurant might be uncertified but verified by us; another might serve alcohol with halal options. We surface that honestly.</div>
+    <div class="spec">
+      <div class="swatch" style="background: #16864F;">cert</div>
+      <div class="meta"><div class="name">Certified halal</div><div class="desc">Has formal certification. <span class="ar">«حلال موثّق»</span></div><code>--zb-halal-cert · #16864F</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch" style="background: #6FA02E;">standard</div>
+      <div class="meta"><div class="name">Standard halal</div><div class="desc">Verified by us, no certificate. <span class="ar">«حلال»</span></div><code>--zb-halal-std · #6FA02E</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch" style="background: #C68A1A;">options</div>
+      <div class="meta"><div class="name">Halal options</div><div class="desc">Mixed venue but halal items exist. <span class="ar">«خيارات حلال»</span></div><code>--zb-halal-opt · #C68A1A</code></div>
+    </div>
+    <div class="spec">
+      <div class="swatch" style="background: #C0392B;">warn</div>
+      <div class="meta"><div class="name">Caution</div><div class="desc">Serves alcohol / not suitable. <span class="ar">«احذر»</span></div><code>--zb-halal-warn · #C0392B</code></div>
+    </div>
+
+    <h3>Copy-paste token block</h3>
+<pre class="code"><span class="c">/* Alzbdh design tokens — paste into your global stylesheet */</span>
+<span class="k">:root</span> {
+  <span class="p">--zb-accent</span>:        <span class="v">#1F3D2E</span>;
+  <span class="p">--zb-accent-deep</span>:   <span class="v">#122618</span>;
+  <span class="p">--zb-accent-2</span>:      <span class="v">#2E5A43</span>;
+  <span class="p">--zb-accent-light</span>:  <span class="v">#E5EDE7</span>;
+  <span class="p">--zb-bg</span>:            <span class="v">#FDFBF7</span>;
+  <span class="p">--zb-card</span>:          <span class="v">#FFFFFF</span>;
+  <span class="p">--zb-cream-2</span>:       <span class="v">#F4EFE6</span>;
+  <span class="p">--zb-cream-3</span>:       <span class="v">#ECE5D8</span>;
+  <span class="p">--zb-ink</span>:           <span class="v">#1F1B16</span>;
+  <span class="p">--zb-text</span>:          <span class="v">#1A1A1A</span>;
+  <span class="p">--zb-text-2</span>:        <span class="v">#4A4A48</span>;
+  <span class="p">--zb-muted</span>:         <span class="v">#7A7A7A</span>;
+  <span class="p">--zb-border</span>:        <span class="v">#E8E4DD</span>;
+  <span class="p">--zb-halal-cert</span>:    <span class="v">#16864F</span>;
+  <span class="p">--zb-halal-std</span>:     <span class="v">#6FA02E</span>;
+  <span class="p">--zb-halal-opt</span>:     <span class="v">#C68A1A</span>;
+  <span class="p">--zb-halal-warn</span>:    <span class="v">#C0392B</span>;
+  <span class="p">--zb-r-sm</span>: <span class="v">10px</span>; <span class="p">--zb-r-md</span>: <span class="v">14px</span>;
+  <span class="p">--zb-r-lg</span>: <span class="v">20px</span>; <span class="p">--zb-r-xl</span>: <span class="v">28px</span>;
+}</pre>
+  </section>
+
+  <!-- 02 VOICE -->
+  <section class="doc-section" id="voice">
+    <h2><span class="num">02</span> Brand voice <a class="anchor" href="#voice">#</a></h2>
+    <p class="intro">
+      Alzbdh speaks like a <b>trusted local friend</b> — warm, direct, opinionated.
+      Saudi/Khaleeji conversational Arabic, never corporate Modern Standard. The
+      product's name (<span class="ar">«الزبدة»</span> = "the butter / the essence") sets the tone:
+      <i>cut to what actually matters</i>.
+    </p>
+
+    <h3>Tone pillars</h3>
+    <ul style="font-size: 14.5px; line-height: 2; color: var(--zb-text-2); padding-inline-start: 22px;">
+      <li><b>Honest:</b> we say "skip this" when it's bad. The Voice quote brand mark literally reads <span class="ar">«صراحة»</span> ("honestly").</li>
+      <li><b>Warm:</b> "حواليك" (around you), not "your area". "يلا" (let's go), not "begin trip".</li>
+      <li><b>Brief:</b> the <i>zubda</i>. Two-sentence verdicts, not paragraphs.</li>
+      <li><b>Local:</b> Saudi/Khaleeji idioms (<span class="ar">«يستاهل»</span>, <span class="ar">«شفت»</span>) — never formal MSA when speaking <i>to</i> the user.</li>
+      <li><b>Confident, not pushy:</b> we recommend, we don't oversell.</li>
+    </ul>
+
+    <h3>Examples — do / don't</h3>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 14px;">
+      <div class="zb-card" style="padding: 16px;">
+        <div class="zb-eyebrow" style="color: var(--zb-halal-cert);">DO ✓</div>
+        <div class="ar-block" style="margin-top: 8px; font-size: 14px; line-height: 1.7;">
+          «خصّص ساعتين لتوبكابي على الأقل. الجناح الإسلامي واجب.»
+        </div>
+        <div style="font-size: 12px; color: var(--zb-muted); margin-top: 8px;">Direct, opinionated, specific.</div>
+      </div>
+      <div class="zb-card" style="padding: 16px;">
+        <div class="zb-eyebrow" style="color: var(--zb-halal-warn);">DON'T ✗</div>
+        <div class="ar-block" style="margin-top: 8px; font-size: 14px; line-height: 1.7;">
+          «يُنصح بتخصيص وقت كافٍ لزيارة قصر طوبقابي السلطاني والاستمتاع بمقتنياته القيّمة.»
+        </div>
+        <div style="font-size: 12px; color: var(--zb-muted); margin-top: 8px;">Formal MSA, vague, sounds like a brochure.</div>
+      </div>
+    </div>
+
+    <h3>Brand vocabulary (use these literal words)</h3>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px;">
+      <div class="zb-card" style="padding: 12px 14px;"><div class="ar" style="font-weight: 700; font-size: 18px;">صراحة</div><div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">"Honestly" — Voice quote label</div></div>
+      <div class="zb-card" style="padding: 12px 14px;"><div class="ar" style="font-weight: 700; font-size: 18px;">يستاهل</div><div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">"Worth it" — Verdict YES</div></div>
+      <div class="zb-card" style="padding: 12px 14px;"><div class="ar" style="font-weight: 700; font-size: 18px;">حواليك</div><div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">"Around you" — Local tab</div></div>
+      <div class="zb-card" style="padding: 12px 14px;"><div class="ar" style="font-weight: 700; font-size: 18px;">يلا</div><div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">"Let's go" — CTA</div></div>
+      <div class="zb-card" style="padding: 12px 14px;"><div class="ar" style="font-weight: 700; font-size: 18px;">نبذة</div><div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">"Quick take" — Editorial summary</div></div>
+      <div class="zb-card" style="padding: 12px 14px;"><div class="ar" style="font-weight: 700; font-size: 18px;">الزبدة</div><div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">"The essence" — Brand / concierge tab</div></div>
+    </div>
+  </section>
+
+  <!-- 03 TYPOGRAPHY -->
+  <section class="doc-section" id="typography">
+    <h2><span class="num">03</span> Typography <a class="anchor" href="#typography">#</a></h2>
+    <p class="intro">
+      <b>Changa</b> for all Arabic and Latin UI text — it has excellent Arabic support
+      with personality, plus a clean Latin set. <b>Inter</b> is the fallback for Latin-only
+      contexts (e.g. this English doc). Eastern Arabic numerals (٠١٢٣٤٥٦٧٨٩) for prices/times.
+    </p>
+
+    <div class="type-sample"><div class="label">display 1</div><div class="ar" style="font-size: 32px; font-weight: 800; letter-spacing: -.02em;">قرارات أفضل، صراحة.</div><div class="specs">32 / 800 / -2%</div></div>
+    <div class="type-sample"><div class="label">display 2</div><div class="ar" style="font-size: 26px; font-weight: 800; letter-spacing: -.01em;">خطّط رحلتك بالعربي</div><div class="specs">26 / 800</div></div>
+    <div class="type-sample"><div class="label">h1</div><div class="ar" style="font-size: 22px; font-weight: 700;">رحلتي إلى إسطنبول</div><div class="specs">22 / 700</div></div>
+    <div class="type-sample"><div class="label">h2</div><div class="ar zb-h2">حواليك الآن</div><div class="specs">19 / 700</div></div>
+    <div class="type-sample"><div class="label">h3</div><div class="ar zb-h3">يوم ٢ — السلطان أحمد</div><div class="specs">16 / 600</div></div>
+    <div class="type-sample"><div class="label">body</div><div class="ar zb-body">قهوة Yirgacheffe من أفضل ما في الرياض، الكرواسون مقبول، الـ WiFi قوي.</div><div class="specs">15 / 400</div></div>
+    <div class="type-sample"><div class="label">small</div><div class="ar zb-sm">وصول بعد ١٢ دقيقة من العليا.</div><div class="specs">13 / 400</div></div>
+    <div class="type-sample"><div class="label">eyebrow</div><div class="ar zb-eyebrow">عطور · المكتبة</div><div class="specs">11 / 600 / +12%</div></div>
+
+    <div class="callout">
+      <strong>Mixing Arabic & Latin:</strong> wrap inline Latin in <code>&lt;span class="en"&gt;</code>
+      so directionality isolates: <span class="ar">قهوة <span style="font-family:Inter; direction:ltr; unicode-bidi:isolate;">Yirgacheffe</span> من أفضل ما في الرياض</span>.
+      For numerals, use Eastern Arabic (٠١٢٣٤٥٦٧٨٩) in body text. Prices and times stay in tabular numerals via <code>font-feature-settings: "tnum" 1;</code>.
+    </div>
+  </section>
+
+  <!-- 04 SPACING -->
+  <section class="doc-section" id="spacing">
+    <h2><span class="num">04</span> Spacing & grid <a class="anchor" href="#spacing">#</a></h2>
+    <p class="intro">
+      4-point base scale. Use multiples of 4. Card padding is 16 by default,
+      18–20 for hero cards. Mobile screen padding is 16; desktop is 28.
+    </p>
+    <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 18px;">
+      <div style="text-align: center;"><div style="width: 4px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-1 / 4</div></div>
+      <div style="text-align: center;"><div style="width: 8px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-2 / 8</div></div>
+      <div style="text-align: center;"><div style="width: 12px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-3 / 12</div></div>
+      <div style="text-align: center;"><div style="width: 16px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-4 / 16</div></div>
+      <div style="text-align: center;"><div style="width: 20px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-5 / 20</div></div>
+      <div style="text-align: center;"><div style="width: 24px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-6 / 24</div></div>
+      <div style="text-align: center;"><div style="width: 32px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-8 / 32</div></div>
+      <div style="text-align: center;"><div style="width: 40px; height: 60px; background: var(--zb-accent); margin: 0 auto;"></div><div style="font-size: 11px; margin-top: 6px; font-family: monospace;">s-10 / 40</div></div>
+    </div>
+  </section>
+
+  <!-- 05 RTL -->
+  <section class="doc-section" id="rtl">
+    <h2><span class="num">05</span> RTL & Arabic rules <a class="anchor" href="#rtl">#</a></h2>
+    <p class="intro">
+      RTL is not "mirroring CSS" — it's a layout discipline. These rules are
+      non-negotiable.
+    </p>
+
+    <h3>1. Use logical CSS properties</h3>
+    <div class="callout">
+      <code>margin-inline-start</code> / <code>padding-inline-end</code> / <code>border-inline-start</code> / <code>inset-inline-start</code> — never <code>margin-left</code> or <code>right</code>. Arrows, chevrons, sliders all flip automatically.
+    </div>
+
+    <h3>2. Mirror directional icons, keep symmetric ones</h3>
+    <ul style="font-size: 14.5px; line-height: 1.85; color: var(--zb-text-2); padding-inline-start: 22px;">
+      <li><b>Mirror:</b> back/forward chevrons, arrows, send icon, page turners. Use <code>transform: scaleX(-1)</code> on RTL or pick the correctly-pointing variant from the icon set.</li>
+      <li><b>Don't mirror:</b> mosque, plane, search, heart, star, clock — symmetric or universal.</li>
+      <li><b>Numbers in icons:</b> never. Icons are language-agnostic.</li>
+    </ul>
+
+    <h3>3. Embed Latin words correctly</h3>
+    <div class="callout">
+      Wrap Latin inline runs (brand names, English-only terms) in <code>&lt;span class="en"&gt;</code> with <code>direction: ltr; unicode-bidi: isolate</code>. This stops the brand "Lattafa" from breaking the Arabic word order around it.
+    </div>
+
+    <h3>4. Numerals</h3>
+    <ul style="font-size: 14.5px; line-height: 1.85; color: var(--zb-text-2); padding-inline-start: 22px;">
+      <li>Body text: <b>Eastern Arabic</b> (٠١٢٣٤٥٦٧٨٩) — feels native.</li>
+      <li>Code, URLs, version numbers: <b>Western</b> (0123456789).</li>
+      <li>Prices, times, large numbers: tabular alignment via <code>font-variant-numeric: tabular-nums</code>.</li>
+    </ul>
+
+    <h3>5. Punctuation & quotation</h3>
+    <ul style="font-size: 14.5px; line-height: 1.85; color: var(--zb-text-2); padding-inline-start: 22px;">
+      <li>Use Arabic comma <span class="ar">،</span> and question mark <span class="ar">؟</span> in Arabic text — not Latin <code>,</code> or <code>?</code>.</li>
+      <li>Quotes: French-style guillemets <span class="ar">«…»</span> for Voice quotes and editorial nibadhah.</li>
+    </ul>
+  </section>
+
+  <!-- 06 COMPONENTS -->
+  <section class="doc-section" id="components">
+    <h2><span class="num">06</span> Components <a class="anchor" href="#components">#</a></h2>
+    <p class="intro">
+      The atomic kit. Each has a preview + class name. The full React source
+      lives in <code>components.jsx</code> (see end of this doc for the file contents).
+    </p>
+
+    <h3>Buttons</h3>
+    <div class="spec">
+      <div class="preview">
+        <button class="zb-btn zb-btn-accent ar">احجز الآن</button>
+        <button class="zb-btn ar">يلا نروح</button>
+        <button class="zb-btn zb-btn-ghost ar">شوف التفاصيل</button>
+      </div>
+      <div class="meta">
+        <div class="name">Button variants</div>
+        <code>.zb-btn / .zb-btn-accent / .zb-btn-ghost</code>
+        <div class="desc">Primary green, primary ink (warm black), ghost outline. All min-height 44px for touch.</div>
+      </div>
+    </div>
+
+    <h3>Chips</h3>
+    <div class="spec">
+      <div class="preview">
+        <span class="zb-chip ar">حلال</span>
+        <span class="zb-chip zb-chip-accent ar">٤.٧ ★</span>
+        <span class="zb-chip zb-chip-solid ar">مفتوح الآن</span>
+      </div>
+      <div class="meta">
+        <div class="name">Chip variants</div>
+        <code>.zb-chip / .zb-chip-accent / .zb-chip-solid</code>
+        <div class="desc">Use for filters, tags, status. Don't stack more than 3 in a row.</div>
+      </div>
+    </div>
+
+    <h3>Cards</h3>
+    <div class="spec">
+      <div class="preview" style="gap: 16px; flex-wrap: wrap;">
+        <div class="zb-card ar-block" style="padding: 16px; width: 200px;">
+          <div class="zb-eyebrow">سفر · إسطنبول</div>
+          <div class="zb-h3" style="margin-top: 6px;">يوم ٢ — السلطان أحمد</div>
+          <div class="zb-sm" style="margin-top: 8px;">آيا صوفيا، توبكابي، غداء على البوسفور.</div>
+        </div>
+        <div class="zb-card-soft ar-block" style="padding: 16px; width: 200px;">
+          <div class="zb-eyebrow">حواليك</div>
+          <div class="zb-h3" style="margin-top: 6px;">٤ مطاعم مفتوحة قبل المغرب</div>
+        </div>
+        <div class="zb-card-ink ar-block" style="padding: 16px; width: 200px;">
+          <div class="zb-h3">عطر الأسبوع</div>
+          <div class="zb-sm" style="margin-top: 6px; color: rgba(255,255,255,.7);">في بريدك كل خميس</div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="name">Card · Soft · Ink</div>
+        <code>.zb-card / .zb-card-soft / .zb-card-ink</code>
+        <div class="desc">White card with shadow / cream tinted / warm-black for newsletter & high-contrast CTAs.</div>
+      </div>
+    </div>
+
+    <h3>Voice quote</h3>
+    <div class="spec">
+      <div class="preview">
+        <div class="zb-voice" style="max-width: 320px;">
+          توبكابي تستاهل ساعتين على الأقل. الجناح الإسلامي واجب.
+        </div>
+      </div>
+      <div class="meta">
+        <div class="name">Voice quote — <span class="ar">«صراحة»</span></div>
+        <code>.zb-voice</code>
+        <div class="desc">The brand's honest opinion. Always Arabic, always direct, always under 25 words. Use sparingly — at most one per screen.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 SEMANTICS -->
+  <section class="doc-section" id="semantics">
+    <h2><span class="num">07</span> Semantic signals <a class="anchor" href="#semantics">#</a></h2>
+    <p class="intro">
+      Three product-specific markers. They carry meaning.
+    </p>
+
+    <h3>Halal scale</h3>
+    <div class="spec">
+      <div class="preview" style="gap: 18px; flex-direction: column; align-items: flex-start;">
+        <span class="zb-halal ar" style="color: var(--zb-halal-cert);">حلال موثّق</span>
+        <span class="zb-halal ar" style="color: var(--zb-halal-std);">حلال</span>
+        <span class="zb-halal ar" style="color: var(--zb-halal-opt);">خيارات حلال</span>
+        <span class="zb-halal ar" style="color: var(--zb-halal-warn);">احذر</span>
+      </div>
+      <div class="meta">
+        <div class="name">Halal indicator</div>
+        <code>.zb-halal · color from --zb-halal-*</code>
+        <div class="desc">A small dot + Arabic label. Never use checkmarks or "yes/no" — the scale is the point.</div>
+      </div>
+    </div>
+
+    <h3>Verdict badges</h3>
+    <div class="spec">
+      <div class="preview" style="gap: 8px;">
+        <span class="zb-verdict zb-verdict-yes ar">يستاهل ✓</span>
+        <span class="zb-verdict zb-verdict-meh ar">عادي</span>
+        <span class="zb-verdict zb-verdict-no ar">ما يستاهل</span>
+      </div>
+      <div class="meta">
+        <div class="name">Verdict — Alzbdh's call</div>
+        <code>.zb-verdict-yes / -meh / -no</code>
+        <div class="desc">Used on offers and place cards as our final take. Three levels — never two.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 08 NAV -->
+  <section class="doc-section" id="nav">
+    <h2><span class="num">08</span> Navigation <a class="anchor" href="#nav">#</a></h2>
+    <p class="intro">
+      Mobile uses a 5-tab bottom bar; desktop uses a right-side sidebar
+      (RTL flips it visually). Profile is always a top-right avatar — never a tab.
+    </p>
+
+    <h3>Mobile — bottom tab bar</h3>
+    <div class="spec">
+      <div class="preview" style="padding: 0;">
+        <div style="width: 360px; direction: rtl;">
+          <div class="zb-tabbar" style="position: relative;">
+            <div class="zb-tab" aria-current="true">
+              <span class="zb-tabicon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2v-9z"/></svg></span>
+              <span>الرئيسية</span>
+            </div>
+            <div class="zb-tab">
+              <span class="zb-tabicon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1L15 22v-1.5L13 19v-5.5L21 16z"/></svg></span>
+              <span>سفر</span>
+            </div>
+            <div class="zb-tab">
+              <span class="zb-tabicon" style="background: #1F3D2E; width: 48px; height: 32px;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg></span>
+              <span>الزبدة</span>
+            </div>
+            <div class="zb-tab">
+              <span class="zb-tabicon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+              <span>حواليك</span>
+            </div>
+            <div class="zb-tab">
+              <span class="zb-tabicon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M15 9l-1.5 4.5L9 15l1.5-4.5L15 9z" fill="currentColor"/></svg></span>
+              <span>استكشف</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="name">5-slot daily-use bar</div>
+        <code>.zb-tabbar</code>
+        <div class="desc">
+          <b>Home</b> · <b>Travel</b> · <b>Alzbdh</b> (concierge — visually elevated) · <b>Around You</b> (auto-pivots between Riyadh and active trip city) · <b>Discover</b> (offers, perfumes, future catalogs).
+          <br/><br/>
+          Travel earns its slot because it generates ~40% of revenue per the BRD. Profile is NOT a tab — it lives as an avatar in the top right.
+        </div>
+      </div>
+    </div>
+
+    <h3>Desktop — sidebar + topbar + concierge dock</h3>
+    <p class="intro" style="margin-top: 0;">
+      On web we use a <b>right-aligned sidebar</b> (RTL flips this visually so it sits on the right edge), a <b>56px topbar</b> for search + avatar, and a <b>floating concierge dock</b> in the lower-start corner. We do <i>not</i> repeat the bottom tab bar on desktop.
+    </p>
+
+    <div class="spec">
+      <div class="preview" style="padding: 0; align-items: stretch; min-height: 320px;">
+        <div style="width: 100%; max-width: 760px; height: 320px; display: grid; grid-template-columns: 220px 1fr; background: var(--zb-bg); border: 1px solid var(--zb-border); border-radius: 14px; overflow: hidden; direction: rtl;">
+          <aside style="background: #fff; border-inline-start: 1px solid var(--zb-border); padding: 18px 14px; display: flex; flex-direction: column; gap: 4px;">
+            <div style="display: flex; align-items: center; gap: 10px; padding: 4px 8px 18px;">
+              <img src="assets/alzbdh-logo-color.png" alt="" style="width: 28px; height: 28px; object-fit: contain;"/>
+              <div class="ar" style="font-weight: 800; font-size: 15px;">الزبدة</div>
+            </div>
+            <div class="ar" style="display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; background: var(--zb-accent-light); color: var(--zb-accent-deep); font-weight: 600; font-size: 13px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2v-9z"/></svg>
+              الرئيسية
+            </div>
+            <div class="ar" style="display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; color: var(--zb-text-2); font-size: 13px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1L15 22v-1.5L13 19v-5.5L21 16z"/></svg>
+              سفر
+            </div>
+            <div class="ar" style="display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; color: var(--zb-text-2); font-size: 13px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              حواليك
+            </div>
+            <div class="ar" style="display: flex; align-items: center; gap: 10px; padding: 9px 10px; border-radius: 10px; color: var(--zb-text-2); font-size: 13px;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M15 9l-1.5 4.5L9 15l1.5-4.5L15 9z" fill="currentColor"/></svg>
+              استكشف
+            </div>
+            <div style="margin-top: auto; padding: 8px; font-size: 11px; color: var(--zb-muted); border-top: 1px solid var(--zb-border);">v1.0 · settings here</div>
+          </aside>
+          <div style="display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; justify-content: space-between; padding: 12px 18px; border-bottom: 1px solid var(--zb-border); background: #fff;">
+              <div class="ar" style="display: flex; align-items: center; gap: 8px; padding: 7px 12px; background: var(--zb-cream-2); border-radius: 999px; font-size: 12px; color: var(--zb-muted); width: 240px;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+                ابحث في كل شي…
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <div class="ar" style="width: 30px; height: 30px; border-radius: 50%; background: var(--zb-accent-light); color: var(--zb-accent); display: grid; place-items: center; font-weight: 700; font-size: 13px;">م</div>
+              </div>
+            </div>
+            <div style="padding: 18px; flex: 1; position: relative;">
+              <div class="zb-eyebrow">CONTENT</div>
+              <div style="font-size: 18px; font-weight: 700; margin-top: 4px;">multi-column / master-detail goes here</div>
+              <div class="ar" style="position: absolute; bottom: 14px; inset-inline-start: 14px; background: var(--zb-ink); color: #fff; padding: 10px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; display: flex; align-items: center; gap: 8px; box-shadow: var(--zb-shadow-md);">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/></svg>
+                اسأل الزبدة
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="meta">
+        <div class="name">Desktop shell</div>
+        <code>aside.zb-sidebar + header.zb-topbar + .zb-dock</code>
+        <div class="desc">Sidebar 220–260px fixed · topbar 56px · floating concierge dock in lower-start corner. Settings and profile live behind the avatar, not in the sidebar.</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>Desktop nav rules:</strong>
+      <ul style="margin: 8px 0 0; padding-inline-start: 22px; line-height: 1.85;">
+        <li>Sidebar is open by default at ≥1280px, collapses to <code>icon-only</code> (64px) between 1024–1280px, hides behind a hamburger below that.</li>
+        <li><b>Alzbdh (concierge) gets no sidebar slot</b> — it's a persistent floating dock in the lower-start corner that opens a slide-in pane on click.</li>
+        <li>Breadcrumbs show in the topbar only on deep pages (e.g. Perfume › Comparison), not on every page.</li>
+        <li>Keyboard: <code>⌘K</code> search, <code>⌘/</code> concierge, <code>g h</code> Home, <code>g t</code> Travel.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 09 PATTERNS -->
+  <section class="doc-section" id="patterns">
+    <h2><span class="num">09</span> Layout patterns <a class="anchor" href="#patterns">#</a></h2>
+    <p class="intro">
+      Every new page follows one of these. Don't invent a new pattern before
+      exhausting these five.
+    </p>
+
+    <h3>A — List page (mobile)</h3>
+    <div class="callout">
+      Hero → filter chip row → vertical stack of cards → sticky CTA on detail-bound items. Use <code>.zb-section-h</code> for "see all" headers between sub-lists.
+    </div>
+
+    <h3>B — Detail page (mobile)</h3>
+    <div class="callout">
+      Image hero (full-bleed, 240–320px) → eyebrow + title → <code>.zb-voice</code> quote (one, max) → meta chips (Halal, rating, distance) → body content → primary CTA fixed-bottom or sticky.
+    </div>
+
+    <h3>C — Wizard / multi-step (mobile + web)</h3>
+    <div class="callout">
+      Step indicator at top (e.g. <span class="ar">«٣ من ٧»</span>) → ONE question per step → primary CTA fixed-bottom. Don't show two prompts at once. Web version mirrors but adds a live preview pane on the right.
+    </div>
+
+    <h3>D — Concierge (chat)</h3>
+    <div class="callout">
+      Empty state with 3–5 quick-prompt chips ("plan a trip", "what's open now"). User bubbles right (start in RTL), Alzbdh bubbles left, with the green forest avatar. Inline rich cards (place, offer) embed in Alzbdh's bubbles.
+    </div>
+
+    <h3>E — Web (large screen)</h3>
+    <div class="callout">
+      <strong>Structure:</strong> right sidebar → topbar (search + avatar) → multi-column content. Concierge dock stays floating in lower start.<br/>
+      <strong>Rule:</strong> don't replicate the mobile experience vertically — exploit the width. Master/detail, split panes, multi-column grids.
+    </div>
+  </section>
+
+  <!-- 10 A11Y -->
+  <section class="doc-section" id="a11y">
+    <h2><span class="num">10</span> Accessibility <a class="anchor" href="#a11y">#</a></h2>
+    <p class="intro">
+      A product that serves everyone, including elderly users and people with
+      disabilities.
+    </p>
+    <ul style="font-size: 14.5px; line-height: 2; color: var(--zb-text-2);">
+      <li><b>Touch targets:</b> 44×44px minimum for every interactive element.</li>
+      <li><b>Contrast:</b> body text on background ≥ 4.5:1. Large text ≥ 3:1.</li>
+      <li><b>Focus state:</b> always visible (<code>outline: 2px solid var(--zb-accent)</code>).</li>
+      <li><b>Arabic <code>aria-label</code>:</b> every icon-only button needs an Arabic label.</li>
+      <li><b>Semantic HTML:</b> <code>&lt;button&gt;</code> for buttons (not <code>&lt;div&gt;</code>), <code>&lt;nav&gt;</code> for navigation.</li>
+      <li><b>Motion:</b> respect <code>prefers-reduced-motion</code> — collapse transitions to opacity only.</li>
+      <li><b>Screen reader:</b> Eastern Arabic numerals read correctly with <code>lang="ar"</code> + VoiceOver.</li>
+      <li><b>Language switching:</b> any inline Latin must be wrapped with <code>lang="en"</code> for correct screen-reader pronunciation.</li>
+    </ul>
+  </section>
+
+  <!-- 11 DARK MODE -->
+  <section class="doc-section" id="dark">
+    <h2><span class="num">11</span> Dark mode <a class="anchor" href="#dark">#</a></h2>
+    <p class="intro">
+      Alzbdh supports full dark mode via <code>[data-theme="dark"]</code> on
+      <code>&lt;html&gt;</code> or <code>.zb-app</code>. Every surface and text color
+      flows from a variable, so themes flip atomically.
+    </p>
+
+    <div class="callout">
+      <strong>Conversion rules:</strong>
+      <ol style="margin: 10px 0 0; padding-inline-start: 22px; line-height: 1.9;">
+        <li><b>Surfaces elevate via lightness, not shadow:</b> <code>bg #14110D</code> → <code>card #1F1B16</code> → <code>elevated #2A251D</code>. No drop shadows on dark — use lighter borders instead.</li>
+        <li><b>Green opens up on dark:</b> <code>--zb-accent</code> shifts from <code>#1F3D2E</code> → <code>#7BBF9A</code> for AA contrast. Logo flips to white-on-dark variant.</li>
+        <li><b>Text:</b> primary <code>#F5F1E8</code> (warm cream, never harsh white) · secondary <code>#B8B0A2</code> · muted <code>#7E776B</code>.</li>
+        <li><b>Voice / Verdict / Halal stay semantic:</b> same hues, ~15% lighter (e.g. halal-cert <code>#16864F</code> → <code>#3FAE76</code>).</li>
+        <li><b>Photos:</b> apply <code>filter: brightness(.85)</code> to reduce glare.</li>
+        <li><b>Borders:</b> <code>rgba(255,255,255,.08)</code> instead of solid lines.</li>
+      </ol>
+    </div>
+
+    <h3>Dark token block (paste this)</h3>
+<pre class="code"><span class="c">/* Dark theme — append after :root */</span>
+<span class="k">[data-theme="dark"]</span> {
+  <span class="p">--zb-accent</span>:        <span class="v">#7BBF9A</span>;
+  <span class="p">--zb-accent-deep</span>:   <span class="v">#A6D6BC</span>;
+  <span class="p">--zb-accent-2</span>:      <span class="v">#4F8A6E</span>;
+  <span class="p">--zb-accent-light</span>:  <span class="v">#1F3D2E</span>;
+  <span class="p">--zb-bg</span>:            <span class="v">#14110D</span>;
+  <span class="p">--zb-card</span>:          <span class="v">#1F1B16</span>;
+  <span class="p">--zb-cream-2</span>:       <span class="v">#2A251D</span>;
+  <span class="p">--zb-cream-3</span>:       <span class="v">#352F25</span>;
+  <span class="p">--zb-ink</span>:           <span class="v">#F5F1E8</span>;
+  <span class="p">--zb-text</span>:          <span class="v">#F5F1E8</span>;
+  <span class="p">--zb-text-2</span>:        <span class="v">#B8B0A2</span>;
+  <span class="p">--zb-muted</span>:         <span class="v">#7E776B</span>;
+  <span class="p">--zb-border</span>:        <span class="v">rgba(255,255,255,.08)</span>;
+  <span class="p">--zb-border-strong</span>: <span class="v">rgba(255,255,255,.16)</span>;
+  <span class="p">--zb-halal-cert</span>:    <span class="v">#3FAE76</span>;
+  <span class="p">--zb-halal-std</span>:     <span class="v">#9BC458</span>;
+  <span class="p">--zb-halal-opt</span>:     <span class="v">#E0A93A</span>;
+  <span class="p">--zb-halal-warn</span>:    <span class="v">#E5634F</span>;
+  <span class="p">--zb-shadow-sm</span>: <span class="v">0 0 0 1px rgba(255,255,255,.04)</span>;
+  <span class="p">--zb-shadow-md</span>: <span class="v">0 0 0 1px rgba(255,255,255,.06)</span>;
+  <span class="p">--zb-shadow-lg</span>: <span class="v">0 12px 32px rgba(0,0,0,.5)</span>;
+}</pre>
+
+    <h3>Dark preview</h3>
+    <div data-theme="dark" style="background: #14110D; border-radius: 16px; padding: 28px; margin-top: 14px; color: #F5F1E8;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px;">
+        <div class="ar-block" style="background: #1F1B16; border: 1px solid rgba(255,255,255,.08); border-radius: 20px; padding: 16px;">
+          <div style="font-size: 11px; font-weight: 600; letter-spacing: .12em; color: #7E776B; text-transform: uppercase;">سفر · إسطنبول</div>
+          <div style="font-size: 17px; font-weight: 700; margin-top: 6px;">يوم ٢ — السلطان أحمد</div>
+          <div style="font-size: 13px; color: #B8B0A2; margin-top: 8px; line-height: 1.65;">آيا صوفيا، توبكابي، غداء على البوسفور.</div>
+          <div style="margin-top: 12px;">
+            <span style="display: inline-flex; align-items: center; gap: 5px; font-size: 12px; font-weight: 600; color: #3FAE76;"><span style="width:8px;height:8px;border-radius:999px;background:#3FAE76;"></span>حلال موثّق</span>
+          </div>
+        </div>
+        <div class="ar-block" style="background: #1F3D2E; border-radius: 14px; padding: 14px; position: relative; color: #A6D6BC; font-weight: 600; font-size: 14px; line-height: 1.55;">
+          <span style="position: absolute; top: -10px; right: 12px; background: #7BBF9A; color: #14110D; font-size: 10px; padding: 3px 8px; border-radius: 999px; letter-spacing: .04em;">صراحة</span>
+          توبكابي تستاهل ساعتين على الأقل. الجناح الإسلامي واجب.
+        </div>
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <button class="ar" style="padding: 12px 18px; border-radius: 14px; border: none; background: #7BBF9A; color: #14110D; font-family: Changa; font-weight: 700; font-size: 14px; cursor: pointer;">احجز الآن</button>
+          <button class="ar" style="padding: 12px 18px; border-radius: 14px; background: transparent; color: #F5F1E8; border: 1px solid rgba(255,255,255,.16); font-family: Changa; font-weight: 600; font-size: 14px; cursor: pointer;">شوف التفاصيل</button>
+        </div>
+        <div class="ar-block" style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(63,174,118,.18); color: #3FAE76; font-size: 13px; font-weight: 700;">يستاهل ✓</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(224,169,58,.18); color: #E0A93A; font-size: 13px; font-weight: 700;">عادي</span>
+          <span style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: rgba(229,99,79,.18); color: #E5634F; font-size: 13px; font-weight: 700;">ما يستاهل</span>
+        </div>
+      </div>
+      <div style="margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.08); font-size: 12px; color: #7E776B;">
+        Note: no shadows — surfaces elevate via lightness. Logo flips to white. Green opens up. Text is warm cream, never harsh <span style="color:#fff;">#FFFFFF</span>.
+      </div>
+    </div>
+
+    <h3>Activation</h3>
+<pre class="code"><span class="c">// 1) Read user preference from localStorage or system</span>
+<span class="k">const</span> theme = localStorage.getItem(<span class="v">'zb-theme'</span>)
+            || (matchMedia(<span class="v">'(prefers-color-scheme: dark)'</span>).matches ? <span class="v">'dark'</span> : <span class="v">'light'</span>);
+
+<span class="c">// 2) Apply to &lt;html&gt;</span>
+document.documentElement.dataset.theme = theme;
+
+<span class="c">// 3) Toggle (e.g. from settings)</span>
+<span class="k">function</span> toggleTheme() {
+  <span class="k">const</span> next = document.documentElement.dataset.theme === <span class="v">'dark'</span> ? <span class="v">'light'</span> : <span class="v">'dark'</span>;
+  document.documentElement.dataset.theme = next;
+  localStorage.setItem(<span class="v">'zb-theme'</span>, next);
+}</pre>
+
+    <div class="callout" style="margin-top: 20px;">
+      <strong>When to use dark:</strong> dark mode is opt-in, not default. Alzbdh's identity is <i>warm cream</i> — light is canonical. Dark is for nighttime comfort and long reading sessions (perfume nibadhah, trip detail). Don't ship features dark-only.
+    </div>
+  </section>
+
+  <!-- 12 FORMS & INPUTS -->
+  <section class="doc-section" id="forms">
+    <h2><span class="num">12</span> Forms &amp; inputs <a class="anchor" href="#forms">#</a></h2>
+    <p class="intro">All inputs share a 14px radius, 1.5px border, 48px min-height for touch. Focus uses a 2px accent ring (no thick outlines). Always pair with a label above; placeholders are NOT labels.</p>
+
+    <h3>Text input</h3>
+    <div class="spec">
+      <div class="preview" style="flex-direction: column; align-items: stretch; gap: 12px; width: 100%;">
+        <div class="ar-block" style="display: flex; flex-direction: column; gap: 6px;">
+          <label style="font-size: 12px; font-weight: 600; color: var(--zb-text-2);">الاسم الكامل</label>
+          <input value="محمد العبدالله" style="padding: 13px 16px; border: 1.5px solid var(--zb-border); border-radius: 14px; font-family: Changa; font-size: 15px; background: #fff; color: var(--zb-text);"/>
+        </div>
+        <div class="ar-block" style="display: flex; flex-direction: column; gap: 6px;">
+          <label style="font-size: 12px; font-weight: 600; color: var(--zb-text-2);">الجوال</label>
+          <input value="٥٠ ١٢٣ ٤٥٦٧" style="padding: 13px 16px; border: 1.5px solid var(--zb-accent); border-radius: 14px; font-family: Changa; font-size: 15px; outline: 2px solid var(--zb-accent-light); outline-offset: 0;"/>
+          <div style="font-size: 11px; color: var(--zb-muted);">يبدأ بـ ٥</div>
+        </div>
+        <div class="ar-block" style="display: flex; flex-direction: column; gap: 6px;">
+          <label style="font-size: 12px; font-weight: 600; color: var(--zb-text-2);">رمز التحقق</label>
+          <input value="" placeholder="••••••" style="padding: 13px 16px; border: 1.5px solid var(--zb-halal-warn); border-radius: 14px; font-family: Changa; font-size: 15px; background: #FDF1EE;"/>
+          <div style="font-size: 11px; color: var(--zb-halal-warn); font-weight: 600;">الرمز خاطئ — حاول مرة ثانية</div>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Text input · default / focus / error</div><code>.zb-input + .zb-input--focus / --error</code><div class="desc">Label always above. Help text below. Error replaces help text when present and turns red. Never use placeholder as label.</div></div>
+    </div>
+
+    <h3>OTP boxes</h3>
+    <div class="spec">
+      <div class="preview">
+        <div style="display: flex; gap: 10px; direction: ltr;">
+          <div style="width: 48px; height: 56px; border-radius: 12px; background: #fff; border: 1.5px solid var(--zb-accent); display: grid; place-items: center; font-size: 22px; font-weight: 800; font-family: Inter; color: var(--zb-accent-deep);">٤</div>
+          <div style="width: 48px; height: 56px; border-radius: 12px; background: #fff; border: 1.5px solid var(--zb-accent); display: grid; place-items: center; font-size: 22px; font-weight: 800; font-family: Inter; color: var(--zb-accent-deep);">٢</div>
+          <div style="width: 48px; height: 56px; border-radius: 12px; background: #fff; border: 1.5px solid var(--zb-accent); display: grid; place-items: center; font-size: 22px; font-weight: 800; font-family: Inter; color: var(--zb-accent-deep);">٧</div>
+          <div style="width: 48px; height: 56px; border-radius: 12px; background: #fff; border: 1.5px solid var(--zb-border); display: grid; place-items: center; font-size: 22px; font-weight: 800; color: var(--zb-muted); outline: 2px solid var(--zb-accent-light); outline-offset: 0;">·</div>
+          <div style="width: 48px; height: 56px; border-radius: 12px; background: #fff; border: 1.5px solid var(--zb-border); display: grid; place-items: center; color: var(--zb-muted);">·</div>
+          <div style="width: 48px; height: 56px; border-radius: 12px; background: #fff; border: 1.5px solid var(--zb-border); display: grid; place-items: center; color: var(--zb-muted);">·</div>
+        </div>
+      </div>
+      <div class="meta"><div class="name">OTP — 6 digits</div><code>.zb-otp</code><div class="desc">Always 6 boxes, LTR even in RTL layout (numbers are LTR). Auto-advance on type, auto-back on delete. Eastern Arabic numerals.</div></div>
+    </div>
+
+    <h3>Search bar</h3>
+    <div class="spec">
+      <div class="preview">
+        <div class="ar" style="display: flex; align-items: center; gap: 10px; padding: 11px 16px; background: #fff; border: 1px solid var(--zb-border); border-radius: 999px; width: 320px; color: var(--zb-muted); font-size: 14px;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+          ابحث عن مطعم، مكان، عطر…
+        </div>
+      </div>
+      <div class="meta"><div class="name">Search · pill</div><code>.zb-search</code><div class="desc">Icon at start (RTL → right). Pill shape. On focus expands and shows recent searches in a dropdown.</div></div>
+    </div>
+
+    <h3>Toggle &amp; checkbox &amp; radio</h3>
+    <div class="spec">
+      <div class="preview" style="gap: 24px;">
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 44px; height: 26px; border-radius: 999px; background: var(--zb-accent); padding: 3px; display: flex; justify-content: flex-end;"><div style="width: 20px; height: 20px; border-radius: 50%; background: #fff;"></div></div>
+          <span class="ar" style="font-size: 13px;">إشعارات الرحلة</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 22px; height: 22px; border-radius: 6px; background: var(--zb-accent); display: grid; place-items: center;"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg></div>
+          <span class="ar" style="font-size: 13px;">حلال موثّق فقط</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div style="width: 22px; height: 22px; border-radius: 50%; border: 2px solid var(--zb-accent); display: grid; place-items: center;"><div style="width: 10px; height: 10px; border-radius: 50%; background: var(--zb-accent);"></div></div>
+          <span class="ar" style="font-size: 13px;">شخصين</span>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Toggle / Checkbox / Radio</div><code>.zb-toggle / .zb-check / .zb-radio</code><div class="desc">Toggle for on/off settings. Checkbox for multi-select filters. Radio for mutually-exclusive single answers (always show all options, never hidden in dropdown if &lt; 4 options).</div></div>
+    </div>
+
+    <h3>Stepper · slider · file upload</h3>
+    <div class="spec">
+      <div class="preview" style="flex-direction: column; align-items: stretch; gap: 18px; width: 100%;">
+        <div style="display: flex; align-items: center; justify-content: space-between; padding: 8px 14px; background: #fff; border: 1px solid var(--zb-border); border-radius: 12px;">
+          <span class="ar" style="font-size: 14px; font-weight: 600;">عدد الأشخاص</span>
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <button style="width: 32px; height: 32px; border-radius: 50%; border: 1px solid var(--zb-border); background: #fff; font-size: 18px; cursor: pointer;">−</button>
+            <span style="font-weight: 700; font-family: Inter; min-width: 16px; text-align: center;">٣</span>
+            <button style="width: 32px; height: 32px; border-radius: 50%; border: none; background: var(--zb-accent); color: #fff; font-size: 18px; cursor: pointer;">+</button>
+          </div>
+        </div>
+        <div>
+          <div class="ar" style="display: flex; justify-content: space-between; font-size: 12px; color: var(--zb-text-2); margin-bottom: 6px;"><span>الميزانية</span><span style="font-weight: 700; color: var(--zb-accent-deep);">٦٬٠٠٠ – ١٢٬٠٠٠ ر.س</span></div>
+          <div style="position: relative; height: 4px; background: var(--zb-border); border-radius: 999px;">
+            <div style="position: absolute; inset: 0 30% 0 15%; background: var(--zb-accent); border-radius: 999px;"></div>
+            <div style="position: absolute; left: 15%; top: 50%; width: 18px; height: 18px; background: #fff; border: 2px solid var(--zb-accent); border-radius: 50%; transform: translate(-50%, -50%);"></div>
+            <div style="position: absolute; left: 70%; top: 50%; width: 18px; height: 18px; background: #fff; border: 2px solid var(--zb-accent); border-radius: 50%; transform: translate(-50%, -50%);"></div>
+          </div>
+        </div>
+        <div class="ar-block" style="border: 2px dashed var(--zb-border-strong); border-radius: 14px; padding: 24px; text-align: center; color: var(--zb-text-2); background: var(--zb-cream-2);">
+          <div style="font-weight: 700;">أرفق صورة الجواز</div>
+          <div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">أو اسحب الملف هنا · PNG، JPG حتى ٥ ميجا</div>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Stepper / Range / Upload</div><code>.zb-stepper / .zb-range / .zb-dropzone</code><div class="desc">Stepper: integer-only counts (people, rooms). Range: dual-thumb for ranges, single-thumb for one value. Dropzone: dashed cream, click or drag.</div></div>
+    </div>
+  </section>
+
+  <!-- 13 ICONOGRAPHY -->
+  <section class="doc-section" id="icons">
+    <h2><span class="num">13</span> Iconography <a class="anchor" href="#icons">#</a></h2>
+    <p class="intro">Pick <b>Lucide</b> as the canonical icon library — outline style, 24×24 viewBox, native stroke. Override stroke-width to <b>1.8</b>. Don't mix line styles (no Heroicons/Material/Tabler in same product). Custom Alzbdh icons (concierge sparkle, halal mark) follow the same metrics.</p>
+
+    <h3>Sizes</h3>
+    <div class="callout">
+      <code>16</code> chips, inline meta · <code>20</code> tab bar, list rows · <code>24</code> headers, primary buttons · <code>32</code> empty states · <code>48+</code> illustrations.
+      Stroke 1.8 at all sizes. Color <code>currentColor</code> — never hardcode.
+    </div>
+
+    <h3>Core set (mandatory)</h3>
+    <div class="spec">
+      <div class="preview" style="gap: 18px; flex-wrap: wrap;">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>home</title><path d="M3 11l9-7 9 7v9a2 2 0 0 1-2 2h-4v-7h-6v7H5a2 2 0 0 1-2-2v-9z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>plane</title><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1L15 22v-1.5L13 19v-5.5L21 16z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>pin</title><path d="M12 22s7-7.5 7-13a7 7 0 1 0-14 0c0 5.5 7 13 7 13z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>compass</title><circle cx="12" cy="12" r="9"/><path d="M15 9l-1.5 4.5L9 15l1.5-4.5L15 9z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>heart</title><path d="M12 21s-7-4.5-9-9a5 5 0 0 1 9-3 5 5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>star</title><path d="M12 3l3 6 6.5 1-4.7 4.7L18 21l-6-3-6 3 1.2-6.3L2.5 10 9 9z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>search</title><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>sparkle (concierge)</title><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>chevron (mirrors RTL)</title><path d="M9 6l6 6-6 6"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>send (mirrors RTL)</title><path d="M3 11l18-8-8 18-2-8z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>bell</title><path d="M6 8a6 6 0 1 1 12 0c0 6 3 7 3 7H3s3-1 3-7z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>perfume bottle</title><path d="M9 3h6v3H9zM7 8a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>tag (offer)</title><path d="M3 12V3h9l9 9-9 9z"/><circle cx="7.5" cy="7.5" r="1.5"/></svg>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><title>mosque</title><path d="M4 21V11l8-6 8 6v10"/><path d="M9 21v-5a3 3 0 0 1 6 0v5"/><path d="M12 5V2"/></svg>
+      </div>
+      <div class="meta"><div class="name">Core 15 icons</div><code>lucide-react · stroke=1.8</code><div class="desc">Mirror in RTL: chevron, arrow, send, page-turn. Don't mirror: home, plane, pin, mosque, heart, star, clock, search, sparkle, bell, perfume, tag.</div></div>
+    </div>
+
+    <h3>RTL mirroring rule</h3>
+<pre class="code"><span class="c">/* Auto-mirror directional icons in RTL */</span>
+<span class="k">[dir="rtl"] .icon-mirror</span> { transform: scaleX(-1); }
+
+<span class="c">// Tag the icon at use-site:</span>
+<span class="k">&lt;ChevronRight</span> className=<span class="v">"icon-mirror"</span> <span class="k">/&gt;</span>
+<span class="k">&lt;Send</span> className=<span class="v">"icon-mirror"</span> <span class="k">/&gt;</span></pre>
+  </section>
+
+  <!-- 14 CONCIERGE CHAT -->
+  <section class="doc-section" id="concierge">
+    <h2><span class="num">14</span> Concierge chat anatomy <a class="anchor" href="#concierge">#</a></h2>
+    <p class="intro">Alzbdh's concierge is the soul of the product. It's not "a chatbot inside a tab" — it's a <b>persistent conversation that owns rich, embedded actions</b> (book, save, share, navigate). Get the chat surface right and the rest follows.</p>
+
+    <h3>Bubble preview</h3>
+    <div class="spec">
+      <div class="preview" style="background: var(--zb-bg); padding: 24px; align-items: stretch; flex-direction: column; gap: 14px; max-width: 460px; width: 100%;">
+        <div class="ar-block" style="display: flex; gap: 10px; align-items: flex-end;">
+          <div style="width: 28px; height: 28px; border-radius: 50%; background: var(--zb-accent); display: grid; place-items: center; padding: 5px;"><img src="assets/alzbdh-logo-color.png" alt="" style="width: 100%; height: 100%; object-fit: contain; filter: brightness(0) invert(1);"/></div>
+          <div style="background: #fff; padding: 12px 14px; border-radius: 16px 16px 16px 4px; max-width: 75%; font-size: 14px; line-height: 1.6; box-shadow: var(--zb-shadow-sm);">
+            تمام، ٣ أيام في إسطنبول لشخصين. ميزانية متوسطة؟
+          </div>
+        </div>
+        <div class="ar-block" style="display: flex; justify-content: flex-end;">
+          <div style="background: var(--zb-accent); color: #fff; padding: 12px 14px; border-radius: 16px 16px 4px 16px; max-width: 75%; font-size: 14px; line-height: 1.6;">
+            ايه، حول ٨ آلاف للشخص.
+          </div>
+        </div>
+        <div class="ar-block" style="display: flex; gap: 10px; align-items: flex-end;">
+          <div style="width: 28px; height: 28px; border-radius: 50%; background: var(--zb-accent); display: grid; place-items: center; padding: 5px;"><img src="assets/alzbdh-logo-color.png" alt="" style="width: 100%; height: 100%; object-fit: contain; filter: brightness(0) invert(1);"/></div>
+          <div style="background: #fff; padding: 12px; border-radius: 16px 16px 16px 4px; max-width: 80%; box-shadow: var(--zb-shadow-sm);">
+            <div style="font-size: 14px; line-height: 1.6; margin-bottom: 10px;">حصلت لك فندق ممتاز:</div>
+            <div style="background: var(--zb-cream-2); border-radius: 12px; padding: 10px 12px; display: flex; gap: 10px;">
+              <div style="width: 56px; height: 56px; border-radius: 8px; background: linear-gradient(135deg, #2E5A43, #1F3D2E);"></div>
+              <div style="flex: 1;">
+                <div style="font-weight: 700; font-size: 13px;">Soho House Istanbul</div>
+                <div style="font-size: 11px; color: var(--zb-muted);">بيوغلو · ٤.٨ ★</div>
+                <div style="font-size: 13px; font-weight: 700; color: var(--zb-accent-deep); margin-top: 4px;">١٬٢٤٠ ر.س / ليلة</div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 6px; margin-top: 10px;">
+              <button style="flex: 1; background: var(--zb-accent); color: #fff; border: none; padding: 8px; border-radius: 10px; font-family: Changa; font-size: 12px; font-weight: 600;">احجز</button>
+              <button style="background: transparent; border: 1px solid var(--zb-border); padding: 8px 12px; border-radius: 10px; font-family: Changa; font-size: 12px;">احفظ</button>
+            </div>
+          </div>
+        </div>
+        <div class="ar-block" style="display: flex; gap: 10px; align-items: center;">
+          <div style="width: 28px; height: 28px; border-radius: 50%; background: var(--zb-accent); display: grid; place-items: center; padding: 5px;"><img src="assets/alzbdh-logo-color.png" alt="" style="width: 100%; height: 100%; object-fit: contain; filter: brightness(0) invert(1);"/></div>
+          <div style="background: #fff; padding: 14px 18px; border-radius: 16px; box-shadow: var(--zb-shadow-sm); display: flex; gap: 4px;">
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--zb-muted); animation: zb-typing 1.2s infinite;"></span>
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--zb-muted); animation: zb-typing 1.2s infinite .2s;"></span>
+            <span style="width: 6px; height: 6px; border-radius: 50%; background: var(--zb-muted); animation: zb-typing 1.2s infinite .4s;"></span>
+          </div>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Bubble pair</div><code>.zb-msg-bot / .zb-msg-user</code><div class="desc">Bot: white card, accent avatar, <b>asymmetric corner radius 16/16/16/4</b> (small corner near avatar). User: solid accent green, no avatar, mirror corner. Rich card embeds inside bot bubble at full width.</div></div>
+    </div>
+    <style>@keyframes zb-typing { 0%,80%,100% { opacity: .3; transform: scale(.8); } 40% { opacity: 1; transform: scale(1); } }</style>
+
+    <h3>Quick prompts (empty state)</h3>
+    <div class="spec">
+      <div class="preview" style="flex-direction: column; gap: 10px; align-items: stretch; max-width: 380px;">
+        <div class="ar-block" style="font-size: 14px; color: var(--zb-text-2); text-align: center; margin-bottom: 4px;">جرّب تقول:</div>
+        <button class="ar" style="text-align: start; padding: 12px 16px; background: #fff; border: 1px solid var(--zb-border); border-radius: 14px; font-family: Changa; font-size: 14px; cursor: pointer;">«خطّط لي رحلة ٤ أيام للقاهرة»</button>
+        <button class="ar" style="text-align: start; padding: 12px 16px; background: #fff; border: 1px solid var(--zb-border); border-radius: 14px; font-family: Changa; font-size: 14px; cursor: pointer;">«وش مفتوح حواليّ بعد المغرب؟»</button>
+        <button class="ar" style="text-align: start; padding: 12px 16px; background: #fff; border: 1px solid var(--zb-border); border-radius: 14px; font-family: Changa; font-size: 14px; cursor: pointer;">«عطر شتوي تحت ٥٠٠ ريال»</button>
+      </div>
+      <div class="meta"><div class="name">Quick prompts</div><code>.zb-quick-prompt</code><div class="desc">3–5 chips on first open. Real example queries (in quotes), not commands. Tap → fills composer and sends. Disappear once conversation starts.</div></div>
+    </div>
+
+    <h3>Composer</h3>
+    <div class="spec">
+      <div class="preview" style="background: var(--zb-bg); width: 100%;">
+        <div class="ar-block" style="display: flex; align-items: center; gap: 8px; background: #fff; border: 1px solid var(--zb-border); border-radius: 999px; padding: 6px 6px 6px 16px; width: 100%; max-width: 420px; box-shadow: var(--zb-shadow-md);">
+          <input class="ar" placeholder="اسأل الزبدة…" style="flex: 1; border: none; outline: none; font-family: Changa; font-size: 14px; background: transparent;"/>
+          <button style="width: 36px; height: 36px; border-radius: 50%; border: none; background: var(--zb-cream-2); cursor: pointer;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+          <button style="width: 36px; height: 36px; border-radius: 50%; border: none; background: var(--zb-accent); color: #fff; cursor: pointer;"><svg class="icon-mirror" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l18-8-8 18-2-8z"/></svg></button>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Composer</div><code>.zb-composer</code><div class="desc">Pill shape, floating shadow. Mic button (center) for voice input. Send button accent green, mirrors in RTL. On long input, the pill grows vertically (rounded rect).</div></div>
+    </div>
+
+    <h3>Streaming &amp; rich-card grammar</h3>
+    <div class="callout">
+      <ul style="margin: 0; padding-inline-start: 22px; line-height: 1.85;">
+        <li><b>Token streaming:</b> show characters as they arrive, with a 2px-wide blinking accent caret <code>▎</code> at the tail.</li>
+        <li><b>Rich cards inside bubbles:</b> place card, offer card, itinerary day, perfume — same components as elsewhere but at <b>92% width</b> of the bubble (never escape the bubble).</li>
+        <li><b>Card actions:</b> always 1 primary (accent) + 0–2 ghost (احفظ / شارك). Never more than 3.</li>
+        <li><b>Disambiguation:</b> when Alzbdh isn't sure, use a row of <code>.zb-quick-prompt</code> chips below the bubble: «جدة ولا الرياض؟» «شخصين ولا أكثر؟».</li>
+        <li><b>Errors:</b> dedicated bubble with <code>--zb-halal-warn</code> avatar dot and a retry CTA.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 15 BOTTOM SHEETS / MODALS / TOASTS -->
+  <section class="doc-section" id="overlays">
+    <h2><span class="num">15</span> Sheets · modals · toasts <a class="anchor" href="#overlays">#</a></h2>
+    <p class="intro">Mobile detail flows almost always use a <b>bottom sheet</b> instead of a modal — it preserves context. Modals are reserved for blocking decisions (delete, sign-out). Toasts are passive, never blocking.</p>
+
+    <h3>Bottom sheet anatomy</h3>
+    <div class="spec">
+      <div class="preview" style="background: rgba(31,27,22,.5); padding: 0; align-items: flex-end; min-height: 280px; border-radius: 14px; overflow: hidden;">
+        <div class="ar-block" style="background: #fff; width: 100%; border-radius: 24px 24px 0 0; padding: 16px 22px 24px;">
+          <div style="width: 36px; height: 4px; background: var(--zb-border-strong); border-radius: 999px; margin: 0 auto 14px;"></div>
+          <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px;">
+            <div style="font-size: 18px; font-weight: 700;">تأكيد الحجز</div>
+            <div style="color: var(--zb-muted); font-size: 18px; cursor: pointer;">×</div>
+          </div>
+          <div style="font-size: 13px; color: var(--zb-text-2); line-height: 1.7;">سيتم خصم ١٬٢٤٠ ر.س من بطاقتك المنتهية بـ ٤٤٢٧.</div>
+          <div style="display: flex; gap: 10px; margin-top: 18px;">
+            <button class="zb-btn zb-btn-ghost ar" style="flex: 1;">إلغاء</button>
+            <button class="zb-btn zb-btn-accent ar" style="flex: 1;">تأكيد</button>
+          </div>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Bottom sheet</div><code>.zb-sheet</code><div class="desc">Top corners 24px. Drag handle 36×4 centered. Header (title + close X). Scrim is <code>rgba(31,27,22,.5)</code>. Snap points: half (50%), full (90%). Drag down to dismiss.</div></div>
+    </div>
+
+    <h3>Modal · toast · action sheet</h3>
+    <div class="spec">
+      <div class="preview" style="flex-direction: column; gap: 14px; align-items: stretch; max-width: 380px;">
+        <div class="ar-block" style="background: #fff; border-radius: 18px; padding: 18px; box-shadow: var(--zb-shadow-lg); text-align: center;">
+          <div style="font-size: 16px; font-weight: 700;">حذف الرحلة؟</div>
+          <div style="font-size: 13px; color: var(--zb-text-2); margin-top: 6px;">ما يمكن استرجاعها بعدها.</div>
+          <div style="display: flex; gap: 8px; margin-top: 14px;">
+            <button class="zb-btn zb-btn-ghost ar" style="flex: 1; padding: 10px;">إلغاء</button>
+            <button class="ar" style="flex: 1; padding: 10px; background: var(--zb-halal-warn); color: #fff; border: none; border-radius: 14px; font-family: Changa; font-weight: 700;">حذف</button>
+          </div>
+        </div>
+        <div class="ar-block" style="background: var(--zb-ink); color: #fff; padding: 12px 16px; border-radius: 14px; display: flex; align-items: center; gap: 10px; font-size: 13px; box-shadow: var(--zb-shadow-md);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3FAE76" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>
+          <span>تم حفظ توبكابي</span>
+          <span style="margin-inline-start: auto; color: #A6D6BC; font-weight: 600;">تراجع</span>
+        </div>
+        <div class="ar-block" style="background: #fff; border-radius: 18px; padding: 6px; box-shadow: var(--zb-shadow-md);">
+          <button class="ar" style="display: block; width: 100%; padding: 14px; background: transparent; border: none; text-align: start; font-family: Changa; font-size: 14px; cursor: pointer; border-bottom: 1px solid var(--zb-border);">تعديل</button>
+          <button class="ar" style="display: block; width: 100%; padding: 14px; background: transparent; border: none; text-align: start; font-family: Changa; font-size: 14px; cursor: pointer; border-bottom: 1px solid var(--zb-border);">شارك</button>
+          <button class="ar" style="display: block; width: 100%; padding: 14px; background: transparent; border: none; text-align: start; font-family: Changa; font-size: 14px; color: var(--zb-halal-warn); cursor: pointer;">حذف</button>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Modal · Toast · Action sheet</div><code>.zb-modal / .zb-toast / .zb-action-sheet</code><div class="desc">Modal: centered, max-width 360, for destructive/blocking only. Toast: dark ink, 3s auto-dismiss, may include single undo action. Action sheet: list of options, native iOS feel.</div></div>
+    </div>
+  </section>
+
+  <!-- 16 EMPTY · LOADING · ERROR -->
+  <section class="doc-section" id="states">
+    <h2><span class="num">16</span> Empty · loading · error states <a class="anchor" href="#states">#</a></h2>
+    <p class="intro">First impression often happens during a load or empty state. Treat them as designed surfaces, not afterthoughts.</p>
+
+    <h3>Skeleton loaders</h3>
+    <div class="spec">
+      <div class="preview" style="flex-direction: column; gap: 10px; align-items: stretch; max-width: 360px;">
+        <div style="background: #fff; border: 1px solid var(--zb-border); border-radius: 16px; padding: 14px; display: flex; gap: 12px;">
+          <div style="width: 60px; height: 60px; border-radius: 12px; background: linear-gradient(90deg, var(--zb-cream-2) 0%, var(--zb-cream-3) 50%, var(--zb-cream-2) 100%); background-size: 200% 100%; animation: zb-shimmer 1.4s linear infinite;"></div>
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 6px;">
+            <div style="height: 12px; width: 70%; border-radius: 4px; background: linear-gradient(90deg, var(--zb-cream-2), var(--zb-cream-3), var(--zb-cream-2)); background-size: 200% 100%; animation: zb-shimmer 1.4s linear infinite;"></div>
+            <div style="height: 10px; width: 40%; border-radius: 4px; background: linear-gradient(90deg, var(--zb-cream-2), var(--zb-cream-3), var(--zb-cream-2)); background-size: 200% 100%; animation: zb-shimmer 1.4s linear infinite;"></div>
+            <div style="height: 10px; width: 55%; border-radius: 4px; background: linear-gradient(90deg, var(--zb-cream-2), var(--zb-cream-3), var(--zb-cream-2)); background-size: 200% 100%; animation: zb-shimmer 1.4s linear infinite;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Skeleton</div><code>.zb-skeleton</code><div class="desc">Mirror the real card's shape, not generic boxes. Shimmer 1.4s cream gradient. Show after 200ms — instant skeletons feel jittery.</div></div>
+    </div>
+    <style>@keyframes zb-shimmer { 0% { background-position: 200% 0; } 100% { background-position: -200% 0; } }</style>
+
+    <h3>Empty state</h3>
+    <div class="spec">
+      <div class="preview" style="flex-direction: column; gap: 10px; padding: 32px;">
+        <svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="var(--zb-accent)" stroke-width="1.4" stroke-linecap="round"><circle cx="11" cy="11" r="7" opacity=".4"/><path d="M20 20l-4-4" opacity=".4"/><circle cx="11" cy="11" r="2"/></svg>
+        <div class="ar-block" style="text-align: center;">
+          <div style="font-size: 16px; font-weight: 700;">ما حصلنا شي بعد</div>
+          <div style="font-size: 13px; color: var(--zb-text-2); margin-top: 6px; max-width: 240px; line-height: 1.6;">جرّب تغيّر الفلاتر، أو خلّ الزبدة يقترح لك.</div>
+          <button class="zb-btn zb-btn-accent ar" style="margin-top: 14px;">اسأل الزبدة</button>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Empty</div><code>.zb-empty</code><div class="desc">Soft icon (56px, 1.4 stroke, accent at 40%) → headline → 1-line explanation → CTA that <i>does something</i>. Never a dead-end.</div></div>
+    </div>
+
+    <h3>Network error</h3>
+    <div class="spec">
+      <div class="preview" style="flex-direction: column; gap: 10px;">
+        <div style="width: 56px; height: 56px; border-radius: 50%; background: rgba(192,57,43,.1); display: grid; place-items: center;"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--zb-halal-warn)" stroke-width="1.8" stroke-linecap="round"><path d="M2 8.5C5 5 8.5 4 12 4s7 1 10 4.5"/><path d="M5 12c2-2 4.5-3 7-3s5 1 7 3"/><path d="M9 15c1-1 2-1.5 3-1.5s2 .5 3 1.5"/><circle cx="12" cy="19" r="1" fill="currentColor"/></svg></div>
+        <div class="ar-block" style="text-align: center;">
+          <div style="font-size: 15px; font-weight: 700;">ما قدرنا نوصل للسيرفر</div>
+          <div style="font-size: 12px; color: var(--zb-muted); margin-top: 4px;">تأكّد من الاتصال وحاول مرة ثانية.</div>
+          <button class="zb-btn ar" style="margin-top: 12px;">إعادة المحاولة</button>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Network error</div><code>.zb-error-state</code><div class="desc">Always actionable (retry button). Honest copy — don't say «حدث خطأ ما» when the wifi is off; say «ما قدرنا نوصل».</div></div>
+    </div>
+  </section>
+
+  <!-- 17 NUMBERS · DATES · PRAYER -->
+  <section class="doc-section" id="numbers">
+    <h2><span class="num">17</span> Numbers · dates · currency · prayer <a class="anchor" href="#numbers">#</a></h2>
+    <p class="intro">Numerical content carries the most localization risk. These rules are firm.</p>
+
+    <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 14px;">
+      <thead><tr style="background: var(--zb-cream-2);"><th style="text-align: start; padding: 10px 14px; font-weight: 700;">Context</th><th style="text-align: start; padding: 10px 14px; font-weight: 700;">Format</th><th style="text-align: start; padding: 10px 14px; font-weight: 700;">Example</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Body text numerals</td><td style="padding: 10px 14px;">Eastern Arabic</td><td style="padding: 10px 14px;" class="ar">«وصلنا قبل ١٢ دقيقة»</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Code, URL, version</td><td style="padding: 10px 14px;">Western</td><td style="padding: 10px 14px; font-family: monospace;">v1.0 · /trip/4827</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Price (display)</td><td style="padding: 10px 14px;">Eastern, tabular, ر.س after</td><td style="padding: 10px 14px;" class="ar"><span style="font-feature-settings: 'tnum';">١٬٢٤٠ ر.س</span></td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Price (budget input)</td><td style="padding: 10px 14px;">Western for typing, Eastern on display</td><td style="padding: 10px 14px;">SAR 1,240</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Time of day</td><td style="padding: 10px 14px;">12-hour with ص / م</td><td style="padding: 10px 14px;" class="ar">٧:٤٥ م</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Date (Gregorian)</td><td style="padding: 10px 14px;">Day month-name year, Arabic month names</td><td style="padding: 10px 14px;" class="ar">١٢ يونيو ٢٠٢٦</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Date (Hijri, opt-in)</td><td style="padding: 10px 14px;">Same shape, Arabic month, suffix هـ</td><td style="padding: 10px 14px;" class="ar">٢٦ ذو القعدة ١٤٤٧ هـ</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Distance</td><td style="padding: 10px 14px;">Decimal Eastern, unit suffix</td><td style="padding: 10px 14px;" class="ar">٢٫٤ كم</td></tr>
+        <tr><td style="padding: 10px 14px;">Rating</td><td style="padding: 10px 14px;">One decimal + star</td><td style="padding: 10px 14px;" class="ar">٤٫٧ ★</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Prayer-time chip</h3>
+    <div class="spec">
+      <div class="preview" style="gap: 10px;">
+        <span class="ar" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: var(--zb-cream-2); font-size: 12px; font-weight: 600; color: var(--zb-text-2);">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 21V11l8-6 8 6v10"/><path d="M9 21v-5a3 3 0 0 1 6 0v5"/></svg>
+          المغرب ٦:٤٢ م
+        </span>
+        <span class="ar" style="display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; background: var(--zb-accent-light); color: var(--zb-accent-deep); font-size: 12px; font-weight: 700;">يقفل قبل العشاء</span>
+      </div>
+      <div class="meta"><div class="name">Prayer-time chip</div><code>.zb-prayer-chip</code><div class="desc">Used on offers / local cards to mark closing windows around prayer times. Always cream pill with mosque icon. Don't use accent green for non-prayer time chips.</div></div>
+    </div>
+  </section>
+
+  <!-- 18 MAPS -->
+  <section class="doc-section" id="maps">
+    <h2><span class="num">18</span> Maps <a class="anchor" href="#maps">#</a></h2>
+    <p class="intro">Local, Travel, and Around You all use maps. Default to <b>Mapbox light-cream style</b> matching the cream UI; fallback to Google Maps with a similar custom style. Pins, clusters, and the user dot are the brand surface.</p>
+
+    <h3>Pins</h3>
+    <div class="spec">
+      <div class="preview" style="gap: 18px; flex-wrap: wrap;">
+        <div style="position: relative; width: 36px; height: 44px;"><svg width="36" height="44" viewBox="0 0 36 44"><path d="M18 0C8 0 1 7 1 16c0 12 17 28 17 28s17-16 17-28c0-9-7-16-17-16z" fill="var(--zb-accent)"/><circle cx="18" cy="16" r="6" fill="#fff"/></svg></div>
+        <div style="position: relative; width: 36px; height: 44px;"><svg width="36" height="44" viewBox="0 0 36 44"><path d="M18 0C8 0 1 7 1 16c0 12 17 28 17 28s17-16 17-28c0-9-7-16-17-16z" fill="var(--zb-halal-cert)"/><circle cx="18" cy="16" r="6" fill="#fff"/></svg></div>
+        <div style="position: relative; width: 36px; height: 44px;"><svg width="36" height="44" viewBox="0 0 36 44"><path d="M18 0C8 0 1 7 1 16c0 12 17 28 17 28s17-16 17-28c0-9-7-16-17-16z" fill="var(--zb-amber)"/><circle cx="18" cy="16" r="6" fill="#fff"/></svg></div>
+        <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--zb-ink); color: #fff; display: grid; place-items: center; font-weight: 800; font-family: Inter; font-size: 14px;">٧</div>
+        <div style="position: relative; width: 22px; height: 22px;"><div style="position: absolute; inset: 0; background: rgba(47,111,184,.25); border-radius: 50%;"></div><div style="position: absolute; inset: 5px; background: var(--zb-blue); border: 2px solid #fff; border-radius: 50%;"></div></div>
+      </div>
+      <div class="meta"><div class="name">Pins · cluster · user dot</div><code>.zb-pin / .zb-cluster / .zb-user-dot</code><div class="desc">Pin shape: 36×44 teardrop with 6px white center. Color = halal scale (cert/std/opt). Cluster: ink circle with count in Eastern Arabic. User: blue dot with translucent halo.</div></div>
+    </div>
+
+    <h3>Route line &amp; map controls</h3>
+    <div class="callout">
+      <ul style="margin: 0; padding-inline-start: 22px; line-height: 1.85;">
+        <li>Route line: <code>--zb-accent</code>, 4px width, dashed for walking <code>stroke-dasharray: 6 4</code>, solid for driving.</li>
+        <li>Tap a pin → bottom sheet card with the place. Tap cluster → zooms in.</li>
+        <li>Map controls (recenter, layers) are floating round buttons 40×40, white with shadow, in lower-end corner.</li>
+        <li>"Around you" radius circle: 1px <code>--zb-accent</code> stroke, 8% fill.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 19 IMAGE TREATMENT -->
+  <section class="doc-section" id="images">
+    <h2><span class="num">19</span> Image treatment <a class="anchor" href="#images">#</a></h2>
+    <p class="intro">Photography is essential to the brand — it makes the product feel premium. But every photo must follow the same treatment rules.</p>
+
+    <h3>Aspect ratios</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 14px;">
+      <thead><tr style="background: var(--zb-cream-2);"><th style="text-align: start; padding: 10px 14px;">Context</th><th style="text-align: start; padding: 10px 14px;">Ratio</th><th style="text-align: start; padding: 10px 14px;">Min size</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Hero — travel/local detail</td><td style="padding: 10px 14px;">16:9 (or full-bleed 9:16 mobile)</td><td style="padding: 10px 14px;">1600×900</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Place card</td><td style="padding: 10px 14px;">4:3</td><td style="padding: 10px 14px;">800×600</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Perfume bottle</td><td style="padding: 10px 14px;">3:4</td><td style="padding: 10px 14px;">600×800</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Editorial cover</td><td style="padding: 10px 14px;">21:9 panorama</td><td style="padding: 10px 14px;">2100×900</td></tr>
+        <tr><td style="padding: 10px 14px;">Avatar / circular</td><td style="padding: 10px 14px;">1:1</td><td style="padding: 10px 14px;">240×240</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Overlay gradient (text on photo)</h3>
+    <div class="spec">
+      <div class="preview" style="padding: 0; min-height: 200px;">
+        <div style="width: 100%; max-width: 360px; aspect-ratio: 16/9; background: linear-gradient(135deg, #2E5A43, #1F3D2E); border-radius: 14px; position: relative; overflow: hidden;">
+          <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.65) 0%, rgba(0,0,0,.2) 50%, transparent 80%);"></div>
+          <div class="ar-block" style="position: absolute; bottom: 14px; inset-inline-start: 14px; color: #fff;">
+            <div style="font-size: 11px; font-weight: 600; letter-spacing: .12em; opacity: .9;">إسطنبول</div>
+            <div style="font-size: 18px; font-weight: 700; margin-top: 2px;">آيا صوفيا</div>
+          </div>
+        </div>
+      </div>
+      <div class="meta"><div class="name">Photo overlay</div><code>.zb-photo-overlay</code><div class="desc">Bottom-up gradient: <code>rgba(0,0,0,.65)</code> at base → transparent at 80%. Caption sits in lower-start corner. Apply to any photo carrying overlay text.</div></div>
+    </div>
+
+    <h3>Placeholder / fallback</h3>
+    <div class="callout">
+      Use a 135° gradient between <code>--zb-accent-2</code> and <code>--zb-accent</code> with the alzbdh logo at 30% opacity center-aligned. Never use grey "no image" boxes — the cream identity must extend to fallbacks.
+    </div>
+  </section>
+
+  <!-- 20 MOTION -->
+  <section class="doc-section" id="motion">
+    <h2><span class="num">20</span> Motion <a class="anchor" href="#motion">#</a></h2>
+    <p class="intro">Motion should feel <b>warm and confident</b> — never bouncy, never sluggish. Default to short durations and gentle easing.</p>
+
+    <h3>Tokens</h3>
+<pre class="code"><span class="k">:root</span> {
+  <span class="c">/* Durations */</span>
+  <span class="p">--zb-d-instant</span>: <span class="v">100ms</span>;  <span class="c">/* hover, press */</span>
+  <span class="p">--zb-d-fast</span>:    <span class="v">180ms</span>;  <span class="c">/* tooltip, chip toggle */</span>
+  <span class="p">--zb-d-base</span>:    <span class="v">240ms</span>;  <span class="c">/* dialog open, page tab */</span>
+  <span class="p">--zb-d-slow</span>:    <span class="v">360ms</span>;  <span class="c">/* sheet slide, route reveal */</span>
+  <span class="p">--zb-d-paced</span>:   <span class="v">560ms</span>;  <span class="c">/* hero reveal, onboarding */</span>
+
+  <span class="c">/* Easings */</span>
+  <span class="p">--zb-e-out</span>:     <span class="v">cubic-bezier(.2, .7, .2, 1)</span>;     <span class="c">/* default — confident exit */</span>
+  <span class="p">--zb-e-in</span>:      <span class="v">cubic-bezier(.6, 0, .8, .3)</span>;      <span class="c">/* leaving */</span>
+  <span class="p">--zb-e-spring</span>:  <span class="v">cubic-bezier(.5, 1.4, .3, 1)</span>;     <span class="c">/* sheet snap (subtle, NOT bouncy) */</span>
+}</pre>
+
+    <h3>Patterns</h3>
+    <div class="callout">
+      <ul style="margin: 0; padding-inline-start: 22px; line-height: 1.85;">
+        <li><b>Sheet open:</b> <code>transform: translateY(100%) → 0</code> with <code>--zb-d-slow --zb-e-spring</code>.</li>
+        <li><b>Page transition:</b> incoming page fades + slides 12px from end edge, <code>--zb-d-base --zb-e-out</code>.</li>
+        <li><b>Card hover (web):</b> <code>transform: translateY(-2px)</code> + shadow lift, <code>--zb-d-fast --zb-e-out</code>.</li>
+        <li><b>Voice quote:</b> on first reveal, soft fade-in only — no slide. The quote is content, not chrome.</li>
+        <li><b>Reduced motion:</b> respect <code>prefers-reduced-motion</code> — collapse all transforms to opacity, halve duration.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 21 AVATARS -->
+  <section class="doc-section" id="avatars">
+    <h2><span class="num">21</span> Avatars <a class="anchor" href="#avatars">#</a></h2>
+    <p class="intro">User avatars and Alzbdh's own avatar. Always circular. Fallback to initials with a deterministic background tint.</p>
+
+    <div class="spec">
+      <div class="preview" style="gap: 16px; align-items: flex-end;">
+        <div style="width: 24px; height: 24px; border-radius: 50%; background: var(--zb-accent-light); color: var(--zb-accent-deep); display: grid; place-items: center; font-family: Changa; font-weight: 700; font-size: 11px;">م</div>
+        <div style="width: 32px; height: 32px; border-radius: 50%; background: var(--zb-accent-light); color: var(--zb-accent-deep); display: grid; place-items: center; font-family: Changa; font-weight: 700; font-size: 13px;">م</div>
+        <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--zb-accent-light); color: var(--zb-accent-deep); display: grid; place-items: center; font-family: Changa; font-weight: 700; font-size: 16px;">م</div>
+        <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--zb-accent-light); color: var(--zb-accent-deep); display: grid; place-items: center; font-family: Changa; font-weight: 700; font-size: 28px;">م</div>
+        <div style="width: 44px; height: 44px; border-radius: 50%; background: var(--zb-accent); display: grid; place-items: center; padding: 9px;"><img src="assets/alzbdh-logo-color.png" alt="Alzbdh" style="width: 100%; height: 100%; object-fit: contain; filter: brightness(0) invert(1);"/></div>
+      </div>
+      <div class="meta"><div class="name">Sizes — sm 24 · md 32 · lg 44 · xl 80 · concierge</div><code>.zb-avatar--sm/md/lg/xl</code><div class="desc"><b>Initial:</b> first letter of given name in Arabic. Background: <code>--zb-accent-light</code>, foreground <code>--zb-accent-deep</code>. Don't randomize per-user color — keep brand consistent. Concierge avatar always uses solid accent + white logo.</div></div>
+    </div>
+  </section>
+
+  <!-- 22 LAYOUT EXAMPLES -->
+  <section class="doc-section" id="examples">
+    <h2><span class="num">22</span> Composition examples <a class="anchor" href="#examples">#</a></h2>
+    <p class="intro">Full HTML page snippets for each layout pattern from §09. Copy, fill in content, ship.</p>
+
+    <h3>A — List page (mobile)</h3>
+<pre class="code"><span class="k">&lt;main</span> class=<span class="v">"zb-page"</span> dir=<span class="v">"rtl"</span> lang=<span class="v">"ar"</span><span class="k">&gt;</span>
+  <span class="k">&lt;header</span> class=<span class="v">"zb-page-h"</span><span class="k">&gt;</span>
+    <span class="k">&lt;h1</span> class=<span class="v">"zb-h1"</span><span class="k">&gt;</span>حواليك<span class="k">&lt;/h1&gt;</span>
+    <span class="k">&lt;p</span> class=<span class="v">"zb-sm"</span><span class="k">&gt;</span>الرياض · العليا<span class="k">&lt;/p&gt;</span>
+  <span class="k">&lt;/header&gt;</span>
+
+  <span class="c">&lt;!-- Filter chip row --&gt;</span>
+  <span class="k">&lt;div</span> class=<span class="v">"zb-chip-row"</span><span class="k">&gt;</span>
+    <span class="k">&lt;span</span> class=<span class="v">"zb-chip zb-chip-solid"</span><span class="k">&gt;</span>الكل<span class="k">&lt;/span&gt;</span>
+    <span class="k">&lt;span</span> class=<span class="v">"zb-chip"</span><span class="k">&gt;</span>مفتوح الآن<span class="k">&lt;/span&gt;</span>
+    <span class="k">&lt;span</span> class=<span class="v">"zb-chip"</span><span class="k">&gt;</span>حلال موثّق<span class="k">&lt;/span&gt;</span>
+  <span class="k">&lt;/div&gt;</span>
+
+  <span class="c">&lt;!-- Card stack --&gt;</span>
+  <span class="k">&lt;ul</span> class=<span class="v">"zb-stack"</span><span class="k">&gt;</span>
+    <span class="k">&lt;li</span> class=<span class="v">"zb-card"</span><span class="k">&gt;</span> <span class="c">/* place card */</span> <span class="k">&lt;/li&gt;</span>
+    …
+  <span class="k">&lt;/ul&gt;</span>
+<span class="k">&lt;/main&gt;</span></pre>
+
+    <h3>B — Detail page (mobile)</h3>
+<pre class="code"><span class="k">&lt;main</span> class=<span class="v">"zb-detail"</span><span class="k">&gt;</span>
+  <span class="k">&lt;figure</span> class=<span class="v">"zb-hero"</span><span class="k">&gt;</span>
+    <span class="k">&lt;img</span> src=<span class="v">"hero.jpg"</span> alt=<span class="v">"…"</span> /<span class="k">&gt;</span>
+    <span class="k">&lt;div</span> class=<span class="v">"zb-photo-overlay"</span><span class="k">&gt;&lt;/div&gt;</span>
+  <span class="k">&lt;/figure&gt;</span>
+
+  <span class="k">&lt;div</span> class=<span class="v">"zb-detail-body"</span><span class="k">&gt;</span>
+    <span class="k">&lt;p</span> class=<span class="v">"zb-eyebrow"</span><span class="k">&gt;</span>إسطنبول · معالم<span class="k">&lt;/p&gt;</span>
+    <span class="k">&lt;h1</span> class=<span class="v">"zb-h1"</span><span class="k">&gt;</span>توبكابي<span class="k">&lt;/h1&gt;</span>
+    <span class="k">&lt;blockquote</span> class=<span class="v">"zb-voice"</span><span class="k">&gt;</span>تستاهل ساعتين على الأقل…<span class="k">&lt;/blockquote&gt;</span>
+    <span class="k">&lt;div</span> class=<span class="v">"zb-meta-row"</span><span class="k">&gt;</span>
+      <span class="k">&lt;span</span> class=<span class="v">"zb-halal"</span> style=<span class="v">"color:var(--zb-halal-cert)"</span><span class="k">&gt;</span>حلال موثّق<span class="k">&lt;/span&gt;</span>
+      <span class="k">&lt;span</span><span class="k">&gt;</span>٤٫٧ ★<span class="k">&lt;/span&gt;</span>
+      <span class="k">&lt;span</span><span class="k">&gt;</span>٢٫٤ كم<span class="k">&lt;/span&gt;</span>
+    <span class="k">&lt;/div&gt;</span>
+    <span class="k">&lt;p</span> class=<span class="v">"zb-body"</span><span class="k">&gt;</span>…<span class="k">&lt;/p&gt;</span>
+  <span class="k">&lt;/div&gt;</span>
+
+  <span class="k">&lt;footer</span> class=<span class="v">"zb-sticky-cta"</span><span class="k">&gt;</span>
+    <span class="k">&lt;button</span> class=<span class="v">"zb-btn zb-btn-accent"</span><span class="k">&gt;</span>احجز<span class="k">&lt;/button&gt;</span>
+  <span class="k">&lt;/footer&gt;</span>
+<span class="k">&lt;/main&gt;</span></pre>
+  </section>
+
+  <!-- 23 Z-INDEX -->
+  <section class="doc-section" id="z-index">
+    <h2><span class="num">23</span> Z-index scale <a class="anchor" href="#z-index">#</a></h2>
+    <p class="intro">Use these named tokens. Never write a raw <code>z-index: 9999</code>.</p>
+<pre class="code"><span class="p">--zb-z-base</span>:        <span class="v">0</span>;     <span class="c">/* page content */</span>
+<span class="p">--zb-z-sticky</span>:      <span class="v">10</span>;    <span class="c">/* sticky CTA, sticky headers */</span>
+<span class="p">--zb-z-nav</span>:         <span class="v">100</span>;   <span class="c">/* tab bar, sidebar, topbar */</span>
+<span class="p">--zb-z-dock</span>:        <span class="v">200</span>;   <span class="c">/* concierge dock (web) */</span>
+<span class="p">--zb-z-sheet</span>:       <span class="v">800</span>;   <span class="c">/* bottom sheet + scrim */</span>
+<span class="p">--zb-z-modal</span>:       <span class="v">900</span>;   <span class="c">/* blocking modal */</span>
+<span class="p">--zb-z-toast</span>:       <span class="v">1000</span>;  <span class="c">/* always above everything */</span>
+<span class="p">--zb-z-cmd</span>:         <span class="v">1100</span>;  <span class="c">/* command palette ⌘K */</span></pre>
+  </section>
+
+  <!-- 24 BREAKPOINTS -->
+  <section class="doc-section" id="breakpoints">
+    <h2><span class="num">24</span> Breakpoints <a class="anchor" href="#breakpoints">#</a></h2>
+    <p class="intro">Mobile-first. Each breakpoint adds capability, never overrides intent.</p>
+<pre class="code"><span class="p">--zb-bp-sm</span>:  <span class="v">480px</span>;   <span class="c">/* large phone */</span>
+<span class="p">--zb-bp-md</span>:  <span class="v">768px</span>;   <span class="c">/* tablet portrait */</span>
+<span class="p">--zb-bp-lg</span>:  <span class="v">1024px</span>;  <span class="c">/* tablet landscape, small laptop — sidebar appears icon-only */</span>
+<span class="p">--zb-bp-xl</span>:  <span class="v">1280px</span>;  <span class="c">/* full desktop — sidebar opens, multi-column unlocks */</span>
+<span class="p">--zb-bp-2xl</span>: <span class="v">1536px</span>;  <span class="c">/* wide — content max-width caps at 1440 */</span></pre>
+    <div class="callout">
+      <strong>Layout shifts:</strong>
+      <ul style="margin: 8px 0 0; padding-inline-start: 22px; line-height: 1.85;">
+        <li><b>0–767:</b> mobile shell (bottom tab bar, full-bleed sheets, single column).</li>
+        <li><b>768–1023:</b> mobile shell with comfortable margins; cards may show in 2 columns.</li>
+        <li><b>1024–1279:</b> desktop shell, sidebar collapses to icon-only 64px; main content single-or-double column.</li>
+        <li><b>1280+:</b> sidebar opens to 220–260px; pages can use master-detail and 3-column grids.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 25 CONTENT RULES -->
+  <section class="doc-section" id="content">
+    <h2><span class="num">25</span> Content rules <a class="anchor" href="#content">#</a></h2>
+    <p class="intro">Length and truncation rules. The <i>zubda</i> applies — keep it short.</p>
+    <table style="width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 14px;">
+      <thead><tr style="background: var(--zb-cream-2);"><th style="text-align: start; padding: 10px 14px;">Element</th><th style="text-align: start; padding: 10px 14px;">Max length</th><th style="text-align: start; padding: 10px 14px;">Truncate</th></tr></thead>
+      <tbody>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Card title</td><td style="padding: 10px 14px;">42 chars</td><td style="padding: 10px 14px;">2 lines, ellipsis</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Card subtitle</td><td style="padding: 10px 14px;">60 chars</td><td style="padding: 10px 14px;">1 line, ellipsis</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Voice quote</td><td style="padding: 10px 14px;">25 words</td><td style="padding: 10px 14px;">never — rewrite</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Verdict label</td><td style="padding: 10px 14px;">3 words</td><td style="padding: 10px 14px;">never</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Notification</td><td style="padding: 10px 14px;">90 chars</td><td style="padding: 10px 14px;">never — rewrite</td></tr>
+        <tr style="border-bottom: 1px solid var(--zb-border);"><td style="padding: 10px 14px;">Empty-state body</td><td style="padding: 10px 14px;">2 sentences</td><td style="padding: 10px 14px;">never</td></tr>
+        <tr><td style="padding: 10px 14px;">Editorial nibadhah</td><td style="padding: 10px 14px;">3 paragraphs</td><td style="padding: 10px 14px;">"اقرأ المزيد" link</td></tr>
+      </tbody>
+    </table>
+<pre class="code"><span class="c">/* Line clamps */</span>
+<span class="k">.zb-clamp-1</span> { display: -webkit-box; -webkit-line-clamp: <span class="v">1</span>; -webkit-box-orient: vertical; overflow: hidden; }
+<span class="k">.zb-clamp-2</span> { display: -webkit-box; -webkit-line-clamp: <span class="v">2</span>; -webkit-box-orient: vertical; overflow: hidden; }
+<span class="k">.zb-clamp-3</span> { display: -webkit-box; -webkit-line-clamp: <span class="v">3</span>; -webkit-box-orient: vertical; overflow: hidden; }</pre>
+  </section>
+
+  <!-- 26 SHARE & DEEP LINKS -->
+  <section class="doc-section" id="share">
+    <h2><span class="num">26</span> Share · deep links · OG <a class="anchor" href="#share">#</a></h2>
+    <p class="intro">Every detail page must be shareable. Sharing is the most natural growth loop for an opinionated product.</p>
+
+    <h3>Share sheet</h3>
+    <div class="callout">
+      Native OS share sheet first (<code>navigator.share()</code>). On desktop fallback to a custom sheet with: <b>copy link</b> · <b>WhatsApp</b> · <b>X / Twitter</b> · <b>Snapchat</b> (Saudi default) · <b>email</b>.
+    </div>
+
+    <h3>Deep link format</h3>
+<pre class="code"><span class="c">/* Web — clean, indexable */</span>
+alzbdh.com/<span class="p">[locale]</span>/<span class="p">[product]</span>/<span class="p">[slug]</span>
+
+<span class="c">// Examples:</span>
+alzbdh.com/ar/travel/istanbul-3-days-luxe
+alzbdh.com/ar/local/riyadh/topkapi-cafe
+alzbdh.com/ar/perfume/lattafa-hayaati
+alzbdh.com/ar/offer/elaf-25-ramadan
+
+<span class="c">/* App — universal links */</span>
+zbdh://trip/<span class="p">{id}</span>      <span class="c">// e.g. zbdh://trip/4827</span>
+zbdh://place/<span class="p">{id}</span>
+zbdh://perfume/<span class="p">{id}</span>
+zbdh://chat?prompt=<span class="p">{urlencoded}</span>   <span class="c">// open concierge with seeded query</span></pre>
+
+    <h3>OG / share image template</h3>
+    <div class="callout">
+      <b>1200×630, cream <code>#FDFBF7</code> background.</b> Logo top-start, product eyebrow («سفر · إسطنبول»), title in Changa 80px. Voice quote in <code>--zb-accent-light</code> bubble below title (only if it fits in 1 line). Always Arabic — Alzbdh is an Arabic product. Localize per page.
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding-top: 60px; border-top: 1px solid var(--zb-border); color: var(--zb-muted); font-size: 13px;">
+    Alzbdh · Design System v1.0 · May 2026<br/>
+    <span style="font-family: 'Inter', sans-serif; font-size: 11px; opacity: .7;">Single-file reference · Self-contained · Drop into Claude Code</span>
+  </footer>
+
+</div>
+
+</body>
+</html>

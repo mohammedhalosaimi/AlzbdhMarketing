@@ -1,0 +1,81 @@
+{
+  "sources": {
+    "main_website": "https://alzbdh.com/",
+    "ios_app_store": "https://apps.apple.com/sa/app/alzbdh/id6741608525"
+  },
+  "scope": {
+    "platform": "iOS",
+    "city": "Riyadh",
+    "verticals": [
+      "coffee shops",
+      "restaurants",
+      "clinics"
+    ],
+    "features": [
+      "chat",
+      "local discovery",
+      "map",
+      "saved places"
+    ]
+  },
+  "screenshot_urls": [
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/4a/c5/c6/4ac5c63c-1083-bcbe-a6b5-a9598eccf750/Simulator_Screenshot_-_iPhone_11_Pro_Max_-_2026-02-24_at_15.54.42.png/600x1300bb.jpg",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/7f/96/62/7f966203-ad96-a5a3-0ef4-7d6fb72ee333/Simulator_Screenshot_-_iPhone_11_Pro_Max_-_2026-02-24_at_15.54.46.png/600x1300bb.jpg",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/25/70/bf/2570bf85-7ed9-9715-0ce4-e5adbd80fb0b/Simulator_Screenshot_-_iPhone_11_Pro_Max_-_2026-02-24_at_15.54.53.png/600x1300bb.jpg",
+    "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/e7/04/f5e7044a-0ed4-144e-7ef3-3c65013fca0e/Simulator_Screenshot_-_iPhone_11_Pro_Max_-_2026-02-24_at_15.54.55.png/600x1300bb.jpg"
+  ],
+  "campaigns": [
+    {
+      "slug": "ask-zbdh-riyadh",
+      "title": "اسأل الزبدة",
+      "subtitle": "الدرشة بالعربي، والقرار أسرع",
+      "hook": "جرّب: أبي كوفي هادي",
+      "body": "اسأل بالطريقة اللي تفكر فيها، والزبدة تختصر لك الخيارات في الرياض.",
+      "cta": "حمّل تطبيق الزبدة على iOS",
+      "accent": "#D9B56D",
+      "screenshot": 0,
+      "prompt": "جرّب: ياباني في الياسمين أو قهوة هادية قرب كافد",
+      "answer": "الزبدة ترد عليك بالعربي وتختصر القرار.",
+      "screenshot_file": "assets/screenshots-ar/cropped/chat-ar.png",
+      "style": "chat"
+    },
+    {
+      "slug": "weekend-riyadh-plan",
+      "title": "وين نروح الليلة؟",
+      "subtitle": "خريطة الرياض بالعربي",
+      "hook": "مطعم؟ كوفي؟ عيادة؟",
+      "body": "افتح الخريطة، فلتر حسب التصنيف، واختر مكانك بسرعة.",
+      "cta": "حمّل تطبيق الزبدة من App Store",
+      "accent": "#7CC7A0",
+      "screenshot": 1,
+      "prompt": "وش الأقرب لي الآن؟",
+      "answer": "الزبدة تعرض لك الأماكن حولك على الخريطة.",
+      "screenshot_file": "assets/screenshots-ar/cropped/map-ar.png",
+      "style": "map"
+    },
+    {
+      "slug": "skip-review-scroll",
+      "title": "قبل ما تروح",
+      "subtitle": "تفاصيل المكان بالعربي",
+      "hook": "التقييم وحده ما يكفي",
+      "body": "شوف الزبدة، الشائع، غير الشائع، والمراجعات قبل ما تختار.",
+      "cta": "جرّب الزبدة على iPhone",
+      "accent": "#F0D99B",
+      "screenshot": 2,
+      "prompt": "هل المكان يستاهل؟",
+      "answer": "الزبدة تلخص لك المكان قبل الزيارة.",
+      "screenshot_file": "assets/screenshots-ar/cropped/place-detail-ar.png",
+      "style": "detail"
+    }
+  ],
+  "screenshot_files": {
+    "chat": "assets/screenshots-ar/cropped/chat-ar.png",
+    "map": "assets/screenshots-ar/cropped/map-ar.png",
+    "place_detail": "assets/screenshots-ar/cropped/place-detail-ar.png"
+  },
+  "screenshot_sources": {
+    "chat": "/Users/mohammed/Desktop/Software_Projects/Alzbdh/Screenshots for Ads/IMG_8929.PNG",
+    "map": "/Users/mohammed/Desktop/Software_Projects/Alzbdh/Screenshots for Ads/IMG_8936.PNG",
+    "place_detail": "/Users/mohammed/Desktop/Software_Projects/Alzbdh/Screenshots for Ads/IMG_8930.PNG"
+  }
+}

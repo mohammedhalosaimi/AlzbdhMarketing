@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face{font-family:Changa;font-weight:400;src:url("../../assets/fonts/Changa-400.ttf") format("truetype");font-display:block}
+@font-face{font-family:Changa;font-weight:600;src:url("../../assets/fonts/Changa-600.ttf") format("truetype");font-display:block}
+@font-face{font-family:Changa;font-weight:700;src:url("../../assets/fonts/Changa-700.ttf") format("truetype");font-display:block}
+@font-face{font-family:Changa;font-weight:800;src:url("../../assets/fonts/Changa-800.ttf") format("truetype");font-display:block}
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
+body{font-family:Changa,system-ui,sans-serif;background:#102318;color:#FDFBF7}
+.poster{position:relative;width:100%;height:100%;overflow:hidden;background:
+  radial-gradient(circle at 18% 14%, rgba(217,181,109,.18), transparent 31%),
+  linear-gradient(135deg,#102318 0%,#1F3D2E 52%,#0B1711 100%)}
+.poster.style-map{background:
+  radial-gradient(circle at 76% 18%, rgba(124,199,160,.22), transparent 33%),
+  linear-gradient(145deg,#0D2117 0%,#1E4636 48%,#102318 100%)}
+.poster.style-detail{background:
+  radial-gradient(circle at 74% 75%, rgba(240,217,155,.20), transparent 32%),
+  linear-gradient(130deg,#12261A 0%,#0C1812 42%,#243621 100%)}
+.poster:before{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,rgba(253,251,247,.045) 1px,transparent 1px),
+  linear-gradient(0deg,rgba(253,251,247,.035) 1px,transparent 1px);
+  background-size:56px 56px;mask-image:linear-gradient(180deg,rgba(0,0,0,.7),rgba(0,0,0,.08))}
+.poster.style-map:before{background-size:42px 42px;opacity:.68}
+.poster.style-detail:before{background-size:76px 76px;opacity:.55}
+.top{position:absolute;z-index:5;top:52px;left:58px;right:58px;display:flex;align-items:center;justify-content:space-between}
+.logo{width:136px;filter:drop-shadow(0 7px 20px rgba(0,0,0,.45))}
+.site{direction:ltr;font-size:25px;font-weight:700;color:#E9F1EA;text-shadow:0 3px 14px rgba(0,0,0,.45)}
+.content{position:absolute;z-index:3;display:grid;gap:30px;align-items:center;
+  grid-template-rows:auto 1fr;left:58px;right:58px;top:138px;bottom:62px;}
+.style-map .content{top:116px;bottom:52px;}
+.style-detail .content{top:126px;bottom:58px;}
+.copy{min-width:0;text-align:center;}
+.style-map .copy{}
+.style-map .visual{}
+.hook{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(240,217,155,.42);background:rgba(240,217,155,.12);color:#F0D99B;border-radius:999px;padding:8px 18px;font-size:25px;font-weight:800;line-height:1.25}
+h1{margin:20px auto 8px;max-width:920px;font-size:90px;line-height:1.08;font-weight:800;letter-spacing:0;color:#FDFBF7;text-shadow:0 8px 30px rgba(0,0,0,.45)}
+h1 .accent{color:#F0D99B;display:inline}
+.subtitle{font-size:35px;font-weight:700;line-height:1.22;color:#E5EDE7;text-shadow:0 4px 18px rgba(0,0,0,.42)}
+.body{margin:18px auto 0;max-width:840px;font-size:31px;line-height:1.55;font-weight:600;color:#F4EFE6}
+.chips{display:flex;flex-wrap:wrap;gap:12px;margin:24px auto 0;justify-content:center;}
+.chip{border-radius:999px;background:rgba(253,251,247,.10);border:1px solid rgba(253,251,247,.20);padding:9px 15px;font-size:23px;font-weight:700;color:#E5EDE7}
+.cta{display:inline-flex;margin-top:26px;background:#F0D99B;color:#102318;border-radius:8px;padding:13px 22px;font-size:27px;font-weight:800;line-height:1.25;box-shadow:0 16px 38px rgba(0,0,0,.28)}
+.visual{position:relative;display:flex;align-items:center;justify-content:center;min-height:0;height:100%;}
+.phone{position:relative;width:472px;height:1018px;border-radius:58px;background:#050807;padding:16px;box-shadow:0 36px 90px rgba(0,0,0,.52), inset 0 0 0 2px rgba(255,255,255,.08);overflow:hidden}
+.style-map .phone{width:500px;height:1080px;transform:none}
+.style-detail .phone{width:456px;height:982px;transform:none}
+.phone:before{content:"";position:absolute;z-index:3;top:16px;left:50%;transform:translateX(-50%);width:138px;height:29px;background:#050807;border-radius:0 0 18px 18px}
+.screen{width:100%;height:100%;border-radius:44px;object-fit:cover;object-position:center top;display:block}
+.chat{position:absolute;z-index:4;left:18px;right:18px;bottom:44px;display:none;gap:12px;direction:rtl}
+.bubble{padding:13px 15px;border-radius:8px;font-size:24px;font-weight:700;line-height:1.34;box-shadow:0 14px 34px rgba(0,0,0,.32)}
+.bubble.user{background:#FDFBF7;color:#102318;justify-self:end}
+.bubble.app{background:rgba(31,61,46,.92);border:1px solid rgba(240,217,155,.34);color:#FDFBF7;justify-self:start}
+.badge{position:absolute;z-index:4;top:38px;right:4px;background:rgba(15,29,22,.93);border:1px solid rgba(240,217,155,.38);border-radius:8px;padding:11px 14px;min-width:178px;text-align:center;box-shadow:0 16px 38px rgba(0,0,0,.32)}
+.badge strong{display:block;color:#F0D99B;font-size:30px;line-height:1.05}
+.badge span{display:block;color:#E5EDE7;font-size:20px;font-weight:700;margin-top:3px}
+.foot{position:absolute;z-index:5;left:58px;right:58px;bottom:26px;display:flex;align-items:center;justify-content:space-between;color:#CFE0D5;font-size:21px;font-weight:700}
+.ios{direction:rtl}
+@media(max-width:1200px){h1{font-size:82px}.phone{width:472px}}
+</style>
+</head>
+<body>
+<main class="poster style-detail">
+  <div class="top">
+    <div class="site">alzbdh.com</div>
+    <img class="logo" src="../../assets/logos/logo-white.svg" alt="الزبدة">
+  </div>
+  <section class="content">
+    <div class="copy">
+      <div class="hook">التقييم وحده ما يكفي</div>
+      <h1>قبل ما تروح</h1>
+      <div class="subtitle">تفاصيل المكان بالعربي</div>
+      <p class="body">شوف الزبدة، الشائع، غير الشائع، والمراجعات قبل ما تختار.</p>
+      <div class="chips">
+        <span class="chip">الرياض فقط</span>
+        <span class="chip">مطاعم</span>
+        <span class="chip">كافيهات</span>
+        <span class="chip">عيادات</span>
+      </div>
+      <div class="cta">جرّب الزبدة على iPhone</div>
+    </div>
+    <div class="visual">
+      <div class="phone">
+        <img class="screen" src="../../assets/screenshots-ar/cropped/place-detail-ar.png" alt="">
+        <div class="chat">
+          <div class="bubble user">هل المكان يستاهل؟</div>
+          <div class="bubble app">الزبدة تلخص لك المكان قبل الزيارة.</div>
+        </div>
+        <div class="badge"><strong>iOS</strong><span>متوفر الآن</span></div>
+      </div>
+    </div>
+  </section>
+  <div class="foot">
+    <span class="ios">حمّل تطبيق الزبدة</span>
+    <span>app.alzbdh.com</span>
+  </div>
+</main>
+</body>
+</html>

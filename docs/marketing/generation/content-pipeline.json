@@ -1,0 +1,2902 @@
+{
+  "meta": {
+    "generated_from": "live travel DB + MVPAdLaunchPlan.md",
+    "counts": {
+      "local_standout": 30,
+      "halal_find": 6,
+      "travel_famous": 10,
+      "travel_tip": 10,
+      "scam_avoid": 10,
+      "concept_ad": 16
+    },
+    "total": 82,
+    "schema": "post = {id,type,campaign,subject,hook_ar,caption{platform},hashtags,cta_ar,source_image,image_prompt,video_prompt,claims,source}"
+  },
+  "posts": [
+    {
+      "id": "riyadh-standout-cafe-01",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "سيغنتشر جوسز",
+        "area_ar": "حي بدر",
+        "z_score": 9.7,
+        "gist_ar": "مشروب الأوريو عندهم واضح إنه من أكثر الأشياء اللي تخلّي الناس ترجع، وكمان القهوة والشوكولاتة الساخنة لهم حضور قوي حسب المراجعات. المكان نظيف والموظفين تعاملهم يشرح الصدر، بس الطلبات الأونلاين قد تتأخر شوي وقت الضغط.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "مشروب الأوريو عندهم واضح إنه من أكثر الأشياء اللي تخلّي الناس ترجع، وكمان القهوة والشوكولاتة الساخنة لهم حضور قوي حسب ال…",
+      "caption": {
+        "instagram": "سيغنتشر جوسز — حي بدر 📍 مشروب الأوريو عندهم واضح إنه من أكثر الأشياء اللي تخلّي الناس ترجع، وكمان القهوة والشوكولاتة الساخنة لهم حضور قوي حسب ال… حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "سيغنتشر جوسز بالرياض 👌 مشروب الأوريو عندهم واضح إنه من أكثر الأشياء اللي تخلّي الناس ترجع، وكمان القهوة والشوكولاتة الساخنة لهم حضور قوي حسب ال… حلال معتمد · ~75 ريال",
+        "x": "سيغنتشر جوسز — حي بدر: مشروب الأوريو عندهم واضح إنه من أكثر الأشياء اللي تخلّي الناس ترجع، وكمان القهوة والشوكولاتة الساخنة لهم حضور قوي حسب ال… حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJWfhbQ5oPLz4RLorkYgxL_fA/main.jpg",
+      "image_prompt": "Using the attached real photo of سيغنتشر جوسز (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"مشروب الأوريو عندهم واضح إنه من أكثر الأشياء اللي تخلّي الناس ترجع، وكمان القهوة والشوكولاتة الساخنة لهم حضور قوي حسب ال…\" in Readex Pro RTL, the name \"سيغنتشر جوسز\" as a Playfair headline, a teal Z-Score badge \"9.7\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي بدر\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127ad61",
+        "z_score": 9.7,
+        "google_place_id": "ChIJWfhbQ5oPLz4RLorkYgxL_fA"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-02",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "تيم هورتنز",
+        "area_ar": "منطقة المطار",
+        "z_score": 9.6,
+        "gist_ar": "القهوة عندهم ثابتة والمخبوزات الطازجة هي اللي ماسكة المكان، ومعها خدمة سريعة تناسب اللي عنده رحلة أو انتظار بالمطار. بس بعض الحلويات قد ما تعجب الكل، وفيه ملاحظة متفرقة على بطء أو خطأ بالحساب وقت الزحمة.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "القهوة عندهم ثابتة والمخبوزات الطازجة هي اللي ماسكة المكان، ومعها خدمة سريعة تناسب اللي عنده رحلة أو انتظار بالمطار.",
+      "caption": {
+        "instagram": "تيم هورتنز — منطقة المطار 📍 القهوة عندهم ثابتة والمخبوزات الطازجة هي اللي ماسكة المكان، ومعها خدمة سريعة تناسب اللي عنده رحلة أو انتظار بالمطار. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "تيم هورتنز بالرياض 👌 القهوة عندهم ثابتة والمخبوزات الطازجة هي اللي ماسكة المكان، ومعها خدمة سريعة تناسب اللي عنده رحلة أو انتظار بالمطار. حلال معتمد · ~75 ريال",
+        "x": "تيم هورتنز — منطقة المطار: القهوة عندهم ثابتة والمخبوزات الطازجة هي اللي ماسكة المكان، ومعها خدمة سريعة تناسب اللي عنده رحلة أو انتظار بالمطار. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJTdjR7SLxLj4R3XZd39tLEJ0/main.jpg",
+      "image_prompt": "Using the attached real photo of تيم هورتنز (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"القهوة عندهم ثابتة والمخبوزات الطازجة هي اللي ماسكة المكان، ومعها خدمة سريعة تناسب اللي عنده رحلة أو انتظار بالمطار.\" in Readex Pro RTL, the name \"تيم هورتنز\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"منطقة المطار\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8c71c1302ffe9e1278828",
+        "z_score": 9.6,
+        "google_place_id": "ChIJTdjR7SLxLj4R3XZd39tLEJ0"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-03",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ايس كريم وكافيه ٣٦",
+        "area_ar": "حي المحمدية",
+        "z_score": 9.6,
+        "gist_ar": "أم علي عندهم من أكثر الأشياء اللي تنذكر، ومعها الآيس كريم بنكهاته الفاكهية والشوكولاتة الداكنة طالع بقوة، والميزة الحلوة إنك تقدر تذوق قبل تختار. الجو العام مريح والخدمة سريعة ولطيفة، بس الجلسات الداخلية مو متوفرة دائماً…",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "أم علي عندهم من أكثر الأشياء اللي تنذكر، ومعها الآيس كريم بنكهاته الفاكهية والشوكولاتة الداكنة طالع بقوة، والميزة الحلوة…",
+      "caption": {
+        "instagram": "ايس كريم وكافيه ٣٦ — حي المحمدية 📍 أم علي عندهم من أكثر الأشياء اللي تنذكر، ومعها الآيس كريم بنكهاته الفاكهية والشوكولاتة الداكنة طالع بقوة، والميزة الحلوة… حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "ايس كريم وكافيه ٣٦ بالرياض 👌 أم علي عندهم من أكثر الأشياء اللي تنذكر، ومعها الآيس كريم بنكهاته الفاكهية والشوكولاتة الداكنة طالع بقوة، والميزة الحلوة… حلال معتمد · ~75 ريال",
+        "x": "ايس كريم وكافيه ٣٦ — حي المحمدية: أم علي عندهم من أكثر الأشياء اللي تنذكر، ومعها الآيس كريم بنكهاته الفاكهية والشوكولاتة الداكنة طالع بقوة، والميزة الحلوة… حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJPYjxol8dLz4RDxJc9VrkOT0/main.jpg",
+      "image_prompt": "Using the attached real photo of ايس كريم وكافيه ٣٦ (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"أم علي عندهم من أكثر الأشياء اللي تنذكر، ومعها الآيس كريم بنكهاته الفاكهية والشوكولاتة الداكنة طالع بقوة، والميزة الحلوة…\" in Readex Pro RTL, the name \"ايس كريم وكافيه ٣٦\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي المحمدية\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127ac6f",
+        "z_score": 9.6,
+        "google_place_id": "ChIJPYjxol8dLz4RDxJc9VrkOT0"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-04",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ركن ليلك",
+        "area_ar": "حي العليا بالرياض",
+        "z_score": 9.6,
+        "gist_ar": "الشيشة عندهم لها سمعة قوية، والمشروبات مثل القهوة والشوكولاتة الساخنة طالعة بشكل يشرح الصدر، ومعها حلويات خفيفة مثل التيراميسو وكيكة العسل. الخدمة متكررة عليها المديح، والأجواء مريحة للسهر أو الجلسة الهادية، بس صوت الشار…",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "الشيشة عندهم لها سمعة قوية، والمشروبات مثل القهوة والشوكولاتة الساخنة طالعة بشكل يشرح الصدر، ومعها حلويات خفيفة مثل التي…",
+      "caption": {
+        "instagram": "ركن ليلك — حي العليا بالرياض 📍 الشيشة عندهم لها سمعة قوية، والمشروبات مثل القهوة والشوكولاتة الساخنة طالعة بشكل يشرح الصدر، ومعها حلويات خفيفة مثل التي… مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "ركن ليلك بالرياض 👌 الشيشة عندهم لها سمعة قوية، والمشروبات مثل القهوة والشوكولاتة الساخنة طالعة بشكل يشرح الصدر، ومعها حلويات خفيفة مثل التي… مطبخ حلال · ~75 ريال",
+        "x": "ركن ليلك — حي العليا بالرياض: الشيشة عندهم لها سمعة قوية، والمشروبات مثل القهوة والشوكولاتة الساخنة طالعة بشكل يشرح الصدر، ومعها حلويات خفيفة مثل التي… مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJx3jSAtQDLz4RTRjt0-Uou_o/main.jpg",
+      "image_prompt": "Using the attached real photo of ركن ليلك (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الشيشة عندهم لها سمعة قوية، والمشروبات مثل القهوة والشوكولاتة الساخنة طالعة بشكل يشرح الصدر، ومعها حلويات خفيفة مثل التي…\" in Readex Pro RTL, the name \"ركن ليلك\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي العليا بالرياض\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127aaca",
+        "z_score": 9.6,
+        "google_place_id": "ChIJx3jSAtQDLz4RTRjt0-Uou_o"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-05",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "كوفي بتيل",
+        "area_ar": "في الطريف",
+        "z_score": 9.6,
+        "gist_ar": "كوفي بتيل في الطريف بالدرعية، جنب وادي حنيفة وبإطلالة على البجيري، والناس تمدح القعدة هناك أكثر من أي شيء. اللي يميزه القهوة السعودية، التشيز كيك، والجو المرتب، بس فيه ملاحظات متفرقة على بطء بعض الطلبات وتنظيم الحجوزات.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "كوفي بتيل في الطريف بالدرعية، جنب وادي حنيفة وبإطلالة على البجيري، والناس تمدح القعدة هناك أكثر من أي شيء.",
+      "caption": {
+        "instagram": "كوفي بتيل — في الطريف 📍 كوفي بتيل في الطريف بالدرعية، جنب وادي حنيفة وبإطلالة على البجيري، والناس تمدح القعدة هناك أكثر من أي شيء. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "كوفي بتيل بالرياض 👌 كوفي بتيل في الطريف بالدرعية، جنب وادي حنيفة وبإطلالة على البجيري، والناس تمدح القعدة هناك أكثر من أي شيء. حلال معتمد · ~75 ريال",
+        "x": "كوفي بتيل — في الطريف: كوفي بتيل في الطريف بالدرعية، جنب وادي حنيفة وبإطلالة على البجيري، والناس تمدح القعدة هناك أكثر من أي شيء. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJsw7zANzhLj4RRGkgPdBVXgo/main.jpg",
+      "image_prompt": "Using the attached real photo of كوفي بتيل (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"كوفي بتيل في الطريف بالدرعية، جنب وادي حنيفة وبإطلالة على البجيري، والناس تمدح القعدة هناك أكثر من أي شيء.\" in Readex Pro RTL, the name \"كوفي بتيل\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"في الطريف\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127aaef",
+        "z_score": 9.6,
+        "google_place_id": "ChIJsw7zANzhLj4RRGkgPdBVXgo"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-06",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "مشويات مكيول",
+        "area_ar": "حي النسيم الشرقي",
+        "z_score": 9.6,
+        "gist_ar": "الكباب واللحم المشوي هنا هو اللي شايل السمعة، ومعه الخبز الطازج والمحمرة يطلعون الوجبة كاملة. الخدمة عليها مدح واضح والكميات تشبع، بس ريحة الدخان مو دايم تعجب الكل وبعض المشاوي قد تتأخر شوي وقت الزحمة.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "الكباب واللحم المشوي هنا هو اللي شايل السمعة، ومعه الخبز الطازج والمحمرة يطلعون الوجبة كاملة.",
+      "caption": {
+        "instagram": "مشويات مكيول — حي النسيم الشرقي 📍 الكباب واللحم المشوي هنا هو اللي شايل السمعة، ومعه الخبز الطازج والمحمرة يطلعون الوجبة كاملة. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "مشويات مكيول بالرياض 👌 الكباب واللحم المشوي هنا هو اللي شايل السمعة، ومعه الخبز الطازج والمحمرة يطلعون الوجبة كاملة. مطبخ حلال · ~75 ريال",
+        "x": "مشويات مكيول — حي النسيم الشرقي: الكباب واللحم المشوي هنا هو اللي شايل السمعة، ومعه الخبز الطازج والمحمرة يطلعون الوجبة كاملة. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJ9T-pOgCrLz4R7WgJIsaJ8RA/main.jpg",
+      "image_prompt": "Using the attached real photo of مشويات مكيول (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الكباب واللحم المشوي هنا هو اللي شايل السمعة، ومعه الخبز الطازج والمحمرة يطلعون الوجبة كاملة.\" in Readex Pro RTL, the name \"مشويات مكيول\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي النسيم الشرقي\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8c71c1302ffe9e127884d",
+        "z_score": 9.6,
+        "google_place_id": "ChIJ9T-pOgCrLz4R7WgJIsaJ8RA"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-07",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "كافيه ليلو",
+        "area_ar": "حي حطين",
+        "z_score": 9.6,
+        "gist_ar": "الكيك والفرنش توست والماتشا هم اللي ماسكين سمعة المكان، وتقديمهم واضح عليه اهتمام. الأجواء أنيقة وهادية والخدمة عليها كلام كثير، لكن السعر والحصص مو دايم ترضي الكل، فالمكان يناسب جلسة مرتبة أو برنش خفيف أكثر من إنه خيار…",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "الكيك والفرنش توست والماتشا هم اللي ماسكين سمعة المكان، وتقديمهم واضح عليه اهتمام.",
+      "caption": {
+        "instagram": "كافيه ليلو — حي حطين 📍 الكيك والفرنش توست والماتشا هم اللي ماسكين سمعة المكان، وتقديمهم واضح عليه اهتمام. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "كافيه ليلو بالرياض 👌 الكيك والفرنش توست والماتشا هم اللي ماسكين سمعة المكان، وتقديمهم واضح عليه اهتمام. حلال معتمد · ~75 ريال",
+        "x": "كافيه ليلو — حي حطين: الكيك والفرنش توست والماتشا هم اللي ماسكين سمعة المكان، وتقديمهم واضح عليه اهتمام. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJcd8ZfOHjLj4R2MhcWMOsPiw/main.jpg",
+      "image_prompt": "Using the attached real photo of كافيه ليلو (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الكيك والفرنش توست والماتشا هم اللي ماسكين سمعة المكان، وتقديمهم واضح عليه اهتمام.\" in Readex Pro RTL, the name \"كافيه ليلو\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي حطين\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cb1302ffe9e127aaaa",
+        "z_score": 9.6,
+        "google_place_id": "ChIJcd8ZfOHjLj4R2MhcWMOsPiw"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-08",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ام سي سي مولتن تشوكليت كافيه",
+        "area_ar": "حي الشهداء",
+        "z_score": 9.6,
+        "gist_ar": "المولتن والبراونيز السزلنغ هم أكثر شي يخلّي الناس ترجع، وطعم الشوكولاتة عندهم غالبًا غني ودافي ومشبع. الخدمة بعد عليها مدح كبير، بس الجودة أحيانًا تختلف شوي بين زيارة والثانية، فالمكان يناسبك إذا تبي جلسة حلا مع طلعة خفي…",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "المولتن والبراونيز السزلنغ هم أكثر شي يخلّي الناس ترجع، وطعم الشوكولاتة عندهم غالبًا غني ودافي ومشبع.",
+      "caption": {
+        "instagram": "ام سي سي مولتن تشوكليت كافيه — حي الشهداء 📍 المولتن والبراونيز السزلنغ هم أكثر شي يخلّي الناس ترجع، وطعم الشوكولاتة عندهم غالبًا غني ودافي ومشبع. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "ام سي سي مولتن تشوكليت كافيه بالرياض 👌 المولتن والبراونيز السزلنغ هم أكثر شي يخلّي الناس ترجع، وطعم الشوكولاتة عندهم غالبًا غني ودافي ومشبع. حلال معتمد · ~75 ريال",
+        "x": "ام سي سي مولتن تشوكليت كافيه — حي الشهداء: المولتن والبراونيز السزلنغ هم أكثر شي يخلّي الناس ترجع، وطعم الشوكولاتة عندهم غالبًا غني ودافي ومشبع. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJqcNkwyr9Lj4RnG6xxHcBeVE/main.jpg",
+      "image_prompt": "Using the attached real photo of ام سي سي مولتن تشوكليت كافيه (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"المولتن والبراونيز السزلنغ هم أكثر شي يخلّي الناس ترجع، وطعم الشوكولاتة عندهم غالبًا غني ودافي ومشبع.\" in Readex Pro RTL, the name \"ام سي سي مولتن تشوكليت كافيه\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي الشهداء\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127acb8",
+        "z_score": 9.6,
+        "google_place_id": "ChIJqcNkwyr9Lj4RnG6xxHcBeVE"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-09",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ترك المهندسين",
+        "area_ar": "حي العارض بالرياض",
+        "z_score": 9.6,
+        "gist_ar": "الهوت شوكليت مع الإسبريسو هو نجم المكان، ومعه الليمون بالنعناع طالع مضبوط ومنعش مرّة. الخدمة لطيفة والجو الفكرة نفسها مميزة، بس أحياناً بعض الأصناف تخلص والانتظار يطول إذا زحموا السيارات.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "الهوت شوكليت مع الإسبريسو هو نجم المكان، ومعه الليمون بالنعناع طالع مضبوط ومنعش مرّة.",
+      "caption": {
+        "instagram": "ترك المهندسين — حي العارض بالرياض 📍 الهوت شوكليت مع الإسبريسو هو نجم المكان، ومعه الليمون بالنعناع طالع مضبوط ومنعش مرّة. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "ترك المهندسين بالرياض 👌 الهوت شوكليت مع الإسبريسو هو نجم المكان، ومعه الليمون بالنعناع طالع مضبوط ومنعش مرّة. حلال معتمد · ~75 ريال",
+        "x": "ترك المهندسين — حي العارض بالرياض: الهوت شوكليت مع الإسبريسو هو نجم المكان، ومعه الليمون بالنعناع طالع مضبوط ومنعش مرّة. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJV5PPdQDnLj4RCgpTwN8aov8/main.jpg",
+      "image_prompt": "Using the attached real photo of ترك المهندسين (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الهوت شوكليت مع الإسبريسو هو نجم المكان، ومعه الليمون بالنعناع طالع مضبوط ومنعش مرّة.\" in Readex Pro RTL, the name \"ترك المهندسين\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي العارض بالرياض\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127ac9e",
+        "z_score": 9.6,
+        "google_place_id": "ChIJV5PPdQDnLj4RCgpTwN8aov8"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-10",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ربع جرام كافيه ومطعم",
+        "area_ar": "حي النرجس شمال",
+        "z_score": 9.6,
+        "gist_ar": "الباستا والقهوة هنا من أكثر الأشياء اللي الناس ترجع لها، ومعاها سلايدرز وبيتزا وروبيان مقلي نالوا مدح واضح. الأجواء مريحة والخدمة حاضرة بقوة، لكن الشيشة قد ما تعجب الكل لأنها متفاوتة شوي بين التعليقات.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "الباستا والقهوة هنا من أكثر الأشياء اللي الناس ترجع لها، ومعاها سلايدرز وبيتزا وروبيان مقلي نالوا مدح واضح.",
+      "caption": {
+        "instagram": "ربع جرام كافيه ومطعم — حي النرجس شمال 📍 الباستا والقهوة هنا من أكثر الأشياء اللي الناس ترجع لها، ومعاها سلايدرز وبيتزا وروبيان مقلي نالوا مدح واضح. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "ربع جرام كافيه ومطعم بالرياض 👌 الباستا والقهوة هنا من أكثر الأشياء اللي الناس ترجع لها، ومعاها سلايدرز وبيتزا وروبيان مقلي نالوا مدح واضح. حلال معتمد · ~75 ريال",
+        "x": "ربع جرام كافيه ومطعم — حي النرجس شمال: الباستا والقهوة هنا من أكثر الأشياء اللي الناس ترجع لها، ومعاها سلايدرز وبيتزا وروبيان مقلي نالوا مدح واضح. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJ5_obgWX7Lj4RjY_vw8T8nTg/main.png",
+      "image_prompt": "Using the attached real photo of ربع جرام كافيه ومطعم (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الباستا والقهوة هنا من أكثر الأشياء اللي الناس ترجع لها، ومعاها سلايدرز وبيتزا وروبيان مقلي نالوا مدح واضح.\" in Readex Pro RTL, the name \"ربع جرام كافيه ومطعم\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي النرجس شمال\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127ab52",
+        "z_score": 9.6,
+        "google_place_id": "ChIJ5_obgWX7Lj4RjY_vw8T8nTg"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-11",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "كاسبر آند جامبينيز",
+        "area_ar": "في واجهة المطار أمام مطار ال",
+        "z_score": 9.6,
+        "gist_ar": "كاسبر آند جامبينيز في واجهة المطار قرب الملك خالد، وناس كثير تمدح فيه فطورهم مثل الإنجليزي والكرواسون وبانكيك التوت. المكان هادي ومرتب، والخدمة فيها متابعة واهتمام واضح، فمناسب لجلوسة سريعة أو فطور على مهل إذا كنت قريب م…",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "كاسبر آند جامبينيز في واجهة المطار قرب الملك خالد، وناس كثير تمدح فيه فطورهم مثل الإنجليزي والكرواسون وبانكيك التوت.",
+      "caption": {
+        "instagram": "كاسبر آند جامبينيز — في واجهة المطار أمام مطار ال 📍 كاسبر آند جامبينيز في واجهة المطار قرب الملك خالد، وناس كثير تمدح فيه فطورهم مثل الإنجليزي والكرواسون وبانكيك التوت. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "كاسبر آند جامبينيز بالرياض 👌 كاسبر آند جامبينيز في واجهة المطار قرب الملك خالد، وناس كثير تمدح فيه فطورهم مثل الإنجليزي والكرواسون وبانكيك التوت. حلال معتمد · ~75 ريال",
+        "x": "كاسبر آند جامبينيز — في واجهة المطار أمام مطار ال: كاسبر آند جامبينيز في واجهة المطار قرب الملك خالد، وناس كثير تمدح فيه فطورهم مثل الإنجليزي والكرواسون وبانكيك التوت. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJlW7x0X39Lj4RUw2FppQQ6x0/main.jpg",
+      "image_prompt": "Using the attached real photo of كاسبر آند جامبينيز (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"كاسبر آند جامبينيز في واجهة المطار قرب الملك خالد، وناس كثير تمدح فيه فطورهم مثل الإنجليزي والكرواسون وبانكيك التوت.\" in Readex Pro RTL, the name \"كاسبر آند جامبينيز\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"حلال معتمد\", and a small area label \"في واجهة المطار أمام مطار ال\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8c71c1302ffe9e127880b",
+        "z_score": 9.6,
+        "google_place_id": "ChIJlW7x0X39Lj4RUw2FppQQ6x0"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-12",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "يوليكا كافيه",
+        "area_ar": "حي الغدير بالرياض",
+        "z_score": 9.5,
+        "gist_ar": "يوليكا كافيه على الدائري الشمالي في الغدير، والناس تروح له خصوصاً كوقفة سريعة من الدرايف ثرو. أكثر شي متكرر عندهم القهوة نفسها، مع مشروبات مميزة مثل الماتشا وسبانيش لاتيه، وفيه مديح واضح للحلا والكوكيز بعد.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "يوليكا كافيه على الدائري الشمالي في الغدير، والناس تروح له خصوصاً كوقفة سريعة من الدرايف ثرو.",
+      "caption": {
+        "instagram": "يوليكا كافيه — حي الغدير بالرياض 📍 يوليكا كافيه على الدائري الشمالي في الغدير، والناس تروح له خصوصاً كوقفة سريعة من الدرايف ثرو. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "يوليكا كافيه بالرياض 👌 يوليكا كافيه على الدائري الشمالي في الغدير، والناس تروح له خصوصاً كوقفة سريعة من الدرايف ثرو. حلال معتمد · ~75 ريال",
+        "x": "يوليكا كافيه — حي الغدير بالرياض: يوليكا كافيه على الدائري الشمالي في الغدير، والناس تروح له خصوصاً كوقفة سريعة من الدرايف ثرو. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJY_TTCr3jLj4R7es9JgXuPY0/main.jpg",
+      "image_prompt": "Using the attached real photo of يوليكا كافيه (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"يوليكا كافيه على الدائري الشمالي في الغدير، والناس تروح له خصوصاً كوقفة سريعة من الدرايف ثرو.\" in Readex Pro RTL, the name \"يوليكا كافيه\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي الغدير بالرياض\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127acfd",
+        "z_score": 9.5,
+        "google_place_id": "ChIJY_TTCr3jLj4R7es9JgXuPY0"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-13",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "لاس كافيه - العُليا",
+        "area_ar": "حي العليا",
+        "z_score": 9.5,
+        "gist_ar": "التشيزكيك والحلويات هنا هي اللي تسحب الناس، ومعها قهوة بمستوى كويس وإطلالة تشرح الصدر على العليا. بس المكان أحيانًا يزحم وتلقى الجلسة متأخرة شوي، فالأفضل تجيه بدري إذا تبي راحة أكثر.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "التشيزكيك والحلويات هنا هي اللي تسحب الناس، ومعها قهوة بمستوى كويس وإطلالة تشرح الصدر على العليا.",
+      "caption": {
+        "instagram": "لاس كافيه - العُليا — حي العليا 📍 التشيزكيك والحلويات هنا هي اللي تسحب الناس، ومعها قهوة بمستوى كويس وإطلالة تشرح الصدر على العليا. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "لاس كافيه - العُليا بالرياض 👌 التشيزكيك والحلويات هنا هي اللي تسحب الناس، ومعها قهوة بمستوى كويس وإطلالة تشرح الصدر على العليا. حلال معتمد · ~75 ريال",
+        "x": "لاس كافيه - العُليا — حي العليا: التشيزكيك والحلويات هنا هي اللي تسحب الناس، ومعها قهوة بمستوى كويس وإطلالة تشرح الصدر على العليا. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJ2c5rxDADLz4Ry4Z3g4Tojt4/main.jpg",
+      "image_prompt": "Using the attached real photo of لاس كافيه - العُليا (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"التشيزكيك والحلويات هنا هي اللي تسحب الناس، ومعها قهوة بمستوى كويس وإطلالة تشرح الصدر على العليا.\" in Readex Pro RTL, the name \"لاس كافيه - العُليا\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي العليا\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127aba8",
+        "z_score": 9.5,
+        "google_place_id": "ChIJ2c5rxDADLz4Ry4Z3g4Tojt4"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-14",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "اون اوف كوفي",
+        "area_ar": "حي السويدي",
+        "z_score": 9.5,
+        "gist_ar": "الحلويات هنا هي اللي تسحبك، خصوصًا سان سيباستيان ومانجو ماتشا، ومعها أجواء مريحة ومساحة واسعة تعطيك جلسة زينة. الخدمة غالبًا لطيفة، لكن الطلبات الأونلاين والتوصيل عليها ملاحظات، فالمكان يلمع أكثر إذا جيته بنفسك.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "الحلويات هنا هي اللي تسحبك، خصوصًا سان سيباستيان ومانجو ماتشا، ومعها أجواء مريحة ومساحة واسعة تعطيك جلسة زينة.",
+      "caption": {
+        "instagram": "اون اوف كوفي — حي السويدي 📍 الحلويات هنا هي اللي تسحبك، خصوصًا سان سيباستيان ومانجو ماتشا، ومعها أجواء مريحة ومساحة واسعة تعطيك جلسة زينة. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "اون اوف كوفي بالرياض 👌 الحلويات هنا هي اللي تسحبك، خصوصًا سان سيباستيان ومانجو ماتشا، ومعها أجواء مريحة ومساحة واسعة تعطيك جلسة زينة. حلال معتمد · ~75 ريال",
+        "x": "اون اوف كوفي — حي السويدي: الحلويات هنا هي اللي تسحبك، خصوصًا سان سيباستيان ومانجو ماتشا، ومعها أجواء مريحة ومساحة واسعة تعطيك جلسة زينة. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJu0jurEgPLz4RRmJg9e9D3hU/main.jpg",
+      "image_prompt": "Using the attached real photo of اون اوف كوفي (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الحلويات هنا هي اللي تسحبك، خصوصًا سان سيباستيان ومانجو ماتشا، ومعها أجواء مريحة ومساحة واسعة تعطيك جلسة زينة.\" in Readex Pro RTL, the name \"اون اوف كوفي\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي السويدي\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127abfa",
+        "z_score": 9.5,
+        "google_place_id": "ChIJu0jurEgPLz4RRmJg9e9D3hU"
+      }
+    },
+    {
+      "id": "riyadh-standout-cafe-15",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "عصائر سيجنتشر",
+        "area_ar": "حي المذر",
+        "z_score": 9.5,
+        "gist_ar": "العصير السيجنتشر عندهم هو نجم المكان، ومعه الهوت شوكليت شتاءً يطلع خيار محبّب خصوصاً بنكهات جوز الهند والتوت. الخدمة تنمدح كثير والطلب غالباً يطلع بسرعة، بس بعض الزباين لاحظوا إن السعر ارتفع والحجم صار أقل شوي، فالمكان ي…",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "كافيه"
+      },
+      "hook_ar": "العصير السيجنتشر عندهم هو نجم المكان، ومعه الهوت شوكليت شتاءً يطلع خيار محبّب خصوصاً بنكهات جوز الهند والتوت.",
+      "caption": {
+        "instagram": "عصائر سيجنتشر — حي المذر 📍 العصير السيجنتشر عندهم هو نجم المكان، ومعه الهوت شوكليت شتاءً يطلع خيار محبّب خصوصاً بنكهات جوز الهند والتوت. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "عصائر سيجنتشر بالرياض 👌 العصير السيجنتشر عندهم هو نجم المكان، ومعه الهوت شوكليت شتاءً يطلع خيار محبّب خصوصاً بنكهات جوز الهند والتوت. حلال معتمد · ~75 ريال",
+        "x": "عصائر سيجنتشر — حي المذر: العصير السيجنتشر عندهم هو نجم المكان، ومعه الهوت شوكليت شتاءً يطلع خيار محبّب خصوصاً بنكهات جوز الهند والتوت. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#كافيهات_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_cafes/ChIJp6AV2YsFLz4RVqgh83sTYpc/main.jpg",
+      "image_prompt": "Using the attached real photo of عصائر سيجنتشر (a Riyadh كافيه), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"العصير السيجنتشر عندهم هو نجم المكان، ومعه الهوت شوكليت شتاءً يطلع خيار محبّب خصوصاً بنكهات جوز الهند والتوت.\" in Readex Pro RTL, the name \"عصائر سيجنتشر\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي المذر\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_cafes",
+        "id": "69e8d0cc1302ffe9e127ad99",
+        "z_score": 9.5,
+        "google_place_id": "ChIJp6AV2YsFLz4RVqgh83sTYpc"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-01",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "أصياخ",
+        "area_ar": "حي النرجس",
+        "z_score": 9.6,
+        "gist_ar": "الكباب البحريني والحمص هم نجوم المكان، ومعهم يطلع الشغل مضبوط من ناحية الطراوة والتتبيل. الخدمة سريعة ووجه الموظفين بشوش، لكن بعض الأصناف الجانبية مثل البطاطس مو دايم على نفس مستوى المشاوي، والزحمة واردة بأوقات الذروة.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "الكباب البحريني والحمص هم نجوم المكان، ومعهم يطلع الشغل مضبوط من ناحية الطراوة والتتبيل.",
+      "caption": {
+        "instagram": "أصياخ — حي النرجس 📍 الكباب البحريني والحمص هم نجوم المكان، ومعهم يطلع الشغل مضبوط من ناحية الطراوة والتتبيل. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "أصياخ بالرياض 👌 الكباب البحريني والحمص هم نجوم المكان، ومعهم يطلع الشغل مضبوط من ناحية الطراوة والتتبيل. مطبخ حلال · ~75 ريال",
+        "x": "أصياخ — حي النرجس: الكباب البحريني والحمص هم نجوم المكان، ومعهم يطلع الشغل مضبوط من ناحية الطراوة والتتبيل. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJWZ9WfgDlLj4Rh0dnfyltPTA/main.jpg",
+      "image_prompt": "Using the attached real photo of أصياخ (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الكباب البحريني والحمص هم نجوم المكان، ومعهم يطلع الشغل مضبوط من ناحية الطراوة والتتبيل.\" in Readex Pro RTL, the name \"أصياخ\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي النرجس\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39f1302ffe9e11ea878",
+        "z_score": 9.6,
+        "google_place_id": "ChIJWZ9WfgDlLj4Rh0dnfyltPTA"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-02",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "أجواء فيروز",
+        "area_ar": "حي قرطبة",
+        "z_score": 9.5,
+        "gist_ar": "أجوا فيروز في قرطبة بالرياض مطعم لبناني فخم شوي، والناس تمدح المشاوي والحمص والتبولة والأجواء الأنيقة. بس فيه ملاحظات متكررة على تذبذب الخدمة وتجدد البوفيه وقت الإفطار، فمناسب أكثر لزيارة مرتبة بعيدة عن الزحمة.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "أجوا فيروز في قرطبة بالرياض مطعم لبناني فخم شوي، والناس تمدح المشاوي والحمص والتبولة والأجواء الأنيقة.",
+      "caption": {
+        "instagram": "أجواء فيروز — حي قرطبة 📍 أجوا فيروز في قرطبة بالرياض مطعم لبناني فخم شوي، والناس تمدح المشاوي والحمص والتبولة والأجواء الأنيقة. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "أجواء فيروز بالرياض 👌 أجوا فيروز في قرطبة بالرياض مطعم لبناني فخم شوي، والناس تمدح المشاوي والحمص والتبولة والأجواء الأنيقة. مطبخ حلال · ~75 ريال",
+        "x": "أجواء فيروز — حي قرطبة: أجوا فيروز في قرطبة بالرياض مطعم لبناني فخم شوي، والناس تمدح المشاوي والحمص والتبولة والأجواء الأنيقة. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJm8XeH80cLz4RGM6pMtQtM-U/main.jpg",
+      "image_prompt": "Using the attached real photo of أجواء فيروز (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"أجوا فيروز في قرطبة بالرياض مطعم لبناني فخم شوي، والناس تمدح المشاوي والحمص والتبولة والأجواء الأنيقة.\" in Readex Pro RTL, the name \"أجواء فيروز\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي قرطبة\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39f1302ffe9e11ea881",
+        "z_score": 9.5,
+        "google_place_id": "ChIJm8XeH80cLz4RGM6pMtQtM-U"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-03",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "شيف اياد",
+        "area_ar": "حي السليمانية",
+        "z_score": 9.5,
+        "gist_ar": "البريسكت والضلوع هنا هم سبب الزيارة، وطراوتهم مع الطعم المدخن واضحة من أول لقمة. ومعهم يجيك كرم في الإضافات المجانية مثل الحمص والأرز والصلصات، بس الدجاج عند بعض الناس مو بنفس قوة باقي الأصناف المدخنة.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "البريسكت والضلوع هنا هم سبب الزيارة، وطراوتهم مع الطعم المدخن واضحة من أول لقمة.",
+      "caption": {
+        "instagram": "شيف اياد — حي السليمانية 📍 البريسكت والضلوع هنا هم سبب الزيارة، وطراوتهم مع الطعم المدخن واضحة من أول لقمة. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "شيف اياد بالرياض 👌 البريسكت والضلوع هنا هم سبب الزيارة، وطراوتهم مع الطعم المدخن واضحة من أول لقمة. مطبخ حلال · ~75 ريال",
+        "x": "شيف اياد — حي السليمانية: البريسكت والضلوع هنا هم سبب الزيارة، وطراوتهم مع الطعم المدخن واضحة من أول لقمة. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJZTGXMesDLz4RbVJlkv-P9yE/main.jpg",
+      "image_prompt": "Using the attached real photo of شيف اياد (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"البريسكت والضلوع هنا هم سبب الزيارة، وطراوتهم مع الطعم المدخن واضحة من أول لقمة.\" in Readex Pro RTL, the name \"شيف اياد\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي السليمانية\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39e1302ffe9e11ea84e",
+        "z_score": 9.5,
+        "google_place_id": "ChIJZTGXMesDLz4RbVJlkv-P9yE"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-04",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "مقلط الفريج",
+        "area_ar": "حي العقيق بالرياض",
+        "z_score": 9.5,
+        "gist_ar": "الشكشوكة والكبدة من أكثر الأشياء اللي عليها كلام حلو هنا، ومعها الفطور السعودي والجريش والكبسة النجديّة طالعين بنكهة تراثية واضحة. الخدمة كثير تمدح، والمكان مناسب للعوائل والغرف الخاصة، بس بعض الأطباق تطلع مالحة شوي والا…",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "الشكشوكة والكبدة من أكثر الأشياء اللي عليها كلام حلو هنا، ومعها الفطور السعودي والجريش والكبسة النجديّة طالعين بنكهة ترا…",
+      "caption": {
+        "instagram": "مقلط الفريج — حي العقيق بالرياض 📍 الشكشوكة والكبدة من أكثر الأشياء اللي عليها كلام حلو هنا، ومعها الفطور السعودي والجريش والكبسة النجديّة طالعين بنكهة ترا… حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "مقلط الفريج بالرياض 👌 الشكشوكة والكبدة من أكثر الأشياء اللي عليها كلام حلو هنا، ومعها الفطور السعودي والجريش والكبسة النجديّة طالعين بنكهة ترا… حلال معتمد · ~75 ريال",
+        "x": "مقلط الفريج — حي العقيق بالرياض: الشكشوكة والكبدة من أكثر الأشياء اللي عليها كلام حلو هنا، ومعها الفطور السعودي والجريش والكبسة النجديّة طالعين بنكهة ترا… حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJZdDiUDXjLj4Rg5jhy1KzvIU/main.jpg",
+      "image_prompt": "Using the attached real photo of مقلط الفريج (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الشكشوكة والكبدة من أكثر الأشياء اللي عليها كلام حلو هنا، ومعها الفطور السعودي والجريش والكبسة النجديّة طالعين بنكهة ترا…\" in Readex Pro RTL, the name \"مقلط الفريج\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي العقيق بالرياض\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e8c02d1302ffe9e12772ba",
+        "z_score": 9.5,
+        "google_place_id": "ChIJZdDiUDXjLj4Rg5jhy1KzvIU"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-05",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "مطعم بهار الهند",
+        "area_ar": "حي الورود",
+        "z_score": 9.5,
+        "gist_ar": "دجاج التيكا والنان بالثوم واضح إنها من أقوى الأشياء عندهم، ومعها الخدمة هي اللي تخلي التجربة تثبت في بالك. الجو مريح والأسعار معقولة، لكن بعض الأطباق الجانبية مو دايم على نفس المستوى، فالمكان يناسبك إذا تبي عشاء هادي وطع…",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "دجاج التيكا والنان بالثوم واضح إنها من أقوى الأشياء عندهم، ومعها الخدمة هي اللي تخلي التجربة تثبت في بالك.",
+      "caption": {
+        "instagram": "مطعم بهار الهند — حي الورود 📍 دجاج التيكا والنان بالثوم واضح إنها من أقوى الأشياء عندهم، ومعها الخدمة هي اللي تخلي التجربة تثبت في بالك. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "مطعم بهار الهند بالرياض 👌 دجاج التيكا والنان بالثوم واضح إنها من أقوى الأشياء عندهم، ومعها الخدمة هي اللي تخلي التجربة تثبت في بالك. مطبخ حلال · ~75 ريال",
+        "x": "مطعم بهار الهند — حي الورود: دجاج التيكا والنان بالثوم واضح إنها من أقوى الأشياء عندهم، ومعها الخدمة هي اللي تخلي التجربة تثبت في بالك. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJcaIBYogDLz4RicouLomd6s0/main.jpg",
+      "image_prompt": "Using the attached real photo of مطعم بهار الهند (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"دجاج التيكا والنان بالثوم واضح إنها من أقوى الأشياء عندهم، ومعها الخدمة هي اللي تخلي التجربة تثبت في بالك.\" in Readex Pro RTL, the name \"مطعم بهار الهند\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي الورود\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39f1302ffe9e11ea852",
+        "z_score": 9.5,
+        "google_place_id": "ChIJcaIBYogDLz4RicouLomd6s0"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-06",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "مطعم جليا",
+        "area_ar": "حي الورود",
+        "z_score": 9.5,
+        "gist_ar": "المنسف والحمص والفلافل هنا هم سبب الرجعة، والطعم عند كثير من الزوار يجيب جو البيت الشامي على طول. بس الجلسات صغيرة شوي والزحمة قد تبين وقت الضغط، فالمكان أنسب للي يركز على الأكل أكثر من المساحة.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "المنسف والحمص والفلافل هنا هم سبب الرجعة، والطعم عند كثير من الزوار يجيب جو البيت الشامي على طول.",
+      "caption": {
+        "instagram": "مطعم جليا — حي الورود 📍 المنسف والحمص والفلافل هنا هم سبب الرجعة، والطعم عند كثير من الزوار يجيب جو البيت الشامي على طول. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "مطعم جليا بالرياض 👌 المنسف والحمص والفلافل هنا هم سبب الرجعة، والطعم عند كثير من الزوار يجيب جو البيت الشامي على طول. مطبخ حلال · ~75 ريال",
+        "x": "مطعم جليا — حي الورود: المنسف والحمص والفلافل هنا هم سبب الرجعة، والطعم عند كثير من الزوار يجيب جو البيت الشامي على طول. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJebTIsMYDLz4R3S3KSpQoHWg/main.jpg",
+      "image_prompt": "Using the attached real photo of مطعم جليا (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"المنسف والحمص والفلافل هنا هم سبب الرجعة، والطعم عند كثير من الزوار يجيب جو البيت الشامي على طول.\" in Readex Pro RTL, the name \"مطعم جليا\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي الورود\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39e1302ffe9e11ea847",
+        "z_score": 9.5,
+        "google_place_id": "ChIJebTIsMYDLz4R3S3KSpQoHWg"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-07",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "فيش فاكتورى للمأكولات البحرية أسماك و أكثر",
+        "area_ar": "حي السليمانية",
+        "z_score": 9.5,
+        "gist_ar": "السمك الطازج والشوربة هم عنوان المكان هنا، والناس واضح ترجع عشانه. أكثر شيء ملاحظ إن الخدمة سريعة ومتابعة، بس الجلسات والديكور قد ما تعجب الكل لأن المكان قديم شوي.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "السمك الطازج والشوربة هم عنوان المكان هنا، والناس واضح ترجع عشانه.",
+      "caption": {
+        "instagram": "فيش فاكتورى للمأكولات البحرية أسماك و أكثر — حي السليمانية 📍 السمك الطازج والشوربة هم عنوان المكان هنا، والناس واضح ترجع عشانه. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "فيش فاكتورى للمأكولات البحرية أسماك و أكثر بالرياض 👌 السمك الطازج والشوربة هم عنوان المكان هنا، والناس واضح ترجع عشانه. مطبخ حلال · ~75 ريال",
+        "x": "فيش فاكتورى للمأكولات البحرية أسماك و أكثر — حي السليمانية: السمك الطازج والشوربة هم عنوان المكان هنا، والناس واضح ترجع عشانه. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJF4eLPnEDLz4RNttuAmvQ-Ao/main.jpg",
+      "image_prompt": "Using the attached real photo of فيش فاكتورى للمأكولات البحرية أسماك و أكثر (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"السمك الطازج والشوربة هم عنوان المكان هنا، والناس واضح ترجع عشانه.\" in Readex Pro RTL, the name \"فيش فاكتورى للمأكولات البحرية أسماك و أكثر\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي السليمانية\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39e1302ffe9e11ea84c",
+        "z_score": 9.5,
+        "google_place_id": "ChIJF4eLPnEDLz4RNttuAmvQ-Ao"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-08",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "أواني",
+        "area_ar": "منطقة مطار الملك خالد الدولي",
+        "z_score": 9.5,
+        "gist_ar": "الحمص عندهم هو اللي يخلّي الناس ترجع، ناعم ومليان نكهة، ومعاه فتوش وتبولة ومشاوي المشكلة يطلعون مضبوطين غالب الوقت. الخدمة تُمدح بشكل واضح والكميات سخية، بس بعض الأطباق الأساسية قد تتفاوت شوي، والمكان أحياناً يكون زحمة و…",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "الحمص عندهم هو اللي يخلّي الناس ترجع، ناعم ومليان نكهة، ومعاه فتوش وتبولة ومشاوي المشكلة يطلعون مضبوطين غالب الوقت.",
+      "caption": {
+        "instagram": "أواني — منطقة مطار الملك خالد الدولي 📍 الحمص عندهم هو اللي يخلّي الناس ترجع، ناعم ومليان نكهة، ومعاه فتوش وتبولة ومشاوي المشكلة يطلعون مضبوطين غالب الوقت. مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "أواني بالرياض 👌 الحمص عندهم هو اللي يخلّي الناس ترجع، ناعم ومليان نكهة، ومعاه فتوش وتبولة ومشاوي المشكلة يطلعون مضبوطين غالب الوقت. مطبخ حلال · ~75 ريال",
+        "x": "أواني — منطقة مطار الملك خالد الدولي: الحمص عندهم هو اللي يخلّي الناس ترجع، ناعم ومليان نكهة، ومعاه فتوش وتبولة ومشاوي المشكلة يطلعون مضبوطين غالب الوقت. مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJFdJkoZnxLj4R0jo6S5Ciehs/main.jpg",
+      "image_prompt": "Using the attached real photo of أواني (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الحمص عندهم هو اللي يخلّي الناس ترجع، ناعم ومليان نكهة، ومعاه فتوش وتبولة ومشاوي المشكلة يطلعون مضبوطين غالب الوقت.\" in Readex Pro RTL, the name \"أواني\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"منطقة مطار الملك خالد الدولي\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39f1302ffe9e11ea880",
+        "z_score": 9.5,
+        "google_place_id": "ChIJFdJkoZnxLj4R0jo6S5Ciehs"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-09",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ديب فرايز",
+        "area_ar": "حي الاندلس",
+        "z_score": 9.5,
+        "gist_ar": "الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة. لكن أسلوب بعض الموظفين مو ثابت، فالتجربة قد تطلع ممتازة أو متفاوتة حسب الوقت والشفت.",
+        "halal": "حلال معتمد",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة.",
+      "caption": {
+        "instagram": "ديب فرايز — حي الاندلس 📍 الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة. حلال معتمد · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "ديب فرايز بالرياض 👌 الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة. حلال معتمد · ~75 ريال",
+        "x": "ديب فرايز — حي الاندلس: الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة. حلال معتمد · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJubqbsmcPLz4RwJDAv4aJD6s/main.jpg",
+      "image_prompt": "Using the attached real photo of ديب فرايز (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة.\" in Readex Pro RTL, the name \"ديب فرايز\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"حلال معتمد\", and a small area label \"حي الاندلس\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39f1302ffe9e11ea86e",
+        "z_score": 9.5,
+        "google_place_id": "ChIJubqbsmcPLz4RwJDAv4aJD6s"
+      }
+    },
+    {
+      "id": "riyadh-standout-rest-10",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "مطعم صمد العراقي البوليفارد (ليالي العراقي)",
+        "area_ar": "حي حطين",
+        "z_score": 9.5,
+        "gist_ar": "الدولمة هنا من أقوى الأطباق، وتجي بتتبيل واضح ونضج مضبوط، ومعها شوربة العدس والخبز والشاي المجانيين يعطونك بداية ونهاية على أصولها. الأجواء مرتبة والخدمة ودودة، لكن بعض الأطباق مثل المسكوف قد يطوّل تجهيزها، فالمكان أنسب…",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": 75,
+        "category": "مطعم"
+      },
+      "hook_ar": "الدولمة هنا من أقوى الأطباق، وتجي بتتبيل واضح ونضج مضبوط، ومعها شوربة العدس والخبز والشاي المجانيين يعطونك بداية ونهاية…",
+      "caption": {
+        "instagram": "مطعم صمد العراقي البوليفارد (ليالي العراقي) — حي حطين 📍 الدولمة هنا من أقوى الأطباق، وتجي بتتبيل واضح ونضج مضبوط، ومعها شوربة العدس والخبز والشاي المجانيين يعطونك بداية ونهاية… مطبخ حلال · ~75 ريال — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "مطعم صمد العراقي البوليفارد (ليالي العراقي) بالرياض 👌 الدولمة هنا من أقوى الأطباق، وتجي بتتبيل واضح ونضج مضبوط، ومعها شوربة العدس والخبز والشاي المجانيين يعطونك بداية ونهاية… مطبخ حلال · ~75 ريال",
+        "x": "مطعم صمد العراقي البوليفارد (ليالي العراقي) — حي حطين: الدولمة هنا من أقوى الأطباق، وتجي بتتبيل واضح ونضج مضبوط، ومعها شوربة العدس والخبز والشاي المجانيين يعطونك بداية ونهاية… مطبخ حلال · ~75 ريال"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJNRPORGrjLj4RY42FrgVJSso/main.jpg",
+      "image_prompt": "Using the attached real photo of مطعم صمد العراقي البوليفارد (ليالي العراقي) (a Riyadh مطعم), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"الدولمة هنا من أقوى الأطباق، وتجي بتتبيل واضح ونضج مضبوط، ومعها شوربة العدس والخبز والشاي المجانيين يعطونك بداية ونهاية…\" in Readex Pro RTL, the name \"مطعم صمد العراقي البوليفارد (ليالي العراقي)\" as a Playfair headline, a teal Z-Score badge \"9.5\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي حطين\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39e1302ffe9e11ea83b",
+        "z_score": 9.5,
+        "google_place_id": "ChIJNRPORGrjLj4RY42FrgVJSso"
+      }
+    },
+    {
+      "id": "riyadh-standout-attr-01",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "جامع عبدالله بن ناصر المهيني",
+        "area_ar": "حي العارض على",
+        "z_score": 9.7,
+        "gist_ar": "تلاوة الشيخ ناصر القطامي هي أكثر شيء يخلّي الناس ترجع له، ومعها نظافة المسجد وجمال تصميمه واضحة من أغلب التعليقات. المكان مناسب للصلاة الهادية، وقسم العوائل والمواقف متوفرة، بس وقت الصلوات قد يصير عليه زحمة شوي.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": null,
+        "category": "مكان"
+      },
+      "hook_ar": "تلاوة الشيخ ناصر القطامي هي أكثر شيء يخلّي الناس ترجع له، ومعها نظافة المسجد وجمال تصميمه واضحة من أغلب التعليقات.",
+      "caption": {
+        "instagram": "جامع عبدالله بن ناصر المهيني — حي العارض على 📍 تلاوة الشيخ ناصر القطامي هي أكثر شيء يخلّي الناس ترجع له، ومعها نظافة المسجد وجمال تصميمه واضحة من أغلب التعليقات. مطبخ حلال · — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "جامع عبدالله بن ناصر المهيني بالرياض 👌 تلاوة الشيخ ناصر القطامي هي أكثر شيء يخلّي الناس ترجع له، ومعها نظافة المسجد وجمال تصميمه واضحة من أغلب التعليقات. مطبخ حلال ·",
+        "x": "جامع عبدالله بن ناصر المهيني — حي العارض على: تلاوة الشيخ ناصر القطامي هي أكثر شيء يخلّي الناس ترجع له، ومعها نظافة المسجد وجمال تصميمه واضحة من أغلب التعليقات. مطبخ حلال ·"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_attractions/ChIJq5jZbKnlLj4RUIkqZFFtnao/main.jpg",
+      "image_prompt": "Using the attached real photo of جامع عبدالله بن ناصر المهيني (a Riyadh مكان), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"تلاوة الشيخ ناصر القطامي هي أكثر شيء يخلّي الناس ترجع له، ومعها نظافة المسجد وجمال تصميمه واضحة من أغلب التعليقات.\" in Readex Pro RTL, the name \"جامع عبدالله بن ناصر المهيني\" as a Playfair headline, a teal Z-Score badge \"9.7\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي العارض على\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "69e8e5ef8baf5841b746b2a2",
+        "z_score": 9.7,
+        "google_place_id": "ChIJq5jZbKnlLj4RUIkqZFFtnao"
+      }
+    },
+    {
+      "id": "riyadh-standout-attr-02",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "تشرنوبل ليزر تاق",
+        "area_ar": "على طريق أنس بن مالك قرب منط",
+        "z_score": 9.7,
+        "gist_ar": "اللعبة هنا هي اللي تسحبك من أول دقيقة؛ الساحة مرتبة، والأجواء تشحن الحماس، والطاقم غالباً يضبط الشرح والتجربة بشكل يخليك تدخل جو بسرعة. أغلب الناس جايين على جلسات جماعية أو أعياد ميلاد، ومع الزحمة أحياناً الحجز المسبق يك…",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": null,
+        "category": "مكان"
+      },
+      "hook_ar": "اللعبة هنا هي اللي تسحبك من أول دقيقة؛ الساحة مرتبة، والأجواء تشحن الحماس، والطاقم غالباً يضبط الشرح والتجربة بشكل يخليك…",
+      "caption": {
+        "instagram": "تشرنوبل ليزر تاق — على طريق أنس بن مالك قرب منط 📍 اللعبة هنا هي اللي تسحبك من أول دقيقة؛ الساحة مرتبة، والأجواء تشحن الحماس، والطاقم غالباً يضبط الشرح والتجربة بشكل يخليك… مطبخ حلال · — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "تشرنوبل ليزر تاق بالرياض 👌 اللعبة هنا هي اللي تسحبك من أول دقيقة؛ الساحة مرتبة، والأجواء تشحن الحماس، والطاقم غالباً يضبط الشرح والتجربة بشكل يخليك… مطبخ حلال ·",
+        "x": "تشرنوبل ليزر تاق — على طريق أنس بن مالك قرب منط: اللعبة هنا هي اللي تسحبك من أول دقيقة؛ الساحة مرتبة، والأجواء تشحن الحماس، والطاقم غالباً يضبط الشرح والتجربة بشكل يخليك… مطبخ حلال ·"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_attractions/ChIJ5xG77av7Lj4Rjwobo8hGpdQ/main.png",
+      "image_prompt": "Using the attached real photo of تشرنوبل ليزر تاق (a Riyadh مكان), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"اللعبة هنا هي اللي تسحبك من أول دقيقة؛ الساحة مرتبة، والأجواء تشحن الحماس، والطاقم غالباً يضبط الشرح والتجربة بشكل يخليك…\" in Readex Pro RTL, the name \"تشرنوبل ليزر تاق\" as a Playfair headline, a teal Z-Score badge \"9.7\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"على طريق أنس بن مالك قرب منط\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "69e8e5ef8baf5841b746b20a",
+        "z_score": 9.7,
+        "google_place_id": "ChIJ5xG77av7Lj4Rjwobo8hGpdQ"
+      }
+    },
+    {
+      "id": "riyadh-standout-attr-03",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "المسار الرياضي",
+        "area_ar": "حي حطين على",
+        "z_score": 9.6,
+        "gist_ar": "المسارات الواسعة والنظيفة هي اللي تخلّي المكان يستاهل الزيارة، خصوصًا للمشي والدراجات والجري مع الأهل أو العيال. بعد الغروب الجو يصير أزحم، والمواقف ودورات المياه مو دايمًا مثالية، فالأفضل تجيه بدري إذا تبي تمشي براحتك.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": null,
+        "category": "مكان"
+      },
+      "hook_ar": "المسارات الواسعة والنظيفة هي اللي تخلّي المكان يستاهل الزيارة، خصوصًا للمشي والدراجات والجري مع الأهل أو العيال.",
+      "caption": {
+        "instagram": "المسار الرياضي — حي حطين على 📍 المسارات الواسعة والنظيفة هي اللي تخلّي المكان يستاهل الزيارة، خصوصًا للمشي والدراجات والجري مع الأهل أو العيال. مطبخ حلال · — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "المسار الرياضي بالرياض 👌 المسارات الواسعة والنظيفة هي اللي تخلّي المكان يستاهل الزيارة، خصوصًا للمشي والدراجات والجري مع الأهل أو العيال. مطبخ حلال ·",
+        "x": "المسار الرياضي — حي حطين على: المسارات الواسعة والنظيفة هي اللي تخلّي المكان يستاهل الزيارة، خصوصًا للمشي والدراجات والجري مع الأهل أو العيال. مطبخ حلال ·"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_attractions/ChIJg-FiKQDhLj4Ra6lQLaCVwmE/main.jpg",
+      "image_prompt": "Using the attached real photo of المسار الرياضي (a Riyadh مكان), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"المسارات الواسعة والنظيفة هي اللي تخلّي المكان يستاهل الزيارة، خصوصًا للمشي والدراجات والجري مع الأهل أو العيال.\" in Readex Pro RTL, the name \"المسار الرياضي\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي حطين على\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "69e8e5ef8baf5841b746b210",
+        "z_score": 9.6,
+        "google_place_id": "ChIJg-FiKQDhLj4Ra6lQLaCVwmE"
+      }
+    },
+    {
+      "id": "riyadh-standout-attr-04",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "جامع الملك خالد بن عبدالعزيز",
+        "area_ar": "حي أم الحمام",
+        "z_score": 9.6,
+        "gist_ar": "هذا جامع الملك خالد في أم الحمام الغربي، قريب من تقاطع عرُبة مع الأمير تركي بن عبدالعزيز الأول. أغلب الناس يمدحون اتساعه، هدوءه، والمواقف السهلة، وفيه تلاوة إمام واضحة تلفت الانتباه.",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": null,
+        "category": "مكان"
+      },
+      "hook_ar": "هذا جامع الملك خالد في أم الحمام الغربي، قريب من تقاطع عرُبة مع الأمير تركي بن عبدالعزيز الأول.",
+      "caption": {
+        "instagram": "جامع الملك خالد بن عبدالعزيز — حي أم الحمام 📍 هذا جامع الملك خالد في أم الحمام الغربي، قريب من تقاطع عرُبة مع الأمير تركي بن عبدالعزيز الأول. مطبخ حلال · — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "جامع الملك خالد بن عبدالعزيز بالرياض 👌 هذا جامع الملك خالد في أم الحمام الغربي، قريب من تقاطع عرُبة مع الأمير تركي بن عبدالعزيز الأول. مطبخ حلال ·",
+        "x": "جامع الملك خالد بن عبدالعزيز — حي أم الحمام: هذا جامع الملك خالد في أم الحمام الغربي، قريب من تقاطع عرُبة مع الأمير تركي بن عبدالعزيز الأول. مطبخ حلال ·"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_attractions/ChIJUc-ltiEdLz4R8S4q8Ei6zLA/main.jpg",
+      "image_prompt": "Using the attached real photo of جامع الملك خالد بن عبدالعزيز (a Riyadh مكان), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"هذا جامع الملك خالد في أم الحمام الغربي، قريب من تقاطع عرُبة مع الأمير تركي بن عبدالعزيز الأول.\" in Readex Pro RTL, the name \"جامع الملك خالد بن عبدالعزيز\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي أم الحمام\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "69e8e5ef8baf5841b746b265",
+        "z_score": 9.6,
+        "google_place_id": "ChIJUc-ltiEdLz4R8S4q8Ei6zLA"
+      }
+    },
+    {
+      "id": "riyadh-standout-attr-05",
+      "type": "local_standout",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "جامع سليمان بن عبدالعزيز البسام",
+        "area_ar": "حي قرطبة",
+        "z_score": 9.6,
+        "gist_ar": "جامع سليمان البسام في قرطبة معروف بتنظيمه الواضح ومواقفه المخصصة، وأقوى نقطة فيه ترجمة خطبة الجمعة على الشاشة بالإنجليزية والأردو. المكان واسع ونظيف وفيه ترتيبات مميزة للنساء وذوي الإعاقة، لكنه قد يحتاج شوي تعرّف على الم…",
+        "halal": "مطبخ حلال",
+        "avg_cost_sar": null,
+        "category": "مكان"
+      },
+      "hook_ar": "جامع سليمان البسام في قرطبة معروف بتنظيمه الواضح ومواقفه المخصصة، وأقوى نقطة فيه ترجمة خطبة الجمعة على الشاشة بالإنجليزي…",
+      "caption": {
+        "instagram": "جامع سليمان بن عبدالعزيز البسام — حي قرطبة 📍 جامع سليمان البسام في قرطبة معروف بتنظيمه الواضح ومواقفه المخصصة، وأقوى نقطة فيه ترجمة خطبة الجمعة على الشاشة بالإنجليزي… مطبخ حلال · — زبدة صريحة بدون مجاملة 💯",
+        "tiktok": "جامع سليمان بن عبدالعزيز البسام بالرياض 👌 جامع سليمان البسام في قرطبة معروف بتنظيمه الواضح ومواقفه المخصصة، وأقوى نقطة فيه ترجمة خطبة الجمعة على الشاشة بالإنجليزي… مطبخ حلال ·",
+        "x": "جامع سليمان بن عبدالعزيز البسام — حي قرطبة: جامع سليمان البسام في قرطبة معروف بتنظيمه الواضح ومواقفه المخصصة، وأقوى نقطة فيه ترجمة خطبة الجمعة على الشاشة بالإنجليزي… مطبخ حلال ·"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#الرياض",
+        "#زبدة_المكان",
+        "#مطاعم_الرياض"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_attractions/ChIJISwYqBP8Lj4RWdoKsF_R27U/main.jpg",
+      "image_prompt": "Using the attached real photo of جامع سليمان بن عبدالعزيز البسام (a Riyadh مكان), compose a 1080x1350 social card: the photo fills the top ~60%, a cream card below carries the Arabic gist \"جامع سليمان البسام في قرطبة معروف بتنظيمه الواضح ومواقفه المخصصة، وأقوى نقطة فيه ترجمة خطبة الجمعة على الشاشة بالإنجليزي…\" in Readex Pro RTL, the name \"جامع سليمان بن عبدالعزيز البسام\" as a Playfair headline, a teal Z-Score badge \"9.6\", a green verified-halal badge \"مطبخ حلال\", and a small area label \"حي قرطبة\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real Z-Score + زبده gist from the app DB; show only this real text + photo",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "69e8e5ef8baf5841b746b2a0",
+        "z_score": 9.6,
+        "google_place_id": "ChIJISwYqBP8Lj4RWdoKsF_R27U"
+      }
+    },
+    {
+      "id": "halal-find-riyadh-01",
+      "type": "halal_find",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ريزينج كينز",
+        "destination": "Riyadh",
+        "halal": "حلال معتمد",
+        "z_score": 9.5,
+        "cuisine": "['chicken_restaurant']"
+      },
+      "hook_ar": "ريزينج كينز — سكوير درايف ثرو: حلال معتمد",
+      "caption": {
+        "instagram": "حلال موثّق — سكوير درايف ثرو: ريزينج كينز ✅ أصابع الدجاج هنا هي نجم المكان، ومعها صلصة كينز اللي كثير يمدحونها لأنها تكمل الطعم بشكل واضح. الزبدة تتحقق لك — مو مجرد لافتة على الباب. 🇸🇦",
+        "tiktok": "مطعم حلال موثّق بالرياض 👌 ريزينج كينز — أصابع الدجاج هنا هي نجم المكان، ومعها صلصة كينز اللي كثير يمدحونها لأنها تكمل الطعم بشكل واضح.",
+        "x": "ريزينج كينز — سكوير درايف ثرو: حلال معتمد ✅ أصابع الدجاج هنا هي نجم المكان، ومعها صلصة كينز اللي كثير يمدحونها لأنها تكمل الطعم بشكل واضح."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#حلال",
+        "#مطاعم_الرياض",
+        "#riyadh"
+      ],
+      "cta_ar": "اكتشف المطاعم الحلال",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJ0Rq4DKf7Lj4Ripfp0AWf2IE/main.jpg",
+      "image_prompt": "Using the attached real photo of ريزينج كينز (a Riyadh restaurant), compose a 1080x1350 card: photo on top, cream card with the Arabic line \"أصابع الدجاج هنا هي نجم المكان، ومعها صلصة كينز اللي كثير يمدحونها لأنها تكمل الطعم بشكل واضح.\", name \"ريزينج كينز\" as a Playfair headline, and a green (#16864F) verified-halal badge \"حلال معتمد\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real verified-halal label + gist from the app DB; show only the real badge",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39f1302ffe9e11ea87b"
+      }
+    },
+    {
+      "id": "halal-find-riyadh-02",
+      "type": "halal_find",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "برايم كت",
+        "destination": "Riyadh",
+        "halal": "حلال معتمد",
+        "z_score": 9.5,
+        "cuisine": "['hamburger_restaurant']"
+      },
+      "hook_ar": "برايم كت — حي العليا بالرياض: حلال معتمد",
+      "caption": {
+        "instagram": "حلال موثّق — حي العليا بالرياض: برايم كت ✅ برجر سموكي وبرجر الجبن المشوي هم اللي ماسكين السمعة هنا، ومعهم بطاطس الحلوة اللي انمدحت كثير لأنها لذيذة ومختل… الزبدة تتحقق لك — مو مجرد لافتة على الباب. 🇸🇦",
+        "tiktok": "مطعم حلال موثّق بالرياض 👌 برايم كت — برجر سموكي وبرجر الجبن المشوي هم اللي ماسكين السمعة هنا، ومعهم بطاطس الحلوة اللي انمدحت كثير لأنها لذيذة ومختل…",
+        "x": "برايم كت — حي العليا بالرياض: حلال معتمد ✅ برجر سموكي وبرجر الجبن المشوي هم اللي ماسكين السمعة هنا، ومعهم بطاطس الحلوة اللي انمدحت كثير لأنها لذيذة ومختل…"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#حلال",
+        "#مطاعم_الرياض",
+        "#riyadh"
+      ],
+      "cta_ar": "اكتشف المطاعم الحلال",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJ7SmdLiEDLz4R2bW32GcUeA8/fcaf2da7bea83480462adb74.jpg",
+      "image_prompt": "Using the attached real photo of برايم كت (a Riyadh restaurant), compose a 1080x1350 card: photo on top, cream card with the Arabic line \"برجر سموكي وبرجر الجبن المشوي هم اللي ماسكين السمعة هنا، ومعهم بطاطس الحلوة اللي انمدحت كثير لأنها لذيذة ومختل…\", name \"برايم كت\" as a Playfair headline, and a green (#16864F) verified-halal badge \"حلال معتمد\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real verified-halal label + gist from the app DB; show only the real badge",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "6a100deabf2f9e5cad5e1b29"
+      }
+    },
+    {
+      "id": "halal-find-riyadh-03",
+      "type": "halal_find",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "ديب فرايز",
+        "destination": "Riyadh",
+        "halal": "حلال معتمد",
+        "z_score": 9.5,
+        "cuisine": "['fast_food_restaurant']"
+      },
+      "hook_ar": "ديب فرايز — حي الاندلس: حلال معتمد",
+      "caption": {
+        "instagram": "حلال موثّق — حي الاندلس: ديب فرايز ✅ الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة. الزبدة تتحقق لك — مو مجرد لافتة على الباب. 🇸🇦",
+        "tiktok": "مطعم حلال موثّق بالرياض 👌 ديب فرايز — الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة.",
+        "x": "ديب فرايز — حي الاندلس: حلال معتمد ✅ الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#حلال",
+        "#مطاعم_الرياض",
+        "#riyadh"
+      ],
+      "cta_ar": "اكتشف المطاعم الحلال",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJubqbsmcPLz4RwJDAv4aJD6s/main.jpg",
+      "image_prompt": "Using the attached real photo of ديب فرايز (a Riyadh restaurant), compose a 1080x1350 card: photo on top, cream card with the Arabic line \"الأكل هو السبب الرئيسي اللي يخلي الناس ترجع، وكثير يمدحون الطعم والنظافة مع خدمة زينة في أكثر من زيارة.\", name \"ديب فرايز\" as a Playfair headline, and a green (#16864F) verified-halal badge \"حلال معتمد\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real verified-halal label + gist from the app DB; show only the real badge",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69e5f39f1302ffe9e11ea86e"
+      }
+    },
+    {
+      "id": "halal-find-london-01",
+      "type": "halal_find",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "غرلانديا",
+        "destination": "London",
+        "halal": "حلال معتمد",
+        "z_score": 9.6,
+        "cuisine": "['lebanese_restaurant', 'family_restaurant', 'halal_restaurant', 'mediterranean_restaurant', 'middle_eastern_restaurant']"
+      },
+      "hook_ar": "غرلانديا في London: حلال معتمد",
+      "caption": {
+        "instagram": "حلال موثّق في London: غرلانديا ✅ غرلانديا في مايفير، على غروسفينور ستريت، مطعم لبناني/شرقي واضح من تقييماته. الزبدة تتحقق لك — مو مجرد لافتة على الباب. 🇬🇧",
+        "tiktok": "مطعم حلال موثّق في London 👌 غرلانديا — غرلانديا في مايفير، على غروسفينور ستريت، مطعم لبناني/شرقي واضح من تقييماته.",
+        "x": "غرلانديا في London: حلال معتمد ✅ غرلانديا في مايفير، على غروسفينور ستريت، مطعم لبناني/شرقي واضح من تقييماته."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#حلال",
+        "#سفر_حلال",
+        "#london"
+      ],
+      "cta_ar": "اكتشف المطاعم الحلال",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJZWE0nCsFdkgRURzZERHYDtw/main.jpg",
+      "image_prompt": "Using the attached real photo of غرلانديا (a London restaurant), compose a 1080x1350 card: photo on top, cream card with the Arabic line \"غرلانديا في مايفير، على غروسفينور ستريت، مطعم لبناني/شرقي واضح من تقييماته.\", name \"غرلانديا\" as a Playfair headline, and a green (#16864F) verified-halal badge \"حلال معتمد\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real verified-halal label + gist from the app DB; show only the real badge",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69ec983a8baf5841b752efb1"
+      }
+    },
+    {
+      "id": "halal-find-london-02",
+      "type": "halal_find",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "مطعم فرايا",
+        "destination": "London",
+        "halal": "حلال معتمد",
+        "z_score": 9.6,
+        "cuisine": "['restaurant', 'food']"
+      },
+      "hook_ar": "مطعم فرايا في London: حلال معتمد",
+      "caption": {
+        "instagram": "حلال موثّق في London: مطعم فرايا ✅ فرايا في أولد برومبتون، ساوث كنسنغتون، مطعم لبناني واضح عليه التركيز على المنيو الثابت والكميات الكبيرة. الزبدة تتحقق لك — مو مجرد لافتة على الباب. 🇬🇧",
+        "tiktok": "مطعم حلال موثّق في London 👌 مطعم فرايا — فرايا في أولد برومبتون، ساوث كنسنغتون، مطعم لبناني واضح عليه التركيز على المنيو الثابت والكميات الكبيرة.",
+        "x": "مطعم فرايا في London: حلال معتمد ✅ فرايا في أولد برومبتون، ساوث كنسنغتون، مطعم لبناني واضح عليه التركيز على المنيو الثابت والكميات الكبيرة."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#حلال",
+        "#سفر_حلال",
+        "#london"
+      ],
+      "cta_ar": "اكتشف المطاعم الحلال",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJqT_wr2wFdkgRvWCTEIueuvI/main.jpg",
+      "image_prompt": "Using the attached real photo of مطعم فرايا (a London restaurant), compose a 1080x1350 card: photo on top, cream card with the Arabic line \"فرايا في أولد برومبتون، ساوث كنسنغتون، مطعم لبناني واضح عليه التركيز على المنيو الثابت والكميات الكبيرة.\", name \"مطعم فرايا\" as a Playfair headline, and a green (#16864F) verified-halal badge \"حلال معتمد\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real verified-halal label + gist from the app DB; show only the real badge",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69eca04e8baf5841b7533dee"
+      }
+    },
+    {
+      "id": "halal-find-london-03",
+      "type": "halal_find",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "name_ar": "هيبا ستريت فود",
+        "destination": "London",
+        "halal": "حلال معتمد",
+        "z_score": 9.6,
+        "cuisine": "['mediterranean_restaurant', 'middle_eastern_restaurant', 'lebanese_restaurant', 'restaurant', 'food']"
+      },
+      "hook_ar": "هيبا ستريت فود في London: حلال معتمد",
+      "caption": {
+        "instagram": "حلال موثّق في London: هيبا ستريت فود ✅ هيبا ستريت فود في فيتزروفيا، قريب من أكسفورد ستريت، ومطعمهم صغير ومرتب أكثر من إنه واسع. الزبدة تتحقق لك — مو مجرد لافتة على الباب. 🇬🇧",
+        "tiktok": "مطعم حلال موثّق في London 👌 هيبا ستريت فود — هيبا ستريت فود في فيتزروفيا، قريب من أكسفورد ستريت، ومطعمهم صغير ومرتب أكثر من إنه واسع.",
+        "x": "هيبا ستريت فود في London: حلال معتمد ✅ هيبا ستريت فود في فيتزروفيا، قريب من أكسفورد ستريت، ومطعمهم صغير ومرتب أكثر من إنه واسع."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#حلال",
+        "#سفر_حلال",
+        "#london"
+      ],
+      "cta_ar": "اكتشف المطاعم الحلال",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJE4YpUykbdkgRpzVbvvo3xRE/main.jpg",
+      "image_prompt": "Using the attached real photo of هيبا ستريت فود (a London restaurant), compose a 1080x1350 card: photo on top, cream card with the Arabic line \"هيبا ستريت فود في فيتزروفيا، قريب من أكسفورد ستريت، ومطعمهم صغير ومرتب أكثر من إنه واسع.\", name \"هيبا ستريت فود\" as a Playfair headline, and a green (#16864F) verified-halal badge \"حلال معتمد\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real verified-halal label + gist from the app DB; show only the real badge",
+      "source": {
+        "collection": "travel_restaurants",
+        "id": "69ec983a8baf5841b752efc2"
+      }
+    },
+    {
+      "id": "travel-famous-istanbul",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Istanbul",
+        "flag": "🇹🇷",
+        "highlights_ar": [
+          "آيا صوفيا",
+          "المسجد الأزرق",
+          "البازار الكبير",
+          "مضيق البوسفور"
+        ]
+      },
+      "hook_ar": "Istanbul 🇹🇷 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Istanbul 🇹🇷: مدينة بين قارتين وحضارتين. إسطنبول وجهة مفضلة للسعوديين — أسواق وطعام وتاريخ وأسعار معقولة. أبرز الأماكن: آيا صوفيا، المسجد الأزرق، البازار الكبير، مضيق البوسفور. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Istanbul؟ آيا صوفيا، المسجد الأزرق، البازار الكبير، مضيق البوسفور 👀 والزبدة ترتبها لك يوم بيوم 🇹🇷",
+        "x": "Istanbul: آيا صوفيا، المسجد الأزرق، البازار الكبير، مضيق البوسفور. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇹🇷"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#istanbul",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/istanbul/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Istanbul, 1080x1350, featuring its famous landmarks (Hagia Sophia, Blue Mosque, Grand Bazaar). Arabic headline (Playfair, RTL): \"Istanbul — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Istanbul: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "istanbul"
+      }
+    },
+    {
+      "id": "travel-tip-istanbul",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Istanbul",
+        "attraction_ar": "Suleymaniye Mosque",
+        "tips_ar": [
+          "روح بدري أو متأخر شوي إذا تبي زيارة أهدى وتصوير أحسن.",
+          "البس جزمة مريحة لأن الطريق فيه طلعة وتحتاج مجهود."
+        ]
+      },
+      "hook_ar": "Suleymaniye Mosque — Istanbul",
+      "caption": {
+        "instagram": "Suleymaniye Mosque في Istanbul 🇹🇷: القوة هنا في الهيبة المعمارية والإطلالة من فوق التلة؛ الداخل هادئ ومرتب، وتحس المكان يعطيك نفس وروح أكثر من مجرد زيارة سريعة. أكثر ملاحظة متكررة إن الطلعة له متعبة شوي، وبعض الأيام دخول الضريح يكون مو متاح. نصيحة الزبدة: روح بدري أو متأخر شوي إذا تبي زيارة أهدى وتصوير أحسن. · البس جزمة مريحة لأن الطريق فيه طلعة وتحتاج مجهود. ✨",
+        "tiktok": "قبل ما تروح Suleymaniye Mosque 📍 روح بدري أو متأخر شوي إذا تبي زيارة أهدى وتصوير أحسن.",
+        "x": "Suleymaniye Mosque (Istanbul): القوة هنا في الهيبة المعمارية والإطلالة من فوق التلة؛ الداخل هادئ ومرتب، وتحس المكان يعطيك نفس وروح أكثر من مجرد زيارة سريعة. أكثر ملاحظة متكررة إن الطلعة له متعبة شوي، وبعض الأيام دخول الضريح يكون مو متاح."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#istanbul",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_attractions/ChIJMRDAOo25yhQR7c9XIQT1zIo/main.jpg",
+      "image_prompt": "Photoreal 1080x1350 of Suleymaniye Mosque, with an Arabic tip overlay card \"روح بدري أو متأخر شوي إذا تبي زيارة أهدى وتصوير أحسن.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a072a21a43bbba1d04d7b47"
+      }
+    },
+    {
+      "id": "travel-famous-london",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "London",
+        "flag": "🇬🇧",
+        "highlights_ar": [
+          "بيج بن والبرلمان",
+          "برج لندن",
+          "المتحف البريطاني",
+          "قصر باكنغهام"
+        ]
+      },
+      "hook_ar": "London 🇬🇧 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "London 🇬🇧: أفضل وجهة أوروبية للمسافر المسلم. لندن عندها كل شي — تاريخ، ثقافة، تسوق، والأهم إن الحلال في كل مكان. أبرز الأماكن: بيج بن والبرلمان، برج لندن، المتحف البريطاني، قصر باكنغهام. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في London؟ بيج بن والبرلمان، برج لندن، المتحف البريطاني، قصر باكنغهام 👀 والزبدة ترتبها لك يوم بيوم 🇬🇧",
+        "x": "London: بيج بن والبرلمان، برج لندن، المتحف البريطاني، قصر باكنغهام. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇬🇧"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#london",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/london/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of London, 1080x1350, featuring its famous landmarks (Big Ben & Parliament, Tower of London, British Museum). Arabic headline (Playfair, RTL): \"London — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of London: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "london"
+      }
+    },
+    {
+      "id": "travel-tip-london",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "London",
+        "attraction_ar": "لندن سَيتسِيكنغ تورز",
+        "tips_ar": [
+          "أنسب للكبار أو المراهقين الأكبر لأن الموضوع فيه تفاصيل صريحة.",
+          "إذا تبي أجواء أقوى، خذ الجولة المسائية أو الليلية."
+        ]
+      },
+      "hook_ar": "لندن سَيتسِيكنغ تورز — London",
+      "caption": {
+        "instagram": "لندن سَيتسِيكنغ تورز في London 🇬🇧: هذي جولة مشي في وايت تشابل شرق لندن، وتركّز على قصة جاك السفاح والشوارع التاريخية حولها. أكثر شيء يطلع من التقييمات هو قوة المرشدين في السرد والمعرفة، ومع بعض الجولات الصغيرة يصير الجو أخص، لكن المحتوى نفسه صريح ومناسب ل… نصيحة الزبدة: أنسب للكبار أو المراهقين الأكبر لأن الموضوع فيه تفاصيل صريحة. · إذا تبي أجواء أقوى، خذ الجولة المسائية أو الليلية. ✨",
+        "tiktok": "قبل ما تروح لندن سَيتسِيكنغ تورز 📍 أنسب للكبار أو المراهقين الأكبر لأن الموضوع فيه تفاصيل صريحة.",
+        "x": "لندن سَيتسِيكنغ تورز (London): هذي جولة مشي في وايت تشابل شرق لندن، وتركّز على قصة جاك السفاح والشوارع التاريخية حولها. أكثر شيء يطلع من التقييمات هو قوة المرشدين في السرد والمعرفة، ومع بعض الجولات الصغيرة يصير الجو أخص، لكن المحتوى نفسه صريح ومناسب ل…"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#london",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/mirrored_images/travel_attractions/ChIJ4-KYXb4ddkgRASmekVg4YRg/main.jpg",
+      "image_prompt": "Photoreal 1080x1350 of London Sightseeing Tours, with an Arabic tip overlay card \"أنسب للكبار أو المراهقين الأكبر لأن الموضوع فيه تفاصيل صريحة.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "69ecb1c58baf5841b753ff7b"
+      }
+    },
+    {
+      "id": "travel-famous-bangkok",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Bangkok",
+        "flag": "🇹🇭",
+        "highlights_ar": [
+          "القصر الكبير",
+          "سوق تشاتوتشاك",
+          "معبد وات فو",
+          "الأسواق العائمة"
+        ]
+      },
+      "hook_ar": "Bangkok 🇹🇭 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Bangkok 🇹🇭: مدينة لا تنام وأسعار لا تُصدق. بانكوك وجهة مفضلة للسعوديين — طعام شارع خرافي، مساج تايلندي بأسعار رمزية، وتسوق رخيص. أبرز الأماكن: القصر الكبير، سوق تشاتوتشاك، معبد وات فو، الأسواق العائمة. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Bangkok؟ القصر الكبير، سوق تشاتوتشاك، معبد وات فو، الأسواق العائمة 👀 والزبدة ترتبها لك يوم بيوم 🇹🇭",
+        "x": "Bangkok: القصر الكبير، سوق تشاتوتشاك، معبد وات فو، الأسواق العائمة. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇹🇭"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#bangkok",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/bangkok/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Bangkok, 1080x1350, featuring its famous landmarks (Grand Palace, Chatuchak Market, Wat Pho). Arabic headline (Playfair, RTL): \"Bangkok — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Bangkok: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "bangkok"
+      }
+    },
+    {
+      "id": "travel-tip-bangkok",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Bangkok",
+        "attraction_ar": "ศาลหลักเมืองกรุงเทพมหานคร",
+        "tips_ar": [
+          "البس لبس محتشم وكن محترماً حول الناس أثناء الصلاة.",
+          "روح بدري أو خارج مواسم الإجازات إذا تبي زيارة أهدى."
+        ]
+      },
+      "hook_ar": "ศาลหลักเมืองกรุงเทพมหานคร — Bangkok",
+      "caption": {
+        "instagram": "ศาลหลักเมืองกรุงเทพมหานคร في Bangkok 🇹🇭: المكان يعطيك جو روحاني وتايلاندي واضح من أول خطوة، والناس يمدحون النظافة والزخرفة والأجواء الهادية. بس وقت الأعياد ورأس السنة الزحمة تزيد بشكل ملحوظ، فالأفضل تزوره بدري أو في يوم عادي عشان تاخذ راحتك. نصيحة الزبدة: البس لبس محتشم وكن محترماً حول الناس أثناء الصلاة. · روح بدري أو خارج مواسم الإجازات إذا تبي زيارة أهدى. ✨",
+        "tiktok": "قبل ما تروح ศาลหลักเมืองกรุงเทพมหานคร 📍 البس لبس محتشم وكن محترماً حول الناس أثناء الصلاة.",
+        "x": "ศาลหลักเมืองกรุงเทพมหานคร (Bangkok): المكان يعطيك جو روحاني وتايلاندي واضح من أول خطوة، والناس يمدحون النظافة والزخرفة والأجواء الهادية. بس وقت الأعياد ورأس السنة الزحمة تزيد بشكل ملحوظ، فالأفضل تزوره بدري أو في يوم عادي عشان تاخذ راحتك."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#bangkok",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of Bangkok City Pillar Shrine, with an Arabic tip overlay card \"البس لبس محتشم وكن محترماً حول الناس أثناء الصلاة.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a19cd80417f50fd35d47903"
+      }
+    },
+    {
+      "id": "travel-famous-tokyo",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Tokyo",
+        "flag": "🇯🇵",
+        "highlights_ar": [
+          "تقاطع شيبويا",
+          "معبد سينسوجي",
+          "برج طوكيو",
+          "أكيهابارا"
+        ]
+      },
+      "hook_ar": "Tokyo 🇯🇵 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Tokyo 🇯🇵: عالم مختلف تماماً. طوكيو تجربة لا تشبه أي شي — تكنولوجيا متقدمة بجانب معابد عمرها ألف سنة. أبرز الأماكن: تقاطع شيبويا، معبد سينسوجي، برج طوكيو، أكيهابارا. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Tokyo؟ تقاطع شيبويا، معبد سينسوجي، برج طوكيو، أكيهابارا 👀 والزبدة ترتبها لك يوم بيوم 🇯🇵",
+        "x": "Tokyo: تقاطع شيبويا، معبد سينسوجي، برج طوكيو، أكيهابارا. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇯🇵"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#tokyo",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/tokyo/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Tokyo, 1080x1350, featuring its famous landmarks (Shibuya Crossing, Senso-ji Temple, Tokyo Tower). Arabic headline (Playfair, RTL): \"Tokyo — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Tokyo: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "tokyo"
+      }
+    },
+    {
+      "id": "travel-tip-tokyo",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Tokyo",
+        "attraction_ar": "Tokyo Camii & Diyanet Turkish Culture Center",
+        "tips_ar": [
+          "أنسب لوقفة صلاة هادئة وزيارة ثقافية خفيفة أكثر من كونه برنامج سياحي طويل.",
+          "إذا بتجي يوم الجمعة، الأفضل توصل بدري لأن المكان يزحم وقت الجمعة."
+        ]
+      },
+      "hook_ar": "Tokyo Camii & Diyanet Turkish Culture Center — Tokyo",
+      "caption": {
+        "instagram": "Tokyo Camii & Diyanet Turkish Culture Center في Tokyo 🇯🇵: المسجد نفسه هو اللي يسحبك: العمارة العثمانية، والجو الهادي، والنظافة الواضحة تعطيك زيارة لها معنى. وبعد الصلاة عندهم متجر وسوق حلال ومحتوى ثقافي مفيد، لكن وقت الجمعة قد يصير زحام ومصلى النساء فوق بدرج حلزوني ضيق شوي. نصيحة الزبدة: أنسب لوقفة صلاة هادئة وزيارة ثقافية خفيفة أكثر من كونه برنامج سياحي طويل. · إذا بتجي يوم الجمعة، الأفضل توصل بدري لأن المكان يزحم وقت الجمعة. ✨",
+        "tiktok": "قبل ما تروح Tokyo Camii & Diyanet Turkish Culture Center 📍 أنسب لوقفة صلاة هادئة وزيارة ثقافية خفيفة أكثر من كونه برنامج سياحي طويل.",
+        "x": "Tokyo Camii & Diyanet Turkish Culture Center (Tokyo): المسجد نفسه هو اللي يسحبك: العمارة العثمانية، والجو الهادي، والنظافة الواضحة تعطيك زيارة لها معنى. وبعد الصلاة عندهم متجر وسوق حلال ومحتوى ثقافي مفيد، لكن وقت الجمعة قد يصير زحام ومصلى النساء فوق بدرج حلزوني ضيق شوي."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#tokyo",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of Tokyo Camii & Diyanet Turkish Culture Center, with an Arabic tip overlay card \"أنسب لوقفة صلاة هادئة وزيارة ثقافية خفيفة أكثر من كونه برنامج سياحي طويل.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a19c7ed417f50fd35d45f68"
+      }
+    },
+    {
+      "id": "travel-famous-dubai",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Dubai",
+        "flag": "🇦🇪",
+        "highlights_ar": [
+          "برج خليفة",
+          "دبي مول",
+          "نخلة جميرا",
+          "مرسى دبي"
+        ]
+      },
+      "hook_ar": "Dubai 🇦🇪 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Dubai 🇦🇪: مدينة المستقبل والفخامة. دبي تجمع بين ناطحات السحاب الأطول في العالم وتجارب ترفيهية لا تنتهي. أبرز الأماكن: برج خليفة، دبي مول، نخلة جميرا، مرسى دبي. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Dubai؟ برج خليفة، دبي مول، نخلة جميرا، مرسى دبي 👀 والزبدة ترتبها لك يوم بيوم 🇦🇪",
+        "x": "Dubai: برج خليفة، دبي مول، نخلة جميرا، مرسى دبي. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇦🇪"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#dubai",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/dubai/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Dubai, 1080x1350, featuring its famous landmarks (Burj Khalifa, Dubai Mall, Palm Jumeirah). Arabic headline (Playfair, RTL): \"Dubai — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Dubai: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "dubai"
+      }
+    },
+    {
+      "id": "travel-tip-dubai",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Dubai",
+        "attraction_ar": "متحف الفن - دبي مول",
+        "tips_ar": [
+          "مناسب للعائلات والأزواج وأي أحد يحب التجارب التفاعلية أكثر من المتاحف التقليدية.",
+          "الأفضل تروحون صباح يوم من أيام الأسبوع إذا تبيّن مساحة أوسع وزحمة أقل."
+        ]
+      },
+      "hook_ar": "متحف الفن - دبي مول — Dubai",
+      "caption": {
+        "instagram": "متحف الفن - دبي مول في Dubai 🇦🇪: الغرف التفاعلية هنا هي اللي تشدّك من أولها، خصوصاً المؤثرات البصرية والصوتية والروائح اللي تخلي التجربة تحسّها كأنك داخل عالم ثاني. المكان يطلع حلو للعائلة والتصوير والناس اللي تبي شيء هادي ومريح، بس بعض الإضافات الأخيرة… نصيحة الزبدة: مناسب للعائلات والأزواج وأي أحد يحب التجارب التفاعلية أكثر من المتاحف التقليدية. · الأفضل تروحون صباح يوم من أيام الأسبوع إذا تبيّن مساحة أوسع وزحمة أقل. ✨",
+        "tiktok": "قبل ما تروح متحف الفن - دبي مول 📍 مناسب للعائلات والأزواج وأي أحد يحب التجارب التفاعلية أكثر من المتاحف التقليدية.",
+        "x": "متحف الفن - دبي مول (Dubai): الغرف التفاعلية هنا هي اللي تشدّك من أولها، خصوصاً المؤثرات البصرية والصوتية والروائح اللي تخلي التجربة تحسّها كأنك داخل عالم ثاني. المكان يطلع حلو للعائلة والتصوير والناس اللي تبي شيء هادي ومريح، بس بعض الإضافات الأخيرة…"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#dubai",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of ARTE Museum Dubai Mall, with an Arabic tip overlay card \"مناسب للعائلات والأزواج وأي أحد يحب التجارب التفاعلية أكثر من المتاحف التقليدية.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a19d531417f50fd35d492ec"
+      }
+    },
+    {
+      "id": "travel-famous-paris",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Paris",
+        "flag": "🇫🇷",
+        "highlights_ar": [
+          "برج إيفل",
+          "متحف اللوفر",
+          "الشانزليزيه",
+          "كاتدرائية نوتردام"
+        ]
+      },
+      "hook_ar": "Paris 🇫🇷 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Paris 🇫🇷: مدينة النور والجمال. باريس حلم كل مسافر — برج إيفل واللوفر والشانزليزيه. أبرز الأماكن: برج إيفل، متحف اللوفر، الشانزليزيه، كاتدرائية نوتردام. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Paris؟ برج إيفل، متحف اللوفر، الشانزليزيه، كاتدرائية نوتردام 👀 والزبدة ترتبها لك يوم بيوم 🇫🇷",
+        "x": "Paris: برج إيفل، متحف اللوفر، الشانزليزيه، كاتدرائية نوتردام. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇫🇷"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#paris",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/paris/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Paris, 1080x1350, featuring its famous landmarks (Eiffel Tower, Louvre Museum, Champs-Élysées). Arabic headline (Playfair, RTL): \"Paris — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Paris: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "paris"
+      }
+    },
+    {
+      "id": "travel-tip-paris",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Paris",
+        "attraction_ar": "Le Donjon | Escape The Room",
+        "tips_ar": [
+          "مناسب للي يحبون تجارب الرعب الغامرة والسرد القصصي.",
+          "إذا تفضّل ألغاز أصعب، الأفضل تتأكد من السيناريو قبل الحجز لأن مستوى التحدي يختلف."
+        ]
+      },
+      "hook_ar": "Le Donjon | Escape The Room — Paris",
+      "caption": {
+        "instagram": "Le Donjon | Escape The Room في Paris 🇫🇷: الأجواء الغامرة والتمثيل هنا هم سبب الشهرة، والتفاصيل اليدوية فعلاً ترفع التجربة. بعض الألغاز قد ما تكون الأقوى عندهم إذا كنت لاعب خبير، لكن للناس اللي تدور رعب وتشويق مع قصة حية المكان يضبط معاه. نصيحة الزبدة: مناسب للي يحبون تجارب الرعب الغامرة والسرد القصصي. · إذا تفضّل ألغاز أصعب، الأفضل تتأكد من السيناريو قبل الحجز لأن مستوى التحدي يختلف. ✨",
+        "tiktok": "قبل ما تروح Le Donjon | Escape The Room 📍 مناسب للي يحبون تجارب الرعب الغامرة والسرد القصصي.",
+        "x": "Le Donjon | Escape The Room (Paris): الأجواء الغامرة والتمثيل هنا هم سبب الشهرة، والتفاصيل اليدوية فعلاً ترفع التجربة. بعض الألغاز قد ما تكون الأقوى عندهم إذا كنت لاعب خبير، لكن للناس اللي تدور رعب وتشويق مع قصة حية المكان يضبط معاه."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#paris",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of Le Donjon | Escape The Room, with an Arabic tip overlay card \"مناسب للي يحبون تجارب الرعب الغامرة والسرد القصصي.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a19b87d417f50fd35d43189"
+      }
+    },
+    {
+      "id": "travel-famous-phuket",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Phuket",
+        "flag": "🇹🇭",
+        "highlights_ar": [
+          "جزر في في",
+          "شاطئ باتونج",
+          "جزيرة جيمس بوند",
+          "تمثال بوذا الكبير"
+        ]
+      },
+      "hook_ar": "Phuket 🇹🇭 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Phuket 🇹🇭: جنة استوائية بأسعار معقولة. بوكيت أفضل وجهة شاطئية للسعوديين في جنوب شرق آسيا — شواطئ فيروزية، جزر خلابة، ومسلمين محليين يسهلون إيجاد الحلال. أبرز الأماكن: جزر في في، شاطئ باتونج، جزيرة جيمس بوند، تمثال بوذا الكبير. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Phuket؟ جزر في في، شاطئ باتونج، جزيرة جيمس بوند، تمثال بوذا الكبير 👀 والزبدة ترتبها لك يوم بيوم 🇹🇭",
+        "x": "Phuket: جزر في في، شاطئ باتونج، جزيرة جيمس بوند، تمثال بوذا الكبير. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇹🇭"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#phuket",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/phuket/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Phuket, 1080x1350, featuring its famous landmarks (Phi Phi Islands, Patong Beach, James Bond Island). Arabic headline (Playfair, RTL): \"Phuket — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Phuket: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "phuket"
+      }
+    },
+    {
+      "id": "travel-tip-phuket",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Phuket",
+        "attraction_ar": "Flying Hanuman",
+        "tips_ar": [
+          "البسوا حذاء رياضي مريح لأن فيه مشي صاعد قبل بداية الزبلاين.",
+          "مناسب أكثر للعائلات مع أطفال أكبر أو للي يبي متعة أكثر من الإثارة القصوى."
+        ]
+      },
+      "hook_ar": "Flying Hanuman — Phuket",
+      "caption": {
+        "instagram": "Flying Hanuman في Phuket 🇹🇭: الزبلاين هنا هو اللي ماسك التجربة: طاقم يخفف التوتر، وسلامة واضحة، وإطلالات حلوة وسط الغابة تخلي الزيارة ممتعة من أول خط للنهاية. فيه ملاحظة بسيطة إن بعض الباقات تطلع أخف أو أقصر من اللي يتوقعه بعض الناس، لكن للعوائل وال… نصيحة الزبدة: البسوا حذاء رياضي مريح لأن فيه مشي صاعد قبل بداية الزبلاين. · مناسب أكثر للعائلات مع أطفال أكبر أو للي يبي متعة أكثر من الإثارة القصوى. ✨",
+        "tiktok": "قبل ما تروح Flying Hanuman 📍 البسوا حذاء رياضي مريح لأن فيه مشي صاعد قبل بداية الزبلاين.",
+        "x": "Flying Hanuman (Phuket): الزبلاين هنا هو اللي ماسك التجربة: طاقم يخفف التوتر، وسلامة واضحة، وإطلالات حلوة وسط الغابة تخلي الزيارة ممتعة من أول خط للنهاية. فيه ملاحظة بسيطة إن بعض الباقات تطلع أخف أو أقصر من اللي يتوقعه بعض الناس، لكن للعوائل وال…"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#phuket",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of Flying Hanuman, with an Arabic tip overlay card \"البسوا حذاء رياضي مريح لأن فيه مشي صاعد قبل بداية الزبلاين.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a19cd79417f50fd35d4784c"
+      }
+    },
+    {
+      "id": "travel-famous-bali",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Bali",
+        "flag": "🇮🇩",
+        "highlights_ar": [
+          "مدرجات الأرز تيغالالانج",
+          "معبد تانا لوت",
+          "شاطئ سميناك",
+          "جبل أغونج"
+        ]
+      },
+      "hook_ar": "Bali 🇮🇩 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Bali 🇮🇩: جنة استوائية بأسعار معقولة. بالي وجهة أحلام — حقول أرز خضراء ومعابد هندوسية وشواطئ خلابة. أبرز الأماكن: مدرجات الأرز تيغالالانج، معبد تانا لوت، شاطئ سميناك، جبل أغونج. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Bali؟ مدرجات الأرز تيغالالانج، معبد تانا لوت، شاطئ سميناك، جبل أغونج 👀 والزبدة ترتبها لك يوم بيوم 🇮🇩",
+        "x": "Bali: مدرجات الأرز تيغالالانج، معبد تانا لوت، شاطئ سميناك، جبل أغونج. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇮🇩"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#bali",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/bali/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Bali, 1080x1350, featuring its famous landmarks (Tegallalang Rice Terraces, Tanah Lot Temple, Seminyak Beach). Arabic headline (Playfair, RTL): \"Bali — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Bali: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "bali"
+      }
+    },
+    {
+      "id": "travel-tip-bali",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Bali",
+        "attraction_ar": "Jatiluwih",
+        "tips_ar": [
+          "الأفضل تروح بدري الصباح عشان تتفادى الحر والزحمة.",
+          "خذ معك موية وواقي شمس وحذاء مريح للمشي."
+        ]
+      },
+      "hook_ar": "Jatiluwih — Bali",
+      "caption": {
+        "instagram": "Jatiluwih في Bali 🇮🇩: المدرجات هنا هي نجمة المكان: مناظر خضراء واسعة وهدوء يخليك تمشي وأنت مستمتع، خصوصاً إذا جيت بدري. المسارات واضحة غالباً، لكن بعض المقاطع فيها طلوع ونزول والحر وقت الظهر قد ما يساعد الكل، فالأفضل تنسق زيارتك على هالأساس. نصيحة الزبدة: الأفضل تروح بدري الصباح عشان تتفادى الحر والزحمة. · خذ معك موية وواقي شمس وحذاء مريح للمشي. ✨",
+        "tiktok": "قبل ما تروح Jatiluwih 📍 الأفضل تروح بدري الصباح عشان تتفادى الحر والزحمة.",
+        "x": "Jatiluwih (Bali): المدرجات هنا هي نجمة المكان: مناظر خضراء واسعة وهدوء يخليك تمشي وأنت مستمتع، خصوصاً إذا جيت بدري. المسارات واضحة غالباً، لكن بعض المقاطع فيها طلوع ونزول والحر وقت الظهر قد ما يساعد الكل، فالأفضل تنسق زيارتك على هالأساس."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#bali",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of Jatiluwih, with an Arabic tip overlay card \"الأفضل تروح بدري الصباح عشان تتفادى الحر والزحمة.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a19d9e1417f50fd35d4a343"
+      }
+    },
+    {
+      "id": "travel-famous-doha",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Doha",
+        "flag": "🇶🇦",
+        "highlights_ar": [
+          "متحف الفن الإسلامي",
+          "سوق واقف",
+          "اللؤلؤة",
+          "كتارا"
+        ]
+      },
+      "hook_ar": "Doha 🇶🇦 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Doha 🇶🇦: عاصمة عربية حديثة بمتاحف عالمية. الدوحة مدينة نظيفة وآمنة مع متحف الفن الإسلامي وسوق واقف. أبرز الأماكن: متحف الفن الإسلامي، سوق واقف، اللؤلؤة، كتارا. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Doha؟ متحف الفن الإسلامي، سوق واقف، اللؤلؤة، كتارا 👀 والزبدة ترتبها لك يوم بيوم 🇶🇦",
+        "x": "Doha: متحف الفن الإسلامي، سوق واقف، اللؤلؤة، كتارا. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇶🇦"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#doha",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/doha/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Doha, 1080x1350, featuring its famous landmarks (Museum of Islamic Art, Souq Waqif, The Pearl-Qatar). Arabic headline (Playfair, RTL): \"Doha — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Doha: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "doha"
+      }
+    },
+    {
+      "id": "travel-tip-doha",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Doha",
+        "attraction_ar": "Qatar Inbound Tours - Doha",
+        "tips_ar": [
+          "أنسب خيار للي يدور سفاري صحراوي مع سواق/مرشد يعرف للمكان ويضبط التصوير.",
+          "للعوائل، التجربة باينة عليها مريحة وسلسة ومناسبة بشكل ممتاز."
+        ]
+      },
+      "hook_ar": "Qatar Inbound Tours - Doha — Doha",
+      "caption": {
+        "instagram": "Qatar Inbound Tours - Doha في Doha 🇶🇦: التطعيس والغروب هم نجوم التجربة هنا، ومعهم مرشدين يعرفون يخلّون الرحلة سلسة وممتعة ويطلعون لك صور تضبط المزاج. الأجواء مناسبة للعوائل، والتنظيم واضح عليه قوي، بس بعض البرامج مليانة أنشطة لدرجة إنها تناسب اللي يحب الحركة… نصيحة الزبدة: أنسب خيار للي يدور سفاري صحراوي مع سواق/مرشد يعرف للمكان ويضبط التصوير. · للعوائل، التجربة باينة عليها مريحة وسلسة ومناسبة بشكل ممتاز. ✨",
+        "tiktok": "قبل ما تروح Qatar Inbound Tours - Doha 📍 أنسب خيار للي يدور سفاري صحراوي مع سواق/مرشد يعرف للمكان ويضبط التصوير.",
+        "x": "Qatar Inbound Tours - Doha (Doha): التطعيس والغروب هم نجوم التجربة هنا، ومعهم مرشدين يعرفون يخلّون الرحلة سلسة وممتعة ويطلعون لك صور تضبط المزاج. الأجواء مناسبة للعوائل، والتنظيم واضح عليه قوي، بس بعض البرامج مليانة أنشطة لدرجة إنها تناسب اللي يحب الحركة…"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#doha",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of Qatar Inbound Tours - Doha, with an Arabic tip overlay card \"أنسب خيار للي يدور سفاري صحراوي مع سواق/مرشد يعرف للمكان ويضبط التصوير.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a0b3517a43bbba1d063d377"
+      }
+    },
+    {
+      "id": "travel-famous-hanoi",
+      "type": "travel_famous",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Hanoi",
+        "flag": "🇻🇳",
+        "highlights_ar": [
+          "خليج هالونج",
+          "الحي القديم",
+          "بحيرة هوان كيم",
+          "ضريح هوشي منه"
+        ]
+      },
+      "hook_ar": "Hanoi 🇻🇳 — أشهر الأماكن اللي لازم تشوفها",
+      "caption": {
+        "instagram": "Hanoi 🇻🇳: عاصمة فيتنام التاريخية وبوابة خليج هالونج. هانوي أهدأ وأكثر تاريخاً من هوشي منه، مع حي قديم ساحر ومطبخ شمالي مميز. أبرز الأماكن: خليج هالونج، الحي القديم، بحيرة هوان كيم، ضريح هوشي منه. الزبدة ترتب لك كل يوم — وتدلّك على الحلال ✈️",
+        "tiktok": "وش تشوف في Hanoi؟ خليج هالونج، الحي القديم، بحيرة هوان كيم، ضريح هوشي منه 👀 والزبدة ترتبها لك يوم بيوم 🇻🇳",
+        "x": "Hanoi: خليج هالونج، الحي القديم، بحيرة هوان كيم، ضريح هوشي منه. الزبدة تبني لك الرحلة كاملة — حلال، يوم بيوم. ✈️🇻🇳"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#hanoi",
+        "#رحلتك_مرتبة",
+        "#سفر_حلال"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "https://images.alzbdh.com/travel_destinations/hanoi/hero.jpg",
+      "image_prompt": "Cinematic photoreal travel poster of Hanoi, 1080x1350, featuring its famous landmarks (Ha Long Bay, Old Quarter, Hoan Kiem Lake). Arabic headline (Playfair, RTL): \"Hanoi — عيشها مثل أهلها\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "12s vertical 9:16 reel of Hanoi: aerial of the famous landmarks, a young Saudi traveler, then a phone showing الزبدة day-by-day itinerary with halal badges (Concierge Pause beat). CTA \"خطط رحلتك\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "claims": "✅ real destination highlights from the app DB",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "hanoi"
+      }
+    },
+    {
+      "id": "travel-tip-hanoi",
+      "type": "travel_tip",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "destination": "Hanoi",
+        "attraction_ar": "Jinzo Escape",
+        "tips_ar": [
+          "تأكد مسبقاً إذا الغرفة اللي تبيها فيها دعم إنجليزي.",
+          "إذا كنت مبتدئ، توقع تحدي صعب وتلميحات قليلة."
+        ]
+      },
+      "hook_ar": "Jinzo Escape — Hanoi",
+      "caption": {
+        "instagram": "Jinzo Escape في Hanoi 🇻🇳: الألغاز هنا ذكية والجو المرعب هو اللي ماسك التجربة من أول دقيقة، خصوصاً إذا رحت مع أصحابك. بس اللغة قد ما تعجب الكل، لأن أكثر من مراجعة ذكرت إن الشرح والتلميحات مو دايم تساعد غير المتحدثين بالفيتنامية، فالحجز المناسب مهم… نصيحة الزبدة: تأكد مسبقاً إذا الغرفة اللي تبيها فيها دعم إنجليزي. · إذا كنت مبتدئ، توقع تحدي صعب وتلميحات قليلة. ✨",
+        "tiktok": "قبل ما تروح Jinzo Escape 📍 تأكد مسبقاً إذا الغرفة اللي تبيها فيها دعم إنجليزي.",
+        "x": "Jinzo Escape (Hanoi): الألغاز هنا ذكية والجو المرعب هو اللي ماسك التجربة من أول دقيقة، خصوصاً إذا رحت مع أصحابك. بس اللغة قد ما تعجب الكل، لأن أكثر من مراجعة ذكرت إن الشرح والتلميحات مو دايم تساعد غير المتحدثين بالفيتنامية، فالحجز المناسب مهم…"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#hanoi",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "Photoreal 1080x1350 of Jinzo Escape, with an Arabic tip overlay card \"تأكد مسبقاً إذا الغرفة اللي تبيها فيها دعم إنجليزي.\" in Readex Pro RTL. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real attraction gist + tips from the app DB",
+      "source": {
+        "collection": "travel_attractions",
+        "id": "6a19dc82417f50fd35d4ace4"
+      }
+    },
+    {
+      "id": "scam-avoid-istanbul",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Istanbul",
+        "flag": "🇹🇷",
+        "warnings_ar": [
+          "احذر من محلات الصرافة في تقسيم — استخدم الصرافات الرسمية",
+          "سائقي التاكسي قد يطوّلون الطريق — استخدم BiTaksi أو أوبر",
+          "لحم الخنزير موجود في بعض المطاعم — اسأل دائماً"
+        ]
+      },
+      "hook_ar": "رايح Istanbul؟ خذ بالك من هذي",
+      "caption": {
+        "instagram": "رايح Istanbul 🇹🇷؟ صاحبك اللي سافر يقولك: احذر من محلات الصرافة في تقسيم — استخدم الصرافات الرسمية الزبدة تحذّرك قبل لا تنصاب — بدون فزعة 🤝",
+        "tiktok": "قبل ما تسافر Istanbul 🛑 احذر من محلات الصرافة في تقسيم — استخدم الصرافات الرسمية #نصايح_سفر",
+        "x": "Istanbul — تحذيرات حقيقية: احذر من محلات الصرافة في تقسيم / سائقي التاكسي قد يطوّلون الطريق / لحم الخنزير موجود في بعض المطاعم. الزبدة معك. 🇹🇷"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر",
+        "#istanbul"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 trust/safety card for Istanbul: three stacked amber (#D4A017) warning rows in Readex Pro RTL — ⚠️ احذر من محلات الصرافة في تقسيم — استخدم الصرافات الرسمية / ⚠️ سائقي التاكسي قد يطوّلون الطريق — استخدم BiTaksi أو أوبر / ⚠️ لحم الخنزير موجود في بعض المطاعم — اسأل دائماً — under an Arabic Playfair headline \"رايح Istanbul؟ خذ بالك\". calm, not fear-mongering. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real honest_warnings_ar from the app DB; calm Saudi-friend tone, no fear-mongering",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "istanbul"
+      }
+    },
+    {
+      "id": "scam-avoid-bangkok",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Bangkok",
+        "flag": "🇹🇭",
+        "warnings_ar": [
+          "لا تركب توك توك بدون الاتفاق على السعر أولاً",
+          "أكل الشارع ممكن يكون فيه لحم خنزير أو صلصة سمك — اسأل أو استخدم مطاعم حلال",
+          "باتبونغ وسوي كاوسان فيها أجواء حياة ليلية — تجنبها إذا يزعجك"
+        ]
+      },
+      "hook_ar": "رايح Bangkok؟ خذ بالك من هذي",
+      "caption": {
+        "instagram": "رايح Bangkok 🇹🇭؟ صاحبك اللي سافر يقولك: لا تركب توك توك بدون الاتفاق على السعر أولاً الزبدة تحذّرك قبل لا تنصاب — بدون فزعة 🤝",
+        "tiktok": "قبل ما تسافر Bangkok 🛑 لا تركب توك توك بدون الاتفاق على السعر أولاً #نصايح_سفر",
+        "x": "Bangkok — تحذيرات حقيقية: لا تركب توك توك بدون الاتفاق على السعر أولاً / أكل الشارع ممكن يكون فيه لحم خنزير أو صلصة سمك / باتبونغ وسوي كاوسان فيها أجواء حياة ليلية. الزبدة معك. 🇹🇭"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر",
+        "#bangkok"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 trust/safety card for Bangkok: three stacked amber (#D4A017) warning rows in Readex Pro RTL — ⚠️ لا تركب توك توك بدون الاتفاق على السعر أولاً / ⚠️ أكل الشارع ممكن يكون فيه لحم خنزير أو صلصة سمك — اسأل أو استخدم مطاعم حلال / ⚠️ باتبونغ وسوي كاوسان فيها أجواء حياة ليلية — تجنبها إذا يزعجك — under an Arabic Playfair headline \"رايح Bangkok؟ خذ بالك\". calm, not fear-mongering. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real honest_warnings_ar from the app DB; calm Saudi-friend tone, no fear-mongering",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "bangkok"
+      }
+    },
+    {
+      "id": "scam-avoid-london",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "London",
+        "flag": "🇬🇧",
+        "warnings_ar": [
+          "التأشيرة تحتاج مقابلة شخصية وتستغرق ٣-٤ أسابيع — قدّم بدري",
+          "Oyster Card أو Contactless ضرورية — لا تشتري تذاكر مفردة (غالية جداً)",
+          "الطقس يتغير فجأة — دائماً خذ جاكيت ومظلة"
+        ]
+      },
+      "hook_ar": "رايح London؟ خذ بالك من هذي",
+      "caption": {
+        "instagram": "رايح London 🇬🇧؟ صاحبك اللي سافر يقولك: التأشيرة تحتاج مقابلة شخصية وتستغرق ٣-٤ أسابيع — قدّم بدري الزبدة تحذّرك قبل لا تنصاب — بدون فزعة 🤝",
+        "tiktok": "قبل ما تسافر London 🛑 التأشيرة تحتاج مقابلة شخصية وتستغرق ٣-٤ أسابيع — قدّم بدري #نصايح_سفر",
+        "x": "London — تحذيرات حقيقية: التأشيرة تحتاج مقابلة شخصية وتستغرق ٣-٤ أسابيع / Oyster Card أو Contactless ضرورية / الطقس يتغير فجأة. الزبدة معك. 🇬🇧"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر",
+        "#london"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 trust/safety card for London: three stacked amber (#D4A017) warning rows in Readex Pro RTL — ⚠️ التأشيرة تحتاج مقابلة شخصية وتستغرق ٣-٤ أسابيع — قدّم بدري / ⚠️ Oyster Card أو Contactless ضرورية — لا تشتري تذاكر مفردة (غالية جداً) / ⚠️ الطقس يتغير فجأة — دائماً خذ جاكيت ومظلة — under an Arabic Playfair headline \"رايح London؟ خذ بالك\". calm, not fear-mongering. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real honest_warnings_ar from the app DB; calm Saudi-friend tone, no fear-mongering",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "london"
+      }
+    },
+    {
+      "id": "scam-avoid-paris",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Paris",
+        "flag": "🇫🇷",
+        "warnings_ar": [
+          "ميزانية ١٥٠٠-٢٠٠٠ ريال/يوم كحد أدنى مريح في باريس",
+          "النشل في المترو وبرج إيفل حقيقي — احتفظ بأغراضك بإحكام",
+          "لحم الخنزير في كل مكان — اسأل دائماً عن المكونات"
+        ]
+      },
+      "hook_ar": "رايح Paris؟ خذ بالك من هذي",
+      "caption": {
+        "instagram": "رايح Paris 🇫🇷؟ صاحبك اللي سافر يقولك: ميزانية ١٥٠٠-٢٠٠٠ ريال/يوم كحد أدنى مريح في باريس الزبدة تحذّرك قبل لا تنصاب — بدون فزعة 🤝",
+        "tiktok": "قبل ما تسافر Paris 🛑 ميزانية ١٥٠٠-٢٠٠٠ ريال/يوم كحد أدنى مريح في باريس #نصايح_سفر",
+        "x": "Paris — تحذيرات حقيقية: ميزانية ١٥٠٠-٢٠٠٠ ريال/يوم كحد أدنى مريح في باريس / النشل في المترو وبرج إيفل حقيقي / لحم الخنزير في كل مكان. الزبدة معك. 🇫🇷"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر",
+        "#paris"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 trust/safety card for Paris: three stacked amber (#D4A017) warning rows in Readex Pro RTL — ⚠️ ميزانية ١٥٠٠-٢٠٠٠ ريال/يوم كحد أدنى مريح في باريس / ⚠️ النشل في المترو وبرج إيفل حقيقي — احتفظ بأغراضك بإحكام / ⚠️ لحم الخنزير في كل مكان — اسأل دائماً عن المكونات — under an Arabic Playfair headline \"رايح Paris؟ خذ بالك\". calm, not fear-mongering. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real honest_warnings_ar from the app DB; calm Saudi-friend tone, no fear-mongering",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "paris"
+      }
+    },
+    {
+      "id": "scam-avoid-tokyo",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Tokyo",
+        "flag": "🇯🇵",
+        "warnings_ar": [
+          "الرامن الياباني ٩٩% غير حلال (مرق لحم خنزير + ميرين)",
+          "السوشي أكثر أماناً لكن تأكد من عدم وجود ميرين في الأرز",
+          "حمّل تطبيق Halal Gourmet Japan — لا تأكل بدونه"
+        ]
+      },
+      "hook_ar": "رايح Tokyo؟ خذ بالك من هذي",
+      "caption": {
+        "instagram": "رايح Tokyo 🇯🇵؟ صاحبك اللي سافر يقولك: الرامن الياباني ٩٩% غير حلال (مرق لحم خنزير + ميرين) الزبدة تحذّرك قبل لا تنصاب — بدون فزعة 🤝",
+        "tiktok": "قبل ما تسافر Tokyo 🛑 الرامن الياباني ٩٩% غير حلال (مرق لحم خنزير + ميرين) #نصايح_سفر",
+        "x": "Tokyo — تحذيرات حقيقية: الرامن الياباني ٩٩% غير حلال (مرق لحم خنزير + ميرين) / السوشي أكثر أماناً لكن تأكد من عدم وجود ميرين في الأرز / حمّل تطبيق Halal Gourmet Japan. الزبدة معك. 🇯🇵"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر",
+        "#tokyo"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 trust/safety card for Tokyo: three stacked amber (#D4A017) warning rows in Readex Pro RTL — ⚠️ الرامن الياباني ٩٩% غير حلال (مرق لحم خنزير + ميرين) / ⚠️ السوشي أكثر أماناً لكن تأكد من عدم وجود ميرين في الأرز / ⚠️ حمّل تطبيق Halal Gourmet Japan — لا تأكل بدونه — under an Arabic Playfair headline \"رايح Tokyo؟ خذ بالك\". calm, not fear-mongering. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real honest_warnings_ar from the app DB; calm Saudi-friend tone, no fear-mongering",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "tokyo"
+      }
+    },
+    {
+      "id": "scam-avoid-dubai",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Dubai",
+        "flag": "🇦🇪",
+        "warnings_ar": [
+          "ميزانية ١٠٠٠-١٥٠٠ ريال/يوم كحد أدنى مريح للعائلة",
+          "أسعار الفنادق في رأس السنة وعيد الفطر تتضاعف",
+          "الكحول موجود في بارات الفنادق — تجنبها إذا يزعجك"
+        ]
+      },
+      "hook_ar": "رايح Dubai؟ خذ بالك من هذي",
+      "caption": {
+        "instagram": "رايح Dubai 🇦🇪؟ صاحبك اللي سافر يقولك: ميزانية ١٠٠٠-١٥٠٠ ريال/يوم كحد أدنى مريح للعائلة الزبدة تحذّرك قبل لا تنصاب — بدون فزعة 🤝",
+        "tiktok": "قبل ما تسافر Dubai 🛑 ميزانية ١٠٠٠-١٥٠٠ ريال/يوم كحد أدنى مريح للعائلة #نصايح_سفر",
+        "x": "Dubai — تحذيرات حقيقية: ميزانية ١٠٠٠-١٥٠٠ ريال/يوم كحد أدنى مريح للعائلة / أسعار الفنادق في رأس السنة وعيد الفطر تتضاعف / الكحول موجود في بارات الفنادق. الزبدة معك. 🇦🇪"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر",
+        "#dubai"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 trust/safety card for Dubai: three stacked amber (#D4A017) warning rows in Readex Pro RTL — ⚠️ ميزانية ١٠٠٠-١٥٠٠ ريال/يوم كحد أدنى مريح للعائلة / ⚠️ أسعار الفنادق في رأس السنة وعيد الفطر تتضاعف / ⚠️ الكحول موجود في بارات الفنادق — تجنبها إذا يزعجك — under an Arabic Playfair headline \"رايح Dubai؟ خذ بالك\". calm, not fear-mongering. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real honest_warnings_ar from the app DB; calm Saudi-friend tone, no fear-mongering",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "dubai"
+      }
+    },
+    {
+      "id": "scam-avoid-phuket",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Phuket",
+        "flag": "🇹🇭",
+        "warnings_ar": [
+          "تجنب باتونج تماماً إذا معك عائلة — اختر كامالا أو كاتا",
+          "موسم الأمطار (يونيو-سبتمبر) بعض الجزر تُغلق والبحر خطر",
+          "حذّر من رحلات القوارب الرخيصة — اختر شركات موثوقة (سلامة)"
+        ]
+      },
+      "hook_ar": "رايح Phuket؟ خذ بالك من هذي",
+      "caption": {
+        "instagram": "رايح Phuket 🇹🇭؟ صاحبك اللي سافر يقولك: تجنب باتونج تماماً إذا معك عائلة — اختر كامالا أو كاتا الزبدة تحذّرك قبل لا تنصاب — بدون فزعة 🤝",
+        "tiktok": "قبل ما تسافر Phuket 🛑 تجنب باتونج تماماً إذا معك عائلة — اختر كامالا أو كاتا #نصايح_سفر",
+        "x": "Phuket — تحذيرات حقيقية: تجنب باتونج تماماً إذا معك عائلة / موسم الأمطار (يونيو-سبتمبر) بعض الجزر تُغلق والبحر خطر / حذّر من رحلات القوارب الرخيصة. الزبدة معك. 🇹🇭"
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر",
+        "#phuket"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 trust/safety card for Phuket: three stacked amber (#D4A017) warning rows in Readex Pro RTL — ⚠️ تجنب باتونج تماماً إذا معك عائلة — اختر كامالا أو كاتا / ⚠️ موسم الأمطار (يونيو-سبتمبر) بعض الجزر تُغلق والبحر خطر / ⚠️ حذّر من رحلات القوارب الرخيصة — اختر شركات موثوقة (سلامة) — under an Arabic Playfair headline \"رايح Phuket؟ خذ بالك\". calm, not fear-mongering. dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real honest_warnings_ar from the app DB; calm Saudi-friend tone, no fear-mongering",
+      "source": {
+        "collection": "travel_destinations",
+        "id": "phuket"
+      }
+    },
+    {
+      "id": "scam-transfer-makkah",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Makkah",
+        "from_ar": "مطار الملك عبدالعزيز الدولي (جدة)",
+        "to_ar": "فندقك في مكة",
+        "recommended_ar": "سيارة خاصة",
+        "price_sar": 150,
+        "options": [
+          {
+            "name_ar": "سيارة خاصة",
+            "price_sar": 150
+          },
+          {
+            "name_ar": "نقل مشترك",
+            "price_sar": 50
+          }
+        ]
+      },
+      "hook_ar": "التاكسي من مطار الملك عبدالعزيز الدولي (جدة)؟ اعرف السعر الحقيقي قبل لا تركب",
+      "caption": {
+        "instagram": "مطار الملك عبدالعزيز الدولي (جدة) → فندقك في مكة: السعر الحقيقي 150 ريال (سيارة خاصة). لا تنصاب — الزبدة تقولك قبل لا تطلع من المطار 🚕💸",
+        "tiktok": "السعر الحقيقي للمشوار من مطار الملك عبدالعزيز الدولي (جدة): سيارة خاصة 150 ريال، نقل مشترك 50 ريال 🚕 لا تدفع أكثر.",
+        "x": "مطار الملك عبدالعزيز الدولي (جدة) → فندقك في مكة: سيارة خاصة 150 ريال، نقل مشترك 50 ريال. الزبدة تعطيك السعر الحقيقي قبل لا تركب."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 transfer-price card: route \"مطار الملك عبدالعزيز الدولي (جدة) → فندقك في مكة\" with real options سيارة خاصة 150 ريال، نقل مشترك 50 ريال in Readex Pro RTL, the recommended option highlighted teal. Arabic headline \"السعر الحقيقي قبل لا تركب\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real transfer prices (options.price_sar) from the app DB",
+      "source": {
+        "collection": "travel_transfers",
+        "id": "69e89c011302ffe9e1270c16"
+      }
+    },
+    {
+      "id": "scam-transfer-makkah",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Makkah",
+        "from_ar": "فندقك في مكة",
+        "to_ar": "مطار الملك عبدالعزيز الدولي (جدة)",
+        "recommended_ar": "سيارة خاصة",
+        "price_sar": 150,
+        "options": [
+          {
+            "name_ar": "سيارة خاصة",
+            "price_sar": 150
+          },
+          {
+            "name_ar": "نقل مشترك",
+            "price_sar": 50
+          }
+        ]
+      },
+      "hook_ar": "التاكسي من فندقك في مكة؟ اعرف السعر الحقيقي قبل لا تركب",
+      "caption": {
+        "instagram": "فندقك في مكة → مطار الملك عبدالعزيز الدولي (جدة): السعر الحقيقي 150 ريال (سيارة خاصة). لا تنصاب — الزبدة تقولك قبل لا تطلع من المطار 🚕💸",
+        "tiktok": "السعر الحقيقي للمشوار من فندقك في مكة: سيارة خاصة 150 ريال، نقل مشترك 50 ريال 🚕 لا تدفع أكثر.",
+        "x": "فندقك في مكة → مطار الملك عبدالعزيز الدولي (جدة): سيارة خاصة 150 ريال، نقل مشترك 50 ريال. الزبدة تعطيك السعر الحقيقي قبل لا تركب."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 transfer-price card: route \"فندقك في مكة → مطار الملك عبدالعزيز الدولي (جدة)\" with real options سيارة خاصة 150 ريال، نقل مشترك 50 ريال in Readex Pro RTL, the recommended option highlighted teal. Arabic headline \"السعر الحقيقي قبل لا تركب\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real transfer prices (options.price_sar) from the app DB",
+      "source": {
+        "collection": "travel_transfers",
+        "id": "69e89c011302ffe9e1270c17"
+      }
+    },
+    {
+      "id": "scam-transfer-makkah",
+      "type": "scam_avoid",
+      "campaign": "Scam Awareness",
+      "audience": "warm/high-intent retarget",
+      "lang": "ar",
+      "subject": {
+        "destination": "Makkah",
+        "from_ar": "مكة المكرمة",
+        "to_ar": "المدينة المنورة",
+        "recommended_ar": "سيارة خاصة",
+        "price_sar": 500,
+        "options": [
+          {
+            "name_ar": "سيارة خاصة",
+            "price_sar": 500
+          },
+          {
+            "name_ar": "باص سابتكو",
+            "price_sar": 80
+          },
+          {
+            "name_ar": "قطار الحرمين",
+            "price_sar": 150
+          }
+        ]
+      },
+      "hook_ar": "التاكسي من مكة المكرمة؟ اعرف السعر الحقيقي قبل لا تركب",
+      "caption": {
+        "instagram": "مكة المكرمة → المدينة المنورة: السعر الحقيقي 500 ريال (سيارة خاصة). لا تنصاب — الزبدة تقولك قبل لا تطلع من المطار 🚕💸",
+        "tiktok": "السعر الحقيقي للمشوار من مكة المكرمة: سيارة خاصة 500 ريال، باص سابتكو 80 ريال، قطار الحرمين 150 ريال 🚕 لا تدفع أكثر.",
+        "x": "مكة المكرمة → المدينة المنورة: سيارة خاصة 500 ريال، باص سابتكو 80 ريال، قطار الحرمين 150 ريال. الزبدة تعطيك السعر الحقيقي قبل لا تركب."
+      },
+      "hashtags": [
+        "#الزبدة",
+        "#سفر",
+        "#نصايح_سفر"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "1080x1350 transfer-price card: route \"مكة المكرمة → المدينة المنورة\" with real options سيارة خاصة 500 ريال، باص سابتكو 80 ريال، قطار الحرمين 150 ريال in Readex Pro RTL, the recommended option highlighted teal. Arabic headline \"السعر الحقيقي قبل لا تركب\". dark green (#1d3b2c) background, cream (#FDFBF7) card, teal (#0E7C7B) accents, amber (#D4A017) for caution, green (#16864F) for verified-halal, Playfair Display headline + Readex Pro Arabic (RTL), ~70% whitespace, 1080x1350, English numerals.",
+      "video_prompt": "",
+      "claims": "✅ real transfer prices (options.price_sar) from the app DB",
+      "source": {
+        "collection": "travel_transfers",
+        "id": "69e89c011302ffe9e1270c18"
+      }
+    },
+    {
+      "id": "concept-ad-01",
+      "type": "concept_ad",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "ad": 1,
+        "title": "\"Google Confusion\" (Hook)"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "كل ما أبي مكان بالرياض أدخل قوقل وأطلع أتعب أكثر 😮‍💨 فيه حل أسهل"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "افتح الخريطة",
+      "source_image": "",
+      "image_prompt": "premium minimalist app advertisement, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"قوقل حيّرني. 200 خيار… ولا قرار.\"\nsubheadline in Readex Pro 400: \"الزبدة؟ تعطيك الأفضل.\"\n\nCENTER: split composition —\nLEFT: blurred chaotic Google Maps screenshot with dozens of red pins,\nRIGHT: clean الزبدة app interface showing 3 curated place cards,\neach with Arabic name + Z-Score badge + one-line AI gist,\nteal (#0E7C7B) accent highlights on cream (#FDFBF7) cards,\nsubtle arrow/transition from chaos to clarity,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"افتح الخريطة\"\nالزبدة logo + \"الزبدة\" text centered below,\n\ndark green (#1d3b2c) background,\nRiyadh skyline silhouette at bottom edge,\npremium tech brand feel, no clutter, 8k",
+      "video_prompt": "vertical 9:16 video, 9–12 seconds, fast-paced social media ad,\n\nSCENE 1 (0–4s): young Saudi man in thobe sitting in modern Riyadh cafe at night,\nholding iPhone, frustrated expression scrolling Google Maps,\ntext overlay (Readex Pro, white): \"قوقل حيّرني. 200 خيار… ولا قرار.\"\n\nSCENE 2 (4–9s): same man smiling, opens الزبدة app,\nscreen shows clean list with Arabic Z-Score badges and AI gist summaries,\ntext overlay: \"الزبدة؟ تعطيك الأفضل — والباقي تفاصيل.\"\nteal (#0E7C7B) accent color on UI elements,\n\nSCENE 3 (9–12s): end card — dark green (#1d3b2c) background,\nالزبدة logo centered, CTA button: \"افتح الخريطة\" in teal button with cream text,\n\nRiyadh Boulevard lights in background through window,\ncinematic but social-media authentic,\nnatural warm lighting, shallow depth of field,\nsmooth 2-second transition between frustration and relief,\nReadex Pro Arabic typography throughout\n\nPost caption: كل ما أبي مكان بالرياض أدخل قوقل وأطلع أتعب أكثر 😮‍💨 فيه حل أسهل",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 1
+      }
+    },
+    {
+      "id": "concept-ad-02",
+      "type": "concept_ad",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "ad": 2,
+        "title": "\"Locate Me Power\""
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "ما تحتاج تسأل أحد. افتح الزبدة وهي تدلّك 📍"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "جرّب الخريطة الآن",
+      "source_image": "",
+      "image_prompt": "premium app showcase, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"أنا هنا. وش الأفضل حولي؟\"\nsubheadline in Readex Pro 400: \"افتح موقعك… وخلاص.\"\n\nCENTER: iPhone centered displaying الزبدة map interface,\nGPS pulse ring around user location pin (teal #0E7C7B),\n6–8 category-colored pins radiating outward (cafes, restaurants, entertainment),\none place card expanded: Arabic name + Z-Score + \"سبيشلتي ممتاز 👌\" gist,\ncream (#FDFBF7) card floating over map,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"جرّب الخريطة الآن\"\nالزبدة logo + \"الزبدة\" text centered below,\n\ndark green (#1d3b2c) background,\nRiyadh evening skyline softly blurred behind phone,\npremium product showcase feel, 8k",
+      "video_prompt": "screen demo reel, 10 seconds, vertical 9:16,\n\nSCENE 1 (0–3s): cinematic smartphone screen recording style,\nclean الزبدة app interface zooming into Riyadh map,\ntext overlay (Readex Pro, white): \"أنا هنا. وش الأفضل حولي؟\"\n\nSCENE 2 (3–7s): animated pins appear around user location with category icons,\nuser taps cafe pin — summary card slides up showing:\n  Arabic name, Z-Score badge, one-line AI gist,\nteal (#0E7C7B) accent pins on cream (#FDFBF7) card,\n\nSCENE 3 (7–10s): text overlay: \"افتح موقعك… وخلاص.\"\nend card — الزبدة logo, CTA button: \"جرّب الخريطة الآن\" in teal,\n\nurban Riyadh evening softly blurred behind phone mockup,\nwarm golden hour tones, premium product demo feel,\nReadex Pro Arabic typography throughout\n\nPost caption: ما تحتاج تسأل أحد. افتح الزبدة وهي تدلّك 📍",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 2
+      }
+    },
+    {
+      "id": "concept-ad-03",
+      "type": "concept_ad",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "ad": 3,
+        "title": "\"Pin مو بس Pin\" (Z-Score)"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "كل مكان عليه زبدة صريحة — وش الحلو ووش السيء. بدون مجاملة 💯"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "اكتشف أماكن الرياض",
+      "source_image": "",
+      "image_prompt": "premium 3-panel showcase, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"الخريطة تعطيك أماكن. الزبدة تعطيك الزبدة.\"\n\nCENTER: 3 stacked place cards on dark green (#1d3b2c) background,\neach card on cream (#FDFBF7) with rounded corners:\n\nCard 1: بروز كافيه — Z-Score badge (teal),\n  AI gist: \"سبيشلتي ممتاز والأجواء هادية 👌\"\n  teal (#0E7C7B) positive accent line on left,\n\nCard 2: ماما نوره — Z-Score badge,\n  AI gist: \"أكل بيتي والكمية تكفي عيلة كاملة 👨‍👩‍👧\"\n  teal positive accent line,\n\nCard 3: كانديرا — Z-Score badge,\n  AI gist: \"رومانسي بس الأسعار مرتفعة شوي ⚠️\"\n  amber (#D4A017) caution accent line on left,\n\ncards slightly overlapping with depth shadow,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"اكتشف أماكن الرياض\"\nالزبدة logo + \"الزبدة\" text centered below,\n\nminimal premium layout, 8k",
+      "video_prompt": "dynamic vertical 9:16 video, 15 seconds, 3-part montage,\n\nINTRO (0–2s): text overlay (Playfair Display, white on dark):\n\"الخريطة تعطيك أماكن. الزبدة تعطيك الزبدة.\"\n\nSEGMENT 1 (2–5s): بروز كافيه exterior in Riyadh,\nAI summary overlay card: \"سبيشلتي ممتاز والأجواء هادية 👌\"\nArabic text with teal (#0E7C7B) highlight for positive,\n\nSEGMENT 2 (5–8s): ماما نوره restaurant exterior,\nAI summary overlay card: \"أكل بيتي والكمية تكفي عيلة كاملة 👨‍👩‍👧\"\n\nSEGMENT 3 (8–11s): كانديرا exterior,\nAI summary overlay card: \"رومانسي بس الأسعار مرتفعة شوي ⚠️\"\namber highlight for caution,\n\nEND (11–15s): الزبدة logo on dark green (#1d3b2c) background,\nCTA button: \"اكتشف أماكن الرياض\" in teal with cream text,\n\nfast but readable transitions (3s each),\nnight city vibes, warm interior lighting visible through windows,\nclean Readex Pro typography throughout\n\nPost caption: كل مكان عليه زبدة صريحة — وش الحلو ووش السيء. بدون مجاملة 💯",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 3
+      }
+    },
+    {
+      "id": "concept-ad-04",
+      "type": "concept_ad",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "ad": 4,
+        "title": "\"Save It Now\""
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "كل مكان حلو بالرياض — في مكان واحد ❤️"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "ابدأ قائمتك",
+      "source_image": "",
+      "image_prompt": "premium app feature showcase, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"احفظها الحين. بترجع لها.\"\n\nCENTER: iPhone displaying الزبدة favorites list,\n4 saved Riyadh place cards stacked vertically:\neach with thumbnail image, Arabic name, Z-Score badge, one-line gist,\nheart icon filled with teal (#0E7C7B) on each card,\ncream (#FDFBF7) card backgrounds with soft shadows,\ntop card slightly pulled out with finger-tap gesture indicator,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"ابدأ قائمتك\"\nالزبدة logo + \"الزبدة\" text centered below,\n\ndark green (#1d3b2c) background,\ncozy warm lighting feel,\npremium product feature highlight, 8k",
+      "video_prompt": "short demo, 8 seconds, vertical 9:16,\n\nSCENE 1 (0–2s): text overlay (Readex Pro, white):\n\"احفظها الحين. بترجع لها.\"\n\nSCENE 2 (2–5s): close-up smartphone interaction,\nthumb taps heart icon on place card with بروز كافيه,\nheart fills with teal (#0E7C7B) color, subtle pulse animation,\n\nSCENE 3 (5–7s): favorites list showing 4 saved Riyadh places with thumbnails,\neach with Z-Score badge and one-line gist preview,\n\nEND (7–8s): الزبدة logo, CTA button: \"ابدأ قائمتك\" in teal,\n\ncozy indoor cafe environment, warm lighting,\nReadex Pro Arabic typography throughout,\npremium product demo style\n\nPost caption: كل مكان حلو بالرياض — في مكان واحد ❤️",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 4
+      }
+    },
+    {
+      "id": "concept-ad-05",
+      "type": "concept_ad",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "ad": 5,
+        "title": "\"Share Without Explaining\""
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "بدال ما تكتب ٥ رسائل وتشرح المكان… شارك البطاقة وخلاص 🔗"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "شارك الزبدة",
+      "source_image": "",
+      "image_prompt": "social sharing concept, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"صاحبك يسألك وين نروح؟\"\nsubheadline in Readex Pro 400: \"ما يحتاج شرح. شاركها وخلاص.\"\n\nCENTER: two phones side by side on dark green (#1d3b2c) background,\nLEFT phone: WhatsApp chat showing friend asking \"وين نروح الليلة؟\",\nRIGHT phone: الزبدة app with share button highlighted,\nfloating between them: shared place card preview showing:\n  place photo + Arabic name + Z-Score + one-line gist,\n  teal (#0E7C7B) share icon with curved arrow connecting both phones,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"شارك الزبدة\"\nالزبدة logo + \"الزبدة\" text centered below,\n\nmodern Riyadh night vibes in soft background,\npremium social lifestyle feel, 8k",
+      "video_prompt": "short reel, 8 seconds, vertical 9:16,\n\nSCENE 1 (0–3s): young Saudi man in car at night,\nphone notification: friend texts \"وين نروح الليلة؟\",\ntext overlay (Readex Pro): \"صاحبك يسألك وين نروح؟\"\n\nSCENE 2 (3–6s): opens الزبدة app, taps share on سيركولو بوبولاري card,\nWhatsApp share sheet appears, card preview shows:\n  photo + name + Z-Score + one-line gist,\ntext overlay: \"ما يحتاج شرح. شاركها وخلاص.\"\n\nSCENE 3 (6–8s): friend replies with 🔥 emoji,\nend card — الزبدة logo, CTA button: \"شارك الزبدة\" in teal,\n\nmodern Riyadh city lights through car window,\nnatural phone screen glow, authentic social vibe,\nReadex Pro Arabic typography throughout\n\nPost caption: بدال ما تكتب ٥ رسائل وتشرح المكان… شارك البطاقة وخلاص 🔗",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 5
+      }
+    },
+    {
+      "id": "concept-ad-06",
+      "type": "concept_ad",
+      "campaign": "Riyadh Map",
+      "lang": "ar",
+      "subject": {
+        "ad": 6,
+        "title": "Premium Static (Instagram 4:5)"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "خريطة الرياض بعيون الزبدة — أماكن مجرّبة وآراء صريحة 📍"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "اكتشف الحين",
+      "source_image": "",
+      "image_prompt": "premium minimalist app advertisement, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"افتح الخريطة… وخلاص.\"\nsubheadline in Readex Pro 400: \"أماكن الرياض مع زبدة صريحة.\"\n\nCENTER: smartphone centered displaying الزبدة app map interface,\nteal (#0E7C7B) accent pins on light map,\none place card expanded showing Arabic name + Z-Score + gist,\nRiyadh Kingdom Tower softly blurred in background,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"اكتشف الحين\"\nالزبدة logo + \"الزبدة\" text centered below,\n\ndark green (#1d3b2c) background around phone,\ncream (#FDFBF7) card elements,\nluxury tech brand feel, no clutter, 8k",
+      "video_prompt": "vertical 9:16 video, 10 seconds, premium app showcase,\n\nSCENE 1 (0–3s): cinematic overhead shot of Riyadh at night,\ncamera dives down toward illuminated streets,\ntext overlay (Playfair Display, cream): \"افتح الخريطة… وخلاص.\"\n\nSCENE 2 (3–7s): smooth zoom into الزبدة app on smartphone,\nmap interface loads with animated teal (#0E7C7B) pins appearing,\nuser taps a pin — place card slides up showing:\n  Arabic name, Z-Score badge, AI gist summary,\ntext overlay (Readex Pro): \"أماكن الرياض مع زبدة صريحة.\"\n\nSCENE 3 (7–10s): card expands showing full details with pros/cons,\npull back to reveal Riyadh skyline behind phone,\nend card — dark green (#1d3b2c) background,\nالزبدة logo centered, CTA button: \"اكتشف الحين\" in teal,\n\nKingdom Tower and Boulevard visible in aerial shot,\ncinematic warm golden lighting, smooth camera movements,\nReadex Pro Arabic typography throughout\n\nPost caption: خريطة الرياض بعيون الزبدة — أماكن مجرّبة وآراء صريحة 📍",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 6
+      }
+    },
+    {
+      "id": "concept-ad-07",
+      "type": "concept_ad",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "ad": 7,
+        "title": "Vietnam Immersive Poster"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "فيتنام مو بس فو وقهوة. الزبدة ترتب لك كل يوم — وتدلّك على المطاعم الحلال ✈️🇻🇳"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "خطّطها في الزبدة",
+      "source_image": "",
+      "image_prompt": "cinematic travel poster, photorealistic, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, white text with subtle shadow:\n\"VIETNAM — عيشها مثل أهلها.\"\n\nCENTER: Hanoi Old Quarter lantern-lit street at golden hour,\nyoung Saudi traveler in casual modern clothes walking confidently,\nstreet food stalls and motorbikes softly blurred,\nwarm gold and teal color grading,\n\nBOTTOM BAR: semi-transparent dark green (#1d3b2c) overlay,\nCTA button: \"خطّطها في الزبدة\" in teal (#0E7C7B) with cream text,\nالزبدة logo + \"الزبدة\" text centered,\n\nluxury travel campaign aesthetic,\nrich saturated tones, 8k resolution\n\nPost caption: فيتنام مو بس فو وقهوة. الزبدة ترتب لك كل يوم — وتدلّك على المطاعم الحلال ✈️🇻🇳",
+      "video_prompt": "vertical cinematic travel video, 12 seconds, 9:16,\n\nSCENE 1 (0–3s): aerial drone shot of Hanoi Old Quarter at golden hour,\nlantern-lit streets, motorbikes flowing like rivers,\ntext overlay (Playfair Display, white with shadow): \"VIETNAM\"\n\nSCENE 2 (3–6s): young Saudi traveler walking through vibrant street market,\ntrying local street food at a stall, smiling,\ntext overlay (Readex Pro): \"عيشها مثل أهلها.\"\n\nSCENE 3 (6–9s): traveler opens الزبدة app on phone,\nday-by-day itinerary visible: Day 1 activities listed,\nhalal badge on restaurant entry, AI gist visible,\nteal (#0E7C7B) accents on cream (#FDFBF7) cards,\n\nSCENE 4 (9–10s): montage — Ha Long Bay, coffee drip, temple visit,\n\nEND (10–12s): dark green (#1d3b2c) background,\nالزبدة logo centered, CTA button: \"خطّطها في الزبدة\" in teal,\n\nwarm golden tones, cinematic shallow depth of field,\nVietnamese ambient sounds implied,\nReadex Pro Arabic typography throughout\n\nPost caption: فيتنام مو بس فو وقهوة. الزبدة ترتب لك كل يوم — وتدلّك على المطاعم الحلال ✈️🇻🇳",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 7
+      }
+    },
+    {
+      "id": "concept-ad-08",
+      "type": "concept_ad",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "ad": 8,
+        "title": "Istanbul Immersive"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "إسطنبول غير لما تخطط صح: فنادق حلال، مطاعم موثقة، وزبدة صريحة لكل مكان. الزبدة ترتبها لك ✈️"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "خطط رحلتك",
+      "source_image": "",
+      "image_prompt": "cinematic travel poster, photorealistic, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, white text with subtle shadow:\n\"ISTANBUL — عِشها كأنك واحد منهم.\"\n\nCENTER: Istanbul sunset from Galata Tower viewpoint,\nBosphorus and mosques visible in golden light,\nSaudi family (couple + child) on terrace enjoying Turkish tea,\nwarm stained glass lighting from nearby lamp,\nshallow depth of field,\n\nBOTTOM BAR: semi-transparent dark green (#1d3b2c) overlay,\nCTA button: \"خطط رحلتك\" in teal (#0E7C7B) with cream text,\nالزبدة logo + \"الزبدة\" text centered,\n\nluxury travel poster aesthetic, 8k\n\nPost caption: إسطنبول غير لما تخطط صح: فنادق حلال، مطاعم موثقة، وزبدة صريحة لكل مكان. الزبدة ترتبها لك ✈️",
+      "video_prompt": "vertical cinematic travel video, 12 seconds, 9:16,\n\nSCENE 1 (0–3s): sweeping aerial of Istanbul at sunset,\nHagia Sophia and Blue Mosque silhouettes against golden sky,\ntext overlay (Playfair Display, white with shadow): \"ISTANBUL\"\n\nSCENE 2 (3–6s): Saudi family on rooftop terrace overlooking Bosphorus,\nfather pours Turkish tea, child points at passing ferry,\ntext overlay (Readex Pro): \"عِشها كأنك واحد منهم.\"\n\nSCENE 3 (6–9s): mother opens الزبدة app,\nitinerary card shows: Day 2 — Sultanahmet area activities,\nhalal badge on restaurant, hotel card with halal amenities listed,\nteal (#0E7C7B) accents on cream (#FDFBF7) cards,\n\nSCENE 4 (9–10s): quick montage — Grand Bazaar, Bosphorus cruise, street simit vendor,\n\nEND (10–12s): dark green (#1d3b2c) background,\nالزبدة logo centered, CTA button: \"خطط رحلتك\" in teal,\n\nwarm golden hour lighting throughout,\nfamily-friendly warm atmosphere,\nReadex Pro Arabic typography throughout\n\nPost caption: إسطنبول غير لما تخطط صح: فنادق حلال، مطاعم موثقة، وزبدة صريحة لكل مكان. الزبدة ترتبها لك ✈️",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 8
+      }
+    },
+    {
+      "id": "concept-ad-09",
+      "type": "concept_ad",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "ad": 9,
+        "title": "\"Stop Traveling Like a Tourist\""
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "السياح يروحون نفس الأماكن. الزبدة تخطط لك أماكن ما تلقاها بقوقل 🗺️"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "خطط رحلتك مجاناً",
+      "source_image": "",
+      "image_prompt": "bold bilingual travel poster, 1080x1350 (4:5 vertical),\n\nTOP: bold English headline in Playfair Display 800, cream (#FDFBF7):\n\"Stop traveling like a tourist.\"\nArabic headline below in Readex Pro 600:\n\"عِشها مثل أهلها.\"\n\nCENTER: split composition —\nTOP HALF: crowded tourist landmark (generic European square),\ndesaturated, slightly dull color grading,\nsmall text label: \"السياح\" in muted gray,\n\nBOTTOM HALF: hidden local alley with authentic tea shop,\nwarm saturated golden tones, vibrant and inviting,\nsmall text label: \"أهل البلد\" in teal (#0E7C7B),\n\nthin teal dividing line between both halves,\niPhone in center overlap showing الزبدة itinerary with local spots,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"خطط رحلتك مجاناً\"\nالزبدة logo + \"الزبدة\" text centered below,\n\ndark green (#1d3b2c) background frame,\npremium travel campaign feel, 8k",
+      "video_prompt": "vertical cinematic travel montage, 15 seconds, 9:16,\n\nSCENE 1 (0–3s): tourist crowd at famous landmark (generic, overcrowded),\ntext overlay (bold English, white): \"Stop traveling like a tourist.\"\n\nSCENE 2 (3–6s): cut to narrow hidden alley, local tea shop, authentic market,\ntext overlay (Playfair Display, Arabic): \"عِشها مثل أهلها.\"\n\nSCENE 3 (6–10s): confident young Saudi traveler exploring local area with phone,\ntext overlay (Readex Pro): \"الزبدة ترتبها لك — كل يوم، من الصبح للمسا.\"\n\nSCENE 4 (10–12s): phone screen shows الزبدة day-by-day itinerary,\nhalal badges visible on restaurant entries, activity gists visible,\n\nEND (12–15s): end card — cream (#FDFBF7) background,\nالزبدة logo centered, CTA button: \"خطط رحلتك مجاناً\" in teal,\n\nwarm golden light throughout, smooth slow motion,\nArabic + English typography fade-in,\npremium documentary style\n\nPost caption: السياح يروحون نفس الأماكن. الزبدة تخطط لك أماكن ما تلقاها بقوقل 🗺️",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 9
+      }
+    },
+    {
+      "id": "concept-ad-10",
+      "type": "concept_ad",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "ad": 10,
+        "title": "Before / After Travel"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "نفس الوجهة. بس التخطيط فرق. جرّب الزبدة ✈️"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "جرّب الفرق",
+      "source_image": "",
+      "image_prompt": "premium before-after comparison poster, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"نفس الرحلة. تخطيط مختلف.\"\nsubheadline in Readex Pro 400:\n\"بدون الزبدة / مع الزبدة\"\n\nCENTER: split layout with strong contrast,\nLEFT side: messy phone screen collage with 37 open tabs, WhatsApp voice notes,\nNotes app with broken links, search text \"حلال؟؟؟\", red/amber stress accents,\nRIGHT side: clean iPhone showing الزبدة itinerary interface,\nDay-by-day cards, halal badges, destination match score, pre-flight checklist,\nteal (#0E7C7B) highlights and cream cards,\n\nthin glowing teal divider between both sides,\nsmall labels above each side:\n\"بدون الزبدة\" / \"مع الزبدة\"\n\nBOTTOM: CTA button — teal background, cream text:\n\"جرّب الفرق\"\nالزبدة logo centered below,\ndark green (#1d3b2c) background frame,\nhigh-end premium SaaS ad aesthetic, 8k",
+      "video_prompt": "split-screen vertical video, 12 seconds, 9:16, satisfying left-to-right reveal,\n\nLEFT SIDE \"بدون الزبدة\" (0–6s):\nchaotic phone screen — 37 open tabs, Notes app with broken links,\nWhatsApp voice notes piling up, \"حلال؟؟؟\" search with no answers,\nstressed person face in corner, warm harsh lighting,\n\nRIGHT SIDE \"مع الزبدة\" (wipe reveal at 6s):\nclean الزبدة itinerary — cream (#FDFBF7) cards, teal (#0E7C7B) accents,\nhalal badges on restaurants, destination scoring with match %,\nزبده gist with honest pros/cons, pre-flight checklist,\ncalm person face in corner, soft natural lighting,\n\nEND (10–12s): end card — dark green (#1d3b2c) background,\ntext (Playfair Display): \"نفس الرحلة. تخطيط مختلف.\"\nالزبدة logo, CTA button: \"جرّب الفرق\" in teal,\n\nsmooth 2-second wipe transition,\nReadex Pro Arabic typography throughout\n\nPost caption: نفس الوجهة. بس التخطيط فرق. جرّب الزبدة ✈️",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 10
+      }
+    },
+    {
+      "id": "concept-ad-11",
+      "type": "concept_ad",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "ad": 11,
+        "title": "AI Companion Angle"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "سألته ٤ أسئلة وطلع لي جدول ٥ أيام بإسطنبول: فنادق حلال، مطاعم، وزبدة صريحة لكل مكان. مجاناً. 🤖"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "جرّب الذكاء الاصطناعي",
+      "source_image": "",
+      "image_prompt": "premium AI travel planning poster, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream text, RTL:\n\"مو AI يتفلسف. AI يخطط.\"\nsubheadline in Readex Pro 400:\n\"٤ أسئلة — رحلة كاملة.\"\n\nCENTER: iPhone centered on dark green (#1d3b2c) background,\nscreen shows الزبدة AI chat interface:\nuser input: \"أبي رحلة عائلية لتركيا ٥ أيام\"\nbelow it, 4 wizard cards answered,\nthen destination recommendation card:\n\"إسطنبول — 94% مناسب لك\"\nhalal badge visible, AI itinerary preview below,\nteal (#0E7C7B) accents, cream (#FDFBF7) cards, soft glow around phone,\n\nBOTTOM: CTA button — teal background, cream text:\n\"جرّب الذكاء الاصطناعي\"\nالزبدة logo centered below,\nminimal high-end AI product ad style, 8k",
+      "video_prompt": "premium tech ad, 12 seconds, vertical 9:16,\n\nSCENE 1 (0–3s): text overlay (Readex Pro, bold): \"مو AI يتفلسف. AI يخطط.\"\ntyping prompt in الزبدة chat: \"أبي رحلة عائلية لتركيا ٥ أيام\",\n\nSCENE 2 (3–6s): AI responds with wizard cards — quick taps through 4 selections,\ntext overlay: \"٤ أسئلة — رحلة كاملة.\"\n\nSCENE 3 (6–9s): destination recommendations appear with match scores,\nإسطنبول card showing 94% match, halal badge, destination score,\n\nSCENE 4 (9–11s): full itinerary scrolls — hotels, activities, halal badges, AI gists,\nDay 1 card with morning/afternoon/evening activities visible,\n\nEND (11–12s): end card — dark green (#1d3b2c) background,\ntext (Playfair Display): \"AI يخطط.\"\nالزبدة logo, CTA button: \"جرّب الذكاء الاصطناعي\" in teal,\n\nairport lounge background softly blurred,\nteal (#0E7C7B) UI accents on cream (#FDFBF7) cards,\nReadex Pro Arabic typography, smooth animations\n\nPost caption: سألته ٤ أسئلة وطلع لي جدول ٥ أيام بإسطنبول: فنادق حلال، مطاعم، وزبدة صريحة لكل مكان. مجاناً. 🤖",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 11
+      }
+    },
+    {
+      "id": "concept-ad-12",
+      "type": "concept_ad",
+      "campaign": "Travel Immersive",
+      "lang": "ar",
+      "subject": {
+        "ad": 12,
+        "title": "Ultra Premium Minimal"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": ""
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "جرّب الزبدة",
+      "source_image": "",
+      "image_prompt": "minimal luxury advertisement, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text:\n\"رحلتك، مرتبة.\"\nsubheadline in Readex Pro 400, smaller: \"Travel. Refined.\"\ntagline below: \"من الفكرة لآخر يوم — مجاناً.\"\n\nCENTER: single iPhone centered on dark green (#1d3b2c) background,\nscreen shows الزبدة itinerary interface:\n  Day 1 card with morning/afternoon/evening activities,\n  halal badge visible on restaurant entry,\n  زبده gist summary visible on activity,\nsoft golden rim light on phone edges,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"جرّب الزبدة\"\nالزبدة logo + \"الزبدة\" text centered below,\n\nzero clutter, premium brand aesthetic, 8k",
+      "video_prompt": "ultra-premium brand film, vertical 9:16 video, 10–12 seconds,\n\nSCENE 1 (0–3s): dark green (#1d3b2c) background, soft spotlight slowly reveals iPhone silhouette,\nminimal text fade-in (Playfair Display, cream):\n\"رحلتك، مرتبة.\"\nsmall English line beneath: \"Travel. Refined.\"\n\nSCENE 2 (3–7s): phone screen wakes up elegantly,\nsmooth slow scroll through الزبدة itinerary:\nDay 1 morning / afternoon / evening,\nhalal badge on restaurant entry,\nclean AI gist card, refined teal (#0E7C7B) accents,\n\nSCENE 3 (7–10s): close-up macro shots of interface details,\ndestination score badge, checklist item checked, elegant card transitions,\ntext overlay (Readex Pro): \"من الفكرة لآخر يوم — مجاناً.\"\n\nEND (10–12s): minimalist end card,\nالزبدة logo centered, CTA button: \"جرّب الزبدة\" in teal with cream text,\nluxury ambient sound vibe implied, cinematic soft shadows,\nno clutter, premium Apple-style motion language",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 12
+      }
+    },
+    {
+      "id": "concept-ad-13",
+      "type": "concept_ad",
+      "campaign": "Scam Awareness",
+      "lang": "ar",
+      "subject": {
+        "ad": 13,
+        "title": "\"التاكسي المشبوه\" (Taxi Trap)"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "أول يوم بالرحلة وانصبت بالتاكسي؟ مو لازم. الزبدة تعطيك السعر الحقيقي قبل لا تطلع من المطار 🚕💸"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "خطط رحلتك صح",
+      "source_image": "",
+      "image_prompt": "premium travel warning poster, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream text, RTL:\n\"٥٠ يورو؟ المفروض ١٥.\"\nsubheadline in Readex Pro 400:\n\"الزبدة تقولك السعر الحقيقي قبل لا تركب.\"\n\nCENTER: split visual —\nLEFT: airport taxi stand at night, suspicious taxi driver, red warning atmosphere,\nprice board floating: \"٥٠ يورو\"\nRIGHT: iPhone showing الزبدة transfer price card:\n\"المطار → الفندق: ١٥–١٨ يورو\"\nwarning note: \"تجنب التاكسي خارج الصالة\"\nteal (#0E7C7B) accents on cream cards,\nsmall amber alert icon beside misleading fare,\n\nBOTTOM: CTA button:\n\"خطط رحلتك صح\"\nالزبدة logo centered below,\ndark green (#1d3b2c) premium background,\ntrust-building high-contrast travel safety creative, 8k",
+      "video_prompt": "vertical 9:16 video, 12 seconds, social media ad,\n\nSCENE 1 (0–3s): Saudi traveler at airport exit at night,\ntaxi driver gesturing aggressively, meter shows inflated price,\ntext overlay (Readex Pro, bold white): \"التاكسي من المطار: ٥٠ يورو. قوقل يقول: ١٥.\"\nred warning tint on screen edges,\n\nSCENE 2 (3–7s): text overlay with empathy:\n\"انصابت؟ عادي، كلنا مرينا فيها.\"\nquick montage: confused tourist at taxi stand, phone showing different prices,\n\nSCENE 3 (7–10s): same traveler now calm, opens الزبدة app,\ntransfer route card shows: \"المطار → الفندق: ١٥–١٨ يورو (متوسط)\"\nwith warning badge: \"⚠️ تجنب التاكسي خارج الصالة — استخدم التطبيق\"\ntext overlay: \"الزبدة تقولك السعر الحقيقي — قبل لا تركب.\"\nteal (#0E7C7B) accents on cream (#FDFBF7) card,\n\nEND (10–12s): dark green (#1d3b2c) background,\nالزبدة logo centered, CTA button: \"خطط رحلتك صح\" in teal,\n\nairport terminal lighting, cinematic but authentic,\nReadex Pro Arabic typography throughout\n\nPost caption: أول يوم بالرحلة وانصبت بالتاكسي؟ مو لازم. الزبدة تعطيك السعر الحقيقي قبل لا تطلع من المطار 🚕💸",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 13
+      }
+    },
+    {
+      "id": "concept-ad-14",
+      "type": "concept_ad",
+      "campaign": "Scam Awareness",
+      "lang": "ar",
+      "subject": {
+        "ad": 14,
+        "title": "\"حلال مضروب\" (Fake Halal)"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "كلمة \"حلال\" على الباب ما تكفي. الزبدة تعطيك تصنيف حلال حقيقي — مو مجاملة 🥩✅"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "اكتشف المطاعم الحلال",
+      "source_image": "",
+      "image_prompt": "premium halal verification poster, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream text, RTL:\n\"كلمة حلال ما تكفي.\"\nsubheadline in Readex Pro 400:\n\"الزبدة ما تكتب حلال إلا إذا متأكدين.\"\n\nCENTER: restaurant storefront with questionable \"HALAL\" sign slightly blurred in background,\nforeground iPhone displays الزبدة restaurant card with verified halal badge system:\ngreen badge: \"حلال موثق — شهادة رسمية\"\nsupporting note: \"مطبخ منفصل / مورد لحوم موثق\"\nAI gist line visible in Arabic,\nteal (#0E7C7B) and green accents on cream card,\nsubtle amber warning icon referencing fake labels,\n\nBOTTOM: CTA button:\n\"اكتشف المطاعم الحلال\"\nالزبدة logo below,\ndark green (#1d3b2c) frame,\nfamily-safe premium travel app aesthetic, 8k",
+      "video_prompt": "vertical 9:16 video, 15 seconds, emotional + informative,\n\nSCENE 1 (0–4s): close-up of restaurant storefront with \"HALAL\" sign,\ncamera zooms in — sign looks cheap, handwritten, suspicious,\ntext overlay (Readex Pro, bold): \"المطعم كاتب حلال على الباب.\"\nsecond line: \"بس هل فعلاً حلال؟\"\n\nSCENE 2 (4–7s): Saudi family hesitating at restaurant entrance,\nfather looking at phone, mother holding child's hand,\ntext overlay: \"ولا بس عشان يجذب السياح؟\"\namber (#D4A017) warning tint,\n\nSCENE 3 (7–11s): opens الزبدة app, restaurant card shows:\n5-level halal badge (green ✅ \"حلال موثق — شهادة رسمية\"),\nAI gist: \"لحوم حلال مستوردة من البرازيل، مطبخ منفصل\"\nteal (#0E7C7B) accents, cream (#FDFBF7) card,\ntext overlay: \"الزبدة تحقّقت لك.\"\n\nSCENE 4 (11–13s): same family now eating happily inside restaurant,\nwarm golden lighting, authentic food on table,\n\nEND (13–15s): dark green (#1d3b2c) background,\ntext (Readex Pro): \"ما نكتب حلال إلا إذا متأكدين.\"\nالزبدة logo, CTA button: \"اكتشف المطاعم الحلال\" in teal,\n\nwarm restaurant lighting, family-friendly vibe,\nReadex Pro Arabic typography throughout\n\nPost caption: كلمة \"حلال\" على الباب ما تكفي. الزبدة تعطيك تصنيف حلال حقيقي — مو مجاملة 🥩✅",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 14
+      }
+    },
+    {
+      "id": "concept-ad-15",
+      "type": "concept_ad",
+      "campaign": "Scam Awareness",
+      "lang": "ar",
+      "subject": {
+        "ad": 15,
+        "title": "\"المطعم السياحي\" (Tourist Trap Restaurant)"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "٤.٥ نجوم ومطعم سياحي والأكل عادي؟ كلنا مرينا فيها. الزبدة تقولك الصدق — من أول 💯🍽️"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "اكتشف الأماكن الحقيقية",
+      "source_image": "",
+      "image_prompt": "premium travel food truth poster, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream text, RTL:\n\"٤.٥ نجوم… والأكل عادي.\"\nsubheadline in Readex Pro 400:\n\"الزبدة تعطيك رأي صريح — بدون مجاملة.\"\n\nCENTER: comparison composition,\nLEFT: tourist-trap restaurant plate, inflated bill receipt, glowing Google-style 4.5 stars above,\nslightly harsh lighting, red/amber caution tone,\nRIGHT: iPhone showing الزبدة place card with:\nZ-Score badge,\nwarning tag: \"أسعار مبالغ فيها للسياح\"\nalternative local restaurant card below with positive gist:\n\"مطعم محلي، الأسعار معقولة، المنسف أفضل شي 👌\"\nteal highlights and cream cards,\n\nBOTTOM: CTA button:\n\"اكتشف الأماكن الحقيقية\"\nالزبدة logo below,\ndark green (#1d3b2c) background,\nhonest premium editorial ad style, 8k",
+      "video_prompt": "vertical 9:16 video, 12 seconds, relatable + honest,\n\nSCENE 1 (0–3s): phone screen showing Google Maps restaurant with 4.5 stars,\nthumb taps it excitedly,\ncut to: mediocre plate of food, high price on receipt,\ntext overlay (Readex Pro, bold): \"٤.٥ نجوم. دفعت ثلاث أضعاف. والأكل؟ عادي.\"\n\nSCENE 2 (3–6s): frustrated expression, looking at phone bill,\ntext overlay: \"التقييم كان من سيّاح — مو من أهل البلد.\"\nred tint on Google rating,\n\nSCENE 3 (6–10s): opens الزبدة app, same area shows different restaurant,\nAI gist card: \"مطعم محلي، الأسعار معقولة، المنسف أفضل شي 👌\"\nwarning badge on tourist trap: \"⚠️ أسعار مبالغ فيها للسياح\"\nZ-Score badge showing honest rating,\nteal (#0E7C7B) positive highlight vs amber warning,\n\nEND (10–12s): dark green (#1d3b2c) background,\ntext (Readex Pro): \"الزبدة تعطيك رأي صريح — بدون مجاملة.\"\nالزبدة logo, CTA button: \"اكتشف الأماكن الحقيقية\" in teal,\n\nrestaurant atmosphere, warm but contrasting lighting between scenes,\nReadex Pro Arabic typography throughout\n\nPost caption: ٤.٥ نجوم ومطعم سياحي والأكل عادي؟ كلنا مرينا فيها. الزبدة تقولك الصدق — من أول 💯🍽️",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 15
+      }
+    },
+    {
+      "id": "concept-ad-16",
+      "type": "concept_ad",
+      "campaign": "Scam Awareness",
+      "lang": "ar",
+      "subject": {
+        "ad": 16,
+        "title": "\"صاحبك اللي سافر\" (Your Friend Who Traveled)"
+      },
+      "hook_ar": "",
+      "caption": {
+        "instagram": "الزبدة مو تطبيق سياحي عادي. الزبدة = صاحبك اللي سبقك وسافر وقالك وش تسوي ووش تتجنب. بدون مجاملة 🤝✈️"
+      },
+      "hashtags": [
+        "#الزبدة"
+      ],
+      "cta_ar": "خطط رحلتك مع الزبدة",
+      "source_image": "",
+      "image_prompt": "premium minimalist advertisement, 1080x1350 (4:5 vertical),\n\nTOP: headline in Playfair Display 800, cream (#FDFBF7) text, RTL:\n\"صاحبك اللي سافر قبلك؟ هذي الزبدة.\"\nsubheadline in Readex Pro 400:\n\"تحذيرات حقيقية. أماكن مجرّبة. بدون نصب.\"\n\nCENTER: iPhone displaying الزبدة app with 3 stacked notification-style cards:\n  Card 1 (amber): \"⚠️ التاكسي من المطار — السعر الحقيقي ١٥ يورو مو ٥٠\"\n  Card 2 (green): \"✅ مطعم حلال موثق — شهادة رسمية\"\n  Card 3 (teal): \"💡 زبدة المكان: محلي، أسعار معقولة، تجنب الجلسات الخارجية\"\ncards on cream (#FDFBF7) background with teal (#0E7C7B) accents,\nsoft shadow on phone,\n\nBOTTOM: CTA button — teal (#0E7C7B) background, cream text, rounded:\n\"خطط رحلتك مع الزبدة\"\nالزبدة logo + \"الزبدة\" text centered below,\n\ndark green (#1d3b2c) background,\nwarm trust-building aesthetic, 8k\n\nPost caption: الزبدة مو تطبيق سياحي عادي. الزبدة = صاحبك اللي سبقك وسافر وقالك وش تسوي ووش تتجنب. بدون مجاملة 🤝✈️",
+      "video_prompt": "vertical 9:16 video, 10–12 seconds, warm trusted-friend social ad,\n\nSCENE 1 (0–3s): Saudi traveler packing suitcase at home,\nfriend sends voice note style message on phone,\ntext overlay (Readex Pro): \"صاحبك اللي سافر قبلك؟\"\n\nSCENE 2 (3–6s): quick montage of travel risks:\nairport taxi, fake halal sign, tourist-trap menu prices,\neach scene freezes briefly with warning overlays,\n\nSCENE 3 (6–9s): phone opens الزبدة app,\nstacked cards appear one by one:\n\"السعر الحقيقي من المطار\"\n\"مطعم حلال موثق\"\n\"تجنب المكان السياحي هذا\"\ntext overlay: \"هذي الزبدة.\"\n\nEND (9–12s): dark green (#1d3b2c) background,\nheadline centered: \"تحذيرات حقيقية. أماكن مجرّبة. بدون نصب.\"\nCTA button: \"خطط رحلتك مع الزبدة\" in teal,\nالزبدة logo centered,\nwarm home-to-travel color transition, trustworthy Saudi friend vibe",
+      "claims": "concept ad — per README §3 claim ledger; see docs/marketing/batches/ for per-platform captions",
+      "source": {
+        "file": "docs/marketing/MVPAdLaunchPlan.md",
+        "ad": 16
+      }
+    }
+  ]
+}
