@@ -129,6 +129,7 @@ function escapeHtml(value) {
 function htmlFor(campaign, format, htmlDir) {
   const isWide = format.width > format.height;
   const isStory = format.height > 1500;
+  const isTikTok = format.dir === 'tiktok_1080x1920';
   const logo = rel(htmlDir, campaign.style === 'map' ? sources.logoColor : sources.logoWhite);
   const image = rel(htmlDir, campaign.image);
   const title = escapeHtml(campaign.title).replaceAll('الزبدة', '<span>الزبدة</span>');
@@ -153,7 +154,12 @@ h1{margin:18px 0 0;font-size:${isWide ? 82 : isStory ? 88 : 74}px;line-height:1.
 .compare .card{inset-block:${isWide ? '198px 88px' : '248px 118px'};width:${isWide ? 560 : 430}px;padding:${isWide ? 36 : 32}px}.compare .without{inset-inline-end:${isWide ? 94 : 72}px;background:#FDFBF7;color:#102318}.compare .with{inset-inline-start:${isWide ? 94 : 72}px;background:#1F3D2E;color:#FDFBF7;border:1px solid rgba(232,196,107,.42)}.compare h2{margin:0 0 18px;font-size:${isWide ? 48 : 44}px}.compare p{font-size:${isWide ? 30 : 27}px;line-height:1.55;font-weight:700}.compare .cta{font-size:${isWide ? 24 : 23}px}
 .product{background:radial-gradient(circle at 50% 22%,rgba(232,196,107,.20),transparent 28%),linear-gradient(145deg,#09110d,#1F3D2E 58%,#0b1711)}.bottle{position:absolute;z-index:2;inset-block-start:${isWide ? 138 : isStory ? 190 : 176}px;inset-inline:0;margin:auto;width:${isWide ? 410 : isStory ? 420 : 360}px;height:${isWide ? 410 : isStory ? 420 : 360}px;border-radius:8px;background:rgba(253,251,247,.08);display:flex;align-items:center;justify-content:center}.bottle img{max-width:78%;max-height:78%;border-radius:8px}.product .card{inset-inline:${isWide ? 170 : 70}px;inset-block-end:${isWide ? 80 : 88}px;text-align:center}.product .body{max-width:${isWide ? 980 : 870}px;margin-inline:auto}
 .chat{background:linear-gradient(145deg,#102318,#1F3D2E 58%,#0b1711)}.chat .grid{position:absolute;z-index:3;inset-inline:${isWide ? 90 : 58}px;inset-block:${isWide ? 145 : 135}px ${isWide ? 70 : 70}px;display:grid;grid-template-columns:${isWide ? '1fr 480px' : '1fr'};grid-template-rows:${isWide ? '1fr' : 'auto 1fr'};gap:${isWide ? 56 : 26}px;align-items:center}.chat .phone{justify-self:center;width:${isWide ? 410 : isStory ? 470 : 330}px;height:${isWide ? 760 : isStory ? 940 : 660}px;border:14px solid #050807;border-radius:54px;overflow:hidden;box-shadow:0 36px 90px rgba(0,0,0,.52)}.chat .phone img{width:100%;height:100%;object-fit:cover;object-position:center top}.chat .copy{text-align:${isWide ? 'right' : 'center'}}
-</style></head><body><main class="poster ${campaign.style}"><div class="top"><div class="site">app.alzbdh.com</div><img src="${logo}" alt="الزبدة"></div>${bodyFor(campaign, image, title)}</main></body></html>`;
+.tiktok .top{inset-block-start:180px;inset-inline:70px 190px}.tiktok .top img{width:122px}.tiktok .site{font-size:22px}.tiktok h1{font-size:70px;line-height:1.08}.tiktok .subtitle{font-size:30px}.tiktok .body{font-size:27px;line-height:1.45}.tiktok .cta{font-size:24px;margin-block-start:14px;padding:11px 18px}
+.tiktok.map .map-scene{inset-inline:54px 150px;inset-block-start:300px;height:780px;transform:rotate(-1deg)}.tiktok.map .card{inset-inline:62px 164px;inset-block-end:430px;padding:34px 38px}.tiktok.map .callout{inset-block-start:930px;inset-inline-end:178px;font-size:24px}
+.tiktok.compare .card{inset-block:auto 430px;width:360px;padding:26px}.tiktok.compare .without{inset-inline-end:148px}.tiktok.compare .with{inset-inline-start:70px}.tiktok.compare h2{font-size:38px;margin-block-end:12px}.tiktok.compare p{font-size:24px;line-height:1.45}
+.tiktok.product .bottle{inset-block-start:360px;width:340px;height:340px}.tiktok.product .card{inset-inline:72px 168px;inset-block-end:430px}.tiktok.product .body{max-width:760px}
+.tiktok.chat .grid{inset-inline:72px 168px;inset-block:250px 430px;display:grid;grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:42px;align-items:center}.tiktok.chat .copy{text-align:center}.tiktok.chat .phone{width:390px;height:780px;border-width:12px;border-radius:46px;align-self:start}
+</style></head><body><main class="poster ${campaign.style}${isTikTok ? ' tiktok' : ''}"><div class="top"><div class="site">app.alzbdh.com</div><img src="${logo}" alt="الزبدة"></div>${bodyFor(campaign, image, title)}</main></body></html>`;
 }
 
 function bodyFor(campaign, image, title) {
