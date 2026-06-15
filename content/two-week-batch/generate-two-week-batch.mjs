@@ -34,12 +34,12 @@ const dailyPlan = [
   { date: '2026-06-27', type: 'places', id: 'ChIJi0_LHmkPLz4R_4sfMGrGI6A', theme: 'منتزه وادي نمار' },
   { date: '2026-06-28', type: 'travel', id: 'london', theme: 'لندن' },
   { date: '2026-06-29', type: 'places', id: 'ChIJ5xG77av7Lj4Rjwobo8hGpdQ', theme: 'تشرنوبل ليزر تاق' },
-  { date: '2026-06-30', type: 'perfumes', id: 'perfume-verdict', theme: 'زبدة العطور' },
+  { date: '2026-06-30', type: 'perfumes', id: 'angels-share-paradis', theme: 'أنجلز شير بارادي' },
   { date: '2026-07-01', type: 'travel', id: 'paris', theme: 'باريس' },
-  { date: '2026-07-02', type: 'places', id: 'ChIJwU0WYgBV-xURkN87qd-yZJs', theme: 'برجر أوكل المحالة' },
+  { date: '2026-07-02', type: 'perfumes', id: 'bottled-absolu', theme: 'بوتلد أبسولو' },
   { date: '2026-07-03', type: 'travel', id: 'phuket', theme: 'بوكيت' },
   { date: '2026-07-04', type: 'places', id: 'ChIJAfOOqq9V4xURBaACs3r2n1w', theme: 'WBJ ABHA' },
-  { date: '2026-07-05', type: 'places', id: 'ChIJJy56xohV4xURnejZdbLOzFA', theme: 'مطعم مهرانى أبها' }
+  { date: '2026-07-05', type: 'perfumes', id: 'babycat-raw-bourbon', theme: 'بيبيكات راو بوربون' }
 ];
 
 const morningPrompts = [
@@ -62,11 +62,13 @@ const morningPrompts = [
 const readJson = async (relative) => JSON.parse(await fs.readFile(path.join(repo, relative), 'utf8'));
 const travelData = await readJson('content/travel/data/website-destinations-used.json');
 const placesData = await readJson('content/places/data/website-places-used.json');
+const perfumeData = await readJson('content/perfumes/data/live-perfumes-products.json');
 const registerPath = path.join(repo, 'content/social_post_register.json');
 const register = JSON.parse(await fs.readFile(registerPath, 'utf8'));
 
 const travelBySlug = new Map(travelData.destinations.map((item) => [item.slug, item]));
 const placesById = new Map(placesData.places.map((item) => [item.place_id, item]));
+const perfumeBySlug = new Map(perfumeData.products.map((item) => [item.slug, item]));
 
 function csvEscape(value) {
   const s = String(value ?? '');
@@ -113,7 +115,7 @@ function shorten(text, max = 150) {
 function imagePathFor(item, platform) {
   if (item.type === 'travel') return `content/travel/images/${formats[platform].dir}/${item.id}.png`;
   if (item.type === 'places') return `content/places/images/${formats[platform].dir}/${item.id}.png`;
-  if (item.type === 'perfumes') return `content/marketing ad/perfumes/images/${formats[platform].dir}/perfume-verdict.png`;
+  if (item.type === 'perfumes') return `content/marketing ad/perfumes/images/${formats[platform].dir}/${item.id}.png`;
   throw new Error(`Unknown type ${item.type}`);
 }
 
@@ -124,7 +126,11 @@ function storyBackgroundPath(item) {
     if (!data?.localImage) throw new Error(`Missing place hero image for ${item.id}`);
     return `content/places/${data.localImage}`;
   }
-  if (item.type === 'perfumes') return 'content/perfumes/assets/product-images/guidance-46.jpg';
+  if (item.type === 'perfumes') {
+    const data = perfumeBySlug.get(item.id);
+    if (!data?.localImage) throw new Error(`Missing perfume image for ${item.id}`);
+    return data.localImage;
+  }
   throw new Error(`Unknown story background type ${item.type}`);
 }
 
@@ -132,15 +138,7 @@ function itemData(item) {
   if (item.type === 'travel') return travelBySlug.get(item.id);
   if (item.type === 'places') return placesById.get(item.id);
   if (item.type === 'perfumes') {
-    return {
-      title: 'زبدة العطور',
-      name: 'زبدة العطور',
-      category: 'عطر',
-      city: 'الزبدة',
-      score: '',
-      reviews: '',
-      summary: 'لا تشتري من الوصف الجميل بس. خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟'
-    };
+    return perfumeBySlug.get(item.id);
   }
   return null;
 }
@@ -201,24 +199,27 @@ function visualCopy(item) {
     };
   }
 
+  const perfumeTitle = data.arabicName;
+  const perfumeBrand = data.arabicBrand;
+  const perfumeSummary = shorten(data.summary, 150);
   return {
-    title: 'زبدة العطور',
+    title: perfumeTitle,
     vertical: 'زبدة العطور',
     x: {
-      text: `عطر نيش بدون حوسة.\n\nلا تشتري من الوصف الجميل بس. خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟\n\n${site}`,
+      text: `${perfumeTitle} من ${perfumeBrand}.\n\n${perfumeSummary}\n\nخذ الزبدة قبل التجربة: وش ريحته؟ ولمين يناسب؟\n\n${site}`,
       hashtags: '#الزبدة #زبدة_العطور #عطور'
     },
     instagram: {
-      text: `عطر نيش بدون حوسة.\n\nزبدة العطور تختصر لك الانطباع: النوتات، الإحساس، ومتى يناسبك العطر بدون كلام تسويقي زائد.\n\n${site}`,
+      text: `${perfumeTitle} من ${perfumeBrand}.\n\nزبدة العطور تقول: ${perfumeSummary}\n\nبدل الوصف الطويل، خذ الانطباع المختصر وشوف إذا يناسب ذوقك.\n\n${site}`,
       hashtags: '#الزبدة #زبدة_العطور #عطور #عطور_نيش'
     },
     tiktok: {
-      text: `لا تشتري من الوصف الجميل بس.\n\nخذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟\n\n${site}`,
+      text: `${perfumeTitle}.\n\n${perfumeSummary}\n\nزبدة العطور تختصر لك: وش ريحته؟ ولمين يناسب؟\n\n${site}`,
       hashtags: '#الزبدة #زبدة_العطور #عطور'
     },
     story: {
-      title: 'زبدة العطور',
-      body: 'وش ريحته؟ لمين يناسب؟ وهل يستاهل؟',
+      title: perfumeTitle,
+      body: `${perfumeBrand} • تقييم ${data.rating} من ${data.reviews}`,
       cta: 'خذ الزبدة قبل تشتري'
     }
   };
@@ -410,7 +411,7 @@ const daysMarkdown = dailyPlan.map((day) => {
 
 await fs.writeFile(
   path.join(outDir, 'README.md'),
-  `# Two-Week Organic Buffer Batch\n\nWindow: 2026-06-22 to 2026-07-05\nTimezone: Asia/Riyadh\n\nThis batch is designed for a rolling Buffer workflow under the 10 scheduled-post limit. The daily Codex feeder should schedule one day at a time, keeping no more than 5 same-day posts in Buffer.\n\n## Daily Cadence\n\n- 09:45 X text prompt\n- 12:35 X visual post\n- 18:15 Instagram Story-style asset\n- 20:45 Instagram feed post\n- 21:30 TikTok post\n\n## Days\n\n${daysMarkdown}\n\n## Notes\n\n- No day repeats a visual source from this batch.\n- Posts already published or already scheduled before 2026-06-22 are not reused as daily visual themes.\n- Public URLs assume the repo is pushed to \`main\`.\n`
+  `# Two-Week Organic Buffer Batch\n\nWindow: 2026-06-22 to 2026-07-05\nTimezone: Asia/Riyadh\n\nThis batch is designed for a rolling Buffer workflow under the 10 scheduled-post limit. The daily Codex feeder should schedule one day at a time. Launch-mode Buffer filling should use 9 same-day posts when capacity allows: three waves across X, Instagram, and TikTok.\n\n## Baseline Daily Cadence\n\n- 09:45 X text prompt\n- 12:35 X visual post\n- 18:15 Instagram Story-style asset\n- 20:45 Instagram feed post\n- 21:30 TikTok post\n\n## Launch-Mode Buffer Cadence\n\n- 12:15 / 12:35 / 12:55 first wave across X, Instagram, TikTok\n- 18:40 / 19:00 / 19:20 second wave across X, Instagram, TikTok\n- 21:05 / 21:25 / 21:45 third wave across X, Instagram, TikTok\n\n## Days\n\n${daysMarkdown}\n\n## Notes\n\n- No day repeats a visual source from this batch.\n- Perfume days rotate live website products and do not reuse Guidance 46.\n- Posts already published or already scheduled before 2026-06-22 are not reused as daily visual themes.\n- Public URLs assume the repo is pushed to \`main\`.\n`
 );
 
 await fs.writeFile(

@@ -469,7 +469,7 @@ https://app.alzbdh.com
 
 Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png
 
-## 2026-06-30 09:45 — X — زبدة العطور
+## 2026-06-30 09:45 — X — أنجلز شير بارادي
 
 العطور فيها كلام كثير. زبدة العطور تختصر: الريحة، المناسبة، وهل يستاهل التجربة.
 
@@ -479,53 +479,59 @@ https://app.alzbdh.com
 
 Media: text-only
 
-## 2026-06-30 12:35 — X — زبدة العطور
+## 2026-06-30 12:35 — X — أنجلز شير بارادي
 
-عطر نيش بدون حوسة.
+أنجلز شير بارادي من باي كيليان.
 
-لا تشتري من الوصف الجميل بس. خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟
+تشمّ أولاً توتًا ناضجًا من Raspberry مع نبضة Cognac ولمحة Liquor كأنك تذوق كأساً محلى
+
+خذ الزبدة قبل التجربة: وش ريحته؟ ولمين يناسب؟
 
 https://app.alzbdh.com
 
 #الزبدة #زبدة_العطور #عطور
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/perfume-verdict.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/angels-share-paradis.png
 
-## 2026-06-30 18:15 — Instagram Story — زبدة العطور
+## 2026-06-30 18:15 — Instagram Story — أنجلز شير بارادي
 
-زبدة العطور
+أنجلز شير بارادي
 
-وش ريحته؟ لمين يناسب؟ وهل يستاهل؟
+باي كيليان • تقييم 4.3 من (1,904)
 
 https://app.alzbdh.com
 
 #الزبدة
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-30-perfumes-perfume-verdict.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-30-perfumes-angels-share-paradis.png
 
-## 2026-06-30 20:45 — Instagram — زبدة العطور
+## 2026-06-30 20:45 — Instagram — أنجلز شير بارادي
 
-عطر نيش بدون حوسة.
+أنجلز شير بارادي من باي كيليان.
 
-زبدة العطور تختصر لك الانطباع: النوتات، الإحساس، ومتى يناسبك العطر بدون كلام تسويقي زائد.
+زبدة العطور تقول: تشمّ أولاً توتًا ناضجًا من Raspberry مع نبضة Cognac ولمحة Liquor كأنك تذوق كأساً محلى
+
+بدل الوصف الطويل، خذ الانطباع المختصر وشوف إذا يناسب ذوقك.
 
 https://app.alzbdh.com
 
 #الزبدة #زبدة_العطور #عطور #عطور_نيش
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/perfume-verdict.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/angels-share-paradis.png
 
-## 2026-06-30 21:30 — TikTok — زبدة العطور
+## 2026-06-30 21:30 — TikTok — أنجلز شير بارادي
 
-لا تشتري من الوصف الجميل بس.
+أنجلز شير بارادي.
 
-خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟
+تشمّ أولاً توتًا ناضجًا من Raspberry مع نبضة Cognac ولمحة Liquor كأنك تذوق كأساً محلى
+
+زبدة العطور تختصر لك: وش ريحته؟ ولمين يناسب؟
 
 https://app.alzbdh.com
 
 #الزبدة #زبدة_العطور #عطور
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/perfume-verdict.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/angels-share-paradis.png
 
 ## 2026-07-01 09:45 — X — باريس
 
@@ -585,7 +591,7 @@ Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/
 
 Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/travel/images/tiktok_1080x1920/paris.png
 
-## 2026-07-02 09:45 — X — برجر أوكل المحالة
+## 2026-07-02 09:45 — X — بوتلد أبسولو
 
 أحياناً أفضل قرار هو إنك تستبعد الخيار الغلط بسرعة. هنا يجي دور الزبدة.
 
@@ -595,54 +601,59 @@ https://app.alzbdh.com
 
 Media: text-only
 
-## 2026-07-02 12:35 — X — برجر أوكل المحالة
+## 2026-07-02 12:35 — X — بوتلد أبسولو
 
-برجر أوكل المحالة — مطعم في أبها.
+بوتلد أبسولو من هوغو بوس.
 
-تقييم الزبدة 9.8/10 من مراجعات كثيرة. إذا تبي برجر على السريع فهنا خيار قوي، وخصوصاً برجر اللحم المشوي على الفحم والبطاطس.
+Bottled Absolu من Hugo Boss يفتح بدخان بخور كثيف مع جلد مدبوغ دافئ ولمسة صمغية حلوة (myrrh) فوق قاعدة خشبية من (cedarwood) تعطيه عمقًا فوريًا.
+
+خذ الزبدة قبل التجربة: وش ريحته؟ ولمين يناسب؟
 
 https://app.alzbdh.com
 
-#الزبدة #زبدة_الأماكن #أبها #مطعم
+#الزبدة #زبدة_العطور #عطور
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/x_1600x900/ChIJwU0WYgBV-xURkN87qd-yZJs.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/bottled-absolu.png
 
-## 2026-07-02 18:15 — Instagram Story — برجر أوكل المحالة
+## 2026-07-02 18:15 — Instagram Story — بوتلد أبسولو
 
-برجر أوكل المحالة
+بوتلد أبسولو
 
-مطعم في أبها • تقييم الزبدة 9.8/10
+هوغو بوس • تقييم 4.5 من (5,602)
 
 https://app.alzbdh.com
 
 #الزبدة
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-02-places-ChIJwU0WYgBV-xURkN87qd-yZJs.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-02-perfumes-bottled-absolu.png
 
-## 2026-07-02 20:45 — Instagram — برجر أوكل المحالة
+## 2026-07-02 20:45 — Instagram — بوتلد أبسولو
 
-برجر أوكل المحالة طالع بقوة في الزبدة.
+بوتلد أبسولو من هوغو بوس.
 
-مطعم في أبها بتقييم الزبدة 9.8/10. برجر اللحم المشوي على الفحم هو نجم المكان، ومعاه البطاطس طالعة زينة والناس تكرر إنها لذيذة. الملاحظة الوحيدة إن المحل سفري وما فيه جلسات، فأنسب له إذا تبي وجبة سريعة بمستوى ثابت.
+زبدة العطور تقول: Bottled Absolu من Hugo Boss يفتح بدخان بخور كثيف مع جلد مدبوغ دافئ ولمسة صمغية حلوة (myrrh) فوق قاعدة خشبية من (cedarwood) تعطيه عمقًا فوريًا.
 
-افتح https://app.alzbdh.com وشوف الأماكن حواليك بدون حوسة.
-
-#الزبدة #زبدة_الأماكن #أبها #مطعم #صراحة #يستاهل
-
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/instagram_1080x1350/ChIJwU0WYgBV-xURkN87qd-yZJs.png
-
-## 2026-07-02 21:30 — TikTok — برجر أوكل المحالة
-
-وين تروح؟
-
-مطعم: برجر أوكل المحالة
-تقييم الزبدة 9.8/10، والزبدة تقول: إذا تبي برجر على السريع فهنا خيار قوي، وخصوصاً برجر اللحم المشوي على الفحم والبطاطس.
+بدل الوصف الطويل، خذ الانطباع المختصر وشوف إذا يناسب ذوقك.
 
 https://app.alzbdh.com
 
-#الزبدة #زبدة_الأماكن #أبها #مطعم
+#الزبدة #زبدة_العطور #عطور #عطور_نيش
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJwU0WYgBV-xURkN87qd-yZJs.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/bottled-absolu.png
+
+## 2026-07-02 21:30 — TikTok — بوتلد أبسولو
+
+بوتلد أبسولو.
+
+Bottled Absolu من Hugo Boss يفتح بدخان بخور كثيف مع جلد مدبوغ دافئ ولمسة صمغية حلوة (myrrh) فوق قاعدة خشبية من (cedarwood) تعطيه عمقًا فوريًا.
+
+زبدة العطور تختصر لك: وش ريحته؟ ولمين يناسب؟
+
+https://app.alzbdh.com
+
+#الزبدة #زبدة_العطور #عطور
+
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/bottled-absolu.png
 
 ## 2026-07-03 09:45 — X — بوكيت
 
@@ -761,7 +772,7 @@ https://app.alzbdh.com
 
 Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJAfOOqq9V4xURBaACs3r2n1w.png
 
-## 2026-07-05 09:45 — X — مطعم مهرانى أبها
+## 2026-07-05 09:45 — X — بيبيكات راو بوربون
 
 نهاية الأسبوع تحتاج قرار أخف. مكان واضح، زبدة مختصرة، ووقت أقل في البحث.
 
@@ -771,51 +782,56 @@ https://app.alzbdh.com
 
 Media: text-only
 
-## 2026-07-05 12:35 — X — مطعم مهرانى أبها
+## 2026-07-05 12:35 — X — بيبيكات راو بوربون
 
-مطعم مهرانى فرع أبها Maharani Restaurant, Abha Branch — مطعم في أبها.
+بيبيكات راو بوربون من إيف سان لوران.
 
-تقييم الزبدة 9.6/10 من مراجعات كثيرة. إذا بتروح، خذ البتر تشيكن والنان والروبيان داينمايت، لأنها من أكثر الأشياء اللي جابت مدح.
+تحس في البداية بشرارة الفلفل الأسود والوردي تمنح انطلاقة حارة ومشرقة، ثم يتسلل لبان مدخن مع زعفران عطري ودفعات من الراتنج
+
+خذ الزبدة قبل التجربة: وش ريحته؟ ولمين يناسب؟
 
 https://app.alzbdh.com
 
-#الزبدة #زبدة_الأماكن #أبها #مطعم
+#الزبدة #زبدة_العطور #عطور
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/x_1600x900/ChIJJy56xohV4xURnejZdbLOzFA.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/babycat-raw-bourbon.png
 
-## 2026-07-05 18:15 — Instagram Story — مطعم مهرانى أبها
+## 2026-07-05 18:15 — Instagram Story — بيبيكات راو بوربون
 
-مطعم مهرانى فرع أبها Maharani Restaurant, Abha Branch
+بيبيكات راو بوربون
 
-مطعم في أبها • تقييم الزبدة 9.6/10
+إيف سان لوران • تقييم 4.6 من (981)
 
 https://app.alzbdh.com
 
 #الزبدة
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-05-places-ChIJJy56xohV4xURnejZdbLOzFA.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-05-perfumes-babycat-raw-bourbon.png
 
-## 2026-07-05 20:45 — Instagram — مطعم مهرانى أبها
+## 2026-07-05 20:45 — Instagram — بيبيكات راو بوربون
 
-مطعم مهرانى فرع أبها Maharani Restaurant, Abha Branch طالع بقوة في الزبدة.
+بيبيكات راو بوربون من إيف سان لوران.
 
-مطعم في أبها بتقييم الزبدة 9.6/10. الكاري والبرياني هم أكثر شي الناس تمدحهم هنا، ومعهم نان طالع قوي والخدمة لفتت نظر كثير من الزوار.
+زبدة العطور تقول: تحس في البداية بشرارة الفلفل الأسود والوردي تمنح انطلاقة حارة ومشرقة، ثم يتسلل لبان مدخن مع زعفران عطري ودفعات من الراتنج
 
-افتح https://app.alzbdh.com وشوف الأماكن حواليك بدون حوسة.
-
-#الزبدة #زبدة_الأماكن #أبها #مطعم #صراحة #يستاهل
-
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/instagram_1080x1350/ChIJJy56xohV4xURnejZdbLOzFA.png
-
-## 2026-07-05 21:30 — TikTok — مطعم مهرانى أبها
-
-وين تروح؟
-
-مطعم: مطعم مهرانى فرع أبها Maharani Restaurant, Abha Branch
-تقييم الزبدة 9.6/10، والزبدة تقول: إذا بتروح، خذ البتر تشيكن والنان والروبيان داينمايت، لأنها من أكثر الأشياء اللي جابت مدح.
+بدل الوصف الطويل، خذ الانطباع المختصر وشوف إذا يناسب ذوقك.
 
 https://app.alzbdh.com
 
-#الزبدة #زبدة_الأماكن #أبها #مطعم
+#الزبدة #زبدة_العطور #عطور #عطور_نيش
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJJy56xohV4xURnejZdbLOzFA.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/babycat-raw-bourbon.png
+
+## 2026-07-05 21:30 — TikTok — بيبيكات راو بوربون
+
+بيبيكات راو بوربون.
+
+تحس في البداية بشرارة الفلفل الأسود والوردي تمنح انطلاقة حارة ومشرقة، ثم يتسلل لبان مدخن مع زعفران عطري ودفعات من الراتنج
+
+زبدة العطور تختصر لك: وش ريحته؟ ولمين يناسب؟
+
+https://app.alzbdh.com
+
+#الزبدة #زبدة_العطور #عطور
+
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/babycat-raw-bourbon.png

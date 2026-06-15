@@ -31,6 +31,50 @@ const sources = {
   site: 'https://app.alzbdh.com'
 };
 
+const perfumeData = JSON.parse(await fs.readFile(path.join(repo, 'content/perfumes/data/live-perfumes-products.json'), 'utf8'));
+const selectedPerfumes = [
+  'angels-share-paradis',
+  'blue-talisman-extrait-de-parfum',
+  'bottled-absolu',
+  'babycat-raw-bourbon'
+].map((slug) => perfumeData.products.find((product) => product.slug === slug)).filter(Boolean);
+
+const perfumeTitles = {
+  'angels-share-paradis': 'أنجلز شير بارادي',
+  'blue-talisman-extrait-de-parfum': 'بلو تاليسمان',
+  'bottled-absolu': 'بوتلد أبسولو',
+  'babycat-raw-bourbon': 'بيبيكات راو بوربون'
+};
+
+const perfumeHooks = {
+  'angels-share-paradis': 'حلاوة توت وكونياك على خشب دافئ.',
+  'blue-talisman-extrait-de-parfum': 'كمثرى وبرغموت وياسمين على خشب كريمي.',
+  'bottled-absolu': 'بخور وجلد دافئ مع قاعدة خشبية واضحة.',
+  'babycat-raw-bourbon': 'فلفل ولبان مدخن وفانيلا كريمية.'
+};
+
+const perfumeCampaigns = selectedPerfumes.map((product) => ({
+  vertical: 'perfumes',
+  slug: product.slug,
+  title: perfumeTitles[product.slug] ?? product.arabicName,
+  eyebrow: 'زبدة العطور',
+  subtitle: `${product.arabicBrand} · تقييم ${product.rating}`,
+  body: perfumeHooks[product.slug] ?? product.summary,
+  cta: 'خذ الزبدة',
+  image: product.localImage,
+  style: 'product',
+  captions: {
+    x: `${product.arabicName} من ${product.arabicBrand}.\n\n${product.summary}\n\nخذ الزبدة قبل التجربة: هل يناسبك؟ ومتى يطلع بأفضل صورة؟\n\napp.alzbdh.com`,
+    instagram: `${product.arabicName} من ${product.arabicBrand}.\n\nزبدة العطور تقول: ${product.summary}\n\nبدل ما تضيع بين وصف تسويقي طويل، خذ الانطباع المختصر وشوف إذا يناسب ذوقك.\n\napp.alzbdh.com`,
+    tiktok: `${product.arabicName}.\n\n${perfumeHooks[product.slug] ?? product.summary}\n\nزبدة العطور تختصر لك: وش ريحته؟ ولمين يناسب؟\n\napp.alzbdh.com`
+  },
+  hashtags: {
+    x: '#الزبدة #زبدة_العطور #عطور',
+    instagram: '#الزبدة #زبدة_العطور #عطور #عطور_نيش #Perfume',
+    tiktok: '#الزبدة #زبدة_العطور #عطور #عطر'
+  }
+}));
+
 const campaigns = [
   {
     vertical: 'places',
@@ -74,27 +118,7 @@ const campaigns = [
       tiktok: '#الزبدة #زبدة_السفر #سفر #وين_نسافر'
     }
   },
-  {
-    vertical: 'perfumes',
-    slug: 'perfume-verdict',
-    title: 'عطر نيش بدون حوسة',
-    eyebrow: 'زبدة العطور',
-    subtitle: 'لا تشتري من الوصف الجميل بس.',
-    body: 'خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟',
-    cta: 'خذ الزبدة',
-    image: 'content/perfumes/assets/product-images/guidance-46.jpg',
-    style: 'product',
-    captions: {
-      x: 'عطر نيش بدون حوسة.\n\nلا تشتري من الوصف الجميل بس. خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟\n\napp.alzbdh.com',
-      instagram: 'عطر نيش بدون حوسة.\n\nزبدة العطور تختصر لك الانطباع: النوتات، الإحساس، ومتى يناسبك العطر بدون كلام تسويقي زائد.\n\napp.alzbdh.com',
-      tiktok: 'لا تشتري من الوصف الجميل بس.\n\nخذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟\n\napp.alzbdh.com'
-    },
-    hashtags: {
-      x: '#الزبدة #زبدة_العطور #عطور',
-      instagram: '#الزبدة #زبدة_العطور #عطور #عطور_نيش #Perfume',
-      tiktok: '#الزبدة #زبدة_العطور #عطور #عطر'
-    }
-  },
+  ...perfumeCampaigns,
   {
     vertical: 'mobile-app',
     slug: 'ask-zbdh-chat',

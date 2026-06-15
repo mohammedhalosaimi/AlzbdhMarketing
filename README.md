@@ -32,11 +32,12 @@ Buffer tracking logs for marketing operations.
 
 Timezone: Asia/Riyadh
 
-- X: 12:30-13:15
-- Instagram: 20:30-21:15
-- TikTok: 21:00-22:00
+- Launch mode: 9 same-day scheduled posts when Buffer capacity allows.
+- Wave 1: 12:15 X, 12:35 Instagram, 12:55 TikTok.
+- Wave 2: 18:40 X, 19:00 Instagram, 19:20 TikTok.
+- Wave 3: 21:05 X, 21:25 Instagram, 21:45 TikTok.
 
-Default cadence: one campaign theme per day, adapted per platform.
+Buffer's current plan caps scheduled posts at 10, so the daily feeder should schedule one day at a time rather than filling multiple future days.
 
 ## Source Repo
 

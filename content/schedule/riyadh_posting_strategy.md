@@ -5,11 +5,11 @@ Timezone: Asia/Riyadh
 
 ## Recommended Windows
 
-- X: 09:30-10:15, 12:30-13:15, and selective 17:00-17:45 Riyadh time.
-- Instagram: 20:30-21:15 Riyadh time.
-- TikTok: 21:00-22:00 Riyadh time.
+- Wave 1: 12:15 X, 12:35 Instagram, 12:55 TikTok.
+- Wave 2: 18:40 X, 19:00 Instagram, 19:20 TikTok.
+- Wave 3: 21:05 X, 21:25 Instagram, 21:45 TikTok.
 
-The working cadence is one polished visual theme per day, posted to all three platforms with platform-specific copy and asset sizes. X gets extra text-only conversation posts because the platform tolerates more frequency and benefits from timely prompts. Instagram and TikTok stay evening-led and staggered 45 minutes apart so the first engagement window is cleaner.
+The launch cadence is three polished content waves per day, adapted per platform with platform-specific copy and asset sizes. This gives each platform more than one daily post while staying under Buffer's 10 scheduled-post cap.
 
 ## Weekly Mix
 
@@ -25,13 +25,27 @@ Offers are intentionally excluded from this cadence until dates, availability, a
 
 ## Cadence Recommendation
 
-- Keep Instagram and TikTok at one polished visual post per day for now.
-- Prepare up to five same-day posts in the content library: 09:45 X text, 12:35 X visual, 18:15 Instagram Story-style asset, 20:45 Instagram feed, and 21:30 TikTok.
-- Add X-only conversational posts in the 09:45 and 17:20 Riyadh windows when Buffer capacity allows.
-- Do not double-post Instagram/TikTok daily until there are more native-feeling video, story, or carousel assets; repeated static images can make the account feel automated.
-- During paid campaign weeks, keep `content/marketing-content/` as the ad pool and keep organic posts useful/account-style.
-- Buffer plan constraint as of 2026-06-15: scheduled post creation is blocked at 10/10 scheduled posts. Existing queued posts can be edited, but new X-only posts cannot be added until scheduled volume drops or the Buffer plan changes.
-- Recommended operating model: a daily Codex/Buffer feeder schedules only the current day from `content/two-week-batch/`, keeping the Buffer queue under the 10-post limit while maintaining a fuller account rhythm.
+- Use 9 posts/day in launch mode: three waves across X, Instagram, and TikTok.
+- Keep the older five-row organic batch as a content library, not as the live launch cadence.
+- Add a 10th X-only conversational post only when Buffer has one spare slot.
+- Avoid repeating the same visual template twice in one day; rotate places, mobile-app/chat, travel, and perfume assets.
+- During paid campaign weeks, keep `content/marketing ad/` as the ad pool and keep organic posts useful/account-style.
+- Buffer plan constraint as of 2026-06-15: the plan allows 10 scheduled posts. Existing queued posts can be edited; new posts should be added one day at a time.
+- Recommended operating model: a daily Codex/Buffer feeder schedules only the current day, keeping the Buffer queue under the 10-post limit while maintaining a fuller account rhythm.
+
+## 2026-06-17 Launch-Mode Buffer Batch
+
+| Wave | Theme | Platform | Riyadh Time | Buffer ID |
+|---:|---|---|---:|---|
+| 1 | خريطة الرياض | X | 12:15 | 6a3073394b32b4b3c401d93c |
+| 1 | خريطة الرياض | Instagram | 12:35 | 6a307362c5cca7fb316a8588 |
+| 1 | خريطة الرياض | TikTok | 12:55 | 6a3073855fcdd1a7ca628f19 |
+| 2 | اسأل الزبدة | X | 18:40 | 6a3073aac5cca7fb316a8674 |
+| 2 | اسأل الزبدة | Instagram | 19:00 | 6a3073d4e44c0a8b44856440 |
+| 2 | اسأل الزبدة | TikTok | 19:20 | 6a3073f24b32b4b3c401e34f |
+| 3 | أنجلز شير بارادي | X | 21:05 | pending edit |
+| 3 | أنجلز شير بارادي | Instagram | 21:25 | pending edit |
+| 3 | أنجلز شير بارادي | TikTok | 21:45 | pending edit |
 
 ## Scheduled Batch
 
@@ -82,10 +96,10 @@ Use `plan.json` as the automation source and `plan.csv` / `copy.md` for human re
 
 ## 2026-06-15 Content Update
 
-- Created `content/marketing-content/` as the current campaign pack:
+- Created `content/marketing ad/` as the current campaign pack:
   - Places: map-first Riyadh decision ad.
   - Travel: before/after planning comparison.
-  - Perfumes: "خذ الزبدة" verdict ad.
+  - Perfumes: rotating live perfume-product assets from the website.
   - Mobile app: chat/acquisition ad.
 - Buffer queue text was corrected for scheduled Istanbul and National Museum posts.
 - Do not point Buffer to `content/marketing-content/...` media URLs until the marketing repo is pushed or otherwise hosted; Buffer requires publicly accessible image URLs.

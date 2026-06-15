@@ -3,15 +3,21 @@
 Window: 2026-06-22 to 2026-07-05
 Timezone: Asia/Riyadh
 
-This batch is designed for a rolling Buffer workflow under the 10 scheduled-post limit. The daily Codex feeder should schedule one day at a time, keeping no more than 5 same-day posts in Buffer.
+This batch is designed for a rolling Buffer workflow under the 10 scheduled-post limit. The daily Codex feeder should schedule one day at a time. Launch-mode Buffer filling should use 9 same-day posts when capacity allows: three waves across X, Instagram, and TikTok.
 
-## Daily Cadence
+## Baseline Daily Cadence
 
 - 09:45 X text prompt
 - 12:35 X visual post
 - 18:15 Instagram Story-style asset
 - 20:45 Instagram feed post
 - 21:30 TikTok post
+
+## Launch-Mode Buffer Cadence
+
+- 12:15 / 12:35 / 12:55 first wave across X, Instagram, TikTok
+- 18:40 / 19:00 / 19:20 second wave across X, Instagram, TikTok
+- 21:05 / 21:25 / 21:45 third wave across X, Instagram, TikTok
 
 ## Days
 
@@ -79,13 +85,13 @@ This batch is designed for a rolling Buffer workflow under the 10 scheduled-post
 - 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/instagram_1080x1350/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png
 - 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png
 
-### 2026-06-30 — زبدة العطور
+### 2026-06-30 — أنجلز شير بارادي
 
 - 09:45 X: morning
-- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/perfume-verdict.png
-- 18:15 Instagram Story: story — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-30-perfumes-perfume-verdict.png
-- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/perfume-verdict.png
-- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/perfume-verdict.png
+- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/angels-share-paradis.png
+- 18:15 Instagram Story: story — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-30-perfumes-angels-share-paradis.png
+- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/angels-share-paradis.png
+- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/angels-share-paradis.png
 
 ### 2026-07-01 — باريس
 
@@ -95,13 +101,13 @@ This batch is designed for a rolling Buffer workflow under the 10 scheduled-post
 - 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/travel/images/instagram_1080x1350/paris.png
 - 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/travel/images/tiktok_1080x1920/paris.png
 
-### 2026-07-02 — برجر أوكل المحالة
+### 2026-07-02 — بوتلد أبسولو
 
 - 09:45 X: morning
-- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/x_1600x900/ChIJwU0WYgBV-xURkN87qd-yZJs.png
-- 18:15 Instagram Story: story — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-02-places-ChIJwU0WYgBV-xURkN87qd-yZJs.png
-- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/instagram_1080x1350/ChIJwU0WYgBV-xURkN87qd-yZJs.png
-- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJwU0WYgBV-xURkN87qd-yZJs.png
+- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/bottled-absolu.png
+- 18:15 Instagram Story: story — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-02-perfumes-bottled-absolu.png
+- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/bottled-absolu.png
+- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/bottled-absolu.png
 
 ### 2026-07-03 — بوكيت
 
@@ -119,16 +125,17 @@ This batch is designed for a rolling Buffer workflow under the 10 scheduled-post
 - 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/instagram_1080x1350/ChIJAfOOqq9V4xURBaACs3r2n1w.png
 - 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJAfOOqq9V4xURBaACs3r2n1w.png
 
-### 2026-07-05 — مطعم مهرانى أبها
+### 2026-07-05 — بيبيكات راو بوربون
 
 - 09:45 X: morning
-- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/x_1600x900/ChIJJy56xohV4xURnejZdbLOzFA.png
-- 18:15 Instagram Story: story — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-05-places-ChIJJy56xohV4xURnejZdbLOzFA.png
-- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/instagram_1080x1350/ChIJJy56xohV4xURnejZdbLOzFA.png
-- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/tiktok_1080x1920/ChIJJy56xohV4xURnejZdbLOzFA.png
+- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/babycat-raw-bourbon.png
+- 18:15 Instagram Story: story — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-05-perfumes-babycat-raw-bourbon.png
+- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/babycat-raw-bourbon.png
+- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/babycat-raw-bourbon.png
 
 ## Notes
 
 - No day repeats a visual source from this batch.
+- Perfume days rotate live website products and do not reuse Guidance 46.
 - Posts already published or already scheduled before 2026-06-22 are not reused as daily visual themes.
 - Public URLs assume the repo is pushed to `main`.

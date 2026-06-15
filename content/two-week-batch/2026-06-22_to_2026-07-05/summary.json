@@ -1,19 +1,19 @@
 {
   "batchSlug": "2026-06-22_to_2026-07-05",
-  "generatedAt": "2026-06-15T19:39:55.337Z",
+  "generatedAt": "2026-06-15T22:14:37.604Z",
   "days": 14,
   "posts": 70,
   "registerCounts": {
-    "total": 191,
+    "total": 200,
     "travel": 39,
     "places": 45,
     "perfumes": 3,
     "mobile-app": 9,
-    "marketing-content": 21,
+    "marketing-content": 30,
     "engagement": 4,
-    "batch-places": 40,
+    "batch-places": 30,
     "batch-travel": 25,
-    "batch-perfumes": 5
+    "batch-perfumes": 15
   },
   "publicBase": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main"
 }
