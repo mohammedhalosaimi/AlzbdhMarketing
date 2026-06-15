@@ -35,7 +35,6 @@ const campaigns = [
   {
     vertical: 'places',
     slug: 'riyadh-map-decision',
-    kind: 'Marketing ad',
     title: 'وين نروح الليلة؟',
     eyebrow: 'تطبيق الزبدة',
     subtitle: 'مطعم، كوفي، أو عيادة في الرياض.',
@@ -57,7 +56,6 @@ const campaigns = [
   {
     vertical: 'travel',
     slug: 'travel-compare',
-    kind: 'Account content',
     title: 'نفس الوجهة. التخطيط هو الفرق.',
     eyebrow: 'زبدة السفر',
     subtitle: 'بدون حوسة مواقع وقروبات.',
@@ -79,7 +77,6 @@ const campaigns = [
   {
     vertical: 'perfumes',
     slug: 'perfume-verdict',
-    kind: 'Marketing ad',
     title: 'عطر نيش بدون حوسة',
     eyebrow: 'زبدة العطور',
     subtitle: 'لا تشتري من الوصف الجميل بس.',
@@ -101,7 +98,6 @@ const campaigns = [
   {
     vertical: 'mobile-app',
     slug: 'ask-zbdh-chat',
-    kind: 'Marketing ad',
     title: 'اسأل الزبدة',
     eyebrow: 'تطبيق الزبدة',
     subtitle: 'اكتبها مثل ما تقولها لخويك.',
