@@ -32,12 +32,54 @@ const sources = {
 };
 
 const perfumeData = JSON.parse(await fs.readFile(path.join(repo, 'content/perfumes/data/live-perfumes-products.json'), 'utf8'));
+
+async function ensureCenteredPerfumeAsset(product) {
+  if (!product.localImage) return product;
+  const source = path.join(repo, product.localImage);
+  const outDir = path.join(repo, 'content/perfumes/assets/product-cuts');
+  const output = path.join(outDir, `${product.slug}.png`);
+  await fs.mkdir(outDir, { recursive: true });
+
+  const trimmed = await sharp(source)
+    .flatten({ background: '#ffffff' })
+    .trim({ background: '#ffffff', threshold: 16 })
+    .png()
+    .toBuffer();
+
+  const cut = await sharp(trimmed)
+    .resize(620, 620, { fit: 'contain', background: '#ffffff' })
+    .extend({
+      top: 50,
+      bottom: 50,
+      left: 50,
+      right: 50,
+      background: '#ffffff'
+    })
+    .png()
+    .toBuffer();
+
+  await sharp({
+    create: {
+      width: 720,
+      height: 720,
+      channels: 3,
+      background: '#ffffff'
+    }
+  })
+    .composite([{ input: cut, gravity: 'center' }])
+    .png({ compressionLevel: 9 })
+    .toFile(output);
+
+  return { ...product, centeredImage: `content/perfumes/assets/product-cuts/${product.slug}.png` };
+}
+
+const centeredPerfumeProducts = await Promise.all(perfumeData.products.map(ensureCenteredPerfumeAsset));
 const selectedPerfumes = [
   'angels-share-paradis',
   'blue-talisman-extrait-de-parfum',
   'bottled-absolu',
   'babycat-raw-bourbon'
-].map((slug) => perfumeData.products.find((product) => product.slug === slug)).filter(Boolean);
+].map((slug) => centeredPerfumeProducts.find((product) => product.slug === slug)).filter(Boolean);
 
 const perfumeTitles = {
   'angels-share-paradis': 'أنجلز شير بارادي',
@@ -61,7 +103,7 @@ const perfumeCampaigns = selectedPerfumes.map((product) => ({
   subtitle: `${product.arabicBrand} · تقييم ${product.rating}`,
   body: perfumeHooks[product.slug] ?? product.summary,
   cta: 'خذ الزبدة',
-  image: product.localImage,
+  image: product.centeredImage ?? product.localImage,
   style: 'product',
   captions: {
     x: `${product.arabicName} من ${product.arabicBrand}.\n\n${product.summary}\n\nخذ الزبدة قبل التجربة: هل يناسبك؟ ومتى يطلع بأفضل صورة؟\n\napp.alzbdh.com`,
@@ -176,12 +218,12 @@ h1{margin:18px 0 0;font-size:${isWide ? 82 : isStory ? 88 : 74}px;line-height:1.
 .card{position:absolute;z-index:3;border-radius:8px}
 .map{background:#F7F3EA;color:#102318}.map .site{color:#1F3D2E;text-shadow:none}.map-scene{position:absolute;inset-inline:${isWide ? 60 : 44}px;inset-block-start:${isWide ? 145 : 145}px;height:${isWide ? 535 : isStory ? 960 : 760}px;border-radius:18px;overflow:hidden;transform:rotate(-2deg);box-shadow:0 28px 80px rgba(16,35,24,.25);border:1px solid rgba(31,61,46,.16)}.map-scene img{width:100%;height:100%;object-fit:cover;object-position:center top;filter:saturate(1.08) contrast(1.03)}.map-scene:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(247,243,234,0),rgba(16,35,24,.31))}.map .card{inset-inline:${isWide ? '760px 72px' : '70px'};inset-block-end:${isWide ? '78px' : '84px'};background:#FDFBF7;color:#102318;padding:${isWide ? '36px 42px' : '38px 42px'};box-shadow:0 28px 70px rgba(16,35,24,.16)}.map h1{color:#102318}.map .body{color:#34463b}.callout{position:absolute;z-index:5;inset-block-start:${isWide ? 520 : isStory ? 815 : 650}px;inset-inline-end:${isWide ? 900 : 78}px;background:#1F3D2E;color:#FDFBF7;border:1px solid rgba(232,196,107,.55);border-radius:8px;padding:14px 18px;font-size:${isWide ? 25 : 27}px;font-weight:800}
 .compare .card{inset-block:${isWide ? '198px 88px' : '248px 118px'};width:${isWide ? 560 : 430}px;padding:${isWide ? 36 : 32}px}.compare .without{inset-inline-end:${isWide ? 94 : 72}px;background:#FDFBF7;color:#102318}.compare .with{inset-inline-start:${isWide ? 94 : 72}px;background:#1F3D2E;color:#FDFBF7;border:1px solid rgba(232,196,107,.42)}.compare h2{margin:0 0 18px;font-size:${isWide ? 48 : 44}px}.compare p{font-size:${isWide ? 30 : 27}px;line-height:1.55;font-weight:700}.compare .cta{font-size:${isWide ? 24 : 23}px}
-.product{background:radial-gradient(circle at 50% 22%,rgba(232,196,107,.20),transparent 28%),linear-gradient(145deg,#09110d,#1F3D2E 58%,#0b1711)}.bottle{position:absolute;z-index:2;inset-block-start:${isWide ? 138 : isStory ? 190 : 176}px;inset-inline:0;margin:auto;width:${isWide ? 410 : isStory ? 420 : 360}px;height:${isWide ? 410 : isStory ? 420 : 360}px;border-radius:8px;background:rgba(253,251,247,.08);display:flex;align-items:center;justify-content:center}.bottle img{max-width:78%;max-height:78%;border-radius:8px}.product .card{inset-inline:${isWide ? 170 : 70}px;inset-block-end:${isWide ? 80 : 88}px;text-align:center}.product .body{max-width:${isWide ? 980 : 870}px;margin-inline:auto}
+.product{background:radial-gradient(circle at 50% 25%,rgba(232,196,107,.20),transparent 30%),linear-gradient(145deg,#09110d,#1F3D2E 58%,#0b1711)}.bottle{position:absolute;z-index:2;inset-block-start:${isWide ? 120 : isStory ? 202 : 168}px;inset-inline:0;margin:auto;width:${isWide ? 430 : isStory ? 470 : 390}px;height:${isWide ? 430 : isStory ? 470 : 390}px;border-radius:8px;background:rgba(253,251,247,.10);display:flex;align-items:center;justify-content:center}.bottle img{width:78%;height:78%;object-fit:contain;object-position:center center;display:block;border-radius:8px}.product .card{inset-inline:${isWide ? 170 : 70}px;inset-block-end:${isWide ? 80 : 88}px;text-align:center}.product .body{max-width:${isWide ? 980 : 870}px;margin-inline:auto}
 .chat{background:linear-gradient(145deg,#102318,#1F3D2E 58%,#0b1711)}.chat .grid{position:absolute;z-index:3;inset-inline:${isWide ? 90 : 58}px;inset-block:${isWide ? 145 : 135}px ${isWide ? 70 : 70}px;display:grid;grid-template-columns:${isWide ? '1fr 480px' : '1fr'};grid-template-rows:${isWide ? '1fr' : 'auto 1fr'};gap:${isWide ? 56 : 26}px;align-items:center}.chat .phone{justify-self:center;width:${isWide ? 410 : isStory ? 470 : 330}px;height:${isWide ? 760 : isStory ? 940 : 660}px;border:14px solid #050807;border-radius:54px;overflow:hidden;box-shadow:0 36px 90px rgba(0,0,0,.52)}.chat .phone img{width:100%;height:100%;object-fit:cover;object-position:center top}.chat .copy{text-align:${isWide ? 'right' : 'center'}}
 .tiktok .top{inset-block-start:180px;inset-inline:70px 190px}.tiktok .top img{width:122px}.tiktok .site{font-size:22px}.tiktok h1{font-size:70px;line-height:1.08}.tiktok .subtitle{font-size:30px}.tiktok .body{font-size:27px;line-height:1.45}.tiktok .cta{font-size:24px;margin-block-start:14px;padding:11px 18px}
 .tiktok.map .map-scene{inset-inline:54px 150px;inset-block-start:300px;height:780px;transform:rotate(-1deg)}.tiktok.map .card{inset-inline:62px 164px;inset-block-end:430px;padding:34px 38px}.tiktok.map .callout{inset-block-start:930px;inset-inline-end:178px;font-size:24px}
 .tiktok.compare .card{inset-block:auto 430px;width:360px;padding:26px}.tiktok.compare .without{inset-inline-end:148px}.tiktok.compare .with{inset-inline-start:70px}.tiktok.compare h2{font-size:38px;margin-block-end:12px}.tiktok.compare p{font-size:24px;line-height:1.45}
-.tiktok.product .bottle{inset-block-start:360px;width:340px;height:340px}.tiktok.product .card{inset-inline:72px 168px;inset-block-end:430px}.tiktok.product .body{max-width:760px}
+.tiktok.product .bottle{inset-block-start:330px;width:420px;height:420px}.tiktok.product .card{inset-inline:72px 168px;inset-block-end:430px}.tiktok.product .body{max-width:760px}
 .tiktok.chat .grid{inset-inline:72px 168px;inset-block:250px 430px;display:grid;grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:42px;align-items:center}.tiktok.chat .copy{text-align:center}.tiktok.chat .phone{width:390px;height:780px;border-width:12px;border-radius:46px;align-self:start}
 </style></head><body><main class="poster ${campaign.style}${isTikTok ? ' tiktok' : ''}"><div class="top"><div class="site">app.alzbdh.com</div><img src="${logo}" alt="الزبدة"></div>${bodyFor(campaign, image, title)}</main></body></html>`;
 }
