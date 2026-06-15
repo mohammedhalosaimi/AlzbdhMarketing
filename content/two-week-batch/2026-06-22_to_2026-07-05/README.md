@@ -82,10 +82,10 @@ This batch is designed for a rolling Buffer workflow under the 10 scheduled-post
 ### 2026-06-30 — زبدة العطور
 
 - 09:45 X: morning
-- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing-content/perfumes/images/x_1600x900/perfume-verdict.png
+- 12:35 X: visual — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/perfume-verdict.png
 - 18:15 Instagram Story: story — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-30-perfumes-perfume-verdict.png
-- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing-content/perfumes/images/instagram_1080x1350/perfume-verdict.png
-- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing-content/perfumes/images/tiktok_1080x1920/perfume-verdict.png
+- 20:45 Instagram: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/perfume-verdict.png
+- 21:30 TikTok: feed — https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/perfume-verdict.png
 
 ### 2026-07-01 — باريس
 

@@ -1,0 +1,151 @@
+# Marketing Content Captions
+
+## places / riyadh-map-decision / x
+
+Image: `content/marketing ad/places/images/x_1600x900/riyadh-map-decision.png`
+
+وين نروح الليلة؟
+
+مطعم، كوفي، أو عيادة في الرياض. افتح الخريطة وخذ الزبدة بدون لفّة تعليقات.
+
+حمّل تطبيق الزبدة على iOS:
+https://apps.apple.com/sa/app/alzbdh/id6741608525
+
+#الزبدة #تطبيق_الزبدة #الرياض
+
+## places / riyadh-map-decision / instagram
+
+Image: `content/marketing ad/places/images/instagram_1080x1350/riyadh-map-decision.png`
+
+وين نروح الليلة؟
+
+الرياض مليانة خيارات، بس مو كل خيار يستاهل وقتك. افتح الخريطة في تطبيق الزبدة، فلتر بين مطاعم وكافيهات وعيادات، وخذ قرارك أسرع.
+
+حمّله من App Store:
+https://apps.apple.com/sa/app/alzbdh/id6741608525
+
+#الزبدة #تطبيق_الزبدة #الرياض #مطاعم_الرياض #كافيهات_الرياض #عيادات_الرياض
+
+## places / riyadh-map-decision / tiktok
+
+Image: `content/marketing ad/places/images/tiktok_1080x1920/riyadh-map-decision.png`
+
+وين نروح الليلة؟
+
+مطعم؟ كوفي؟ عيادة؟ تطبيق الزبدة يخلي خريطة الرياض أوضح، والقرار أسرع.
+
+حمّل تطبيق الزبدة على iOS:
+https://apps.apple.com/sa/app/alzbdh/id6741608525
+
+#الزبدة #تطبيق_الزبدة #الرياض #وين_نروح #مطاعم_الرياض #كافيهات_الرياض
+
+## travel / travel-compare / x
+
+Image: `content/marketing ad/travel/images/x_1600x900/travel-compare.png`
+
+نفس الوجهة. التخطيط هو الفرق.
+
+بدون الزبدة: قروبات وآراء متضاربة.
+مع الزبدة: خطة أوضح وأماكن تستاهل قبل ما تحجز.
+
+app.alzbdh.com
+
+#الزبدة #زبدة_السفر #سفر
+
+## travel / travel-compare / instagram
+
+Image: `content/marketing ad/travel/images/instagram_1080x1350/travel-compare.png`
+
+نفس الوجهة. التخطيط هو الفرق.
+
+السفر مو بس تذاكر وفندق. زبدة السفر تساعدك تفهم الوجهة، ترتب الأيام، وتعرف وش يستاهل قبل ما تضيع بين المواقع.
+
+app.alzbdh.com
+
+#الزبدة #زبدة_السفر #سفر #رحلات #تخطيط_سفر
+
+## travel / travel-compare / tiktok
+
+Image: `content/marketing ad/travel/images/tiktok_1080x1920/travel-compare.png`
+
+بدون الزبدة: لفّة مواقع.
+مع الزبدة: خطة أوضح.
+
+وش وجهتكم الجاية؟
+app.alzbdh.com
+
+#الزبدة #زبدة_السفر #سفر #وين_نسافر
+
+## perfumes / perfume-verdict / x
+
+Image: `content/marketing ad/perfumes/images/x_1600x900/perfume-verdict.png`
+
+عطر نيش بدون حوسة.
+
+لا تشتري من الوصف الجميل بس. خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟
+
+app.alzbdh.com
+
+#الزبدة #زبدة_العطور #عطور
+
+## perfumes / perfume-verdict / instagram
+
+Image: `content/marketing ad/perfumes/images/instagram_1080x1350/perfume-verdict.png`
+
+عطر نيش بدون حوسة.
+
+زبدة العطور تختصر لك الانطباع: النوتات، الإحساس، ومتى يناسبك العطر بدون كلام تسويقي زائد.
+
+app.alzbdh.com
+
+#الزبدة #زبدة_العطور #عطور #عطور_نيش #Perfume
+
+## perfumes / perfume-verdict / tiktok
+
+Image: `content/marketing ad/perfumes/images/tiktok_1080x1920/perfume-verdict.png`
+
+لا تشتري من الوصف الجميل بس.
+
+خذ الزبدة: وش ريحته؟ لمين يناسب؟ وهل يستاهل التجربة؟
+
+app.alzbdh.com
+
+#الزبدة #زبدة_العطور #عطور #عطر
+
+## mobile-app / ask-zbdh-chat / x
+
+Image: `content/marketing ad/mobile-app/images/x_1600x900/ask-zbdh-chat.png`
+
+اسأل الزبدة.
+
+كوفي هادي؟ أفضل شاورما؟ عيادة قريبة؟ اكتبها مثل ما تقولها لخويك، والشات يختصر القرار في الرياض.
+
+https://apps.apple.com/sa/app/alzbdh/id6741608525
+
+#الزبدة #تطبيق_الزبدة #الرياض
+
+## mobile-app / ask-zbdh-chat / instagram
+
+Image: `content/marketing ad/mobile-app/images/instagram_1080x1350/ask-zbdh-chat.png`
+
+اسأل الزبدة.
+
+اكتبها بالطريقة اللي تفكر فيها: كوفي هادي، أفضل شاورما، أو عيادة قريبة. تطبيق الزبدة يساعدك تختصر القرار في الرياض.
+
+حمّله من App Store:
+https://apps.apple.com/sa/app/alzbdh/id6741608525
+
+#الزبدة #تطبيق_الزبدة #الرياض #مطاعم_الرياض #كافيهات_الرياض
+
+## mobile-app / ask-zbdh-chat / tiktok
+
+Image: `content/marketing ad/mobile-app/images/tiktok_1080x1920/ask-zbdh-chat.png`
+
+اسأل الزبدة.
+
+كوفي هادي؟ أفضل شاورما؟ عيادة قريبة؟ اكتبها مثل ما تقولها لخويك.
+
+حمّل تطبيق الزبدة على iOS:
+https://apps.apple.com/sa/app/alzbdh/id6741608525
+
+#الزبدة #تطبيق_الزبدة #الرياض #وين_نروح

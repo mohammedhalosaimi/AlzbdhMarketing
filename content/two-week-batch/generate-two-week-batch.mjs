@@ -86,7 +86,7 @@ function relToRepo(filePath) {
 }
 
 function publicUrl(relativePath) {
-  return `${githubBase}/${relativePath}`;
+  return `${githubBase}/${relativePath.split('/').map(encodeURIComponent).join('/')}`;
 }
 
 function localRel(fromDir, relativePath) {
@@ -113,7 +113,7 @@ function shorten(text, max = 150) {
 function imagePathFor(item, platform) {
   if (item.type === 'travel') return `content/travel/images/${formats[platform].dir}/${item.id}.png`;
   if (item.type === 'places') return `content/places/images/${formats[platform].dir}/${item.id}.png`;
-  if (item.type === 'perfumes') return `content/marketing-content/perfumes/images/${formats[platform].dir}/perfume-verdict.png`;
+  if (item.type === 'perfumes') return `content/marketing ad/perfumes/images/${formats[platform].dir}/perfume-verdict.png`;
   throw new Error(`Unknown type ${item.type}`);
 }
 

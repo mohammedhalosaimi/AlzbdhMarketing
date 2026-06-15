@@ -489,7 +489,7 @@ https://app.alzbdh.com
 
 #الزبدة #زبدة_العطور #عطور
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing-content/perfumes/images/x_1600x900/perfume-verdict.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/x_1600x900/perfume-verdict.png
 
 ## 2026-06-30 18:15 — Instagram Story — زبدة العطور
 
@@ -513,7 +513,7 @@ https://app.alzbdh.com
 
 #الزبدة #زبدة_العطور #عطور #عطور_نيش
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing-content/perfumes/images/instagram_1080x1350/perfume-verdict.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/perfume-verdict.png
 
 ## 2026-06-30 21:30 — TikTok — زبدة العطور
 
@@ -525,7 +525,7 @@ https://app.alzbdh.com
 
 #الزبدة #زبدة_العطور #عطور
 
-Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing-content/perfumes/images/tiktok_1080x1920/perfume-verdict.png
+Media: https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/tiktok_1080x1920/perfume-verdict.png
 
 ## 2026-07-01 09:45 — X — باريس
 
