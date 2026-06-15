@@ -43,9 +43,9 @@ Offers are intentionally excluded from this cadence until dates, availability, a
 | 2 | اسأل الزبدة | X | 18:40 | 6a3073aac5cca7fb316a8674 |
 | 2 | اسأل الزبدة | Instagram | 19:00 | 6a3073d4e44c0a8b44856440 |
 | 2 | اسأل الزبدة | TikTok | 19:20 | 6a3073f24b32b4b3c401e34f |
-| 3 | أنجلز شير بارادي | X | 21:05 | pending edit |
-| 3 | أنجلز شير بارادي | Instagram | 21:25 | pending edit |
-| 3 | أنجلز شير بارادي | TikTok | 21:45 | pending edit |
+| 3 | أنجلز شير بارادي | X | 21:05 | 6a307427c5cca7fb316a8e32 |
+| 3 | أنجلز شير بارادي | Instagram | 21:25 | 6a3074445fcdd1a7ca629984 |
+| 3 | أنجلز شير بارادي | TikTok | 21:45 | 6a30746c5fcdd1a7ca6299f3 |
 
 ## Scheduled Batch
 
