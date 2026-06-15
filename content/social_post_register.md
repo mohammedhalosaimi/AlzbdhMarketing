@@ -6,14 +6,19 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - Use `post_key` as the idempotency key.
 - Before scheduling/posting, skip any row where `posted=true` or `buffer_post_id` is filled.
 - After Buffer schedules or publishes the post, update `posted`, `posted_at_riyadh`, `buffer_post_id`, `buffer_channel_id`, and `post_url` if available.
-- The image paths are relative to `June marketing content/`.
+- Image paths are relative to the marketing repo root unless a row has an explicit public URL.
 
 ## Counts
-- Total platform posts: 96
+- Total platform posts: 182
 - Travel posts: 39
 - Places posts: 45
 - Perfumes posts: 3
 - Mobile app posts: 9
+- Marketing content posts: 12
+- Engagement posts: 4
+- Two-week batch places posts: 40
+- Two-week batch travel posts: 25
+- Two-week batch perfume posts: 5
 
 ## Voice sources
 - `docs/marketing/README.md`
@@ -26,6 +31,8 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - `social_post_register.csv` for spreadsheets/Buffer tracking.
 - `social_post_register.json` for automation.
 - Per-folder caption files remain in `travel/copy/`, `places/copy/`, and `perfumes/copy/`.
+- `marketing-content/` contains the current campaign-ready ad/account pack across places, travel, perfumes, and mobile app.
+- `two-week-batch/2026-06-22_to_2026-07-05/` contains the next 14-day rolling Buffer batch.
 
 ## Posted Log
 - 2026-06-13 18:01-18:06 Riyadh: Published Guidance 46 perfume posts via Buffer to X, Instagram, and TikTok. Buffer IDs: X 6a2d70e3768f4d60d56dafca, Instagram 6a2d712161b0aab8c15f6837, TikTok 6a2d718608bd17e5f3a90ff0.
@@ -35,9 +42,20 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 
 ## Manual Account Changes
 - 2026-06-13 Riyadh: Vietnam launch posts were manually deleted by the user from the social accounts; the register keeps them as used creative to avoid accidental reposting unless explicitly requested.
+- 2026-06-15 Riyadh: Sent-post audit found older published places captions with `تقييم زبدة` / `زبدة الرياض` wording. Recommendation: do not mass-delete unless brand consistency is more important than preserving early account activity; Buffer cannot edit already-sent posts from this connector.
 
 ## Scheduled Queue
-- 2026-06-17 to 2026-06-19 Riyadh: Scheduled mobile-app acquisition posts via Buffer for X, Instagram, and TikTok. Themes: اسأل زبدة, وين نروح الليلة, بدل ما تقرأ ٢٠٠ تعليق.
+- 2026-06-22 to 2026-07-05 Riyadh: Prepared 70 rolling-feed posts locally for X, Instagram, Instagram Story-style assets, and TikTok. These are marked `ready` only; do not pre-schedule all rows because the Buffer plan is capped at 10 scheduled posts. Daily feeder should schedule the same-day five-post batch and then write back Buffer IDs.
+- 2026-06-17 to 2026-06-19 Riyadh: Scheduled mobile-app acquisition posts via Buffer for X, Instagram, and TikTok. Themes: اسأل الزبدة, وين نروح الليلة, بدل ما تقرأ ٢٠٠ تعليق.
+
+- 2026-06-15 Riyadh: Updated scheduled Buffer captions that had brand wording issues:
+  - إسطنبول Instagram/TikTok now says `خلّ الزبدة` / `الزبدة`.
+  - المتحف الوطني السعودي X/Instagram/TikTok now says `تقييم الزبدة` and `في الزبدة` instead of app-brand wording without the article.
+- 2026-06-17 to 2026-06-19 Riyadh: Added X-only engagement prompts at 17:20 to make the account more conversational without over-posting visual content on Instagram/TikTok. Buffer IDs: 6a2fd917de9e76f6203923cb, 6a2fd945f18d4698afaa4851, 6a2fd976c266f6f56ba5ca53.
+- 2026-06-17 Riyadh: Added one X-only morning prompt at 09:45 to test the Saudi weekday mid-morning window. Buffer ID: 6a2ffa5d9815dc2cea27b661.
+- 2026-06-15 Riyadh: Refreshed scheduled media URLs in Buffer from older GitHub raw paths to GitHub Release assets under `buffer-media-2026-06-15`, without pushing repository contents. Updated all scheduled visual posts through 2026-06-21 except الطائف Instagram/TikTok, where Buffer returned a 429 rate limit before the final two edits. Retry after the connector cooldown.
+- 2026-06-20 Riyadh: Scheduled يرمين posts via Buffer. X 12:35 (6a2fd79dbc4ff5b211518dfe), Instagram 20:45 (6a2fd7d2c11354a315fdc648), TikTok 21:30 (6a2fd8259417b7b890885861).
+- 2026-06-21 Riyadh: Scheduled الطائف posts via Buffer. X 12:35 (6a2fd85dbc4ff5b2115192a4), Instagram 20:45 (6a2fd896c266f6f56ba5c66c), TikTok 21:30 (6a2fd8d2c11354a315fdcbfe).
 
 - 2026-06-14 Riyadh: Scheduled إيرث كافيه posts via Buffer. X 12:35 (6a2d77d361b0aab8c15f8dfe), Instagram 20:45 (6a2d77df08bd17e5f3a93710), TikTok 21:30 (6a2d77e9adc07817f4124573).
 - 2026-06-15 Riyadh: Scheduled إسطنبول posts via Buffer. X 12:35 (6a2d77f7e1196234c341862a), Instagram 20:45 (6a2d7803768f4d60d56dd7d7), TikTok 21:30 (6a2d780dadc07817f4124622).

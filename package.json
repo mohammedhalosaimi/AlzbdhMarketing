@@ -5,9 +5,12 @@
   "description": "Dedicated marketing workspace for الزبدة social content, campaign assets, and Buffer operations.",
   "type": "module",
   "scripts": {
-    "generate:mobile-app": "node content/mobile-app/generate-mobile-app-content.mjs"
+    "generate:mobile-app": "node content/mobile-app/generate-mobile-app-content.mjs",
+    "generate:marketing-content": "node content/marketing-content/generate-marketing-content.mjs",
+    "generate:two-week-batch": "node content/two-week-batch/generate-two-week-batch.mjs"
   },
   "devDependencies": {
-    "playwright": "^1.52.0"
+    "playwright": "^1.52.0",
+    "sharp": "^0.35.1"
   }
 }

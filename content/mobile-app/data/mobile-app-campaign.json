@@ -28,7 +28,7 @@
     {
       "slug": "ask-zbdh-riyadh",
       "title": "اسأل الزبدة",
-      "subtitle": "الدرشة بالعربي، والقرار أسرع",
+      "subtitle": "الشات بالعربي، والقرار أسرع",
       "hook": "جرّب: أبي كوفي هادي",
       "body": "اسأل بالطريقة اللي تفكر فيها، والزبدة تختصر لك الخيارات في الرياض.",
       "cta": "حمّل تطبيق الزبدة على iOS",
@@ -74,7 +74,7 @@
     "place_detail": "assets/screenshots-ar/cropped/place-detail-ar.png"
   },
   "screenshot_sources": {
-    "chat": "/Users/mohammed/Desktop/Software_Projects/Alzbdh/Screenshots for Ads/IMG_8929.PNG",
+    "chat": "/tmp/codex-remote-attachments/019ebcab-a110-7211-8e03-b9aa577c811a/83D8A34F-CA19-4EA8-BF33-2D91C9042424/1-Photo-1.jpg",
     "map": "/Users/mohammed/Desktop/Software_Projects/Alzbdh/Screenshots for Ads/IMG_8936.PNG",
     "place_detail": "/Users/mohammed/Desktop/Software_Projects/Alzbdh/Screenshots for Ads/IMG_8930.PNG"
   }

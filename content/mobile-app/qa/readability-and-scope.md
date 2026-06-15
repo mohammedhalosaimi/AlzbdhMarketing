@@ -16,7 +16,7 @@ Date: 2026-06-13
 ## Visual QA
 
 - Changa font is used from the local marketing assets.
-- White Zbdh logo appears on every image.
+- White الزبدة logo appears on every image.
 - `alzbdh.com` and `app.alzbdh.com` appear on every image.
 - Arabic text is centered/aligned and does not overlap after the second render pass.
 - Phone mockup uses Arabic in-app screenshots supplied by the user.
