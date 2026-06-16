@@ -3113,11 +3113,11 @@
     "hashtags": "#الزبدة #تطبيق_الزبدة #الرياض",
     "image": "content/marketing ad/mobile-app/images/x_1600x900/ask-zbdh-chat.png",
     "posted": "false",
-    "posted_at_riyadh": "2026-06-17T18:40:00+03:00",
+    "posted_at_riyadh": "2026-06-16T16:10:00+03:00",
     "buffer_post_id": "6a3073aac5cca7fb316a8674",
     "buffer_channel_id": "67364f29da2e3cb64c611c48",
     "post_url": "",
-    "notes": "Scheduled in Buffer for 2026-06-17 18:40 Riyadh using clean content/marketing ad media; TikTok variants use 1080x1920 safe-zone layout."
+    "notes": "MOVED_TO_TODAY: Buffer post moved from 2026-06-17 18:40 to 2026-06-16 16:10 Riyadh. Duplicate of rapid-2026-06-15::20:25::x::mobile-app-ask-zbdh-chat; do not schedule another copy."
   },
   {
     "post_key": "tomorrow-clean-2026-06-17::19:00::instagram::mobile-app-ask-zbdh-chat",
@@ -3129,11 +3129,11 @@
     "hashtags": "#الزبدة #تطبيق_الزبدة #الرياض #مطاعم_الرياض #كافيهات_الرياض",
     "image": "content/marketing ad/mobile-app/images/instagram_1080x1350/ask-zbdh-chat.png",
     "posted": "false",
-    "posted_at_riyadh": "2026-06-17T19:00:00+03:00",
+    "posted_at_riyadh": "2026-06-16T16:30:00+03:00",
     "buffer_post_id": "6a3073d4e44c0a8b44856440",
     "buffer_channel_id": "6a23e0dec687a22dd4680c8d",
     "post_url": "",
-    "notes": "Scheduled in Buffer for 2026-06-17 19:00 Riyadh using clean content/marketing ad media; TikTok variants use 1080x1920 safe-zone layout."
+    "notes": "MOVED_TO_TODAY: Buffer post moved from 2026-06-17 19:00 to 2026-06-16 16:30 Riyadh. Duplicate of rapid-2026-06-15::20:40::instagram::mobile-app-ask-zbdh-chat; do not schedule another copy."
   },
   {
     "post_key": "tomorrow-clean-2026-06-17::19:20::tiktok::mobile-app-ask-zbdh-chat",
@@ -3145,11 +3145,11 @@
     "hashtags": "#الزبدة #تطبيق_الزبدة #الرياض #وين_نروح",
     "image": "content/marketing ad/mobile-app/images/tiktok_1080x1920/ask-zbdh-chat.png",
     "posted": "false",
-    "posted_at_riyadh": "2026-06-17T19:20:00+03:00",
+    "posted_at_riyadh": "2026-06-16T16:20:00+03:00",
     "buffer_post_id": "6a3073f24b32b4b3c401e34f",
     "buffer_channel_id": "67365353da2e3cb64c9ccb65",
     "post_url": "",
-    "notes": "Scheduled in Buffer for 2026-06-17 19:20 Riyadh using clean content/marketing ad media; TikTok variants use 1080x1920 safe-zone layout."
+    "notes": "MOVED_TO_TODAY: Buffer post moved from 2026-06-17 19:20 to 2026-06-16 16:20 Riyadh. Duplicate of rapid-2026-06-15::21:00::tiktok::mobile-app-ask-zbdh-chat; do not schedule another copy."
   },
   {
     "post_key": "tomorrow-clean-2026-06-17::21:05::x::perfumes-angels-share-paradis",
@@ -3198,5 +3198,69 @@
     "buffer_channel_id": "67365353da2e3cb64c9ccb65",
     "post_url": "",
     "notes": "Scheduled in Buffer for 2026-06-17 Riyadh using Angels’ Share Paradis perfume creative; TikTok variant is 1080x1920 safe-zone layout."
+  },
+  {
+    "post_key": "manual-fill-2026-06-16::19:40::tiktok::travel-bangkok",
+    "content_type": "travel",
+    "item": "بانكوك",
+    "slug": "bangkok",
+    "platform": "TikTok",
+    "text": "بانكوك في بالك؟ خذ الزبدة قبل لا تتوه.\n\nالقصر الكبير، معبد الفجر.\n\nخططها على https://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_السفر #سفر #بانكوك",
+    "image": "content/travel/images/tiktok_1080x1920/bangkok.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-06-16T19:40:00+03:00",
+    "buffer_post_id": "6a31481e89ee3f21dbd9ffd9",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "MANUAL_FILL_TODAY: Scheduled in Buffer to reach 10 TikTok posts on 2026-06-16. Source row from two-week plan 2026-06-23; future feeder should skip same source/text/media."
+  },
+  {
+    "post_key": "manual-fill-2026-06-16::20:30::tiktok::place-ice-cream-cafe-36",
+    "content_type": "places",
+    "item": "ايس كريم وكافيه ٣٦",
+    "slug": "ChIJPYjxol8dLz4RDxJc9VrkOT0",
+    "platform": "TikTok",
+    "text": "وين تروح؟\n\nمقهى: ايس كريم وكافيه ٣٦\nتقييم الزبدة 9.5/10، والزبدة تقول: احفظ ايس كريم وكافيه ٣٦ في قائمتك إذا كنت تبحث عن مقهى موثوق في الرياض.\n\nhttps://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_الأماكن #الرياض #مقهى",
+    "image": "content/places/images/tiktok_1080x1920/ChIJPYjxol8dLz4RDxJc9VrkOT0.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-06-16T20:30:00+03:00",
+    "buffer_post_id": "6a314831c0bf6cdaf24b01d2",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "MANUAL_FILL_TODAY: Scheduled in Buffer to reach 10 TikTok posts on 2026-06-16. Source row from two-week plan 2026-06-22; future feeder should skip same source/text/media."
+  },
+  {
+    "post_key": "manual-fill-2026-06-16::21:20::tiktok::travel-dubai",
+    "content_type": "travel",
+    "item": "دبي",
+    "slug": "dubai",
+    "platform": "TikTok",
+    "text": "دبي في بالك؟ خذ الزبدة قبل لا تتوه.\n\nأطول برج في العالم، دبي مول.\n\nخططها على https://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_السفر #سفر #دبي",
+    "image": "content/travel/images/tiktok_1080x1920/dubai.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-06-16T21:20:00+03:00",
+    "buffer_post_id": "6a31486189ee3f21dbda0149",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "MANUAL_FILL_TODAY: Scheduled in Buffer to reach 10 TikTok posts on 2026-06-16. Source row from two-week plan 2026-06-25; future feeder should skip same source/text/media."
+  },
+  {
+    "post_key": "manual-fill-2026-06-16::22:10::tiktok::perfume-bottled-absolu",
+    "content_type": "marketing-content",
+    "item": "بوتلد أبسولو",
+    "slug": "bottled-absolu",
+    "platform": "TikTok",
+    "text": "بوتلد أبسولو.\n\nBottled Absolu من Hugo Boss يفتح بدخان بخور كثيف مع جلد مدبوغ دافئ ولمسة صمغية حلوة (myrrh) فوق قاعدة خشبية من (cedarwood) تعطيه عمقًا فوريًا.\n\nزبدة العطور تختصر لك: وش ريحته؟ ولمين يناسب؟\n\nhttps://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_العطور #عطور",
+    "image": "content/marketing ad/perfumes/images/tiktok_1080x1920/bottled-absolu.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-06-16T22:10:00+03:00",
+    "buffer_post_id": "6a31487289ee3f21dbda019d",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "MANUAL_FILL_TODAY: Scheduled in Buffer to reach 10 TikTok posts on 2026-06-16. Source row from two-week plan 2026-07-02; future feeder should skip same source/text/media."
   }
 ]
