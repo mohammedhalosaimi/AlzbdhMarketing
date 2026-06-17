@@ -7,6 +7,14 @@
 - Confirm the media URL is hosted on `images.alzbdh.com`.
 - Confirm the caption and hashtags match the platform.
 - Confirm the row exists in `content/social_post_register.*`.
+- Count current Buffer scheduled posts across all connected channels. Do not
+  exceed 10 total scheduled posts for the account.
+- Run `npm run buffer:gate -- --date YYYY-MM-DD --current-scheduled N`.
+  Schedule only rows written by `npm run buffer:select -- --date YYYY-MM-DD
+  --current-scheduled N --fill-future`; if the selection is empty, do not
+  improvise a duplicate replacement.
+- If a planned time has passed, reschedule only when the copy still matches the
+  new Riyadh time. Never publish or schedule morning copy at night.
 
 ## After Scheduling
 

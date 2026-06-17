@@ -27,6 +27,17 @@ Buffer tracking logs for marketing operations.
 - Do not use temporary media hosts for scheduled posts.
 - Keep `content/social_post_register.*` updated after every Buffer action.
 - Never repost an asset if its register row is marked posted or already scheduled.
+- Run `npm run buffer:gate -- --date YYYY-MM-DD --current-scheduled N` before
+  creating Buffer posts. Use `npm run buffer:select -- --date YYYY-MM-DD
+  --current-scheduled N --fill-future` when today's rows are exhausted and the
+  account has open scheduled-post capacity. A post is a duplicate if the same
+  channel has matching normalized text, matching normalized media, or the same
+  source with equivalent text anywhere in the used register history.
+- Buffer's `scheduledPosts=10` limit is an account-level cap for this workspace.
+  The daily feeder fills only the open slots up to 10 total scheduled posts.
+- Time-sensitive wording must match Riyadh time. Morning copy such as
+  `صباح الخير` is only valid from 05:00 through 11:59; night/evening copy such
+  as `الليلة` is valid from 16:00 onward.
 
 ## Buffer Cadence
 

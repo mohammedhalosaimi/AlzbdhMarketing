@@ -7,7 +7,9 @@
   "scripts": {
     "generate:mobile-app": "node content/mobile-app/generate-mobile-app-content.mjs",
     "generate:marketing-content": "node content/marketing-content/generate-marketing-content.mjs",
-    "generate:two-week-batch": "node content/two-week-batch/generate-two-week-batch.mjs"
+    "generate:two-week-batch": "node content/two-week-batch/generate-two-week-batch.mjs",
+    "buffer:gate": "node scripts/buffer-feeder-gate.mjs",
+    "buffer:select": "node scripts/buffer-feeder-gate.mjs --write-selection .gstack/alzbdh-daily-buffer-feeder-selection.json"
   },
   "devDependencies": {
     "playwright": "^1.52.0",
