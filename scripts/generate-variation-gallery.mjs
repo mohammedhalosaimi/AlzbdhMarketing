@@ -18,9 +18,10 @@ const groups = [
     roots: [
       'content/perfumes/images',
       'content/marketing ad/perfumes/images',
-      'content/two-week-batch/2026-06-22_to_2026-07-05/stories/images'
+      'content/two-week-batch/2026-06-22_to_2026-07-05/stories/images',
+      'content/monthly-batch'
     ],
-    match: (relPath) => relPath.includes('/perfumes/') || /-perfumes-/.test(relPath)
+    match: (relPath) => relPath.includes('/perfumes/') || /-perfumes-/.test(relPath) || /\/perfume-/.test(relPath)
   },
   {
     key: 'places',
@@ -30,9 +31,10 @@ const groups = [
     roots: [
       'content/places/images',
       'content/marketing ad/places/images',
-      'content/two-week-batch/2026-06-22_to_2026-07-05/stories/images'
+      'content/two-week-batch/2026-06-22_to_2026-07-05/stories/images',
+      'content/monthly-batch'
     ],
-    match: (relPath) => relPath.includes('/places/') || /-places-/.test(relPath)
+    match: (relPath) => relPath.includes('/places/') || /-places-/.test(relPath) || /\/place-/.test(relPath)
   },
   {
     key: 'destinations',
@@ -42,9 +44,10 @@ const groups = [
     roots: [
       'content/travel/images',
       'content/marketing ad/travel/images',
-      'content/two-week-batch/2026-06-22_to_2026-07-05/stories/images'
+      'content/two-week-batch/2026-06-22_to_2026-07-05/stories/images',
+      'content/monthly-batch'
     ],
-    match: (relPath) => relPath.includes('/travel/') || /-travel-/.test(relPath)
+    match: (relPath) => relPath.includes('/travel/') || /-travel-/.test(relPath) || /\/destination-/.test(relPath)
   },
   {
     key: 'ads',
@@ -107,6 +110,7 @@ function titleCase(value) {
 function sourceLabel(relPath) {
   if (relPath.includes('content/marketing ad/')) return 'Paid marketing';
   if (relPath.includes('content/two-week-batch/')) return 'Upcoming batch story';
+  if (relPath.includes('content/monthly-batch/')) return 'Next month batch';
   if (relPath.includes('content/mobile-app/')) return 'Mobile app';
   if (relPath.includes('content/perfumes/')) return 'Account perfume';
   if (relPath.includes('content/places/')) return 'Account place';
@@ -175,7 +179,7 @@ const nav = groups.map((group) => {
 function card(item) {
   return `<article class="asset-card ${item.aspect}">
     <div class="thumb">
-      <img src="${escapeHtml(item.imageSrc)}" alt="${escapeHtml(item.title)}" loading="lazy">
+      <img src="${escapeHtml(item.imageSrc)}" alt="${escapeHtml(item.title)}">
     </div>
     <div class="asset-info">
       <div class="chips">

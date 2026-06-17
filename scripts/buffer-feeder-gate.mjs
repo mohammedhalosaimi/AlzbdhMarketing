@@ -11,6 +11,7 @@ const DEFAULT_SELECTION_PATH = '.gstack/alzbdh-daily-buffer-feeder-selection.jso
 const PLAN_GLOBS = [
   'content/buffer-batches',
   'content/two-week-batch',
+  'content/monthly-batch',
 ];
 
 const PLATFORM_CHANNEL = {

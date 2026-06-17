@@ -1,0 +1,634 @@
+{
+  "generatedAt": "2026-06-17T22:43:10.978Z",
+  "batchSlug": "2026-07-06_to_2026-08-04",
+  "source": {
+    "travelConfig": "https://api.alzbdh.com/api/v1/travel/config",
+    "perfumeFeed": "https://api.alzbdh.com/api/v1/perfumes/feed",
+    "placeSearch": "https://api.alzbdh.com/place/search"
+  },
+  "placeQueries": [
+    "dubai",
+    "tokyo",
+    "paris",
+    "london",
+    "rome",
+    "bangkok",
+    "istanbul",
+    "cairo",
+    "bali",
+    "miami",
+    "atlanta",
+    "hanoi"
+  ],
+  "counts": {
+    "places": 12,
+    "destinations": 10,
+    "perfumes": 8,
+    "days": 30,
+    "rows": 120
+  },
+  "places": [
+    {
+      "type": "place",
+      "id": "ChIJvYwf99hcXz4Rp4ci-Nb3bxg",
+      "slug": "ChIJvYwf99hcXz4Rp4ci-Nb3bxg",
+      "title": "Dampa Seafood Grill - Dubai",
+      "category": "مطعم",
+      "city": "dubai",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_raw_candidates/ChIJvYwf99hcXz4Rp4ci-Nb3bxg/51c33346a9ac3a85b34cfa79.jpg",
+      "score": 9.8,
+      "reviews": 22299,
+      "rating": 4.8,
+      "body": "مكس البحريات بالكاجن هو اللي شايل المكان فعلاً، ومعاه الصوصات الطيبة والكمية الكبيرة يطلع مناسب للشاركة. الأكل طازج والخدمة سريعة وودودة، بس الزحمة وقت الذروة قد تطول شوي، والمشروبات مو دايم أقوى نقطة عندهم.",
+      "detail": "إذا تبي جمعة بحريات مرتبة، خذ مكس الكاجن أو البلاتر المشكل وادخل على الصوصات مباشرة. المكان قوي في الطزاجة والكمية، بس الأفضل تروح بدري إذا تبي تجربة أهدى.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJvYwf99hcXz4Rp4ci-Nb3bxg"
+    },
+    {
+      "type": "place",
+      "id": "ChIJ8WQHFoqNGGARpc767pcSol8",
+      "slug": "ChIJ8WQHFoqNGGARpc767pcSol8",
+      "title": "HALAL WAGYU RAMEN SHINJUKU-TEI Tokyo Shinjuku",
+      "category": "مطعم",
+      "city": "tokyo",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_raw_candidates/ChIJ8WQHFoqNGGARpc767pcSol8/b5e53c4e7639299e6da5bfed.jpg",
+      "score": 9.8,
+      "reviews": 9154,
+      "rating": 4.8,
+      "body": "رامن الواغيو هنا هو اللي يشيل التجربة: اللحم طري والمرق ثقيل وغني، وعشان كذا أغلب الناس رجعوا مدحوا الطبق نفسه قبل أي شيء ثاني. المكان صغير شوي وصعب ينلقط أول مرة، وسعره أعلى من المتوسط، بس لو تبي وجبة تشبعك وتطلع منها راضي فهنا خيار قوي جدًا.",
+      "detail": "أنصح فيه إذا تبي رامن واغيو حلال بمستوى عالي، وخصوصًا الميسو وواغيو سوشي بعد. بس خلك جاهز إن السعر مو الأرخص والمكان يحتاج انتباه عشان توصل له بسهولة.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJ8WQHFoqNGGARpc767pcSol8"
+    },
+    {
+      "type": "place",
+      "id": "ChIJo5Al72xz5kcRFkvhZNO_uUw",
+      "slug": "ChIJo5Al72xz5kcRFkvhZNO_uUw",
+      "title": "Kafkaf - Paris 11",
+      "category": "مطعم",
+      "city": "paris",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_raw_candidates/ChIJo5Al72xz5kcRFkvhZNO_uUw/9f4fbc5533bfd379d36928e6.jpg",
+      "score": 9.8,
+      "reviews": 16358,
+      "rating": 4.8,
+      "body": "البان كيك والدينر/البرنش عندهم هو اللي يشدّ الناس، ومعه الماتشا واللاتيهات لها حضور واضح. الأكل مرتب ومقدّم بشكل حلو، لكن الزحمة أحياناً تطوّل شوي والخدمة قد تتفاوت بين زيارة والثانية.",
+      "detail": "إذا ودّك برنش فيه خيارات كثيرة وقهوة ومشروبات حلوة، فهذا مكانه. خذ البان كيك، البيض بندكت مع الحلوم، والماتشا بالفستق، ويفضّل تجي بدري عشان تلحق على الجو الهادئ.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJo5Al72xz5kcRFkvhZNO_uUw"
+    },
+    {
+      "type": "place",
+      "id": "ChIJ-0sYC0UFdkgR22MCL9yb9sQ",
+      "slug": "ChIJ-0sYC0UFdkgR22MCL9yb9sQ",
+      "title": "هابي لندن",
+      "category": "مطعم",
+      "city": "london",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJ-0sYC0UFdkgR22MCL9yb9sQ/main.png",
+      "score": 9.3,
+      "reviews": 9420,
+      "rating": 4.4,
+      "body": "هابي لندن في كوفنتري ستريت قرب بيكاديللي سيركس، ومكانه يخدم اللي يبي عشاء قبل المسرح أو طلعة مع قروب. أكثر شي انمدح عندهم التاكو والفيليه والدجاج البريديه، مع أجواء حيوية وتقديم مرتب، بس فيه تذبذب بسيط بين الأطباق والأسعار تميل للارتفاع.",
+      "detail": "أنصح فيه إذا تبي جلسة وسط لندن تناسب قروب أو مناسبة، خصوصًا مع الحجز. بس لا تتفاجأ إذا بعض الأطباق كانت أضعف من غيرها، والأسعار أعلى شوي من المتوقع.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJ-0sYC0UFdkgR22MCL9yb9sQ"
+    },
+    {
+      "type": "place",
+      "id": "ChIJ7V5-9alhLxMRD9EOOC0h4Ac",
+      "slug": "ChIJ7V5-9alhLxMRD9EOOC0h4Ac",
+      "title": "Hard Rock Cafe Rome",
+      "category": "مطعم",
+      "city": "rome",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_raw_candidates/ChIJ7V5-9alhLxMRD9EOOC0h4Ac/a931fdd2cbcd39e76e1b0c18.jpg",
+      "score": 9.3,
+      "reviews": 21046,
+      "rating": 4.4,
+      "body": "الأجنحة والأضلاع هي اللي طالعة هنا، ومعها أجواء الروك والديكور اللي يخلي الجلسة مختلفة. الخدمة غالباً ودودة والمكان مناسب إذا تبي استراحة من أكل روما التقليدي، لكن الأسعار مرتفعة شوي وبعض الأطباق مستواها متفاوت.",
+      "detail": "إذا ودك بأكل أمريكي معروف خذ الأضلاع أو الأجنحة، وخل البرغر على حسب مزاجك لأنه مو الأقوى عندهم. المكان حلو للجلوس الخفيف أو وجبة وسط اليوم، بس راقب الفاتورة.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJ7V5-9alhLxMRD9EOOC0h4Ac"
+    },
+    {
+      "type": "place",
+      "id": "ChIJBYCkBQCZ4jARMk27YRVj-vM",
+      "slug": "ChIJBYCkBQCZ4jARMk27YRVj-vM",
+      "title": "The Island Bangkok – Top Rated Thai Restaurant & Bar",
+      "category": "مطعم",
+      "city": "bangkok",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_raw_candidates/ChIJBYCkBQCZ4jARMk27YRVj-vM/4658d07f5efe60adf9b0407f.jpg",
+      "score": 9.9,
+      "reviews": 12715,
+      "rating": 4.9,
+      "body": "أرز المانجو اللاصق وخاو سوي هم أكثر شي الناس ترجع عشانه، مع حصص كبيرة وطعم مرتب يخلّي الوجبة تستاهل. فيه تنوّع ممتاز، لكن بعض الأطباق قد ما تعجب الكل، فالأفضل تجي وأنت طالب الأطباق المشهورة عندهم.",
+      "detail": "إذا تبي مكان تايلندي بخدمة لطيفة وكميات تشبع، هذا خيار قوي. خذ خاو سوي أو أرز المانجو اللاصق، ومعهم عصير المانجو، والباقي حسب مزاجك لأن فيه تفاوت بسيط بين الأطباق.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJBYCkBQCZ4jARMk27YRVj-vM"
+    },
+    {
+      "type": "place",
+      "id": "ChIJNZXdPnW3yhQR3LX-IzyqXT8",
+      "slug": "ChIJNZXdPnW3yhQR3LX-IzyqXT8",
+      "title": "Meat Moot Istanbul Taksim",
+      "category": "مطعم",
+      "city": "istanbul",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_restaurants/ChIJNZXdPnW3yhQR3LX-IzyqXT8/main.jpg",
+      "score": 9.6,
+      "reviews": 9704,
+      "rating": 4.7,
+      "body": "اللحم المدخن وكتف الغنم هنا هم سبب الزيارة، والطراوة عليهم واضحة من أول لقمة. الخدمة غالباً سريعة والكمية كبيرة، لكن الأطباق الجانبية مو دايم تجي بنفس الحرارة، فالأفضل تروح بدري أو وقت هادي إذا تبي تجربة أرتب.",
+      "detail": "إذا ودّك بوجبة لحوم للمشاركة، خذ كتف الغنم أو اللحم المدخن ومعها الصوصات. المكان مناسب للجروبات، بس حرارة البطاطس والأرز قد ما تعجب الكل.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJNZXdPnW3yhQR3LX-IzyqXT8"
+    },
+    {
+      "type": "place",
+      "id": "ChIJz2GOEc9AWBQRPWWYVRruSq8",
+      "slug": "ChIJz2GOEc9AWBQRPWWYVRruSq8",
+      "title": "InterContinental Cairo Semiramis by IHG",
+      "category": "مطعم",
+      "city": "cairo",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_raw_candidates/ChIJz2GOEc9AWBQRPWWYVRruSq8/d57380ed725537e1b44de717.jpg",
+      "score": 9.8,
+      "reviews": 57127,
+      "rating": 4.8,
+      "body": "الفطور هنا هو اللي يلفت، خصوصاً الفلافل الطازجة والخبز العربي إذا جتك حارّين مع الطحينة. والإطلالة على النيل والخدمة المرتبة مكررات بكل قوة، بس أحياناً فيه إلحاح على التقييم أو زحمة وقت الذروة قد ما تعجب الكل.",
+      "detail": "إذا تبي تجربة مضمونة، خذ الفطور أو المشاوي، ومعها جلسة على النيل بتفرق كثير. المكان مناسب لطلعة مرتبة، لكن الأفضل تحجز بالك أو تختار وقت أهدى شوي.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJz2GOEc9AWBQRPWWYVRruSq8"
+    },
+    {
+      "type": "place",
+      "id": "ChIJY9xjgOhV4xURCoz4rIbIDHY",
+      "slug": "ChIJY9xjgOhV4xURCoz4rIbIDHY",
+      "title": "مطعم جوري ايليت (على بالي - سينسو - لاسين)",
+      "category": "مطعم",
+      "city": "bali",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/ChIJY9xjgOhV4xURCoz4rIbIDHY/2b7d47fed44e580c37ecacd6.jpg",
+      "score": 9,
+      "reviews": 14274,
+      "rating": 4.2,
+      "body": "الإطلالة المرتفعة هنا من أقوى الأسباب اللي تخليك ترجع، ومعها الخدمة الودودة والأجواء الراقية. الفطور والبيتزا والوجبات اللبنانية عليهم مدح واضح، بس بعض الأصناف مثل المعجنات أو الدجاج أحياناً يجي مستواها متفاوت، والأسعار مو الأرخص.",
+      "detail": "إذا تبي جلسة مع منظر حلو وخدمة مرتبة، المكان يستاهل. خذ الفطور أو الأطباق اللبنانية، ووقت الغروب يطلع أبهى؛ بس بعض الأصناف مو دايم تثبت على نفس المستوى.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJY9xjgOhV4xURCoz4rIbIDHY"
+    },
+    {
+      "type": "place",
+      "id": "ChIJc2PcMM612YgR_kdEdDDuTrQ",
+      "slug": "ChIJc2PcMM612YgR_kdEdDDuTrQ",
+      "title": "Rusty Pelican Miami",
+      "category": "مطعم",
+      "city": "miami",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/ChIJc2PcMM612YgR_kdEdDDuTrQ/874c01b87560586ba8c44d5e.jpg",
+      "score": 9.6,
+      "reviews": 20911,
+      "rating": 4.7,
+      "body": "السمك والمأكولات البحرية هنا عليها الكلام، خصوصاً برج البحريات واللوبستر ريزوتو والـسي باس إذا تبغى وجبة مرتبة. الإطلالة وقت الغروب والخدمة الهادية ترفع التجربة كثير، بس بعض المقبلات طلعت عادية عند كم شخص، فالمكان يطلع أحسن مع الجلسات الخاصة أو مناسبة حلوة.",
+      "detail": "إذا بتروح، خذ البحريات أو حلى البودينغ، وحاول تحجز على وقت الغروب. المكان يقدّم تجربة متوازنة بين الأكل والمنظر، لكن بعض المقبلات مو الأقوى عندهم.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJc2PcMM612YgR_kdEdDDuTrQ"
+    },
+    {
+      "type": "place",
+      "id": "ChIJ-7n8wJ0F9YgRTJpNQS1gDnM",
+      "slug": "ChIJ-7n8wJ0F9YgRTJpNQS1gDnM",
+      "title": "Pelicana Chicken Atlanta",
+      "category": "مطعم",
+      "city": "atlanta",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/ChIJ-7n8wJ0F9YgRTJpNQS1gDnM/042f5a6a951170b498d615c2.jpg",
+      "score": 9.9,
+      "reviews": 12009,
+      "rating": 4.9,
+      "body": "الدجاج الكوري المقلي هنا هو نجم المكان، والقرمشة مع العصارة والنكهات مثل العسل والصويا والثوم متكررة في أكثر من تقييم. الخدمة عليها مدح قوي، لكن الجو أحياناً يكون متحرك والزحمة تظهر وقت العشاء، فالمكان يناسبك إذا تبي وجبة سريعة بطابع كوري واضح.",
+      "detail": "إذا ودك بشي مضمون، خذ أجنحة العسل والثوم أو العسل والصويا، ومعها الرامن أو كرات الجبن. المكان حلو للتجربة الأولى أو الرجعة، بس خلك مستعد إن بعض الأوقات تكون أهدى من غيرها.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJ-7n8wJ0F9YgRTJpNQS1gDnM"
+    },
+    {
+      "type": "place",
+      "id": "ChIJlR80_dG9NTERorHk3_x6wTQ",
+      "slug": "ChIJlR80_dG9NTERorHk3_x6wTQ",
+      "title": "Hanoi Corner Restaurant",
+      "category": "مطعم",
+      "city": "hanoi",
+      "imageUrl": "https://images.alzbdh.com/mirrored_images/travel_raw_candidates/ChIJlR80_dG9NTERorHk3_x6wTQ/94b6dfe82d4517de5981a358.jpg",
+      "score": 9.9,
+      "reviews": 9941,
+      "rating": 4.9,
+      "body": "الشي اللي يخلّي المكان يستاهل التجربة هو الفو واللفائف الطازجة؛ النكهة واضحة والخدمة تعطيك شرح وتوجيه بدل الارتباك. فيه ملاحظة بسيطة إن بعض الأطباق طعمها قد يطلع متفاوت، لكن أغلب الناس طلعوا راضين، خصوصاً إذا تبغى جلسة هادية وسط زحمة الحي القديم.",
+      "detail": "إذا بتروح، خذ الفو ولفائف الروبيان، ومعها طبق دجاج مشوي إذا ودك بخيار آمن ولذيذ. المكان ممتاز لزيارة مريحة، بس بعض الأطباق مو بنفس قوة أفضل أطباقهم.",
+      "label": "زبدة الأماكن",
+      "sourceUrl": "https://app.alzbdh.com/place/ChIJlR80_dG9NTERorHk3_x6wTQ"
+    }
+  ],
+  "destinations": [
+    {
+      "type": "destination",
+      "id": "bali",
+      "slug": "bali",
+      "title": "بالي",
+      "country": "إندونيسيا",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/bali/hero.jpg",
+      "body": "أبرزها: حقول الأرز في أوبود، معبد تانا لوت، شاطئ سميناك.",
+      "detail": "أفضل وقت: Apr، May، Jun، Jul",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/bali"
+    },
+    {
+      "type": "destination",
+      "id": "atlanta",
+      "slug": "atlanta",
+      "title": "أتلانتا",
+      "country": "الولايات المتحدة",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/atlanta/hero.jpg",
+      "body": "أبرزها: مرسيدس بنز ستاديوم، جورجيا أكواريوم، عالم كوكاكولا.",
+      "detail": "أفضل وقت: Mar، Apr، May، Sep",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/atlanta"
+    },
+    {
+      "type": "destination",
+      "id": "hanoi",
+      "slug": "hanoi",
+      "title": "هانوي",
+      "country": "فيتنام",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/hanoi/hero.jpg",
+      "body": "أبرزها: خليج هالونج، الحي القديم، معبد أوك سون.",
+      "detail": "أفضل وقت: Oct، Nov، Dec، Mar",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/hanoi"
+    },
+    {
+      "type": "destination",
+      "id": "houston",
+      "slug": "houston",
+      "title": "هيوستن",
+      "country": "الولايات المتحدة",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/houston/hero.jpg",
+      "body": "أبرزها: إن آر جي ستاديوم، مركز الفضاء هيوستن، حي المتاحف.",
+      "detail": "أفضل وقت: Feb، Mar، Apr، Oct",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/houston"
+    },
+    {
+      "type": "destination",
+      "id": "miami",
+      "slug": "miami",
+      "title": "ميامي",
+      "country": "الولايات المتحدة",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/miami/hero.jpg",
+      "body": "أبرزها: هارد روك ستاديوم، ساوث بيتش، وينوود.",
+      "detail": "أفضل وقت: Nov، Dec، Jan، Feb",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/miami"
+    },
+    {
+      "type": "destination",
+      "id": "jeddah",
+      "slug": "jeddah",
+      "title": "جدة",
+      "country": "السعودية",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/jeddah/hero.jpg",
+      "body": "أبرزها: البلد التاريخية، كورنيش جدة، غوص البحر الأحمر.",
+      "detail": "أفضل وقت: Oct، Nov، Dec، Jan",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/jeddah"
+    },
+    {
+      "type": "destination",
+      "id": "cairo",
+      "slug": "cairo",
+      "title": "القاهرة",
+      "country": "مصر",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/cairo/hero.jpg",
+      "body": "أبرزها: الأهرامات وأبو الهول، المتحف المصري الكبير، القاهرة الإسلامية.",
+      "detail": "أفضل وقت: Oct، Nov، Dec، Jan",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/cairo"
+    },
+    {
+      "type": "destination",
+      "id": "rome",
+      "slug": "rome",
+      "title": "روما",
+      "country": "إيطاليا",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/rome/hero.jpg",
+      "body": "أبرزها: الكولوسيوم، الفاتيكان، باستا إيطالية.",
+      "detail": "أفضل وقت: Apr، May، Sep، Oct",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/rome"
+    },
+    {
+      "type": "destination",
+      "id": "bangkok",
+      "slug": "bangkok",
+      "title": "بانكوك",
+      "country": "تايلاند",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/bangkok/hero.jpg",
+      "body": "أبرزها: القصر الكبير، معبد الفجر، مساج تايلندي.",
+      "detail": "أفضل وقت: Nov، Dec، Jan، Feb",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/bangkok"
+    },
+    {
+      "type": "destination",
+      "id": "phuket",
+      "slug": "phuket",
+      "title": "بوكيت",
+      "country": "تايلاند",
+      "imageUrl": "https://images.alzbdh.com/travel_destinations/phuket/hero.jpg",
+      "body": "أبرزها: جزر في في، خليج فانغ نا، معبد وات شالونج.",
+      "detail": "أفضل وقت: Nov، Dec، Jan، Feb",
+      "label": "زبدة السفر",
+      "sourceUrl": "https://app.alzbdh.com/destination/phuket"
+    }
+  ],
+  "perfumes": [
+    {
+      "type": "perfume",
+      "id": "by-kilian-angel-s-share-on-the-rocks-113083",
+      "slug": "by-kilian-angel-s-share-on-the-rocks-113083",
+      "title": "أنجلز شير أون ذا روكس",
+      "brand": "باي كيليان",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.113083.jpg",
+      "rating": 4.36,
+      "reviews": 1489,
+      "body": "تشمّ رائحة شرائح جريب فروت والليمون الباردة وكأنها رُشّت على كأس كونياك دافئ مع خيوط من الكراميل والقرفة، وينتهي بانطباع خشبي محمّص يذكّرك ببرميل البلوط.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    },
+    {
+      "type": "perfume",
+      "id": "dior-dior-homme-intense-2025-101596",
+      "slug": "dior-dior-homme-intense-2025-101596",
+      "title": "ديور أوم إنتنس ٢٠٢٥",
+      "brand": "ديور",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.101596.jpg",
+      "rating": 4.11,
+      "reviews": 1839,
+      "body": "Dior Homme Intense 2025 تفتح ببودرة التلك من Tuscan Iris، مع نفحات مسكية ناعمة من Ambrette وقاعدة خشبية جافة من Virginia Cedar.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    },
+    {
+      "type": "perfume",
+      "id": "zoologist-perfumes-rabbit-91167",
+      "slug": "zoologist-perfumes-rabbit-91167",
+      "title": "رابيت",
+      "brand": "زولوجيست بيرفيومز",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.91167.jpg",
+      "rating": 3.95,
+      "reviews": 1465,
+      "body": "في الأنف Rabbit يفتح بنفحات تفاح أخضر مقرمش وبرغموت منعش مع لمسة قرفة دافئة وأوراق خضراء كأنك تمشي في حقل مقطوف.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    },
+    {
+      "type": "perfume",
+      "id": "amouage-outlands-97924",
+      "slug": "amouage-outlands-97924",
+      "title": "آوتلاندز",
+      "brand": "أموج",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.97924.jpg",
+      "rating": 4.32,
+      "reviews": 2142,
+      "body": "Outlands من Amouage يفتح بدخان frankincense لزج ومُدخّن كأنك داخل مخزن بخور، يقابله قشر lemon وbergamot منعشانان، وعلى الخلفية تبرز وخزات cardamom وSichuan pepper توابلية تقوّي الحضور.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    },
+    {
+      "type": "perfume",
+      "id": "guerlain-l-homme-id-al-parfum-90803",
+      "slug": "guerlain-l-homme-id-al-parfum-90803",
+      "title": "لوم إيديال بارفان",
+      "brand": "غيرلان",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.90803.jpg",
+      "rating": 4.44,
+      "reviews": 1560,
+      "body": "ريحة L'Homme Idéal Parfum تفتح بلوز محمّص وحلاوة فاكهية تشبه المشمش أو الكرز، ثم تتطور إلى قاعدة جلدية مخملية مع ظلّ مسكي وحيواني خفيف.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    },
+    {
+      "type": "perfume",
+      "id": "initio-parfums-prives-narcotic-delight-89368",
+      "slug": "initio-parfums-prives-narcotic-delight-89368",
+      "title": "ناركوتيك ديلايت",
+      "brand": "إنيتيو بارفان بريفيه",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.89368.jpg",
+      "rating": 4.19,
+      "reviews": 3119,
+      "body": "تفوح رائحة حلوة كريمية من الفانيلا مع كرزة ناضجة شبيهة بالمربّى، يظهر وهج كونياك دافئ في القلب وتتخلّلها نفحات دخان التبغ وخشب الأرز.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    },
+    {
+      "type": "perfume",
+      "id": "maison-crivelli-tub-reuse-astrale-90733",
+      "slug": "maison-crivelli-tub-reuse-astrale-90733",
+      "title": "توبيروز أسترال",
+      "brand": "ميزون كريفيللي",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.90733.jpg",
+      "rating": 4.05,
+      "reviews": 1796,
+      "body": "تشم عند الرشة الأولى دفء Cinnamon المتبّل يقرص الحواس، ثم ينفتح قلب كثيف من tuberose وأزهار بيضاء كباقة كريمية، وفي القاعدة تتوارى Vanilla وتحتضنها Musk بدفء ناعم.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    },
+    {
+      "type": "perfume",
+      "id": "marc-antoine-barrois-tilia-91688",
+      "slug": "marc-antoine-barrois-tilia-91688",
+      "title": "تيليا",
+      "brand": "مارك أنطوان باروا",
+      "imageUrl": "https://fimgs.net/mdimg/perfume-thumbs/dark-270x270.91688.jpg",
+      "rating": 4.09,
+      "reviews": 5009,
+      "body": "Tilia يفتح على زهر الزيزفون الحلو والعطري مع ياسمين سامباك كريمي وتبقى لمسة بودرية خشبية خفيفة في الخلفية.",
+      "label": "زبدة العطور",
+      "sourceUrl": "https://app.alzbdh.com/perfumes/"
+    }
+  ],
+  "days": [
+    {
+      "date": "2026-07-06",
+      "type": "place",
+      "id": "ChIJvYwf99hcXz4Rp4ci-Nb3bxg",
+      "title": "Dampa Seafood Grill - Dubai"
+    },
+    {
+      "date": "2026-07-07",
+      "type": "destination",
+      "id": "bali",
+      "title": "بالي"
+    },
+    {
+      "date": "2026-07-08",
+      "type": "perfume",
+      "id": "by-kilian-angel-s-share-on-the-rocks-113083",
+      "title": "أنجلز شير أون ذا روكس"
+    },
+    {
+      "date": "2026-07-09",
+      "type": "place",
+      "id": "ChIJ8WQHFoqNGGARpc767pcSol8",
+      "title": "HALAL WAGYU RAMEN SHINJUKU-TEI Tokyo Shinjuku"
+    },
+    {
+      "date": "2026-07-10",
+      "type": "destination",
+      "id": "atlanta",
+      "title": "أتلانتا"
+    },
+    {
+      "date": "2026-07-11",
+      "type": "place",
+      "id": "ChIJo5Al72xz5kcRFkvhZNO_uUw",
+      "title": "Kafkaf - Paris 11"
+    },
+    {
+      "date": "2026-07-12",
+      "type": "perfume",
+      "id": "dior-dior-homme-intense-2025-101596",
+      "title": "ديور أوم إنتنس ٢٠٢٥"
+    },
+    {
+      "date": "2026-07-13",
+      "type": "destination",
+      "id": "hanoi",
+      "title": "هانوي"
+    },
+    {
+      "date": "2026-07-14",
+      "type": "place",
+      "id": "ChIJ-0sYC0UFdkgR22MCL9yb9sQ",
+      "title": "هابي لندن"
+    },
+    {
+      "date": "2026-07-15",
+      "type": "destination",
+      "id": "houston",
+      "title": "هيوستن"
+    },
+    {
+      "date": "2026-07-16",
+      "type": "perfume",
+      "id": "zoologist-perfumes-rabbit-91167",
+      "title": "رابيت"
+    },
+    {
+      "date": "2026-07-17",
+      "type": "place",
+      "id": "ChIJ7V5-9alhLxMRD9EOOC0h4Ac",
+      "title": "Hard Rock Cafe Rome"
+    },
+    {
+      "date": "2026-07-18",
+      "type": "destination",
+      "id": "miami",
+      "title": "ميامي"
+    },
+    {
+      "date": "2026-07-19",
+      "type": "place",
+      "id": "ChIJBYCkBQCZ4jARMk27YRVj-vM",
+      "title": "The Island Bangkok – Top Rated Thai Restaurant & Bar"
+    },
+    {
+      "date": "2026-07-20",
+      "type": "perfume",
+      "id": "amouage-outlands-97924",
+      "title": "آوتلاندز"
+    },
+    {
+      "date": "2026-07-21",
+      "type": "destination",
+      "id": "jeddah",
+      "title": "جدة"
+    },
+    {
+      "date": "2026-07-22",
+      "type": "place",
+      "id": "ChIJNZXdPnW3yhQR3LX-IzyqXT8",
+      "title": "Meat Moot Istanbul Taksim"
+    },
+    {
+      "date": "2026-07-23",
+      "type": "destination",
+      "id": "cairo",
+      "title": "القاهرة"
+    },
+    {
+      "date": "2026-07-24",
+      "type": "perfume",
+      "id": "guerlain-l-homme-id-al-parfum-90803",
+      "title": "لوم إيديال بارفان"
+    },
+    {
+      "date": "2026-07-25",
+      "type": "place",
+      "id": "ChIJz2GOEc9AWBQRPWWYVRruSq8",
+      "title": "InterContinental Cairo Semiramis by IHG"
+    },
+    {
+      "date": "2026-07-26",
+      "type": "destination",
+      "id": "rome",
+      "title": "روما"
+    },
+    {
+      "date": "2026-07-27",
+      "type": "place",
+      "id": "ChIJY9xjgOhV4xURCoz4rIbIDHY",
+      "title": "مطعم جوري ايليت (على بالي - سينسو - لاسين)"
+    },
+    {
+      "date": "2026-07-28",
+      "type": "perfume",
+      "id": "initio-parfums-prives-narcotic-delight-89368",
+      "title": "ناركوتيك ديلايت"
+    },
+    {
+      "date": "2026-07-29",
+      "type": "destination",
+      "id": "bangkok",
+      "title": "بانكوك"
+    },
+    {
+      "date": "2026-07-30",
+      "type": "place",
+      "id": "ChIJc2PcMM612YgR_kdEdDDuTrQ",
+      "title": "Rusty Pelican Miami"
+    },
+    {
+      "date": "2026-07-31",
+      "type": "destination",
+      "id": "phuket",
+      "title": "بوكيت"
+    },
+    {
+      "date": "2026-08-01",
+      "type": "perfume",
+      "id": "maison-crivelli-tub-reuse-astrale-90733",
+      "title": "توبيروز أسترال"
+    },
+    {
+      "date": "2026-08-02",
+      "type": "place",
+      "id": "ChIJ-7n8wJ0F9YgRTJpNQS1gDnM",
+      "title": "Pelicana Chicken Atlanta"
+    },
+    {
+      "date": "2026-08-03",
+      "type": "place",
+      "id": "ChIJlR80_dG9NTERorHk3_x6wTQ",
+      "title": "Hanoi Corner Restaurant"
+    },
+    {
+      "date": "2026-08-04",
+      "type": "perfume",
+      "id": "marc-antoine-barrois-tilia-91688",
+      "title": "تيليا"
+    }
+  ]
+}
