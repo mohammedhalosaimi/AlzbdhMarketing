@@ -3,93 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alzbdh Social Variation Gallery</title>
+  <title>Alzbdh Real Social Variations</title>
   <style>
+    @font-face {
+      font-family: Changa;
+      font-weight: 400;
+      src: url("../travel/assets/fonts/Changa-400.ttf") format("truetype");
+      font-display: block;
+    }
+    @font-face {
+      font-family: Changa;
+      font-weight: 700;
+      src: url("../travel/assets/fonts/Changa-700.ttf") format("truetype");
+      font-display: block;
+    }
+    @font-face {
+      font-family: Changa;
+      font-weight: 800;
+      src: url("../travel/assets/fonts/Changa-800.ttf") format("truetype");
+      font-display: block;
+    }
     :root {
-      --green: #173527;
-      --green-2: #23624c;
-      --cream: #f7f2e8;
-      --paper: #fffaf1;
-      --gold: #d7a63a;
-      --teal: #08747a;
-      --tomato: #ca5941;
-      --ink: #102118;
-      --muted: #5e6d63;
-      --line: rgba(23, 53, 39, .15);
+      --green: #1F3D2E;
+      --deep: #102318;
+      --paper: #FDFBF7;
+      --cream: #F7F3EA;
+      --gold: #E8C46B;
+      --muted: #647166;
+      --line: rgba(31, 61, 46, .14);
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
       background: var(--cream);
-      color: var(--ink);
-      font-family: Changa, "Noto Sans Arabic", Tahoma, Arial, sans-serif;
+      color: var(--deep);
+      font-family: Changa, Tahoma, Arial, sans-serif;
       letter-spacing: 0;
     }
     header {
-      min-height: 72vh;
+      min-height: 56vh;
       display: grid;
       align-items: end;
-      padding: 48px clamp(24px, 5vw, 76px);
+      padding: 42px clamp(20px, 5vw, 72px);
       background:
-        linear-gradient(135deg, rgba(16, 33, 24, .86), rgba(35, 98, 76, .84)),
-        repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 1px, transparent 1px 78px),
-        var(--green);
+        linear-gradient(135deg, rgba(16,35,24,.94), rgba(31,61,46,.88)),
+        url("../mobile-app/assets/screenshots-ar/ad-ready/map-only-ar.png");
+      background-size: cover;
+      background-position: center top;
       color: var(--paper);
     }
     .hero {
-      max-width: 1180px;
-      width: 100%;
+      width: min(1220px, 100%);
       margin-inline: auto;
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 320px;
-      gap: 32px;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
       align-items: end;
+    }
+    .brand {
+      width: 154px;
+      display: block;
+      margin-bottom: 22px;
     }
     .label {
       display: inline-flex;
       width: fit-content;
-      padding: 8px 14px;
-      border: 1px solid rgba(215, 166, 58, .48);
-      color: #f2d38a;
-      font-weight: 800;
+      border: 1px solid rgba(232,196,107,.55);
+      color: var(--gold);
       border-radius: 999px;
-      font-size: 16px;
+      padding: 7px 14px;
+      font-weight: 800;
+      direction: ltr;
     }
     h1 {
-      margin: 18px 0 16px;
-      max-width: 880px;
-      font-size: clamp(46px, 6vw, 86px);
+      margin: 16px 0 12px;
+      max-width: 900px;
+      font-size: clamp(42px, 6vw, 84px);
       line-height: 1.05;
-      font-weight: 800;
       letter-spacing: 0;
+      font-weight: 800;
     }
     header p {
-      max-width: 760px;
+      max-width: 780px;
       margin: 0;
-      color: #f0eadf;
+      color: #F4EFE6;
       font-size: clamp(18px, 2vw, 25px);
-      line-height: 1.65;
-      font-weight: 600;
+      line-height: 1.55;
+      font-weight: 700;
     }
-    .summary {
-      background: rgba(255, 250, 241, .1);
-      border: 1px solid rgba(255, 250, 241, .2);
+    .count {
+      background: rgba(253,251,247,.12);
+      border: 1px solid rgba(253,251,247,.24);
       border-radius: 8px;
-      padding: 22px;
+      padding: 20px 24px;
+      min-width: 210px;
     }
-    .summary strong {
+    .count strong {
       display: block;
-      color: #f2d38a;
+      color: var(--gold);
       font-size: 62px;
       line-height: 1;
+      direction: ltr;
     }
-    .summary span {
+    .count span {
       display: block;
       margin-top: 8px;
-      color: #fffaf1;
+      font-size: 18px;
       font-weight: 800;
-      font-size: 22px;
     }
     nav {
       position: sticky;
@@ -102,201 +123,156 @@
     }
     nav a {
       min-width: 0;
-      color: var(--ink);
+      padding: 14px clamp(12px, 2vw, 24px);
+      color: var(--deep);
       text-decoration: none;
-      padding: 14px clamp(10px, 2vw, 24px);
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 10px;
+      align-items: center;
+      gap: 8px;
       border-inline-start: 1px solid var(--line);
       font-weight: 800;
     }
-    nav span { color: var(--muted); font-size: 14px; }
-    nav strong { color: var(--teal); }
-    .band {
-      padding: 44px clamp(18px, 4vw, 64px) 64px;
+    nav span { color: var(--muted); direction: ltr; }
+    nav strong { color: var(--green); direction: ltr; }
+    section {
+      padding: 46px clamp(18px, 4vw, 58px) 62px;
     }
     .section-head {
-      max-width: 1280px;
+      width: min(1480px, 100%);
       margin: 0 auto 24px;
       display: flex;
       justify-content: space-between;
       align-items: end;
-      gap: 24px;
+      gap: 20px;
     }
     .eyebrow {
-      color: var(--tomato);
-      font-weight: 800;
-      font-size: 15px;
-      text-transform: uppercase;
       direction: ltr;
       text-align: right;
+      color: #B77816;
+      font-size: 16px;
+      font-weight: 800;
+      text-transform: uppercase;
     }
     h2 {
-      margin: 4px 0 8px;
-      font-size: clamp(30px, 4vw, 54px);
+      margin: 2px 0 8px;
+      font-size: clamp(34px, 4vw, 58px);
       line-height: 1.1;
       letter-spacing: 0;
     }
     .section-head p {
       margin: 0;
+      max-width: 780px;
       color: var(--muted);
-      font-size: 17px;
+      font-size: 18px;
       line-height: 1.6;
-      max-width: 680px;
+      font-weight: 700;
     }
-    .section-head > strong {
-      color: var(--green);
-      border: 1px solid var(--line);
+    .section-head strong {
       background: var(--paper);
+      border: 1px solid var(--line);
       border-radius: 8px;
       padding: 10px 14px;
       white-space: nowrap;
-      direction: ltr;
+      color: var(--green);
+      font-weight: 800;
     }
-    .grid {
-      max-width: 1280px;
+    .asset-grid {
+      width: min(1480px, 100%);
       margin: 0 auto;
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
+      gap: 18px;
     }
-    .card {
-      min-width: 0;
+    .asset-card {
       background: var(--paper);
       border: 1px solid var(--line);
       border-radius: 8px;
       overflow: hidden;
-      display: grid;
-      grid-template-rows: auto auto 1fr auto;
-      box-shadow: 0 18px 42px rgba(23, 53, 39, .08);
-    }
-    .meta {
+      box-shadow: 0 18px 46px rgba(16,35,24,.08);
       display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-      padding: 12px;
-      direction: ltr;
-      justify-content: flex-end;
+      flex-direction: column;
+      min-width: 0;
     }
-    .meta span {
-      border: 1px solid var(--line);
-      color: var(--green);
-      border-radius: 999px;
-      padding: 5px 9px;
-      font-size: 12px;
-      font-weight: 800;
-      background: #fff;
-    }
-    .meta .id {
-      color: #fff;
-      background: var(--green);
-      border-color: var(--green);
-    }
-    .poster {
-      min-height: 230px;
-      margin: 0 12px;
-      border-radius: 8px;
-      padding: 18px;
-      color: var(--paper);
-      background:
-        linear-gradient(150deg, rgba(23,53,39,.98), rgba(8,116,122,.88)),
-        var(--green);
+    .thumb {
+      background: #EDE7DA;
+      min-height: 280px;
       display: grid;
-      align-content: space-between;
-      gap: 18px;
-      position: relative;
-      overflow: hidden;
+      place-items: center;
+      padding: 10px;
     }
-    .poster:after {
-      content: "";
-      position: absolute;
-      inset-inline-start: -34px;
-      inset-block-end: -60px;
-      width: 145px;
-      height: 145px;
-      border-radius: 999px;
-      border: 18px solid rgba(215,166,58,.24);
+    .thumb img {
+      display: block;
+      max-width: 100%;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 6px;
+      background: #0D1E15;
+      box-shadow: 0 10px 28px rgba(16,35,24,.18);
     }
-    .brand {
-      position: relative;
-      z-index: 1;
-      width: fit-content;
-      background: rgba(255, 250, 241, .13);
-      border: 1px solid rgba(255, 250, 241, .2);
-      border-radius: 999px;
-      padding: 5px 10px;
-      font-weight: 800;
-      color: #f4d992;
-    }
-    h3 {
-      position: relative;
-      z-index: 1;
-      margin: 0;
-      font-size: 30px;
-      line-height: 1.25;
-      letter-spacing: 0;
-    }
-    .screen-lines {
-      position: relative;
-      z-index: 1;
+    .wide .thumb { aspect-ratio: 16 / 9; }
+    .portrait .thumb { aspect-ratio: 4 / 5; }
+    .vertical .thumb { aspect-ratio: 9 / 16; }
+    .asset-info {
+      padding: 13px 14px 15px;
       display: grid;
       gap: 8px;
     }
-    .screen-lines span {
-      display: block;
-      height: 9px;
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      direction: ltr;
+      justify-content: flex-end;
+    }
+    .chips span {
+      border: 1px solid var(--line);
       border-radius: 999px;
-      background: rgba(255, 250, 241, .38);
+      padding: 4px 8px;
+      font-size: 12px;
+      color: var(--green);
+      background: #fff;
+      font-weight: 800;
     }
-    .screen-lines span:nth-child(2) { width: 76%; }
-    .screen-lines span:nth-child(3) { width: 52%; background: rgba(215, 166, 58, .7); }
-    .card p {
+    h3 {
       margin: 0;
-      padding: 16px 16px 12px;
-      color: #273b31;
-      line-height: 1.65;
-      font-size: 15px;
-      font-weight: 650;
+      color: var(--deep);
+      font-size: 20px;
+      line-height: 1.25;
+      font-weight: 800;
+      letter-spacing: 0;
     }
-    .detail {
-      margin: 0 16px 16px;
-      border-top: 1px solid var(--line);
-      padding-top: 12px;
+    .asset-info p {
+      margin: 0;
       color: var(--muted);
-      font-size: 13px;
-      line-height: 1.55;
-      font-weight: 700;
+      direction: ltr;
+      text-align: left;
+      font-size: 12px;
+      line-height: 1.45;
+      overflow-wrap: anywhere;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
     }
-    .paid .poster {
-      background:
-        linear-gradient(150deg, rgba(202,89,65,.96), rgba(35,98,76,.9)),
-        var(--tomato);
-    }
-    .paid .meta .id { background: var(--tomato); border-color: var(--tomato); }
     footer {
-      padding: 28px clamp(18px, 4vw, 64px) 44px;
-      color: var(--muted);
+      padding: 28px clamp(18px, 4vw, 58px) 42px;
       background: var(--paper);
       border-top: 1px solid var(--line);
+      color: var(--muted);
       font-weight: 700;
     }
     footer div {
-      max-width: 1280px;
-      margin: 0 auto;
+      width: min(1480px, 100%);
+      margin-inline: auto;
       display: flex;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
       flex-wrap: wrap;
     }
-    @media (max-width: 760px) {
-      header { min-height: auto; padding-block: 34px; }
+    @media (max-width: 860px) {
       .hero { grid-template-columns: 1fr; }
       nav { grid-template-columns: 1fr 1fr; }
       .section-head { display: block; }
-      .section-head > strong { display: inline-flex; margin-top: 14px; }
-      h3 { font-size: 26px; }
+      .section-head strong { display: inline-flex; margin-top: 14px; }
     }
   </style>
 </head>
@@ -304,1597 +280,1773 @@
   <header>
     <div class="hero">
       <div>
-        <span class="label">Alzbdh Social Variation Gallery</span>
-        <h1>كل تنويعات المحتوى التسويقي في عرض واحد</h1>
-        <p>مقسمة حسب العطور، الأماكن، الوجهات، وإعلانات التطبيق. هذه نسخة عرض فقط من بنك الأفكار، ولا تعني أن أي منشور تم جدولته في Buffer.</p>
+        <img class="brand" src="../../brand/logos/logo-white.svg" alt="الزبدة">
+        <span class="label">Real generated social assets</span>
+        <h1>تنويعات المنشورات الفعلية</h1>
+        <p>هذه الصفحة تعرض الصور الحقيقية الموجودة في ملفات التسويق: نفس الهوية، نفس الخط، نفس الصور، ونفس صيغ المنصات. لا توجد بطاقات وهمية هنا.</p>
       </div>
-      <aside class="summary">
-        <strong>96</strong>
-        <span>unscheduled variations</span>
+      <aside class="count">
+        <strong>131</strong>
+        <span>صورة فعلية</span>
       </aside>
     </div>
   </header>
-  <nav><a href="#perfumes"><span>Perfumes</span><strong>26</strong></a><a href="#places"><span>Places</span><strong>26</strong></a><a href="#destinations"><span>Destinations</span><strong>26</strong></a><a href="#ads"><span>Other marketing ads</span><strong>18</strong></a></nav>
-  <section id="perfumes" class="band perfumes">
+  <nav><a href="#perfumes"><span>Perfumes</span><strong>18</strong></a><a href="#places"><span>Places</span><strong>54</strong></a><a href="#destinations"><span>Destinations</span><strong>47</strong></a><a href="#ads"><span>Marketing ads</span><strong>12</strong></a></nav>
+  <section id="perfumes">
     <div class="section-head">
       <div>
         <div class="eyebrow">Perfumes</div>
-        <h2>زبدة العطور</h2>
-        <p>Organic perfume education plus paid perfume-decision ads.</p>
+        <h2>العطور</h2>
+        <p>كل تنويعات العطور الفعلية: منشورات الحساب، إعلانات العطور، وستوري الدفعات القادمة.</p>
       </div>
-      <strong>26 variations</strong>
+      <strong>18 صور فعلية</strong>
     </div>
-    <div class="grid"><article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-01</span>
-        <span>Organic</span>
-        <span>هوية</span>
+    <div class="asset-grid">
+      <article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../perfumes/images/instagram_1080x1350/guidance-46.png" alt="Guidance 46" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account perfume</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قبل لا تشتري، افهم الريحة.<br>زبدة العطور تختصرها.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Guidance 46</h3>
+      <p>content/perfumes/images/instagram_1080x1350/guidance-46.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../perfumes/images/tiktok_1080x1920/guidance-46.png" alt="Guidance 46" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account perfume</span>
       </div>
-      <p>A perfume decision post that avoids generic luxury language.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-02</span>
-        <span>Organic</span>
-        <span>بطل المنتج</span>
+      <h3>Guidance 46</h3>
+      <p>content/perfumes/images/tiktok_1080x1920/guidance-46.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../perfumes/images/x_1600x900/guidance-46.png" alt="Guidance 46" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account perfume</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>عطر واحد. قرار أوضح.<br>الفخامة مو كل الحكاية.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Guidance 46</h3>
+      <p>content/perfumes/images/x_1600x900/guidance-46.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/instagram_1080x1350/angels-share-paradis.png" alt="Angels Share Paradis" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Pair the bottle/product image with practical fit: season, occasion, strength.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-03</span>
-        <span>Organic</span>
-        <span>إثبات</span>
+      <h3>Angels Share Paradis</h3>
+      <p>content/marketing ad/perfumes/images/instagram_1080x1350/angels-share-paradis.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/instagram_1080x1350/babycat-raw-bourbon.png" alt="Babycat Raw Bourbon" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>المدح كثير.<br>المهم هل يناسبك؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Babycat Raw Bourbon</h3>
+      <p>content/marketing ad/perfumes/images/instagram_1080x1350/babycat-raw-bourbon.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/instagram_1080x1350/blue-talisman-extrait-de-parfum.png" alt="Blue Talisman Extrait De Parfum" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Convert hype into a personal-fit question.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-04</span>
-        <span>Organic</span>
-        <span>خلاصة</span>
+      <h3>Blue Talisman Extrait De Parfum</h3>
+      <p>content/marketing ad/perfumes/images/instagram_1080x1350/blue-talisman-extrait-de-parfum.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/instagram_1080x1350/bottled-absolu.png" alt="Bottled Absolu" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ريحته جميلة، بس متى تلبسه؟<br>خذ الزبدة قبل التجربة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Bottled Absolu</h3>
+      <p>content/marketing ad/perfumes/images/instagram_1080x1350/bottled-absolu.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/tiktok_1080x1920/angels-share-paradis.png" alt="Angels Share Paradis" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Explain use-case rather than only notes.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-05</span>
-        <span>Organic</span>
-        <span>اكتشاف</span>
+      <h3>Angels Share Paradis</h3>
+      <p>content/marketing ad/perfumes/images/tiktok_1080x1920/angels-share-paradis.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/tiktok_1080x1920/babycat-raw-bourbon.png" alt="Babycat Raw Bourbon" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>مو كل عطر غالي يستاهل.<br>اعرف شخصيته أول.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Babycat Raw Bourbon</h3>
+      <p>content/marketing ad/perfumes/images/tiktok_1080x1920/babycat-raw-bourbon.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/tiktok_1080x1920/blue-talisman-extrait-de-parfum.png" alt="Blue Talisman Extrait De Parfum" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Useful evergreen content around buyer caution.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-06</span>
-        <span>Organic</span>
-        <span>مدح/تنبيه</span>
+      <h3>Blue Talisman Extrait De Parfum</h3>
+      <p>content/marketing ad/perfumes/images/tiktok_1080x1920/blue-talisman-extrait-de-parfum.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/tiktok_1080x1920/bottled-absolu.png" alt="Bottled Absolu" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وش يبرز؟ وش ممكن يزعج؟<br>الحكم يصير أصدق.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Bottled Absolu</h3>
+      <p>content/marketing ad/perfumes/images/tiktok_1080x1920/bottled-absolu.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/x_1600x900/angels-share-paradis.png" alt="Angels Share Paradis" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Split compliments vs risks: sweetness, smoke, projection, longevity.</p>
-      <div class="detail">Instagram carousel</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-07</span>
-        <span>Organic</span>
-        <span>مزايا</span>
+      <h3>Angels Share Paradis</h3>
+      <p>content/marketing ad/perfumes/images/x_1600x900/angels-share-paradis.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/x_1600x900/babycat-raw-bourbon.png" alt="Babycat Raw Bourbon" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>النوتات، الإحساس، المناسبة.<br>بدون وصف تسويقي طويل.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Babycat Raw Bourbon</h3>
+      <p>content/marketing ad/perfumes/images/x_1600x900/babycat-raw-bourbon.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/x_1600x900/blue-talisman-extrait-de-parfum.png" alt="Blue Talisman Extrait De Parfum" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Paid marketing</span>
       </div>
-      <p>A concise app/product education post for perfume pages.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-08</span>
-        <span>Organic</span>
-        <span>ثلاث زوايا</span>
+      <h3>Blue Talisman Extrait De Parfum</h3>
+      <p>content/marketing ad/perfumes/images/x_1600x900/blue-talisman-extrait-de-parfum.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../marketing ad/perfumes/images/x_1600x900/bottled-absolu.png" alt="Bottled Absolu" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>عطر واحد. ثلاث أسئلة.<br>لمتى؟ لمين؟ وهل يستاهل؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Bottled Absolu</h3>
+      <p>content/marketing ad/perfumes/images/x_1600x900/bottled-absolu.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-30-perfumes-angels-share-paradis.png" alt="Perfumes Angels Share Paradis" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <p>Short-form video or carousel around decision criteria.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-01</span>
-        <span>Paid ad</span>
-        <span>بطل المنتج</span>
+      <h3>Perfumes Angels Share Paradis</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-30-perfumes-angels-share-paradis.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-02-perfumes-bottled-absolu.png" alt="Perfumes Bottled Absolu" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الوصف الجميل مو كفاية.<br>خذ زبدة العطر.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Perfumes Bottled Absolu</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-02-perfumes-bottled-absolu.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-05-perfumes-babycat-raw-bourbon.png" alt="Perfumes Babycat Raw Bourbon" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <p>زبدة العطور تختصر لك الإحساس، النوتات، المناسبة، وهل العطر فعلاً يناسبك.</p>
-      <div class="detail">افهم العطر</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-02</span>
-        <span>Paid ad</span>
-        <span>إثبات</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>عطر مشهور؟<br>مو شرط يناسبك.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>الإعلان يربط بين شهرة العطر وقرار الشراء الشخصي بدون مبالغة.</p>
-      <div class="detail">خذ القرار</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-03</span>
-        <span>Paid ad</span>
-        <span>خلاصة</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وش ريحته فعلاً؟<br>ومتى يطلع بأفضل صورة؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>مناسب لإعلانات المنتج الواحد مع صورة العطر وخلاصة قصيرة.</p>
-      <div class="detail">شوف الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-04</span>
-        <span>Paid ad</span>
-        <span>مدح/تنبيه</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>المدح والعيب في نفس البطاقة.<br>قرار أصدق.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>يوضح للمشتري الجوانب الجميلة والمخاطر مثل الحلاوة، الدخان، الثبات، أو الانتشار.</p>
-      <div class="detail">جرّب الزبدة</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-09</span>
-        <span>Organic</span>
-        <span>بطل المنتج</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الزجاجة جميلة.<br>بس الشخصية أهم.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Product-image post that moves from packaging to scent personality.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-10</span>
-        <span>Organic</span>
-        <span>خلاصة</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>حلو؟ ممكن.<br>يناسبك؟ هنا السؤال.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Friendly, skeptical perfume decision voice.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-11</span>
-        <span>Organic</span>
-        <span>إثبات</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الثبات مو كل شيء.<br>الإحساس يفرق.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Explain that performance metrics do not replace personal fit.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-12</span>
-        <span>Organic</span>
-        <span>اكتشاف</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>عطر مكتب؟ مناسبة؟ شتاء؟<br>الزبدة تفصلها.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Occasion-based post for perfume selection.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-13</span>
-        <span>Organic</span>
-        <span>مدح/تنبيه</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الجميل في العطر.<br>والشيء اللي قد يزعجك.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Balanced perfume review structure.</p>
-      <div class="detail">Instagram carousel</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-14</span>
-        <span>Organic</span>
-        <span>مزايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>نوتات، ثبات، مناسبة.<br>مختصر بدون مبالغة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>App/content education around how perfume summaries are written.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-15</span>
-        <span>Organic</span>
-        <span>ثلاث زوايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ريحته، حضوره، وقته.<br>ثلاثة تغيّر الحكم.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Short-form perfume criteria.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PF-16</span>
-        <span>Organic</span>
-        <span>هوية</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>زبدة العطر قبل الدفع.<br>قرار أهدأ.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Buyer caution for expensive fragrances.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-05</span>
-        <span>Paid ad</span>
-        <span>بطل المنتج</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قبل العطر الغالي.<br>اعرف إذا يناسبك.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>زبدة العطور تختصر لك شخصية العطر، مناسبته، وأهم ما قد يعجبك أو يزعجك.</p>
-      <div class="detail">شوف الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-06</span>
-        <span>Paid ad</span>
-        <span>خلاصة</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ريحته مو قصة واحدة.<br>الزبدة تفصلها.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>إعلان يشرح العطر بلغة عملية: إحساس، وقت، مناسبة، وانطباع عام.</p>
-      <div class="detail">افهم العطر</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-07</span>
-        <span>Paid ad</span>
-        <span>إثبات</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>شهرة العطر لا تكفي.<br>قرارك يحتاج تفاصيل.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>مناسب لعطور النيش والترندات التي تحتاج تهدئة قبل الشراء.</p>
-      <div class="detail">خذ القرار</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-08</span>
-        <span>Paid ad</span>
-        <span>مدح/تنبيه</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>المدح وحده يبيع.<br>الزبدة توازن.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>يعرض العطر بطريقة أصدق: نقاط قوة ونقاط قد لا تناسب كل شخص.</p>
-      <div class="detail">جرّب الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-09</span>
-        <span>Paid ad</span>
-        <span>مزايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>نوتات، ثبات، استخدام.<br>بدون كلام زائد.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>إعلان تعليمي خفيف يجعل زبدة العطور تبدو عملية وسريعة.</p>
-      <div class="detail">شوف التفاصيل</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PF-10</span>
-        <span>Paid ad</span>
-        <span>ثلاث زوايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ذوقك، وقتك، ميزانيتك.<br>كلها تغيّر العطر المناسب.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Direct response ad for people comparing before buying.</p>
-      <div class="detail">خذ زبدة العطر</div>
-    </article></div>
+      <h3>Perfumes Babycat Raw Bourbon</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-05-perfumes-babycat-raw-bourbon.png</p>
+    </div>
+  </article>
+    </div>
   </section>
-<section id="places" class="band places">
+<section id="places">
     <div class="section-head">
       <div>
         <div class="eyebrow">Places</div>
-        <h2>زبدة الأماكن</h2>
-        <p>Riyadh places, map discovery, place-detail proof, and visit-decision content.</p>
+        <h2>الأماكن</h2>
+        <p>مطاعم، كافيهات، معالم، وخرائط الرياض باستخدام الصور والهوية الموجودة فعلياً في الحساب.</p>
       </div>
-      <strong>26 variations</strong>
+      <strong>54 صور فعلية</strong>
     </div>
-    <div class="grid"><article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-01</span>
-        <span>Organic</span>
-        <span>هوية</span>
+    <div class="asset-grid">
+      <article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJ4cV14VUELz4RBfhtCX8cffo.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قبل لا تطلع، خذ الزبدة.<br>الرأي المختصر قبل المشوار.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJ4cV14VUELz4RBfhtCX8cffo.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <p>A practical post about checking place sentiment before leaving home.</p>
-      <div class="detail">X wide + Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-02</span>
-        <span>Organic</span>
-        <span>بطل المنتج</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJAfOOqq9V4xURBaACs3r2n1w.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>افتح المكان. شوف الزبدة.<br>وش يمدحون؟ وش ينتبهون له؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJAfOOqq9V4xURBaACs3r2n1w.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <p>Explain that the app saves the user from reading long review threads.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-03</span>
-        <span>Organic</span>
-        <span>إثبات</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJe3-RjlX7Lj4Rk4j8PtI0xsg.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>النجوم تعطي لمحة.<br>الزبدة تعطي السبب.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJe3-RjlX7Lj4Rk4j8PtI0xsg.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJg6hoh6xV4xUR7eJ3Epd0X2o.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <p>Show that stars can hide useful context like crowding, service, parking, or wait time.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-04</span>
-        <span>Organic</span>
-        <span>خلاصة</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJg6hoh6xV4xUR7eJ3Epd0X2o.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJi0_LHmkPLz4R_4sfMGrGI6A.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الخلاصة قبل القرار.<br>سطر واحد يختصر التعليقات.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJi0_LHmkPLz4R_4sfMGrGI6A.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJJy56xohV4xURnejZdbLOzFA.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <p>Make the app feel like a calm second opinion before choosing a restaurant, cafe, or clinic.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-05</span>
-        <span>Organic</span>
-        <span>خريطة</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJJy56xohV4xURnejZdbLOzFA.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJPYjxol8dLz4RDxJc9VrkOT0.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>افتح الخريطة. قرّب القرار.<br>أماكن الرياض أوضح في الزبدة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJPYjxol8dLz4RDxJc9VrkOT0.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJrVtg__X7Lj4RtLz4nFSoYR4.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <p>Invite users to explore nearby places without sounding like a hard ad.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-06</span>
-        <span>Organic</span>
-        <span>مدح/تنبيه</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJrVtg__X7Lj4RtLz4nFSoYR4.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJtZpCp_UPLz4Rclj3rotYC38.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وش يمدحون؟ وش يزعجهم؟<br>القرار يصير أوضح.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJtZpCp_UPLz4Rclj3rotYC38.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJv4pzVgBV4xURGDT7aF-FHbw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <p>Use a split card for positives and cautions from reviews.</p>
-      <div class="detail">Instagram carousel</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-07</span>
-        <span>Organic</span>
-        <span>مزايا</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJv4pzVgBV4xURGDT7aF-FHbw.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJvYlUfGlV4xURD8Yy8H-WeYw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>نظرة عامة، شائع، غير شائع.<br>كلها قبل الزيارة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJvYlUfGlV4xURD8Yy8H-WeYw.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJwU0WYgBV-xURkN87qd-yZJs.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <p>Teach the place-detail screen without turning the caption into a tutorial.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-08</span>
-        <span>Organic</span>
-        <span>ثلاث زوايا</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJwU0WYgBV-xURkN87qd-yZJs.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../places/images/instagram_1080x1350/ChIJy-NYpsRV4xURrZOLdEJs8NI.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>مكان واحد. ثلاث زوايا.<br>التقييم، الزحمة، التجربة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/instagram_1080x1350/ChIJy-NYpsRV4xURrZOLdEJs8NI.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJ4cV14VUELz4RBfhtCX8cffo.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>Show one place through rating, visit timing, and review summary.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-01</span>
-        <span>Paid ad</span>
-        <span>هوية</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJ4cV14VUELz4RBfhtCX8cffo.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>خيارات الرياض كثيرة.<br>الزبدة تختصر القرار.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJAfOOqq9V4xURBaACs3r2n1w.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>للناس اللي تطلع كثير: افتح التطبيق، اختر التصنيف، وشوف خلاصة المكان قبل المشوار.</p>
-      <div class="detail">اكتشف الأماكن</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-02</span>
-        <span>Paid ad</span>
-        <span>إثبات</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJAfOOqq9V4xURBaACs3r2n1w.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>رقم أقل. معنى أكثر.<br>تقييم الزبدة مع التفاصيل.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJe3-RjlX7Lj4Rk4j8PtI0xsg.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>النجوم تعطيك لمحة، والزبدة تعطيك سبب القرار: وش ممتاز ووش يحتاج انتباه.</p>
-      <div class="detail">خذ الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-03</span>
-        <span>Paid ad</span>
-        <span>مزايا</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJe3-RjlX7Lj4Rk4j8PtI0xsg.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJg6hoh6xV4xUR7eJ3Epd0X2o.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>كل شيء قبل الزيارة.<br>شائع، غير شائع، مراجعات.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJg6hoh6xV4xUR7eJ3Epd0X2o.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJi0_LHmkPLz4R_4sfMGrGI6A.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>صفحة المكان في الزبدة تجمع أهم الإشارات بدل ما تضيع في التعليقات الطويلة.</p>
-      <div class="detail">افتح التطبيق</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-04</span>
-        <span>Paid ad</span>
-        <span>ثلاث زوايا</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJi0_LHmkPLz4R_4sfMGrGI6A.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJJy56xohV4xURnejZdbLOzFA.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قبل المشوار اسأل ثلاث.<br>هل يستاهل؟ متى؟ وليش؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJJy56xohV4xURnejZdbLOzFA.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJPYjxol8dLz4RDxJc9VrkOT0.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>الزبدة تساعدك تعرف إذا المكان مناسب لك، الوقت الأفضل، وأهم ما يميزه.</p>
-      <div class="detail">حمّل التطبيق</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-09</span>
-        <span>Organic</span>
-        <span>بطل المنتج</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJPYjxol8dLz4RDxJc9VrkOT0.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJrVtg__X7Lj4RtLz4nFSoYR4.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>المكان واضح من قبل ما توصل.<br>الزبدة تجمع الإشارات المهمة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJrVtg__X7Lj4RtLz4nFSoYR4.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJtZpCp_UPLz4Rclj3rotYC38.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>Show the app as a pre-visit confidence check for Riyadh places.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-10</span>
-        <span>Organic</span>
-        <span>خلاصة</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJtZpCp_UPLz4Rclj3rotYC38.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJv4pzVgBV4xURGDT7aF-FHbw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>مو كل تعليق تحتاجه.<br>المهم هو الخلاصة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJv4pzVgBV4xURGDT7aF-FHbw.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJvYlUfGlV4xURD8Yy8H-WeYw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>Post about reducing review fatigue without dismissing user reviews.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-11</span>
-        <span>Organic</span>
-        <span>إثبات</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJvYlUfGlV4xURD8Yy8H-WeYw.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJwU0WYgBV-xURkN87qd-yZJs.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>تقييم، بس معه تفسير.<br>هنا الفرق.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJwU0WYgBV-xURkN87qd-yZJs.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../places/images/tiktok_1080x1920/ChIJy-NYpsRV4xURrZOLdEJs8NI.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account place</span>
       </div>
-      <p>Compare raw rating vs explained rating in a clean proof-card layout.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-12</span>
-        <span>Organic</span>
-        <span>خريطة</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/tiktok_1080x1920/ChIJy-NYpsRV4xURrZOLdEJs8NI.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJ4cV14VUELz4RBfhtCX8cffo.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قريب منك، ومفهوم أكثر.<br>اختيار المكان صار أهدأ.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJ4cV14VUELz4RBfhtCX8cffo.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <p>Nearby discovery without a hard sales tone.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-13</span>
-        <span>Organic</span>
-        <span>مدح/تنبيه</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJAfOOqq9V4xURBaACs3r2n1w.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>يمدحون الجلسة؟<br>ولا ينتبهون للخدمة؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJAfOOqq9V4xURBaACs3r2n1w.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <p>Good for restaurants/cafes where atmosphere and service differ.</p>
-      <div class="detail">Instagram carousel</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-14</span>
-        <span>Organic</span>
-        <span>مزايا</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJe3-RjlX7Lj4Rk4j8PtI0xsg.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>من أول نظرة تعرف.<br>الشائع وغير الشائع.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJe3-RjlX7Lj4Rk4j8PtI0xsg.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJg6hoh6xV4xUR7eJ3Epd0X2o.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <p>Product education for the place page using simple UI language.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-15</span>
-        <span>Organic</span>
-        <span>ثلاث زوايا</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJg6hoh6xV4xUR7eJ3Epd0X2o.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJi0_LHmkPLz4R_4sfMGrGI6A.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>القرار مو من رقم واحد.<br>شوف الصورة كاملة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJi0_LHmkPLz4R_4sfMGrGI6A.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJJy56xohV4xURnejZdbLOzFA.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <p>Explain why one metric is not enough for real-world visits.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-PL-16</span>
-        <span>Organic</span>
-        <span>هوية</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJJy56xohV4xURnejZdbLOzFA.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJPYjxol8dLz4RDxJc9VrkOT0.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الزبدة قبل المشوار.<br>وقت أقل في الحيرة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJPYjxol8dLz4RDxJc9VrkOT0.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJrVtg__X7Lj4RtLz4nFSoYR4.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <p>Brand-building post for repeated daily decision moments.</p>
-      <div class="detail">X wide + Instagram</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-05</span>
-        <span>Paid ad</span>
-        <span>بطل المنتج</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJrVtg__X7Lj4RtLz4nFSoYR4.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJtZpCp_UPLz4Rclj3rotYC38.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قبل المطعم، شوف الخلاصة.<br>وش يمدحون ووش ينتبهون له.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJtZpCp_UPLz4Rclj3rotYC38.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJv4pzVgBV4xURGDT7aF-FHbw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <p>الزبدة تجمع أهم ما يهمك قبل الزيارة: التقييم، الملاحظات، وشائع المكان.</p>
-      <div class="detail">شوف المكان</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-06</span>
-        <span>Paid ad</span>
-        <span>إثبات</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJv4pzVgBV4xURGDT7aF-FHbw.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJvYlUfGlV4xURD8Yy8H-WeYw.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>التقييم مفهوم أكثر.<br>لما تعرف السبب.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJvYlUfGlV4xURD8Yy8H-WeYw.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJwU0WYgBV-xURkN87qd-yZJs.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <p>لا تعتمد على النجوم فقط. الزبدة تساعدك تفهم سبب الانطباع قبل القرار.</p>
-      <div class="detail">افتح الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-07</span>
-        <span>Paid ad</span>
-        <span>خريطة</span>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJwU0WYgBV-xURkN87qd-yZJs.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../places/images/x_1600x900/ChIJy-NYpsRV4xURrZOLdEJs8NI.png" alt="مكان من الدفعة" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account place</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قهوة؟ عشاء؟ عيادة؟<br>ابدأ من الزبدة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>مكان من الدفعة</h3>
+      <p>content/places/images/x_1600x900/ChIJy-NYpsRV4xURrZOLdEJs8NI.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../marketing ad/places/images/instagram_1080x1350/riyadh-map-decision.png" alt="Riyadh Map Decision" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Paid marketing</span>
       </div>
-      <p>إعلان واسع للبحث المحلي في الرياض بدون حصره في نوع مكان واحد.</p>
-      <div class="detail">اكتشف قريب منك</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-08</span>
-        <span>Paid ad</span>
-        <span>مدح/تنبيه</span>
+      <h3>Riyadh Map Decision</h3>
+      <p>content/marketing ad/places/images/instagram_1080x1350/riyadh-map-decision.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../marketing ad/places/images/tiktok_1080x1920/riyadh-map-decision.png" alt="Riyadh Map Decision" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>جلسة ممتازة؟ خدمة بطيئة؟<br>اعرف قبل ما تروح.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Riyadh Map Decision</h3>
+      <p>content/marketing ad/places/images/tiktok_1080x1920/riyadh-map-decision.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../marketing ad/places/images/x_1600x900/riyadh-map-decision.png" alt="Riyadh Map Decision" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Paid marketing</span>
       </div>
-      <p>مناسب لإعلانات المطاعم والكافيهات التي تحتاج توازن بين الجمال والتنبيه.</p>
-      <div class="detail">خذ الخلاصة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-09</span>
-        <span>Paid ad</span>
-        <span>مزايا</span>
+      <h3>Riyadh Map Decision</h3>
+      <p>content/marketing ad/places/images/x_1600x900/riyadh-map-decision.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-22-places-ChIJPYjxol8dLz4RDxJc9VrkOT0.png" alt="Places ChIJPYjxol8dLz4RDxJc9VrkOT0" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>صفحة المكان تختصرها.<br>الشائع وغير الشائع والمراجعات.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Places ChIJPYjxol8dLz4RDxJc9VrkOT0</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-22-places-ChIJPYjxol8dLz4RDxJc9VrkOT0.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-24-places-ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png" alt="Places ChIJcd8ZfOHjLj4R2MhcWMOsPiw" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <p>ركز على شاشة المكان كدليل عملي قبل الخروج.</p>
-      <div class="detail">حمّل التطبيق</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-PL-10</span>
-        <span>Paid ad</span>
-        <span>ثلاث زوايا</span>
+      <h3>Places ChIJcd8ZfOHjLj4R2MhcWMOsPiw</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-24-places-ChIJcd8ZfOHjLj4R2MhcWMOsPiw.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-26-places-ChIJrVtg__X7Lj4RtLz4nFSoYR4.png" alt="Places ChIJrVtg  X7Lj4RtLz4nFSoYR4" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وقت، مكان، تجربة.<br>قرارك أوضح مع الزبدة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Places ChIJrVtg  X7Lj4RtLz4nFSoYR4</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-26-places-ChIJrVtg__X7Lj4RtLz4nFSoYR4.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-27-places-ChIJi0_LHmkPLz4R_4sfMGrGI6A.png" alt="Places ChIJi0 LHmkPLz4R 4sfMGrGI6A" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <p>إعلان بصري بثلاث بطاقات يربط الزيارة بظروفها.</p>
-      <div class="detail">جرّب الزبدة</div>
-    </article></div>
+      <h3>Places ChIJi0 LHmkPLz4R 4sfMGrGI6A</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-27-places-ChIJi0_LHmkPLz4R_4sfMGrGI6A.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-29-places-ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png" alt="Places ChIJ5xG77av7Lj4Rjwobo8hGpdQ" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
+      </div>
+      <h3>Places ChIJ5xG77av7Lj4Rjwobo8hGpdQ</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-29-places-ChIJ5xG77av7Lj4Rjwobo8hGpdQ.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-04-places-ChIJAfOOqq9V4xURBaACs3r2n1w.png" alt="Places ChIJAfOOqq9V4xURBaACs3r2n1w" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
+      </div>
+      <h3>Places ChIJAfOOqq9V4xURBaACs3r2n1w</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-04-places-ChIJAfOOqq9V4xURBaACs3r2n1w.png</p>
+    </div>
+  </article>
+    </div>
   </section>
-<section id="destinations" class="band destinations">
+<section id="destinations">
     <div class="section-head">
       <div>
         <div class="eyebrow">Destinations</div>
-        <h2>زبدة السفر</h2>
-        <p>Travel planning, destination comparison, itinerary, and pre-booking decision content.</p>
+        <h2>الوجهات</h2>
+        <p>تنويعات زبدة السفر والوجهات بصيغ X وInstagram وTikTok والستوري.</p>
       </div>
-      <strong>26 variations</strong>
+      <strong>47 صور فعلية</strong>
     </div>
-    <div class="grid"><article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-01</span>
-        <span>Organic</span>
-        <span>هوية</span>
+    <div class="asset-grid">
+      <article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/abha.png" alt="Abha" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قبل الحجز، افهم الوجهة.<br>زبدة السفر تختصر البداية.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Abha</h3>
+      <p>content/travel/images/instagram_1080x1350/abha.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/bangkok.png" alt="Bangkok" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <p>A planning-first post for people comparing destinations.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-02</span>
-        <span>Organic</span>
-        <span>بطل المنتج</span>
+      <h3>Bangkok</h3>
+      <p>content/travel/images/instagram_1080x1350/bangkok.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/cairo.png" alt="Cairo" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وجهة وحدة. قرار أوضح.<br>وش يناسبك؟ وش يستاهل؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Cairo</h3>
+      <p>content/travel/images/instagram_1080x1350/cairo.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/dubai.png" alt="Dubai" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <p>Make travel planning feel less like endless tabs and more like an informed choice.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-03</span>
-        <span>Organic</span>
-        <span>إثبات</span>
+      <h3>Dubai</h3>
+      <p>content/travel/images/instagram_1080x1350/dubai.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/istanbul.png" alt="Istanbul" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الوجهة مو بس صور.<br>المهم هل تناسب رحلتك؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Istanbul</h3>
+      <p>content/travel/images/instagram_1080x1350/istanbul.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/london.png" alt="London" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <p>Contrast pretty destination content with practical suitability.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-04</span>
-        <span>Organic</span>
-        <span>خلاصة</span>
+      <h3>London</h3>
+      <p>content/travel/images/instagram_1080x1350/london.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/paris.png" alt="Paris" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الخلاصة قبل التذكرة.<br>الميزانية، التنقل، وأفضل الأيام.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Paris</h3>
+      <p>content/travel/images/instagram_1080x1350/paris.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/phuket.png" alt="Phuket" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <p>Position الزبدة as a pre-booking decision layer.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-05</span>
-        <span>Organic</span>
-        <span>خريطة</span>
+      <h3>Phuket</h3>
+      <p>content/travel/images/instagram_1080x1350/phuket.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/riyadh.png" alt="Riyadh" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>رتّب الأيام قبل الزحمة.<br>أماكن تستاهل ووقت أهدأ.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Riyadh</h3>
+      <p>content/travel/images/instagram_1080x1350/riyadh.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/rome.png" alt="Rome" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <p>Good for city itineraries, especially high-traffic destinations.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-06</span>
-        <span>Organic</span>
-        <span>مدح/تنبيه</span>
+      <h3>Rome</h3>
+      <p>content/travel/images/instagram_1080x1350/rome.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/taif.png" alt="Taif" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الحلو واضح. والمزعج أوضح.<br>خذ الصورة كاملة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Taif</h3>
+      <p>content/travel/images/instagram_1080x1350/taif.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/tokyo.png" alt="Tokyo" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <p>Show both highlights and caveats: crowds, distance, weather, or hidden costs.</p>
-      <div class="detail">Instagram carousel</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-07</span>
-        <span>Organic</span>
-        <span>مزايا</span>
+      <h3>Tokyo</h3>
+      <p>content/travel/images/instagram_1080x1350/tokyo.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../travel/images/instagram_1080x1350/vietnam.png" alt="Vietnam" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>خطة، أماكن، ميزانية، ملاحظات.<br>سفر بدون حوسة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Vietnam</h3>
+      <p>content/travel/images/instagram_1080x1350/vietnam.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/abha.png" alt="Abha" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <p>Feature-style post that still feels useful for account content.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-08</span>
-        <span>Organic</span>
-        <span>ثلاث زوايا</span>
+      <h3>Abha</h3>
+      <p>content/travel/images/tiktok_1080x1920/abha.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/bangkok.png" alt="Bangkok" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وجهة واحدة. ثلاث قرارات.<br>تروح؟ متى؟ ولمين تناسب؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Bangkok</h3>
+      <p>content/travel/images/tiktok_1080x1920/bangkok.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/cairo.png" alt="Cairo" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <p>A carousel or short video comparing audience fit and timing.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-01</span>
-        <span>Paid ad</span>
-        <span>بطل المنتج</span>
+      <h3>Cairo</h3>
+      <p>content/travel/images/tiktok_1080x1920/cairo.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/dubai.png" alt="Dubai" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>قبل التذكرة.<br>خذ زبدة الوجهة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Dubai</h3>
+      <p>content/travel/images/tiktok_1080x1920/dubai.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/istanbul.png" alt="Istanbul" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <p>قارن الوجهات، افهم الميزانية، ورتب أولويات الرحلة قبل ما تحجز.</p>
-      <div class="detail">خطط رحلتك</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-02</span>
-        <span>Paid ad</span>
-        <span>مدح/تنبيه</span>
+      <h3>Istanbul</h3>
+      <p>content/travel/images/tiktok_1080x1920/istanbul.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/london.png" alt="London" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الصور تقول شيء.<br>التجربة تقول أكثر.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>London</h3>
+      <p>content/travel/images/tiktok_1080x1920/london.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/paris.png" alt="Paris" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <p>زبدة السفر تعرض الجمال والتنبيهات معاً، عشان القرار يكون أوضح.</p>
-      <div class="detail">اسأل الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-03</span>
-        <span>Paid ad</span>
-        <span>خلاصة</span>
+      <h3>Paris</h3>
+      <p>content/travel/images/tiktok_1080x1920/paris.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/phuket.png" alt="Phuket" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>سفر أقل حوسة.<br>خطة أوضح من البداية.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Phuket</h3>
+      <p>content/travel/images/tiktok_1080x1920/phuket.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/riyadh.png" alt="Riyadh" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <p>بدل فتح عشرات المواقع، ابدأ بخلاصة تساعدك تعرف وش يناسبك.</p>
-      <div class="detail">ابدأ التخطيط</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-04</span>
-        <span>Paid ad</span>
-        <span>ثلاث زوايا</span>
+      <h3>Riyadh</h3>
+      <p>content/travel/images/tiktok_1080x1920/riyadh.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/rome.png" alt="Rome" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>تروح؟ متى؟ ولمين تناسب؟<br>زبدة السفر تجاوب.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Rome</h3>
+      <p>content/travel/images/tiktok_1080x1920/rome.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/taif.png" alt="Taif" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <p>إعلان مناسب لجمهور نية السفر: يركز على تقليل التردد قبل الحجز.</p>
-      <div class="detail">اعرف الوجهة</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-09</span>
-        <span>Organic</span>
-        <span>بطل المنتج</span>
+      <h3>Taif</h3>
+      <p>content/travel/images/tiktok_1080x1920/taif.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/tokyo.png" alt="Tokyo" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الخطة تبدأ قبل الحماس.<br>زبدة السفر ترتبها.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Tokyo</h3>
+      <p>content/travel/images/tiktok_1080x1920/tokyo.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../travel/images/tiktok_1080x1920/vietnam.png" alt="Vietnam" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Account destination</span>
       </div>
-      <p>A planning discipline post for destination research.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-10</span>
-        <span>Organic</span>
-        <span>خلاصة</span>
+      <h3>Vietnam</h3>
+      <p>content/travel/images/tiktok_1080x1920/vietnam.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/abha.png" alt="Abha" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>اعرف وش ينتظرك.<br>قبل ما ترتب الأيام.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Abha</h3>
+      <p>content/travel/images/x_1600x900/abha.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/bangkok.png" alt="Bangkok" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <p>Destination preview with practical notes: crowds, transfers, weather, costs.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-11</span>
-        <span>Organic</span>
-        <span>إثبات</span>
+      <h3>Bangkok</h3>
+      <p>content/travel/images/x_1600x900/bangkok.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/cairo.png" alt="Cairo" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وجهة جميلة.<br>لكن هل هي مناسبة؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Cairo</h3>
+      <p>content/travel/images/x_1600x900/cairo.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/dubai.png" alt="Dubai" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <p>Suitability framing for family, honeymoon, solo, or budget travel.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-12</span>
-        <span>Organic</span>
-        <span>خريطة</span>
+      <h3>Dubai</h3>
+      <p>content/travel/images/x_1600x900/dubai.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/istanbul.png" alt="Istanbul" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الأماكن كثيرة.<br>الأولويات أهم.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Istanbul</h3>
+      <p>content/travel/images/x_1600x900/istanbul.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/london.png" alt="London" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <p>Turn itinerary planning into priority-setting rather than checklist stuffing.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-13</span>
-        <span>Organic</span>
-        <span>مدح/تنبيه</span>
+      <h3>London</h3>
+      <p>content/travel/images/x_1600x900/london.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/paris.png" alt="Paris" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وش يستاهل الوقت؟<br>وش يتعب أكثر مما يستاهل؟</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Paris</h3>
+      <p>content/travel/images/x_1600x900/paris.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/phuket.png" alt="Phuket" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <p>Highlight tradeoffs with no time-sensitive wording.</p>
-      <div class="detail">Instagram carousel</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-14</span>
-        <span>Organic</span>
-        <span>مزايا</span>
+      <h3>Phuket</h3>
+      <p>content/travel/images/x_1600x900/phuket.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/riyadh.png" alt="Riyadh" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ميزانية، تنقل، جدول.<br>القرار يبدأ من هنا.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Riyadh</h3>
+      <p>content/travel/images/x_1600x900/riyadh.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/rome.png" alt="Rome" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <p>Practical travel framework for account education.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-15</span>
-        <span>Organic</span>
-        <span>ثلاث زوايا</span>
+      <h3>Rome</h3>
+      <p>content/travel/images/x_1600x900/rome.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/taif.png" alt="Taif" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>مدينة، ميزانية، مزاج.<br>كلها تغيّر القرار.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Taif</h3>
+      <p>content/travel/images/x_1600x900/taif.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/tokyo.png" alt="Tokyo" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <p>Useful for short-form destination comparisons.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-TV-16</span>
-        <span>Organic</span>
-        <span>هوية</span>
+      <h3>Tokyo</h3>
+      <p>content/travel/images/x_1600x900/tokyo.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../travel/images/x_1600x900/vietnam.png" alt="Vietnam" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Account destination</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>زبدة السفر قبل الزحمة.<br>اختر وأنت فاهم.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Vietnam</h3>
+      <p>content/travel/images/x_1600x900/vietnam.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../marketing ad/travel/images/instagram_1080x1350/travel-compare.png" alt="Travel Compare" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Broad travel brand post, suitable for evergreen scheduling.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-05</span>
-        <span>Paid ad</span>
-        <span>بطل المنتج</span>
+      <h3>Travel Compare</h3>
+      <p>content/marketing ad/travel/images/instagram_1080x1350/travel-compare.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../marketing ad/travel/images/tiktok_1080x1920/travel-compare.png" alt="Travel Compare" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>وجهتك الجاية تحتاج زبدة.<br>قبل الجدول والحجز.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Travel Compare</h3>
+      <p>content/marketing ad/travel/images/tiktok_1080x1920/travel-compare.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../marketing ad/travel/images/x_1600x900/travel-compare.png" alt="Travel Compare" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Paid marketing</span>
       </div>
-      <p>زبدة السفر تساعدك تفهم الوجهة، الأولويات، والتنبيهات قبل ما ترتب الرحلة.</p>
-      <div class="detail">ابدأ من هنا</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-06</span>
-        <span>Paid ad</span>
-        <span>خلاصة</span>
+      <h3>Travel Compare</h3>
+      <p>content/marketing ad/travel/images/x_1600x900/travel-compare.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-23-travel-bangkok.png" alt="Travel Bangkok" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>اختصر بحث السفر.<br>وخلك على المهم.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Travel Bangkok</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-23-travel-bangkok.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-25-travel-dubai.png" alt="Travel Dubai" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <p>من الميزانية إلى التنقل وأفضل الأنشطة: خذ خلاصة تساعدك تختار بثقة.</p>
-      <div class="detail">خطط أذكى</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-07</span>
-        <span>Paid ad</span>
-        <span>إثبات</span>
+      <h3>Travel Dubai</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-25-travel-dubai.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-28-travel-london.png" alt="Travel London" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ليست كل وجهة لكل شخص.<br>اعرف المناسب لك.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Travel London</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-06-28-travel-london.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-01-travel-paris.png" alt="Travel Paris" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <p>إعلان موجه لناس محتارين بين أكثر من وجهة.</p>
-      <div class="detail">قارن الوجهات</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-08</span>
-        <span>Paid ad</span>
-        <span>مدح/تنبيه</span>
+      <h3>Travel Paris</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-01-travel-paris.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-03-travel-phuket.png" alt="Travel Phuket" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Story 1080x1920</span>
+        <span>Upcoming batch story</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الجانب الجميل واضح.<br>والتنبيهات أهم.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>يساعد الجمهور يشوف الصورة الكاملة قبل الحجز، لا الإلهام فقط.</p>
-      <div class="detail">خذ زبدة السفر</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-09</span>
-        <span>Paid ad</span>
-        <span>مزايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ميزانية وتنقل وتجارب.<br>في خلاصة واحدة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>إعلان عملي للجمهور الذي يريد قرار سفر مرتب لا عشوائي.</p>
-      <div class="detail">ابدأ التخطيط</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-TV-10</span>
-        <span>Paid ad</span>
-        <span>ثلاث زوايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>رحلة أقصر في البحث.<br>وأوضح في القرار.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Direct response ad for travel planning, especially X/Instagram feed.</p>
-      <div class="detail">اسأل الزبدة</div>
-    </article></div>
+      <h3>Travel Phuket</h3>
+      <p>content/two-week-batch/2026-06-22_to_2026-07-05/stories/images/2026-07-03-travel-phuket.png</p>
+    </div>
+  </article>
+    </div>
   </section>
-<section id="ads" class="band ads">
+<section id="ads">
     <div class="section-head">
       <div>
-        <div class="eyebrow">Other marketing ads</div>
-        <h2>إعلانات التطبيق والمحتوى التسويقي</h2>
-        <p>Mobile app acquisition, product education, chat/map proof, and direct-response ads.</p>
+        <div class="eyebrow">Marketing ads</div>
+        <h2>الإعلانات والمحتوى التسويقي</h2>
+        <p>إعلانات تطبيق الزبدة، الشات، الخريطة، ومحتوى الاستحواذ المباشر على المستخدمين.</p>
       </div>
-      <strong>18 variations</strong>
+      <strong>12 صور فعلية</strong>
     </div>
-    <div class="grid"><article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-01</span>
-        <span>Paid ad</span>
-        <span>بطل المنتج</span>
+    <div class="asset-grid">
+      <article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../mobile-app/images/instagram_1080x1350/ask-zbdh-riyadh.png" alt="Ask Zbdh Riyadh" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Mobile app</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>بدل دوامة التعليقات.<br>خذ الزبدة في دقيقة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Ask Zbdh Riyadh</h3>
+      <p>content/mobile-app/images/instagram_1080x1350/ask-zbdh-riyadh.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../mobile-app/images/instagram_1080x1350/skip-review-scroll.png" alt="Skip Review Scroll" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Mobile app</span>
       </div>
-      <p>مطعم، كوفي، أو عيادة في الرياض؟ تطبيق الزبدة يختصر لك الرأي، التقييم، وش الناس تمدح، وش تنتبه له قبل ما تروح.</p>
-      <div class="detail">حمّل تطبيق الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-02</span>
-        <span>Paid ad</span>
-        <span>خريطة</span>
+      <h3>Skip Review Scroll</h3>
+      <p>content/mobile-app/images/instagram_1080x1350/skip-review-scroll.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../mobile-app/images/instagram_1080x1350/weekend-riyadh-plan.png" alt="Weekend Riyadh Plan" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Mobile app</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>ضايع بين الخيارات؟<br>خل الزبدة تختصرها.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Weekend Riyadh Plan</h3>
+      <p>content/mobile-app/images/instagram_1080x1350/weekend-riyadh-plan.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../mobile-app/images/tiktok_1080x1920/ask-zbdh-riyadh.png" alt="Ask Zbdh Riyadh" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Mobile app</span>
       </div>
-      <p>خريطة الرياض في تطبيق واحد: أماكن قريبة، تفاصيل أوضح، وقرار أسرع بدون لفّة قروبات.</p>
-      <div class="detail">متوفر على iOS</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-03</span>
-        <span>Paid ad</span>
-        <span>خلاصة</span>
+      <h3>Ask Zbdh Riyadh</h3>
+      <p>content/mobile-app/images/tiktok_1080x1920/ask-zbdh-riyadh.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../mobile-app/images/tiktok_1080x1920/skip-review-scroll.png" alt="Skip Review Scroll" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Mobile app</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الخلاصة بدل الحوسة.<br>القرار صار أسرع.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Skip Review Scroll</h3>
+      <p>content/mobile-app/images/tiktok_1080x1920/skip-review-scroll.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../mobile-app/images/tiktok_1080x1920/weekend-riyadh-plan.png" alt="Weekend Riyadh Plan" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Mobile app</span>
       </div>
-      <p>الزبدة تلخص لك المكان قبل الزيارة: التجربة العامة، الشائع، غير الشائع، والمراجعات المهمة.</p>
-      <div class="detail">جرّبه الآن</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-04</span>
-        <span>Paid ad</span>
-        <span>مدح/تنبيه</span>
+      <h3>Weekend Riyadh Plan</h3>
+      <p>content/mobile-app/images/tiktok_1080x1920/weekend-riyadh-plan.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../mobile-app/images/x_1600x900/ask-zbdh-riyadh.png" alt="Ask Zbdh Riyadh" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Mobile app</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>اعرف المدح والشكوى.<br>قبل ما تحجز أو تطلع.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Ask Zbdh Riyadh</h3>
+      <p>content/mobile-app/images/x_1600x900/ask-zbdh-riyadh.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../mobile-app/images/x_1600x900/skip-review-scroll.png" alt="Skip Review Scroll" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Mobile app</span>
       </div>
-      <p>مو كل تقييم يحكي القصة كاملة. الزبدة تساعدك تشوف الإيجابيات والتنبيهات في مكان واحد.</p>
-      <div class="detail">حمّل الزبدة</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-01</span>
-        <span>Organic</span>
-        <span>بطل المنتج</span>
+      <h3>Skip Review Scroll</h3>
+      <p>content/mobile-app/images/x_1600x900/skip-review-scroll.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../mobile-app/images/x_1600x900/weekend-riyadh-plan.png" alt="Weekend Riyadh Plan" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Mobile app</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>اكتب سؤالك مثل ما هو.<br>والزبدة ترتب القرار.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Weekend Riyadh Plan</h3>
+      <p>content/mobile-app/images/x_1600x900/weekend-riyadh-plan.png</p>
+    </div>
+  </article>
+<article class="asset-card portrait">
+    <div class="thumb">
+      <img src="../marketing ad/mobile-app/images/instagram_1080x1350/ask-zbdh-chat.png" alt="Ask Zbdh Chat" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>Instagram 1080x1350</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Teach the chat behavior: natural questions, practical answers.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-02</span>
-        <span>Organic</span>
-        <span>خريطة</span>
+      <h3>Ask Zbdh Chat</h3>
+      <p>content/marketing ad/mobile-app/images/instagram_1080x1350/ask-zbdh-chat.png</p>
+    </div>
+  </article>
+<article class="asset-card vertical">
+    <div class="thumb">
+      <img src="../marketing ad/mobile-app/images/tiktok_1080x1920/ask-zbdh-chat.png" alt="Ask Zbdh Chat" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>TikTok 1080x1920</span>
+        <span>Paid marketing</span>
       </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الخريطة مو للاتجاهات بس.<br>للإختيار بعد.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
+      <h3>Ask Zbdh Chat</h3>
+      <p>content/marketing ad/mobile-app/images/tiktok_1080x1920/ask-zbdh-chat.png</p>
+    </div>
+  </article>
+<article class="asset-card wide">
+    <div class="thumb">
+      <img src="../marketing ad/mobile-app/images/x_1600x900/ask-zbdh-chat.png" alt="Ask Zbdh Chat" loading="lazy">
+    </div>
+    <div class="asset-info">
+      <div class="chips">
+        <span>X 1600x900</span>
+        <span>Paid marketing</span>
       </div>
-      <p>Show map discovery as a decision layer, not just navigation.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-03</span>
-        <span>Organic</span>
-        <span>خلاصة</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>سؤال صغير.<br>قرار أوضح.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Light product post around asking about restaurants, cafes, clinics, or activities.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-04</span>
-        <span>Organic</span>
-        <span>مزايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>خريطة، شات، تفاصيل.<br>كلها للقرار نفسه.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Explain the product system without listing every feature.</p>
-      <div class="detail">X wide</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-05</span>
-        <span>Organic</span>
-        <span>ثلاث زوايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>تبحث، تقارن، تختار.<br>في نفس المكان.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>A short video sequence showing user flow in three beats.</p>
-      <div class="detail">TikTok/Reels</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-06</span>
-        <span>Organic</span>
-        <span>إثبات</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الزبدة مو إعلان مكان.<br>هي قراءة للرأي.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Trust-building post that separates brand promise from paid recommendations.</p>
-      <div class="detail">X</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-07</span>
-        <span>Organic</span>
-        <span>هوية</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>اختيارك أسرع لما السياق واضح.<br>هذا دور الزبدة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>More premium/product-led voice for app acquisition content.</p>
-      <div class="detail">Instagram</div>
-    </article>
-<article class="card organic">
-      <div class="meta">
-        <span class="id">ORG-APP-08</span>
-        <span>Organic</span>
-        <span>مدح/تنبيه</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>المدح لحاله ناقص.<br>والشكوى لحالها تخوف.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>Explain balanced review interpretation.</p>
-      <div class="detail">Instagram carousel</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-05</span>
-        <span>Paid ad</span>
-        <span>بطل المنتج</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>اختيار المكان صار أقصر.<br>من السؤال إلى القرار.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>تطبيق الزبدة يساعدك تختصر بحث الأماكن في الرياض: اسأل، قارن، وشوف الخلاصة قبل ما تطلع.</p>
-      <div class="detail">حمّل التطبيق</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-06</span>
-        <span>Paid ad</span>
-        <span>خريطة</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>افتح الرياض بطريقة أذكى.<br>أماكن أقرب وقرار أوضح.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>للمطاعم والكافيهات والعيادات: خريطة تساعدك تختار، مو بس تعرف الطريق.</p>
-      <div class="detail">متوفر على iOS</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-07</span>
-        <span>Paid ad</span>
-        <span>خلاصة</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>القرار يحتاج سياق.<br>والزبدة تعطيك إياه.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>بدل ما تعتمد على رقم أو تعليق واحد، شوف خلاصة المكان والآراء المهمة في التطبيق.</p>
-      <div class="detail">خذ الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-08</span>
-        <span>Paid ad</span>
-        <span>مدح/تنبيه</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>الإيجابي والسلبي في مكان واحد.<br>قبل الزيارة.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>إعلان مباشر يركز على الثقة: الزبدة تعرض المدح والتنبيهات عشان تختار براحة.</p>
-      <div class="detail">حمّل الزبدة</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-09</span>
-        <span>Paid ad</span>
-        <span>مزايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>كل زيارة تبدأ من هنا.<br>شات، خريطة، تفاصيل.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>تطبيق واحد لقرارات الرياض اليومية، من السؤال الأول إلى اختيار المكان.</p>
-      <div class="detail">جرّبه الآن</div>
-    </article>
-<article class="card paid">
-      <div class="meta">
-        <span class="id">AD-APP-10</span>
-        <span>Paid ad</span>
-        <span>ثلاث زوايا</span>
-      </div>
-      <div class="poster">
-        <div class="brand">الزبدة</div>
-        <h3>اسأل. شوف. اختار.<br>الزبدة تختصر الطريق.</h3>
-        <div class="screen-lines">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-      <p>إعلان سريع يناسب Reels/TikTok بفريمات متتابعة من المنتج.</p>
-      <div class="detail">حمّل تطبيق الزبدة</div>
-    </article></div>
+      <h3>Ask Zbdh Chat</h3>
+      <p>content/marketing ad/mobile-app/images/x_1600x900/ask-zbdh-chat.png</p>
+    </div>
+  </article>
+    </div>
   </section>
   <footer>
     <div>
-      <span>Generated from content/ad-campaigns/app-screenshot-variation-bank.md</span>
-      <span>Buffer scheduling still requires the duplicate and timing gate.</span>
+      <span>Generated from existing image assets in content/*/images.</span>
+      <span>Buffer scheduling still requires duplicate and time checks.</span>
     </div>
   </footer>
 </body>
