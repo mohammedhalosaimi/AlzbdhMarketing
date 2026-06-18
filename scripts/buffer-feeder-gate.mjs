@@ -14,6 +14,11 @@ const PLAN_GLOBS = [
   'content/monthly-batch',
 ];
 const BALANCED_CHANNELS = ['x', 'instagram', 'tiktok'];
+const PRIME_TIME_BY_CHANNEL = {
+  x: { morning: '21:00', daytime: '22:00' },
+  instagram: { morning: '21:20', daytime: '22:20' },
+  tiktok: { morning: '21:40', daytime: '22:40' },
+};
 
 const PLATFORM_CHANNEL = {
   x: 'x',
@@ -207,8 +212,11 @@ function sourceFromPostKey(postKey) {
 function candidateEntry(row, planPath) {
   const source = row.source_id || row.slug || sourceFromPostKey(row.post_key);
   const postKey = row.post_key || `${row.date || 'no-date'}::${row.time_riyadh || 'no-time'}::${platformKey(row.platform)}::${normalizeSource(source)}`;
+  const scheduledTime = preferredRiyadhTime(row);
   return {
     ...row,
+    _planned_time_riyadh: row.time_riyadh,
+    time_riyadh: scheduledTime,
     _plan: planPath,
     _post_key: postKey,
     _channel: channelKey(row.platform),
@@ -216,6 +224,18 @@ function candidateEntry(row, planPath) {
     _media_norm: normalizeMedia(rowMedia(row)),
     _source_norm: normalizeSource(source),
   };
+}
+
+function preferredRiyadhTime(row) {
+  const original = String(row.time_riyadh || '').trim();
+  if (!/^\d{2}:\d{2}$/.test(original)) return original;
+  const channel = channelKey(row.platform);
+  const prime = PRIME_TIME_BY_CHANNEL[channel];
+  if (!prime) return original;
+  const hour = Number(original.slice(0, 2));
+  if (hour >= 17) return original;
+  if (MORNING_PATTERNS.some((pattern) => pattern.test(combinedText(row)))) return original;
+  return hour < 11 ? prime.morning : prime.daytime;
 }
 
 function findDuplicate(candidate, usedEntries, selected) {

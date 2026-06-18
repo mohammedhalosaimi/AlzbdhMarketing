@@ -5,9 +5,10 @@ Timezone: Asia/Riyadh
 
 ## Recommended Windows
 
-- Wave 1: 12:15 X, 12:35 Instagram, 12:55 TikTok.
-- Wave 2: 18:40 X, 19:00 Instagram, 19:20 TikTok.
-- Wave 3: 21:05 X, 21:25 Instagram, 21:45 TikTok.
+- Prime-time night focus:
+- X rows that would have landed before 17:00 Riyadh should be shifted into 21:00-22:00 when the copy is still time-appropriate.
+- Instagram should concentrate in 21:00-23:59 Riyadh.
+- TikTok should concentrate in 21:00-23:59 Riyadh.
 
 The launch cadence is three polished content waves per day, adapted per platform with platform-specific copy and asset sizes. This gives each platform more than one daily post while staying under Buffer's 10 scheduled-post cap.
 
@@ -88,9 +89,9 @@ The next production pass should generate additional perfume creatives and more s
 
 `content/two-week-batch/2026-06-22_to_2026-07-05/` is the current two-week organic library. It contains 14 days and 70 prepared rows:
 
-- X: daily 09:45 text prompt and 12:35 visual post.
-- Instagram: daily 18:15 Story-style asset and 20:45 feed post.
-- TikTok: daily 21:30 vertical post.
+- X: prefer 21:00 and 22:00 Riyadh for in-scope feeder scheduling.
+- Instagram: prefer 21:20 and 22:20 Riyadh.
+- TikTok: prefer 21:40 and 22:40 Riyadh.
 
 Use `plan.json` as the automation source and `plan.csv` / `copy.md` for human review. Each row remains `ready` until the daily feeder schedules it in Buffer and records the returned Buffer ID in `content/social_post_register.json`.
 
