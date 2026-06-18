@@ -6221,7 +6221,7 @@
     "buffer_post_id": "6a338a5a65ba0f21398593cd",
     "buffer_channel_id": "67364f29da2e3cb64c611c48",
     "post_url": "",
-    "notes": "Scheduled via Buffer for 2026-06-27T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+    "notes": "Scheduled via Buffer for 2026-06-27T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json. MANUALLY_DELETED_FROM_BUFFER on 2026-06-18 Riyadh to rebalance the queue across channels. Original buffer post id 6a338a5a65ba0f21398593cd should remain treated as used creative."
   },
   {
     "post_key": "2026-06-28::09:45::x::london",
@@ -6237,7 +6237,7 @@
     "buffer_post_id": "6a338a6d6a2e3f214577e995",
     "buffer_channel_id": "67364f29da2e3cb64c611c48",
     "post_url": "",
-    "notes": "Scheduled via Buffer for 2026-06-28T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+    "notes": "Scheduled via Buffer for 2026-06-28T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json. MANUALLY_DELETED_FROM_BUFFER on 2026-06-18 Riyadh to rebalance the queue across channels. Original buffer post id 6a338a6d6a2e3f214577e995 should remain treated as used creative."
   },
   {
     "post_key": "2026-06-29::09:45::x::chij5xg77av7lj4rjwobo8hgpdq",
@@ -6253,7 +6253,7 @@
     "buffer_post_id": "6a338a6d7d3a3723caab31c0",
     "buffer_channel_id": "67364f29da2e3cb64c611c48",
     "post_url": "",
-    "notes": "Scheduled via Buffer for 2026-06-29T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+    "notes": "Scheduled via Buffer for 2026-06-29T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json. MANUALLY_DELETED_FROM_BUFFER on 2026-06-18 Riyadh to rebalance the queue across channels. Original buffer post id 6a338a6d7d3a3723caab31c0 should remain treated as used creative."
   },
   {
     "post_key": "2026-06-30::09:45::x::angelsshareparadis",
@@ -6269,7 +6269,7 @@
     "buffer_post_id": "6a338a6e6a2e3f214577e9ba",
     "buffer_channel_id": "67364f29da2e3cb64c611c48",
     "post_url": "",
-    "notes": "Scheduled via Buffer for 2026-06-30T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+    "notes": "Scheduled via Buffer for 2026-06-30T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json. MANUALLY_DELETED_FROM_BUFFER on 2026-06-18 Riyadh to rebalance the queue across channels. Original buffer post id 6a338a6e6a2e3f214577e9ba should remain treated as used creative."
   },
   {
     "post_key": "2026-07-01::09:45::x::paris",
@@ -6285,7 +6285,7 @@
     "buffer_post_id": "6a338a6f7d3a3723caab31e5",
     "buffer_channel_id": "67364f29da2e3cb64c611c48",
     "post_url": "",
-    "notes": "Scheduled via Buffer for 2026-07-01T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+    "notes": "Scheduled via Buffer for 2026-07-01T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json. MANUALLY_DELETED_FROM_BUFFER on 2026-06-18 Riyadh to rebalance the queue across channels. Original buffer post id 6a338a6f7d3a3723caab31e5 should remain treated as used creative."
   },
   {
     "post_key": "2026-07-02::09:45::x::bottledabsolu",
@@ -6301,7 +6301,7 @@
     "buffer_post_id": "6a338a709be3d7c76e2d1b30",
     "buffer_channel_id": "67364f29da2e3cb64c611c48",
     "post_url": "",
-    "notes": "Scheduled via Buffer for 2026-07-02T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+    "notes": "Scheduled via Buffer for 2026-07-02T09:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json. MANUALLY_DELETED_FROM_BUFFER on 2026-06-18 Riyadh to rebalance the queue across channels. Original buffer post id 6a338a709be3d7c76e2d1b30 should remain treated as used creative."
   },
   {
     "post_key": "2026-07-02::20:45::instagram::bottledabsolu",
@@ -6318,5 +6318,117 @@
     "buffer_channel_id": "6a23e0dec687a22dd4680c8d",
     "post_url": "",
     "notes": "Scheduled via Buffer for 2026-07-02T20:45:00+03:00 Riyadh. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+  },
+  {
+    "post_key": "2026-07-06::21:30::tiktok::monthly20260706to20260804placechijvywf99hcxz4rp4cinb3bxgtiktok",
+    "content_type": "monthly-place",
+    "item": "Dampa Seafood Grill - Dubai",
+    "slug": "monthly-2026-07-06_to_2026-08-04-place-ChIJvYwf99hcXz4Rp4ci-Nb3bxg-tiktok",
+    "platform": "TikTok",
+    "text": "Dampa Seafood Grill - Dubai\n\nتقييم الزبدة 9.8/10.\nإذا تبي جمعة بحريات مرتبة، خذ مكس الكاجن أو البلاتر المشكل وادخل على الصوصات مباشرة. المكان قوي في الطزاجة والكمية،\n\nhttps://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_الأماكن #dubai #مطاعم",
+    "image": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/monthly-batch/2026-07-06_to_2026-08-04/images/tiktok_1080x1920/place-ChIJvYwf99hcXz4Rp4ci-Nb3bxg.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-07-06T21:30:00+03:00",
+    "buffer_post_id": "6a33b555853fe139e0bcc372",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "Scheduled via Buffer for 2026-07-06T21:30:00+03:00 Riyadh. Rebalanced queue on 2026-06-18. Source plan content/monthly-batch/2026-07-06_to_2026-08-04/plan.json."
+  },
+  {
+    "post_key": "2026-07-03::20:45::instagram::phuket",
+    "content_type": "travel",
+    "item": "بوكيت",
+    "slug": "phuket",
+    "platform": "Instagram",
+    "text": "صراحة، بوكيت مو وجهة تمشيها بعشوائية.\n\nزبدة السفر: جنة استوائية بأسعار معقولة. بوكيت أفضل وجهة شاطئية للسعوديين في جنوب شرق آسيا — شواطئ فيروزية، جزر خلابة، ومسلمين محليين يسهلون إيجاد الحلال. باتونج صاخبة لكن كامالا وكاتا هادئة ومناسبة للعائلات.\n\nخططها على https://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_السفر #سفر #رحلات #بوكيت",
+    "image": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/travel/images/instagram_1080x1350/phuket.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-07-03T20:45:00+03:00",
+    "buffer_post_id": "6a33b557853fe139e0bcc396",
+    "buffer_channel_id": "6a23e0dec687a22dd4680c8d",
+    "post_url": "",
+    "notes": "Scheduled via Buffer for 2026-07-03T20:45:00+03:00 Riyadh. Rebalanced queue on 2026-06-18. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+  },
+  {
+    "post_key": "2026-07-07::21:30::tiktok::monthly20260706to20260804destinationbalitiktok",
+    "content_type": "monthly-destination",
+    "item": "بالي",
+    "slug": "monthly-2026-07-06_to_2026-08-04-destination-bali-tiktok",
+    "platform": "TikTok",
+    "text": "بالي\n\nأبرزها: حقول الأرز في أوبود، معبد تانا لوت، شاطئ سميناك.\nأفضل وقت: Apr، May، Jun، Jul\n\nخططها على https://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_السفر #سفر #بالي",
+    "image": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/monthly-batch/2026-07-06_to_2026-08-04/images/tiktok_1080x1920/destination-bali.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-07-07T21:30:00+03:00",
+    "buffer_post_id": "6a33b5580f90cb8a857ac64a",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "Scheduled via Buffer for 2026-07-07T21:30:00+03:00 Riyadh. Rebalanced queue on 2026-06-18. Source plan content/monthly-batch/2026-07-06_to_2026-08-04/plan.json."
+  },
+  {
+    "post_key": "2026-07-04::20:45::instagram::chijafooqq9v4xurbaacs3r2n1w",
+    "content_type": "places",
+    "item": "WBJ ABHA",
+    "slug": "ChIJAfOOqq9V4xURBaACs3r2n1w",
+    "platform": "Instagram",
+    "text": "WBJ ABHA طالع بقوة في الزبدة.\n\nمطعم في أبها بتقييم الزبدة 9.7/10. البرغر هنا هو نجم المشهد، خصوصاً برغر واجيو وبرغر دبليو بي جي مع بطاطسهم اللي انمدحت كثير.\n\nافتح https://app.alzbdh.com وشوف الأماكن حواليك بدون حوسة.",
+    "hashtags": "#الزبدة #زبدة_الأماكن #أبها #مطعم #صراحة #يستاهل",
+    "image": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/places/images/instagram_1080x1350/ChIJAfOOqq9V4xURBaACs3r2n1w.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-07-04T20:45:00+03:00",
+    "buffer_post_id": "6a33b5590f90cb8a857ac66e",
+    "buffer_channel_id": "6a23e0dec687a22dd4680c8d",
+    "post_url": "",
+    "notes": "Scheduled via Buffer for 2026-07-04T20:45:00+03:00 Riyadh. Rebalanced queue on 2026-06-18. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+  },
+  {
+    "post_key": "2026-07-08::21:30::tiktok::monthly20260706to20260804perfumebykilianangelsshareontherocks113083tiktok",
+    "content_type": "monthly-perfume",
+    "item": "أنجلز شير أون ذا روكس",
+    "slug": "monthly-2026-07-06_to_2026-08-04-perfume-by-kilian-angel-s-share-on-the-rocks-113083-tiktok",
+    "platform": "TikTok",
+    "text": "أنجلز شير أون ذا روكس\n\nتشمّ رائحة شرائح جريب فروت والليمون الباردة وكأنها رُشّت على كأس كونياك دافئ مع خيوط من الكراميل والقرفة،\n\nزبدة العطور تختصر لك القرار.\n\nhttps://app.alzbdh.com/perfumes",
+    "hashtags": "#الزبدة #زبدة_العطور #عطور #باي_كيليان",
+    "image": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/monthly-batch/2026-07-06_to_2026-08-04/images/tiktok_1080x1920/perfume-by-kilian-angel-s-share-on-the-rocks-113083.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-07-08T21:30:00+03:00",
+    "buffer_post_id": "6a33b55b4c11243bf4376fcc",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "Scheduled via Buffer for 2026-07-08T21:30:00+03:00 Riyadh. Rebalanced queue on 2026-06-18. Source plan content/monthly-batch/2026-07-06_to_2026-08-04/plan.json."
+  },
+  {
+    "post_key": "2026-07-05::20:45::instagram::babycatrawbourbon",
+    "content_type": "perfumes",
+    "item": "بيبيكات راو بوربون",
+    "slug": "babycat-raw-bourbon",
+    "platform": "Instagram",
+    "text": "بيبيكات راو بوربون من إيف سان لوران.\n\nزبدة العطور تقول: تحس في البداية بشرارة الفلفل الأسود والوردي تمنح انطلاقة حارة ومشرقة، ثم يتسلل لبان مدخن مع زعفران عطري ودفعات من الراتنج\n\nبدل الوصف الطويل، خذ الانطباع المختصر وشوف إذا يناسب ذوقك.\n\nhttps://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_العطور #عطور #عطور_نيش",
+    "image": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/marketing%20ad/perfumes/images/instagram_1080x1350/babycat-raw-bourbon.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-07-05T20:45:00+03:00",
+    "buffer_post_id": "6a33b55c0f90cb8a857ac692",
+    "buffer_channel_id": "6a23e0dec687a22dd4680c8d",
+    "post_url": "",
+    "notes": "Scheduled via Buffer for 2026-07-05T20:45:00+03:00 Riyadh. Rebalanced queue on 2026-06-18. Source plan content/two-week-batch/2026-06-22_to_2026-07-05/plan.json."
+  },
+  {
+    "post_key": "2026-07-09::21:30::tiktok::monthly20260706to20260804placechij8wqhfoqnggarpc767pcsol8tiktok",
+    "content_type": "monthly-place",
+    "item": "HALAL WAGYU RAMEN SHINJUKU-TEI Tokyo Shinjuku",
+    "slug": "monthly-2026-07-06_to_2026-08-04-place-ChIJ8WQHFoqNGGARpc767pcSol8-tiktok",
+    "platform": "TikTok",
+    "text": "HALAL WAGYU RAMEN SHINJUKU-TEI Tokyo Shinjuku\n\nتقييم الزبدة 9.8/10.\nأنصح فيه إذا تبي رامن واغيو حلال بمستوى عالي، وخصوصًا الميسو وواغيو سوشي بعد.\n\nhttps://app.alzbdh.com",
+    "hashtags": "#الزبدة #زبدة_الأماكن #tokyo #مطاعم",
+    "image": "https://raw.githubusercontent.com/mohammedhalosaimi/AlzbdhMarketing/main/content/monthly-batch/2026-07-06_to_2026-08-04/images/tiktok_1080x1920/place-ChIJ8WQHFoqNGGARpc767pcSol8.png",
+    "posted": "false",
+    "posted_at_riyadh": "2026-07-09T21:30:00+03:00",
+    "buffer_post_id": "6a33b55d0f90cb8a857ac6b7",
+    "buffer_channel_id": "67365353da2e3cb64c9ccb65",
+    "post_url": "",
+    "notes": "Scheduled via Buffer for 2026-07-09T21:30:00+03:00 Riyadh. Rebalanced queue on 2026-06-18. Source plan content/monthly-batch/2026-07-06_to_2026-08-04/plan.json."
   }
 ]

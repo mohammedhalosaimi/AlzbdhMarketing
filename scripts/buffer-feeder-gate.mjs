@@ -13,6 +13,7 @@ const PLAN_GLOBS = [
   'content/two-week-batch',
   'content/monthly-batch',
 ];
+const BALANCED_CHANNELS = ['x', 'instagram', 'tiktok'];
 
 const PLATFORM_CHANNEL = {
   x: 'x',
@@ -254,6 +255,67 @@ function textOverlap(a, b) {
   return intersection / Math.min(aWords.size, bWords.size);
 }
 
+function compareRowOrder(a, b) {
+  return `${a.date} ${a.time_riyadh} ${a.platform}`.localeCompare(`${b.date} ${b.time_riyadh} ${b.platform}`);
+}
+
+function futureScheduledCounts(register, date) {
+  const counts = Object.fromEntries(BALANCED_CHANNELS.map((channel) => [channel, 0]));
+  for (const row of register) {
+    const posted = String(row.posted || '').trim().toLowerCase() === 'true';
+    const hasBufferId = Boolean(String(row.buffer_post_id || '').trim());
+    const scheduledAt = String(row.posted_at_riyadh || '').trim();
+    const channel = channelKey(row.platform);
+    if (!BALANCED_CHANNELS.includes(channel)) continue;
+    if (posted || !hasBufferId || !scheduledAt) continue;
+    if (scheduledAt >= `${date}T00:00:00+03:00`) counts[channel] += 1;
+  }
+  return counts;
+}
+
+function pickBalancedCandidates(candidates, usedEntries, remainingCapacity, seededCounts) {
+  const selected = [];
+  const queueCounts = { ...seededCounts };
+  const pool = [...candidates].sort(compareRowOrder);
+
+  while (selected.length < remainingCapacity) {
+    const available = pool.filter((row) => !selected.includes(row) && !findDuplicate(row, usedEntries, selected));
+    if (!available.length) break;
+
+    let chosenChannel = '';
+    let chosenChannelRow = null;
+
+    for (const channel of BALANCED_CHANNELS) {
+      const channelRows = available.filter((row) => row._channel === channel);
+      if (!channelRows.length) continue;
+      const firstRow = channelRows[0];
+      if (!chosenChannel) {
+        chosenChannel = channel;
+        chosenChannelRow = firstRow;
+        continue;
+      }
+
+      const currentCount = queueCounts[channel] ?? 0;
+      const chosenCount = queueCounts[chosenChannel] ?? 0;
+      if (currentCount < chosenCount) {
+        chosenChannel = channel;
+        chosenChannelRow = firstRow;
+        continue;
+      }
+      if (currentCount === chosenCount && compareRowOrder(firstRow, chosenChannelRow) < 0) {
+        chosenChannel = channel;
+        chosenChannelRow = firstRow;
+      }
+    }
+
+    if (!chosenChannelRow) break;
+    selected.push(chosenChannelRow);
+    queueCounts[chosenChannel] = (queueCounts[chosenChannel] ?? 0) + 1;
+  }
+
+  return { selected, queueCounts };
+}
+
 function validateTimeTone(row) {
   const text = combinedText(row);
   const hour = Number(String(row.time_riyadh || '00:00').slice(0, 2));
@@ -334,10 +396,13 @@ async function main() {
   const planFiles = args.plan.length ? args.plan : listPlanFiles();
   const usedEntries = register.filter(usedRegistryRow).map(registryEntry);
   const remainingCapacity = Math.max(0, args.capacity - args.currentScheduled);
-  const selected = [];
+  let selected = [];
   const skippedDuplicates = [];
   const issues = [];
   const allCandidates = [];
+  const eligibleCandidates = [];
+  const seededQueueCounts = futureScheduledCounts(register, args.date);
+  const usedPostKeys = new Set(register.filter(usedRegistryRow).map((row) => row.post_key).filter(Boolean));
 
   const postKeys = new Set();
   for (const row of register) {
@@ -360,7 +425,7 @@ async function main() {
     }
   }
 
-  allCandidates.sort((a, b) => `${a.date} ${a.time_riyadh} ${a.platform}`.localeCompare(`${b.date} ${b.time_riyadh} ${b.platform}`));
+  allCandidates.sort(compareRowOrder);
 
   for (const row of allCandidates) {
     const rowIssues = [
@@ -374,14 +439,31 @@ async function main() {
       continue;
     }
 
-    const duplicate = findDuplicate(row, usedEntries, selected);
+    if (usedPostKeys.has(row._post_key)) {
+      skippedDuplicates.push({
+        row,
+        duplicate: {
+          reason: 'same post_key',
+          existing: { postKey: row._post_key, bufferPostId: '' },
+        },
+      });
+      continue;
+    }
+
+    const duplicate = findDuplicate(row, usedEntries, []);
     if (duplicate) {
       skippedDuplicates.push({ row, duplicate });
       continue;
     }
 
     const selectable = args.fillFuture ? row.date >= args.date : row.date === args.date;
-    if (selectable && selected.length < remainingCapacity) selected.push(row);
+    if (selectable) eligibleCandidates.push(row);
+  }
+
+  if (args.fillFuture) {
+    selected = pickBalancedCandidates(eligibleCandidates, usedEntries, remainingCapacity, seededQueueCounts).selected;
+  } else {
+    selected = eligibleCandidates.slice(0, remainingCapacity);
   }
 
   const report = {
@@ -393,6 +475,7 @@ async function main() {
     capacity: args.capacity,
     currentScheduled: args.currentScheduled,
     remainingCapacity,
+    seededQueueCounts,
     candidateCount: allCandidates.filter((row) => row.date === args.date).length,
     fillFuture: args.fillFuture,
     selected,
