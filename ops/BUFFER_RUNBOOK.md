@@ -12,7 +12,8 @@
 - Run `npm run buffer:gate -- --date YYYY-MM-DD --current-scheduled N`.
   Schedule only rows written by `npm run buffer:select -- --date YYYY-MM-DD
   --current-scheduled N --fill-future`; if the selection is empty, do not
-  improvise a duplicate replacement.
+  improvise a duplicate replacement. `--fill-future` must not cross date
+  boundaries when the target Riyadh date has no approved rows.
 - If a planned time has passed, reschedule only when the copy still matches the
   new Riyadh time. Never publish or schedule morning copy at night.
 

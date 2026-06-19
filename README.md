@@ -30,7 +30,8 @@ Buffer tracking logs for marketing operations.
 - Run `npm run buffer:gate -- --date YYYY-MM-DD --current-scheduled N` before
   creating Buffer posts. Use `npm run buffer:select -- --date YYYY-MM-DD
   --current-scheduled N --fill-future` when today's rows are exhausted and the
-  account has open scheduled-post capacity. A post is a duplicate if the same
+  account has open scheduled-post capacity, but never cross into a future date
+  when the target Riyadh date has no approved rows. A post is a duplicate if the same
   channel has matching normalized text, matching normalized media, or the same
   source with equivalent text anywhere in the used register history.
 - Buffer's `scheduledPosts=10` limit is an account-level cap for this workspace.

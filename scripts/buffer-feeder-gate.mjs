@@ -2,6 +2,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import process from 'node:process';
+import { pathToFileURL } from 'node:url';
 import sharp from 'sharp';
 
 const ROOT = process.cwd();
@@ -209,10 +210,10 @@ function sourceFromPostKey(postKey) {
   return parts[parts.length - 1] || '';
 }
 
-function candidateEntry(row, planPath) {
+export function candidateEntry(row, planPath) {
   const source = row.source_id || row.slug || sourceFromPostKey(row.post_key);
-  const postKey = row.post_key || `${row.date || 'no-date'}::${row.time_riyadh || 'no-time'}::${platformKey(row.platform)}::${normalizeSource(source)}`;
   const scheduledTime = preferredRiyadhTime(row);
+  const postKey = row.post_key || `${row.date || 'no-date'}::${scheduledTime || 'no-time'}::${platformKey(row.platform)}::${normalizeSource(source)}`;
   return {
     ...row,
     _planned_time_riyadh: row.time_riyadh,
@@ -226,7 +227,7 @@ function candidateEntry(row, planPath) {
   };
 }
 
-function preferredRiyadhTime(row) {
+export function preferredRiyadhTime(row) {
   const original = String(row.time_riyadh || '').trim();
   if (!/^\d{2}:\d{2}$/.test(original)) return original;
   const channel = channelKey(row.platform);
@@ -236,6 +237,12 @@ function preferredRiyadhTime(row) {
   if (hour >= 17) return original;
   if (MORNING_PATTERNS.some((pattern) => pattern.test(combinedText(row)))) return original;
   return hour < 11 ? prime.morning : prime.daytime;
+}
+
+export function scopeFillFutureCandidates(candidates, targetDate) {
+  const todayCandidates = candidates.filter((row) => row.date === targetDate);
+  if (todayCandidates.length > 0) return todayCandidates;
+  return [];
 }
 
 function findDuplicate(candidate, usedEntries, selected) {
@@ -476,12 +483,17 @@ async function main() {
       continue;
     }
 
-    const selectable = args.fillFuture ? row.date >= args.date : row.date === args.date;
+    const selectable = row.date === args.date || (args.fillFuture && row.date >= args.date);
     if (selectable) eligibleCandidates.push(row);
   }
 
   if (args.fillFuture) {
-    selected = pickBalancedCandidates(eligibleCandidates, usedEntries, remainingCapacity, seededQueueCounts).selected;
+    selected = pickBalancedCandidates(
+      scopeFillFutureCandidates(eligibleCandidates, args.date),
+      usedEntries,
+      remainingCapacity,
+      seededQueueCounts,
+    ).selected;
   } else {
     selected = eligibleCandidates.slice(0, remainingCapacity);
   }
@@ -514,7 +526,9 @@ async function main() {
   if (issues.length) process.exit(1);
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exit(1);
-});
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {
+  main().catch((error) => {
+    console.error(error);
+    process.exit(1);
+  });
+}
