@@ -9,7 +9,7 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - Image paths are relative to the marketing repo root unless a row has an explicit public URL.
 
 ## Counts
-- Total platform posts: 186
+- Total platform posts: 196
 - Travel posts: 39
 - Places posts: 45
 - Perfumes posts: 3
@@ -46,6 +46,7 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - 2026-06-15 Riyadh: Sent-post audit found older published places captions with `تقييم زبدة` / `زبدة الرياض` wording. Recommendation: do not mass-delete unless brand consistency is more important than preserving early account activity; Buffer cannot edit already-sent posts from this connector.
 
 ## Scheduled Queue
+- 2026-06-20 Riyadh: Scheduled scratch tonight posts via Buffer, generated without the template renderer. TikTok 20:20 (6a36c9fe2186d297628a2730), 21:20 (6a36ca1e9513262b4d2ea2db), 22:20 (6a36ca3f566900623a6195f2), 23:20 (6a36ca5e2186d297628a2956); X 20:40 (6a36ca09cc3bc13e7add6261), 21:40 (6a36ca28566900623a619559), 22:40 (6a36ca489513262b4d2ea37f); Instagram 21:00 (6a36ca13cfab3643d8c8a25f), 22:00 (6a36ca322186d297628a284d), 23:00 (6a36ca54566900623a619663).
 - 2026-06-22 to 2026-07-05 Riyadh: Prepared 70 rolling-feed posts locally for X, Instagram, Instagram Story-style assets, and TikTok. These are marked `ready` only; do not pre-schedule all rows because the Buffer plan is capped at 10 scheduled posts. Daily feeder should schedule the same-day five-post batch and then write back Buffer IDs.
 - 2026-06-17 to 2026-06-19 Riyadh: Scheduled mobile-app acquisition posts via Buffer for X, Instagram, and TikTok. Themes: اسأل الزبدة, وين نروح الليلة, بدل ما تقرأ ٢٠٠ تعليق.
 
