@@ -13,6 +13,7 @@ const PLAN_GLOBS = [
   'content/buffer-batches',
   'content/two-week-batch',
   'content/monthly-batch',
+  'content/rendered',
 ];
 const BALANCED_CHANNELS = ['x', 'instagram', 'tiktok'];
 const PRIME_TIME_BY_CHANNEL = {

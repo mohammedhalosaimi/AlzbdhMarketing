@@ -1,0 +1,22 @@
+[
+  {
+    "template_id": "ads-feature",
+    "name": "App feature ad",
+    "category": "ads",
+    "layout": "feature-ad",
+    "label": "الزبدة",
+    "accent": "#E8C46B",
+    "tone": "conversion",
+    "best_for": "Product feature acquisition posts for chat, map, discovery, and summaries."
+  },
+  {
+    "template_id": "ads-proof",
+    "name": "Decision proof ad",
+    "category": "ads",
+    "layout": "split-detail",
+    "label": "اختصر القرار",
+    "accent": "#79B8A8",
+    "tone": "proof",
+    "best_for": "Before/after, comparison, and why Alzbdh saves time."
+  }
+]

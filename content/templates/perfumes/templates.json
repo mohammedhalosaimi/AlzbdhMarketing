@@ -1,0 +1,22 @@
+[
+  {
+    "template_id": "perfumes-notes",
+    "name": "Perfume notes card",
+    "category": "perfumes",
+    "layout": "product-focus",
+    "label": "زبدة العطور",
+    "accent": "#E8C46B",
+    "tone": "sensory",
+    "best_for": "Notes, opening, drydown, and the short answer on what the perfume smells like."
+  },
+  {
+    "template_id": "perfumes-mood",
+    "name": "Perfume mood card",
+    "category": "perfumes",
+    "layout": "split-detail",
+    "label": "يناسب مين؟",
+    "accent": "#CDA7E8",
+    "tone": "taste",
+    "best_for": "Occasion, personality, season, and recommendation-fit posts."
+  }
+]

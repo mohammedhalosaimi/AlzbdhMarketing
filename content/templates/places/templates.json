@@ -1,0 +1,22 @@
+[
+  {
+    "template_id": "places-rating",
+    "name": "Place rating card",
+    "category": "places",
+    "layout": "score-card",
+    "label": "زبدة الأماكن",
+    "accent": "#E8C46B",
+    "tone": "decisive",
+    "best_for": "A quick rating-led post for restaurants, cafes, landmarks, and clinics."
+  },
+  {
+    "template_id": "places-recommendation",
+    "name": "Place recommendation card",
+    "category": "places",
+    "layout": "split-detail",
+    "label": "وين تروح؟",
+    "accent": "#79B8A8",
+    "tone": "practical",
+    "best_for": "A post that explains what to order, what to expect, or what to watch for."
+  }
+]

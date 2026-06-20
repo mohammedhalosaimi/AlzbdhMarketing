@@ -20,6 +20,19 @@ Buffer tracking logs for marketing operations.
 - `content/perfumes/` - perfume product/social creatives.
 - `content/mobile-app/` - iOS Arabic app acquisition creatives.
 
+## Template + CSV Workflow
+
+- `content/templates/places/` - reusable place-post templates.
+- `content/templates/destinations/` - reusable travel-destination templates.
+- `content/templates/perfumes/` - reusable perfume templates.
+- `content/templates/ads/` - reusable marketing/ad templates.
+- `content/calendar/social-calendar.csv` - source rows for image text, captions,
+  hashtags, dates, platforms, and template choices.
+- `content/rendered/` - rendered HTML, PNG images, and Buffer-ready plan files.
+
+Run `npm run render:calendar` after editing the CSV. The renderer creates a new
+batch folder under `content/rendered/` and the Buffer gate now reads those plans.
+
 ## Publishing Rules
 
 - App name in Arabic is always `الزبدة`.

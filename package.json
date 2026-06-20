@@ -10,6 +10,7 @@
     "generate:two-week-batch": "node content/two-week-batch/generate-two-week-batch.mjs",
     "generate:next-month-batch": "node content/monthly-batch/generate-next-month-batch.mjs",
     "generate:variation-gallery": "node scripts/generate-variation-gallery.mjs",
+    "render:calendar": "node scripts/render-social-calendar.mjs",
     "buffer:gate": "node scripts/buffer-feeder-gate.mjs",
     "buffer:select": "node scripts/buffer-feeder-gate.mjs --write-selection .gstack/alzbdh-daily-buffer-feeder-selection.json"
   },

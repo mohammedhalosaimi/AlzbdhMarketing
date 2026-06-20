@@ -1,0 +1,18 @@
+{
+  "batch": "2026-06-20_social-calendar",
+  "calendar": "content/calendar/social-calendar.csv",
+  "renderedAt": "2026-06-20T10:32:34.643Z",
+  "rows": 4,
+  "templates": {
+    "destinations-highlights": 1,
+    "places-recommendation": 1,
+    "perfumes-notes": 1,
+    "ads-feature": 1
+  },
+  "images": [
+    "content/rendered/2026-06-20_social-calendar/images/x_1600x900/csv-demo-2026-06-20-x-hanoi.png",
+    "content/rendered/2026-06-20_social-calendar/images/instagram_1080x1350/csv-demo-2026-06-20-instagram-london.png",
+    "content/rendered/2026-06-20_social-calendar/images/tiktok_1080x1920/csv-demo-2026-06-20-tiktok-rabbit.png",
+    "content/rendered/2026-06-20_social-calendar/images/x_1600x900/csv-demo-2026-06-20-x-app.png"
+  ]
+}

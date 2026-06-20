@@ -1,0 +1,22 @@
+[
+  {
+    "template_id": "destinations-highlights",
+    "name": "Destination highlights card",
+    "category": "destinations",
+    "layout": "score-card",
+    "label": "زبدة السفر",
+    "accent": "#E8C46B",
+    "tone": "inspiring",
+    "best_for": "A visual destination card with top highlights and trip hooks."
+  },
+  {
+    "template_id": "destinations-planning",
+    "name": "Destination planning card",
+    "category": "destinations",
+    "layout": "split-detail",
+    "label": "خططها صح",
+    "accent": "#74A6D8",
+    "tone": "planning",
+    "best_for": "Timing, suitability, budget, halal planning, and practical trip decisions."
+  }
+]
