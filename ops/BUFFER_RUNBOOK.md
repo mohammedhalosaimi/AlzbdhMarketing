@@ -4,6 +4,9 @@
 
 - Confirm the creative uses `الزبدة` for the app name.
 - Confirm the image has the correct platform size.
+- Confirm the image follows the established Alzbdh post identity: real subject
+  image, Changa Arabic typography, deep green/gold palette, logo/site mark, and
+  no overlapping or undersized text.
 - Confirm the media URL is hosted on `images.alzbdh.com`.
 - Confirm the caption and hashtags match the platform.
 - Confirm the row exists in `content/social_post_register.*`.
@@ -11,9 +14,12 @@
   exceed 10 total scheduled posts for the account.
 - Run `npm run buffer:gate -- --date YYYY-MM-DD --current-scheduled N`.
   Schedule only rows written by `npm run buffer:select -- --date YYYY-MM-DD
-  --current-scheduled N --fill-future`; if the selection is empty, do not
-  improvise a duplicate replacement. `--fill-future` must not cross date
-  boundaries when the target Riyadh date has no approved rows.
+  --current-scheduled N --fill-future`. The goal is to fill the available
+  account slots up to the 10 scheduled-post cap every Riyadh day. If the target
+  date has fewer ready rows than open slots, borrow the next non-duplicate ready
+  rows from the prepared backlog and schedule them into the target date's open
+  time slots. If the selection is empty, do not improvise a duplicate
+  replacement.
 - If a planned time has passed, reschedule only when the copy still matches the
   new Riyadh time. Never publish or schedule morning copy at night.
 

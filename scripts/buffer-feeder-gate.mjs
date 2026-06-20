@@ -241,9 +241,7 @@ export function preferredRiyadhTime(row) {
 }
 
 export function scopeFillFutureCandidates(candidates, targetDate) {
-  const todayCandidates = candidates.filter((row) => row.date === targetDate);
-  if (todayCandidates.length > 0) return todayCandidates;
-  return [];
+  return candidates.filter((row) => row.date >= targetDate);
 }
 
 function findDuplicate(candidate, usedEntries, selected) {
