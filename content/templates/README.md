@@ -5,6 +5,9 @@ that the renderer writes on top of. The CSV calendar selects a `template_id`,
 then `npm run render:calendar` renders platform-specific finished posts and a
 Buffer-ready `plan.json`.
 
+Current library size: 20 visual variations x 3 platform sizes = 60 blank PNG
+templates.
+
 ## Folders
 
 - `places/` - restaurants, cafes, attractions, clinics, city discovery.
@@ -18,6 +21,17 @@ Inside each category:
 - `images/<template_id>/` - blank write-on PNG templates for X, Instagram, and
   TikTok.
 - `html/<template_id>/` - generated preview HTML used to render the PNG bases.
+
+## Variations
+
+- Places: `places-rating`, `places-order`, `places-pros-cons`,
+  `places-local-map`, `places-hidden-gem`.
+- Destinations: `destinations-highlights`, `destinations-planning`,
+  `destinations-budget`, `destinations-fit`, `destinations-mistakes`.
+- Perfumes: `perfumes-notes`, `perfumes-mood`, `perfumes-performance`,
+  `perfumes-alternatives`, `perfumes-verdict`.
+- Ads: `ads-feature`, `ads-before-after`, `ads-social-proof`,
+  `ads-problem-solution`, `ads-cta-offer`.
 
 ## Workflow
 

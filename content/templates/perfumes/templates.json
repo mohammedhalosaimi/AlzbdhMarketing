@@ -18,5 +18,35 @@
     "accent": "#CDA7E8",
     "tone": "taste",
     "best_for": "Occasion, personality, season, and recommendation-fit posts."
+  },
+  {
+    "template_id": "perfumes-performance",
+    "name": "Performance card",
+    "category": "perfumes",
+    "layout": "score-card",
+    "label": "ثباته؟",
+    "accent": "#79B8A8",
+    "tone": "technical",
+    "best_for": "Longevity, sillage, projection, season, and value-for-money summaries."
+  },
+  {
+    "template_id": "perfumes-alternatives",
+    "name": "Alternatives card",
+    "category": "perfumes",
+    "layout": "checklist",
+    "label": "يشبه إيش؟",
+    "accent": "#CFC7A3",
+    "tone": "comparison",
+    "best_for": "Similar perfumes, alternatives, flankers, dupes, and scent-family comparisons."
+  },
+  {
+    "template_id": "perfumes-verdict",
+    "name": "Blind-buy verdict card",
+    "category": "perfumes",
+    "layout": "spotlight",
+    "label": "ينشرى؟",
+    "accent": "#D9A66F",
+    "tone": "decision",
+    "best_for": "Blind-buy verdicts, who should skip it, and final recommendation posts."
   }
 ]

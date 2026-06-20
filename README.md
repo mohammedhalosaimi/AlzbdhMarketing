@@ -33,7 +33,9 @@ Buffer tracking logs for marketing operations.
 Run `npm run render:templates` after changing template styling. Run
 `npm run render:calendar` after editing the CSV. The renderer writes CSV content
 onto the blank PNG templates, creates a new batch folder under
-`content/rendered/`, and the Buffer gate now reads those plans.
+`content/rendered/`, and the Buffer gate now reads those plans. The current
+template library has 20 variations across places, destinations, perfumes, and
+ads, rendered as 60 blank PNG templates for X, Instagram, and TikTok.
 
 ## Publishing Rules
 

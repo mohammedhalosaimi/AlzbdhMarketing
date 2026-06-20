@@ -10,13 +10,43 @@
     "best_for": "A quick rating-led post for restaurants, cafes, landmarks, and clinics."
   },
   {
-    "template_id": "places-recommendation",
-    "name": "Place recommendation card",
+    "template_id": "places-order",
+    "name": "What to order card",
     "category": "places",
     "layout": "split-detail",
-    "label": "وين تروح؟",
+    "label": "وش تطلب؟",
     "accent": "#79B8A8",
     "tone": "practical",
-    "best_for": "A post that explains what to order, what to expect, or what to watch for."
+    "best_for": "A post that explains what to order, book, or try first."
+  },
+  {
+    "template_id": "places-pros-cons",
+    "name": "Pros and cons place card",
+    "category": "places",
+    "layout": "checklist",
+    "label": "قبل تروح",
+    "accent": "#CFC7A3",
+    "tone": "balanced",
+    "best_for": "Clear tradeoffs, crowd warnings, price notes, and visit-fit guidance."
+  },
+  {
+    "template_id": "places-local-map",
+    "name": "Local discovery card",
+    "category": "places",
+    "layout": "product-focus",
+    "label": "حولك",
+    "accent": "#74A6D8",
+    "tone": "discovery",
+    "best_for": "Neighborhood discovery, nearby choices, and city/local recommendations."
+  },
+  {
+    "template_id": "places-hidden-gem",
+    "name": "Hidden gem card",
+    "category": "places",
+    "layout": "spotlight",
+    "label": "مكان يستاهل",
+    "accent": "#D9A66F",
+    "tone": "editorial",
+    "best_for": "Less obvious places, standout experiences, and high-curiosity recommendations."
   }
 ]

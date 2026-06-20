@@ -32,7 +32,7 @@
     "hashtags": "#الزبدة #زبدة_الأماكن #london #مطاعم",
     "buffer_status": "ready",
     "post_key": "csv-demo-2026-06-20-instagram-london",
-    "template_id": "places-recommendation",
+    "template_id": "places-order",
     "subject_id": "happy-london",
     "alt_text": "زبدة الأماكن - هابي لندن",
     "source_calendar": "content/calendar/social-calendar.csv"

@@ -10,13 +10,43 @@
     "best_for": "Product feature acquisition posts for chat, map, discovery, and summaries."
   },
   {
-    "template_id": "ads-proof",
-    "name": "Decision proof ad",
+    "template_id": "ads-before-after",
+    "name": "Before and after ad",
+    "category": "ads",
+    "layout": "proof-card",
+    "label": "قبل وبعد",
+    "accent": "#79B8A8",
+    "tone": "transformation",
+    "best_for": "Before/after, comparison, and why Alzbdh saves time."
+  },
+  {
+    "template_id": "ads-social-proof",
+    "name": "Social proof ad",
     "category": "ads",
     "layout": "split-detail",
-    "label": "اختصر القرار",
-    "accent": "#79B8A8",
+    "label": "الناس تسأل",
+    "accent": "#CFC7A3",
     "tone": "proof",
-    "best_for": "Before/after, comparison, and why Alzbdh saves time."
+    "best_for": "Demand, user quotes, review summaries, and credibility-led app ads."
+  },
+  {
+    "template_id": "ads-problem-solution",
+    "name": "Problem solution ad",
+    "category": "ads",
+    "layout": "checklist",
+    "label": "لا تضيع وقتك",
+    "accent": "#74A6D8",
+    "tone": "problem-solution",
+    "best_for": "Pain-point ads that turn search overload into one clear Alzbdh answer."
+  },
+  {
+    "template_id": "ads-cta-offer",
+    "name": "CTA offer ad",
+    "category": "ads",
+    "layout": "spotlight",
+    "label": "جربها الآن",
+    "accent": "#D9A66F",
+    "tone": "action",
+    "best_for": "Direct app install, signup, campaign, or feature-launch calls to action."
   }
 ]

@@ -1,11 +1,11 @@
 {
   "batch": "2026-06-20_social-calendar",
   "calendar": "content/calendar/social-calendar.csv",
-  "renderedAt": "2026-06-20T10:47:13.700Z",
+  "renderedAt": "2026-06-20T12:37:07.712Z",
   "rows": 4,
   "templates": {
     "destinations-highlights": 1,
-    "places-recommendation": 1,
+    "places-order": 1,
     "perfumes-notes": 1,
     "ads-feature": 1
   },
