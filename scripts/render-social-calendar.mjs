@@ -124,9 +124,27 @@ function absRepoPath(relativePath) {
   return path.join(repo, relativePath);
 }
 
+function cleanGeneratedHtml(html) {
+  return html.replace(/[ \t]+$/gm, '');
+}
+
 function sourceForCss(imageUrl, htmlDir) {
   if (/^https?:\/\//i.test(imageUrl)) return imageUrl;
   return relFrom(htmlDir, absRepoPath(imageUrl));
+}
+
+async function fileExists(absPath) {
+  try {
+    await fs.access(absPath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+async function templateBaseImage(template, format) {
+  const basePath = path.join(repo, 'content/templates', template.category, 'images', template.template_id, `${format.dir}.png`);
+  return (await fileExists(basePath)) ? basePath : '';
 }
 
 async function loadTemplates() {
@@ -171,12 +189,13 @@ function templateClass(layout) {
   }[layout] || 'layout-split';
 }
 
-function posterHtml({ row, template, format, htmlDir }) {
+function posterHtml({ row, template, format, htmlDir, baseImage }) {
   const font400 = relFrom(htmlDir, absRepoPath('content/travel/assets/fonts/Changa-400.ttf'));
   const font700 = relFrom(htmlDir, absRepoPath('content/travel/assets/fonts/Changa-700.ttf'));
   const font800 = relFrom(htmlDir, absRepoPath('content/travel/assets/fonts/Changa-800.ttf'));
   const logo = relFrom(htmlDir, absRepoPath('brand/logos/logo-white.svg'));
   const image = sourceForCss(row.image_url, htmlDir);
+  const base = baseImage ? relFrom(htmlDir, baseImage) : '';
   const isWide = format.width > format.height;
   const isStory = format.height > 1500;
   const accent = template.accent || '#E8C46B';
@@ -192,16 +211,37 @@ function posterHtml({ row, template, format, htmlDir }) {
     *{box-sizing:border-box}
     html,body{margin:0;width:${format.width}px;height:${format.height}px;overflow:hidden}
     body{font-family:Changa,system-ui,sans-serif;background:#102318;color:#FDFBF7}
-    .poster{position:relative;width:100%;height:100%;overflow:hidden;background:#102318}
+    .poster{position:relative;width:100%;height:100%;overflow:hidden;background:#102318${base ? ` url("${base}") center/cover no-repeat` : ''}}
+    ${base ? `
+    .photo{position:absolute;z-index:2;overflow:hidden;border-radius:6px;background-image:url("${image}");background-size:${template.layout === 'product-focus' || template.layout === 'feature-ad' ? 'contain' : 'cover'};background-position:center;background-repeat:no-repeat;filter:saturate(1.04) contrast(1.04)}
+    .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,14,9,.02),rgba(5,14,9,.24))}
+    .layout-score .photo,.layout-split .photo,.layout-product .photo{${isWide
+      ? 'top:170px;right:90px;width:650px;height:610px'
+      : `top:${isStory ? 194 : 168}px;left:86px;right:86px;height:${isStory ? 716 : 456}px`}}
+    .layout-ad .photo{${isWide
+      ? 'top:160px;left:140px;right:140px;height:320px'
+      : `top:${isStory ? 194 : 168}px;left:92px;right:92px;height:${isStory ? 606 : 386}px`}}
+    ` : `
     .photo{position:absolute;inset:0;background-image:linear-gradient(180deg,rgba(5,14,9,.16),rgba(5,14,9,.56) 54%,rgba(5,14,9,.92)),url("${image}");background-size:${template.layout === 'product-focus' || template.layout === 'feature-ad' ? 'contain' : 'cover'};background-position:center;background-repeat:no-repeat;filter:saturate(1.04) contrast(1.04)}
     .photo:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,rgba(16,35,24,.92),rgba(16,35,24,.58) 42%,rgba(16,35,24,.24))}
+    `}
     .top{position:absolute;z-index:3;top:${isStory ? 54 : 44}px;left:${isWide ? 66 : 50}px;right:${isWide ? 66 : 50}px;display:flex;align-items:center;justify-content:space-between}
     .top img{width:${isWide ? 145 : 126}px}.site{direction:ltr;font-size:${isWide ? 24 : 23}px;font-weight:800;text-shadow:0 5px 18px rgba(0,0,0,.45)}
     .panel{position:absolute;z-index:2;border-radius:8px;background:rgba(16,35,24,.84);border:1px solid color-mix(in srgb, ${accent} 55%, transparent);box-shadow:0 28px 70px rgba(0,0,0,.34)}
+    ${base ? `
+    .panel{background:transparent;border:0;box-shadow:none}
+    .layout-score .panel,.layout-split .panel,.layout-product .panel{${isWide
+      ? 'left:72px;right:820px;bottom:64px;padding:34px 38px'
+      : `left:54px;right:54px;bottom:${isStory ? 88 : 74}px;padding:38px 36px`}}
+    .layout-ad .panel{${isWide
+      ? 'left:90px;right:90px;bottom:70px;text-align:center;padding:34px 50px'
+      : `left:56px;right:56px;bottom:${isStory ? 88 : 74}px;text-align:center;padding:42px 42px`}}
+    ` : `
     .layout-score .panel{left:${isWide ? 72 : 54}px;right:${isWide ? 520 : 54}px;bottom:${isWide ? 64 : 74}px;padding:${isWide ? '34px 38px' : '38px 36px'}}
     .layout-split .panel{left:${isWide ? 72 : 54}px;right:${isWide ? 420 : 54}px;bottom:${isWide ? 64 : 74}px;padding:${isWide ? '32px 38px' : '36px 36px'}}
     .layout-product .panel{left:${isWide ? 74 : 56}px;right:${isWide ? 560 : 56}px;bottom:${isWide ? 64 : 74}px;padding:${isWide ? '32px 38px' : '36px 36px'}}
     .layout-ad .panel{left:${isWide ? 90 : 56}px;right:${isWide ? 90 : 56}px;bottom:${isWide ? 70 : 86}px;text-align:center;padding:${isWide ? '34px 50px' : '42px 42px'}}
+    `}
     .eyebrow{display:inline-flex;align-items:center;border-radius:999px;background:color-mix(in srgb, ${accent} 18%, transparent);border:1px solid color-mix(in srgb, ${accent} 55%, transparent);color:${accent};padding:8px 16px;font-size:${isWide ? 23 : 24}px;font-weight:800}
     .title{margin:18px 0 10px;font-size:${isWide ? 74 : isStory ? 74 : 64}px;line-height:1.08;font-weight:800;letter-spacing:0;color:#FDFBF7;text-shadow:0 8px 30px rgba(0,0,0,.45);max-height:${isWide ? 172 : 236}px;overflow:hidden}
     .subtitle{font-size:${isWide ? 30 : 31}px;line-height:1.25;font-weight:800;color:${accent};margin-bottom:12px;max-height:${isWide ? 78 : 96}px;overflow:hidden}
@@ -214,9 +254,9 @@ function posterHtml({ row, template, format, htmlDir }) {
 <body>
   <main class="poster ${templateClass(template.layout)}">
     <div class="photo"></div>
-    <div class="mark"></div>
-    <div class="top"><div class="site">app.alzbdh.com</div><img src="${logo}" alt="الزبدة"></div>
-    <div class="badge">${escapeHtml(row.category)}</div>
+    ${base ? '' : '<div class="mark"></div>'}
+    ${base ? '' : `<div class="top"><div class="site">app.alzbdh.com</div><img src="${logo}" alt="الزبدة"></div>`}
+    ${base ? '' : `<div class="badge">${escapeHtml(row.category)}</div>`}
     <section class="panel">
       <div class="eyebrow">${escapeHtml(template.label)}</div>
       <h1 class="title">${escapeHtml(row.title)}</h1>
@@ -261,7 +301,8 @@ async function renderRow(browser, row, template, outDir) {
 
   const htmlPath = path.join(htmlDir, `${fileBase}.html`);
   const imagePath = path.join(imageDir, `${fileBase}.png`);
-  await fs.writeFile(htmlPath, posterHtml({ row, template, format, htmlDir }));
+  const baseImage = await templateBaseImage(template, format);
+  await fs.writeFile(htmlPath, cleanGeneratedHtml(posterHtml({ row, template, format, htmlDir, baseImage })));
 
   const page = await browser.newPage({ viewport: { width: format.width, height: format.height }, deviceScaleFactor: 1 });
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: 'networkidle' });
@@ -343,4 +384,3 @@ main().catch((error) => {
   console.error(error);
   process.exit(1);
 });
-

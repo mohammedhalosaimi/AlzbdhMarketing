@@ -22,16 +22,18 @@ Buffer tracking logs for marketing operations.
 
 ## Template + CSV Workflow
 
-- `content/templates/places/` - reusable place-post templates.
-- `content/templates/destinations/` - reusable travel-destination templates.
-- `content/templates/perfumes/` - reusable perfume templates.
-- `content/templates/ads/` - reusable marketing/ad templates.
+- `content/templates/places/` - reusable place-post templates and blank PNGs.
+- `content/templates/destinations/` - reusable travel-destination templates and blank PNGs.
+- `content/templates/perfumes/` - reusable perfume templates and blank PNGs.
+- `content/templates/ads/` - reusable marketing/ad templates and blank PNGs.
 - `content/calendar/social-calendar.csv` - source rows for image text, captions,
   hashtags, dates, platforms, and template choices.
 - `content/rendered/` - rendered HTML, PNG images, and Buffer-ready plan files.
 
-Run `npm run render:calendar` after editing the CSV. The renderer creates a new
-batch folder under `content/rendered/` and the Buffer gate now reads those plans.
+Run `npm run render:templates` after changing template styling. Run
+`npm run render:calendar` after editing the CSV. The renderer writes CSV content
+onto the blank PNG templates, creates a new batch folder under
+`content/rendered/`, and the Buffer gate now reads those plans.
 
 ## Publishing Rules
 
