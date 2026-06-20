@@ -9,7 +9,7 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - Image paths are relative to the marketing repo root unless a row has an explicit public URL.
 
 ## Counts
-- Total platform posts: 182
+- Total platform posts: 186
 - Travel posts: 39
 - Places posts: 45
 - Perfumes posts: 3
@@ -19,6 +19,7 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - Two-week batch places posts: 40
 - Two-week batch travel posts: 25
 - Two-week batch perfume posts: 5
+- Rendered CSV template posts: 4
 
 ## Voice sources
 - `docs/marketing/README.md`
@@ -55,6 +56,7 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - 2026-06-17 Riyadh: Added one X-only morning prompt at 09:45 to test the Saudi weekday mid-morning window. Buffer ID: 6a2ffa5d9815dc2cea27b661.
 - 2026-06-15 Riyadh: Refreshed scheduled media URLs in Buffer from older GitHub raw paths to GitHub Release assets under `buffer-media-2026-06-15`, without pushing repository contents. Updated all scheduled visual posts through 2026-06-21 except الطائف Instagram/TikTok, where Buffer returned a 429 rate limit before the final two edits. Retry after the connector cooldown.
 - 2026-06-20 Riyadh: Scheduled يرمين posts via Buffer. X 12:35 (6a2fd79dbc4ff5b211518dfe), Instagram 20:45 (6a2fd7d2c11354a315fdc648), TikTok 21:30 (6a2fd8259417b7b890885861).
+- 2026-06-20 Riyadh: Scheduled rendered CSV template posts via Buffer. Hànội/Hanoi X 18:10 (6a36920e85c1c7cceb0b7b01), Happy London Instagram 18:45 (6a36921b9513262b4d2d57b7), Rabbit TikTok 19:20 (6a36922b9513262b4d2d586e), Alzbdh app ad X 19:55 (6a36923b85c1c7cceb0b7cbe).
 - 2026-06-21 Riyadh: Scheduled الطائف posts via Buffer. X 12:35 (6a2fd85dbc4ff5b2115192a4), Instagram 20:45 (6a2fd896c266f6f56ba5c66c), TikTok 21:30 (6a2fd8d2c11354a315fdcbfe).
 
 - 2026-06-14 Riyadh: Scheduled إيرث كافيه posts via Buffer. X 12:35 (6a2d77d361b0aab8c15f8dfe), Instagram 20:45 (6a2d77df08bd17e5f3a93710), TikTok 21:30 (6a2d77e9adc07817f4124573).
