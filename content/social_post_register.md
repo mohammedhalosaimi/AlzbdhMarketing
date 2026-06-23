@@ -9,7 +9,7 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - Image paths are relative to the marketing repo root unless a row has an explicit public URL.
 
 ## Counts
-- Total platform posts: 206
+- Total platform posts: 216
 - Travel posts: 39
 - Places posts: 45
 - Perfumes posts: 3
@@ -46,6 +46,7 @@ This is the canonical posting tracker for Buffer or any social media manager wor
 - 2026-06-15 Riyadh: Sent-post audit found older published places captions with `تقييم زبدة` / `زبدة الرياض` wording. Recommendation: do not mass-delete unless brand consistency is more important than preserving early account activity; Buffer cannot edit already-sent posts from this connector.
 
 ## Scheduled Queue
+- 2026-06-23 Riyadh: Scheduled daily capacity fill via Buffer. Total 10 posts: X 09:45 (6a3a27b2664ab3d19cd2076f), 13:20 (6a3a27dec5a11e4c3bfa2e5e), 18:10 (6a3a2804b87ceabd5a47754a), 20:05 (6a3a2825c5a11e4c3bfa3315); Instagram 11:00 (6a3a27c4664ab3d19cd20839), 14:05 (6a3a27ebb87ceabd5a4773b0), 18:45 (6a3a2810c5a11e4c3bfa3245); TikTok 12:35 (6a3a27d4b87ceabd5a477223), 15:00 (6a3a27fa664ab3d19cd20b1a), 19:20 (6a3a281b4f0ceb745be351a4).
 - 2026-06-21 Riyadh: Scheduled daily capacity fill via Buffer. Total 10 posts: X 12:35 (6a379a4c848d7b22d0452a22), 15:00 (6a379a74848d7b22d0452c0b); Instagram 13:20 (6a379a5fc3e23728391c9959), 18:10 (6a379a7f8f0197acb5d74fe3), 19:20 (6a379a99aa8f9e94bc0d6305), 20:45 (6a379aaf8f0197acb5d75198); TikTok 14:05 (6a379a69346cbbd0db40ec4e), 18:45 (6a379a8e346cbbd0db40ee32), 20:05 (6a379aa48f0197acb5d7512c), 21:30 (6a379ab9848d7b22d0452e20).
 - 2026-06-20 Riyadh: Scheduled scratch tonight posts via Buffer, generated without the template renderer. TikTok 20:20 (6a36c9fe2186d297628a2730), 21:20 (6a36ca1e9513262b4d2ea2db), 22:20 (6a36ca3f566900623a6195f2), 23:20 (6a36ca5e2186d297628a2956); X 20:40 (6a36ca09cc3bc13e7add6261), 21:40 (6a36ca28566900623a619559), 22:40 (6a36ca489513262b4d2ea37f); Instagram 21:00 (6a36ca13cfab3643d8c8a25f), 22:00 (6a36ca322186d297628a284d), 23:00 (6a36ca54566900623a619663).
 - 2026-06-22 to 2026-07-05 Riyadh: Prepared 70 rolling-feed posts locally for X, Instagram, Instagram Story-style assets, and TikTok. These are marked `ready` only; do not pre-schedule all rows because the Buffer plan is capped at 10 scheduled posts. Daily feeder should schedule the same-day five-post batch and then write back Buffer IDs.
