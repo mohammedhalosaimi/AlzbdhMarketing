@@ -24,6 +24,7 @@
 | **`ad-framework.md`** | Brand positioning, 3-step loop, tone of voice, creative system, the Value-vs-Motion gate | ✅ Canonical (brand voice) |
 | **`old_mvp-launch-social-ads.md`** | Full campaign strategy: personas, retargeting funnels, A/B tests, KPIs, budget, brand safety | ✅ Canonical (strategy) — **but its "Core Capabilities / Not Yet Live" tables are stale; use [§3](#3-claim-ledger--checked-against-the-live-product) instead** |
 | **`social-post-template.md`** | The reusable per-ad generation template (ZBDH-581) — copy it once per ad | ✅ Use this to generate |
+| **`cloud-content-storage-schema.md`** | Cloud-first schema for generated media, post registry, Buffer events, duplicate prevention, and daily scheduling runs | ✅ Proposed system design |
 | **`ads/`** | Existing ad image assets | reference |
 | `archive/marketing/MVPAdLaunchPlan-superseded-draft.md` | An earlier, leaner draft of the plan (shorter prompts; the file formerly named `MVPAdLaunchPlan copy.md`) | ⛔ **Superseded — do not use** |
 
